@@ -16,14 +16,11 @@ let’s understand how a Java source file is executed.
 
 
 * A Java Program in its lifecycle right from source code -> bytecode -> Execution goes below phases
-    * **JDK**
-    * **JRE**
-    * **JVM**
+    * **JDK = JRE + tools to develop Java Application.**
+    * **JRE = JVM + libraries to run Java application.**
+    * **JVM = Class loader system + runtime data area + Execution Engine.**
 
 In layman terms: JDK is grandfather JRE is father and JVM is their son. [i.e. JDK > JRE > JVM ]
-JDK = JRE + tools to develop Java Application.
-JRE = JVM + libraries to run Java application.
-JVM = Class loader system + runtime data area + Execution Engine.
 
 ## **JDK** = JRE + Development/debugging tools
 
@@ -42,21 +39,21 @@ Sometimes, even if you are not planning to do any Java development on a computer
 for more information check  [Pdf](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/BasicJavaTopics/JDK%20Tools%20with%20Names.pdf)  or  [url](https://www.cs.mun.ca/java-api-1.5/tooldocs/index.html)
 
 **General**
-•	General Information (file structure, classpath, how classes are found, changes)
+-	General Information (file structure, classpath, how classes are found, changes)  
 
 **Standard JDK Tools and Utilities**
-•	Basic Tools (javac, java, javadoc, apt, appletviewer, jar, jdb, javah, javap, extcheck)
-•	Security Tools (keytool, jarsigner, policytool, kinit, klist, ktab)
-•	Internationalization Tools (native2ascii)
-•	Remote Method Invocation (RMI) Tools (rmic, rmiregistry, rmid, serialver)
-•	Java IDL and RMI-IIOP Tools (tnameserv, idlj, orbd, servertool)
-•	Java Deployment Tools (pack200, unpack200)
-•	Java Plug-in Tools (htmlconverter)
-•	Java Web Start Tools (javaws)
+- Basic Tools (javac, java, javadoc, apt, appletviewer, jar, jdb, javah, javap, extcheck)  
+-	Security Tools (keytool, jarsigner, policytool, kinit, klist, ktab)  
+-	Internationalization Tools (native2ascii)
+-	Remote Method Invocation (RMI) Tools (rmic, rmiregistry, rmid, serialver)
+-	Java IDL and RMI-IIOP Tools (tnameserv, idlj, orbd, servertool)
+-	Java Deployment Tools (pack200, unpack200)
+-	Java Plug-in Tools (htmlconverter)
+-	Java Web Start Tools (javaws)
 
 **Experimental JDK Tools and Utilities**
-•	Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
-•	Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)
+-	Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
+-	Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)
 
 
 
