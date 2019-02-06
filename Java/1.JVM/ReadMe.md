@@ -13,6 +13,8 @@ let’s understand how a Java source file is executed.
 4.	JVM translates bytecode into native machine code which machines can execute.
 
 <br>
+
+
 ![LifeCycle of Java Program](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true)
 
 
@@ -57,7 +59,10 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 -	Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)      
 
 <br>
+
+
 ![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true)
+
 
 <br>
 
