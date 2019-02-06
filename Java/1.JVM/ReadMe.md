@@ -15,12 +15,12 @@ let’s understand how a Java source file is executed.
 
 <br>
 
-![LifeCycle of Java Program](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true)
+![LifeCycle of Java Program](/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true)
 
 
 <br>
 
-![ ](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true)
+![ ](/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true)
 
 
 
@@ -34,7 +34,7 @@ let’s understand how a Java source file is executed.
 <br>
 
 
-![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true)
+![](/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true)
 
 
 <br>
@@ -44,7 +44,7 @@ let’s understand how a Java source file is executed.
 
 JVM turns into an occurrence of JRE at runtime of a Java program. It is generally known as a runtime interpreter. JVM — to a great extent — helps in the deliberation of internal execution from the software engineers who make utilization of libraries for their projects from JDK.
 
-![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true)
+![](/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true)
 
 
 
@@ -116,7 +116,7 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 
 <br> 
 
-![ ](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/j2se5.gif?raw=true)
+![ ](/Java/ResourcesFiles/Pictures/j2se5.gif?raw=true)
 
 <br> 
 
