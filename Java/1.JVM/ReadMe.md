@@ -18,6 +18,12 @@ let’s understand how a Java source file is executed.
 ![LifeCycle of Java Program](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true)
 
 
+<br>
+
+![ ](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true)
+
+
+
 * A Java Program in its lifecycle right from source code -> bytecode -> Execution goes below phases
     * **JDK = JRE + tools to develop Java Application.**
     * **JRE = JVM + libraries to run Java application.**
@@ -71,9 +77,16 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 
 
 # **JRE** = JVM + libraries to run Java application.
+
+<br>
+
+
+# **JVM** = Class loader system + runtime data area + Execution Engine.
+
+
 ![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true)
 
 
 
 
-![ ](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true)
+
