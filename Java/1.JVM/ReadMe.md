@@ -12,6 +12,7 @@ let’s understand how a Java source file is executed.
 3.	This class file can be executed in any platform/OS by JVM (Java virtual machine).
 4.	JVM translates bytecode into native machine code which machines can execute.
 
+<br>
 ![LifeCycle of Java Program](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true)
 
 
@@ -22,7 +23,7 @@ let’s understand how a Java source file is executed.
 
 In layman terms: JDK is grandfather JRE is father and JVM is their son. [i.e. JDK > JRE > JVM ]
 
-## **JDK** = JRE + Development/debugging tools
+# **JDK** = JRE + Development/debugging tools
 
 - It is a bundle of software that you can use to develop Java based applications.
 - Java Development Kit is needed for developing java applications.
@@ -53,20 +54,18 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 
 **Experimental JDK Tools and Utilities**
 -	Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
--	Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)
+-	Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)      
 
-
-
-
+<br>
 ![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true)
 
-
+<br>
 
 
 ![ ](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/j2se5.gif?raw=true)
 
 
-## **JRE** = JVM + Java Packages Classes(like util, math, lang, awt,swing etc)+runtime libraries.
+# **JRE** = JVM + libraries to run Java application.
 ![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true)
 
 
