@@ -3,7 +3,7 @@ let’s understand how a Java source file is executed.
 
 <br>
 
-![](/aughing-buddha/Java/ResourcesFiles/Pictures/Java_Sourcecode_to_machinelevelcode.jpg?raw=true)
+![](../ResourcesFiles/Pictures/Java_Source_to_machinelevelcode.jpg?raw=true)
 
 
 <br>
