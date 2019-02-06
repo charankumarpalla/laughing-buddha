@@ -1,11 +1,12 @@
-
-
-
-
-
-
-# **Before jumping into the internals of Java**, 
+# **Lets Jump into internals of Java**, 
 let’s understand how a Java source file is executed.
+
+<br>
+
+![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/Java_Sourcecode_to_machinelevelcode.jpg?raw=true)
+
+
+<br>
 
 1.	We write the Java source code in Simple.Java file using an editor or IDE (integrated development environment) e.g. Eclipse or IntelliJ Idea.
 2.	Program has to be compiled into bytecode. Java compiler (javac) compiles the sourcecode to Simple.class file.
@@ -13,7 +14,6 @@ let’s understand how a Java source file is executed.
 4.	JVM translates bytecode into native machine code which machines can execute.
 
 <br>
-
 
 ![LifeCycle of Java Program](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true)
 
