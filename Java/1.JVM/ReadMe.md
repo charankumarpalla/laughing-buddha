@@ -42,6 +42,7 @@ let’s understand how a Java source file is executed.
 
 # **JVM** = Class loader system + runtime data area + Execution Engine.
 
+JVM turns into an occurrence of JRE at runtime of a Java program. It is generally known as a runtime interpreter. JVM — to a great extent — helps in the deliberation of internal execution from the software engineers who make utilization of libraries for their projects from JDK.
 
 ![](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true)
 
