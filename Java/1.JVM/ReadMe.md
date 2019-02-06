@@ -118,3 +118,21 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 ![ ](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/Pictures/j2se5.gif?raw=true)
 
 <br> 
+
+
+
+
+
+# TakeAways :
+
+## Compilation at JDK Level
+First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
+
+- Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
+- 	Enter: Enters symbols for the definitions into the symbol table.
+-	Process annotations: If Requested, processes annotations found in the specifed compilation units.
+-	Attribute: Attributes the Syntax trees. This step includes name resolution, type checking and constant folding.
+-	Flow: Performs dataflow analysis on the trees from the previous step. This includes checks for assignments and reachability.
+-	Desugar: Rewrites the AST and translates away some syntactic sugar.
+-	Generate: Generates ‘.Class’ files.
+
