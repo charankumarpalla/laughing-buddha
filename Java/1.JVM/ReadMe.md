@@ -45,10 +45,22 @@ let’s understand how a Java source file is executed.
 
 Every developer who uses Java knows that Java bytecode runs in a JRE (Java Runtime Environment). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
 
-The JRE is composed of the Java API and the JVM. The role of the JVM is to read the Java application through the Class Loader and execute it along with the __[Java API](#JavaApi)__.
+The JRE is composed of the Java API and the JVM. The role of the JVM is to read the Java application through the Class Loader and execute it along with the __[Java API](#javaApi)__.
+
+> Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
 
 
+A virtual machine (VM) is a software implementation of a machine (i.e. a computer) that executes programs like a physical machine. Originally, Java was designed to run based on a virtual machine separated from a physical machine for implementing WORA (Write Once Run Anywhere), although this goal has been mostly forgotten. Therefore, the JVM runs on all kinds of hardware to execute the Java Bytecode without changing the Java execution code.
+
+***The features of JVM are as follows:***
+* **Stack-based virtual machine**: The most popular computer architectures such as Intel x86 Architecture and ARM Architecture run based on a register. However, JVM runs based on a stack.
+* **Symbolic reference:** All types (class and interface) except for primitive data types are referred to through symbolic reference, instead of through explicit memory address-based reference. 
+* **Garbage collection:** A class instance is explicitly created by the user code and automatically destroyed by garbage collection.
+* **Guarantees platform independence by clearly defining the primitive data type:** A traditional language such as C/C++ has different int type size according to the platform. The JVM clearly defines the primitive data type to maintain its compatibility and guarantee platform independence.
+* **Network byte order:** The Java class file uses the network byte order. To maintain platform independence between the little endian used by Intel x86 Architecture and the big endian used by the RISC Series Architecture, a fixed byte order must be kept. Therefore, JVM uses the network byte order, which is used for network transfer. The network byte order is the big endian.
+
+Sun Microsystems developed Java. However, any vendor can develop and provide a JVM by following the Java Virtual Machine Specification. For this reason, there are various JVMs, including Oracle Hotspot JVM and IBM JVM. The Dalvik VM in Google's Android operating system is a kind of JVM, though it does not follow the Java Virtual Machine Specification. Unlike Java VMs, which are stack machines, the Dalvik VM is a register-based architecture. Java bytecode is also converted into an register-based instruction set used by the Dalvik VM.
 
 
 JVM turns into an occurrence of JRE at runtime of a Java program. It is generally known as a runtime interpreter. JVM — to a great extent — helps in the deliberation of internal execution from the software engineers who make utilization of libraries for their projects from JDK.
@@ -149,10 +161,8 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 
 
 
-
-
 # Know it Better : bit deeper explanation
-- #### JavaApi : 
+- ###### javaApi : 
     - Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
 
@@ -161,3 +171,6 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 
 
 # Reference and Our Thanks to these... 
+
+- https://www.cubrid.org/blog/understanding-jvm-internals/
+
