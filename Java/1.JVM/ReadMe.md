@@ -42,6 +42,15 @@ let’s understand how a Java source file is executed.
 
 # **JVM** = Class loader system + runtime data area + Execution Engine.
 
+
+Every developer who uses Java knows that Java bytecode runs in a JRE (Java Runtime Environment). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
+
+The JRE is composed of the Java API and the JVM. The role of the JVM is to read the Java application through the Class Loader and execute it along with the __[Java API](#JavaApi)__.
+
+
+
+
+
 JVM turns into an occurrence of JRE at runtime of a Java program. It is generally known as a runtime interpreter. JVM — to a great extent — helps in the deliberation of internal execution from the software engineers who make utilization of libraries for their projects from JDK.
 
 ![](/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true)
@@ -137,3 +146,18 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 -	Desugar: Rewrites the AST and translates away some syntactic sugar.
 -	Generate: Generates ‘.Class’ files.
 
+
+
+
+
+
+# Know it Better : bit deeper explanation
+- #### JavaApi : 
+    - Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
+
+
+
+
+
+
+# Reference and Our Thanks to these... 
