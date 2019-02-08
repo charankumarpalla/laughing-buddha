@@ -22,7 +22,7 @@ Table of Contents
          * [javaApi :](#javaapi-)
       * [Reference and Our Thanks to these...](#reference-and-our-thanks-to-these)
    * [More Images](#more-images)
-   
+
 
 # **Lets Jump into internals of Java**, 
 let’s understand how a Java source file is executed.
@@ -321,7 +321,7 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 ## Interview Questions
 
-### Compilation at JDK Level
+**`Compilation at JDK Level`**
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
 -   Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
@@ -334,27 +334,35 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 
 
 
+<br>
+
 > How can we verify that the JVM successfully executes the class file verification process? How can we verify that various JVMs from various JVM vendors satisfy the JVM specifications? For verification, Oracle provides a test tool, TCK (Technology Compatibility Kit).
 
 <br>
 
-### JVM VS Hotspot
+---
+
+**`JVM VS Hotspot`**
 The definition of what exactly is a Java Virtual Machine is stated in the Java Virtual Machine Specification
 
 The JVM is by definition a virtual machine, i. e. a software machine that simulates what a real machine does. Like a real machine, it has an instruction set, a virtual computer architecture and an execution model. It is capable of running code written with this virtual instruction set, pretty much like a real machine can run machine code.
 
 HotSpot is an  **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
 
+---
 
 ## Advanced Topics
+ - [`javap`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html)
+ - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
+ - `Abstract Syntax Tree`
+ - 
 
 
 
 
 
 ## Sometimes ignore is not bliss :)
-### javaApi : 
-    - Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
+- **JavaApi**  : Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
 
 ## Reference and Our Thanks to these... 
@@ -363,6 +371,7 @@ HotSpot is an  **implementation of the JVM concept**. It was originally develope
 - https://www.cubrid.org/blog/understanding-jvm-internals/
 - https://anturis.com/blog/java-virtual-machine-the-essential-guide/
 - https://dzone.com/articles/a-detailed-breakdown-of-the-jvm
+- https://github.com/deephacks/awesome-jvm#nix-tools
 
 
 
