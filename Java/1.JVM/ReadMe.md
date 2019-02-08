@@ -1,3 +1,26 @@
+   * [<strong>Lets Jump into internals of Java</strong>,](#lets-jump-into-internals-of-java)
+   * [<strong>JVM</strong> = Class loader system   runtime data area   Execution Engine.](#jvm--class-loader-system--runtime-data-area--execution-engine)
+      * [Architecture](#architecture)
+         * [Class Loader](#class-loader)
+         * [Execution Engine](#execution-engine)
+         * [Memory Model](#memory-model)
+            * [Performance Optimization](#performance-optimization)
+            * [Performance Monitoring](#performance-monitoring)
+      * [HotSpot JVM](#hotspot-jvm)
+   * [<strong>JRE</strong> = JVM   libraries to run Java application.](#jre--jvm--libraries-to-run-java-application)
+   * [<strong>JDK</strong> = JRE   Development/debugging tools](#jdk--jre--developmentdebugging-tools)
+         * [Example jdk tools :](#example-jdk-tools-)
+   * [TakeAways :](#takeaways-)
+            * [Compilation at JDK Level](#compilation-at-jdk-level)
+            * [JVM VS Hotspot](#jvm-vs-hotspot)
+            * [Know it Better : bit deeper explanation](#know-it-better--bit-deeper-explanation)
+                  * [javaApi :](#javaapi-)
+            * [Interview Questions](#interview-questions)
+            * [Advanced Topics](#advanced-topics)
+            * [Reference and Our Thanks to these...](#reference-and-our-thanks-to-these)
+            
+
+
 # **Lets Jump into internals of Java**, 
 let’s understand how a Java source file is executed.
 
@@ -76,6 +99,8 @@ Sun Microsystems developed Java. However, **any vendor can develop and provide a
 
 The architecture of the JVM enables detailed control over the actions that a Java application performs. **It runs in a sandbox environment and ensures** that the application does not have access to the local file system, processes, and networking without proper permission. In case of remote execution, code should be signed with a certificate.
 
+
+> The JVM is the virtual machine on which Java code executes. It's responsible for converting byte code into machine-specific code.
 
 ## Architecture
 The JVM specification defines the subsystems and their external behavior. _The JVM has the following major subsystems_:
@@ -180,7 +205,29 @@ _The JVM monitor can measure the following metrics._
 
 
 
-<br><br><br>
+<br>
+
+
+
+## HotSpot JVM
+
+Now that we understood theoritically from above
+
+ - What is a VM -> JVM ?
+ - At What level JVM comes into picture during a java program execution ?
+ - SubSystems of JVM ?
+
+_Let's now deep dive into how JVM works and its implementation_ 
+
+The JVM is the virtual machine on which Java code executes. It's responsible for converting byte code into machine-specific code.
+
+> JVM is the one that actually calls the main method present in a java code
+
+Here we discuss about Oracle implementation of JVM specifications i.e HotSpot JVM out of all other implementations(`Eg: IBM J9vm ,  Kaffe , ...`)
+
+<br>
+<br>
+<br>
 
 `JVM turns into an occurrence of JRE at runtime of a Java program. It is generally known as a runtime interpreter. JVM — to a great extent — helps in the deliberation of internal execution from the software engineers who make utilization of libraries for their projects from JDK.`
 
@@ -242,7 +289,7 @@ Usually, if you only care about running Java programs on computer you will only 
 Sometimes, even if you are not planning to do any Java development on a computer, you still need the JDK installed. For example, if you are deploying a web application with JSP, you are technically just running Java programs inside the application server. Why would you need the JDK then? Because the application server will convert JSP into Java servlets and needs to use the JDK to compile the servlets.
 
 ### Example jdk tools : 
-for more information check  [Pdf](https://github.com/charankumarpalla/laughing-buddha/blob/development/Java/ResourcesFiles/BasicJavaTopics/JDK%20Tools%20with%20Names.pdf)  or  [url](https://www.cs.mun.ca/java-api-1.5/tooldocs/index.html)
+for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Tools%20with%20Names.pdf)  or  [url](https://www.cs.mun.ca/java-api-1.5/tooldocs/index.html)
 
 **General**
 -	General Information (file structure, classpath, how classes are found, changes)  
@@ -275,6 +322,7 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 
 # TakeAways :
 
+
 #### Compilation at JDK Level
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
@@ -300,20 +348,22 @@ The JVM is by definition a virtual machine, i. e. a software machine that simula
 HotSpot is an  **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
 
 
-## Know it Better : bit deeper explanation
+#### Know it Better : bit deeper explanation
 - ###### javaApi : 
     - Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
 
-## Interview Questions
+#### Interview Questions
 
 
-## Advanced Topics
+#### Advanced Topics
 
 
 
-## Reference and Our Thanks to these... 
+#### Reference and Our Thanks to these... 
 
+- [**JVM8 Specifications PDF**](/Java/ResourcesFiles/BasicJavaTopics/JVM8_Specifications.pdf)
 - https://www.cubrid.org/blog/understanding-jvm-internals/
 - https://anturis.com/blog/java-virtual-machine-the-essential-guide/
+- https://dzone.com/articles/a-detailed-breakdown-of-the-jvm
 
