@@ -77,7 +77,7 @@ Sun Microsystems developed Java. However, **any vendor can develop and provide a
 The architecture of the JVM enables detailed control over the actions that a Java application performs. **It runs in a sandbox environment and ensures** that the application does not have access to the local file system, processes, and networking without proper permission. In case of remote execution, code should be signed with a certificate.
 
 
-#### Architecture
+## Architecture
 The JVM specification defines the subsystems and their external behavior. _The JVM has the following major subsystems_:
 
 - **Class Loader** -  Responsible for reading Java source code and loading classes into the data areas.
@@ -94,7 +94,7 @@ The data areas occupy memory that is allocated by the JVM from the underlying OS
 
 <br>
 
-#### Class Loader
+### Class Loader
 The JVM uses different class loaders organized into the following hierarchy:
 
 - **The bootstrap class loader** is the parent for other class loaders. It loads the core Java libraries and is the only one written in native code.
@@ -108,7 +108,7 @@ The JVM uses different class loaders organized into the following hierarchy:
 
 
 
-#### Execution Engine
+### Execution Engine
 
 The execution engine executes commands from the bytecode loaded into the data areas one by one. To make the bytecode commands readable to the machine, the execution engine uses two methods.
 
@@ -117,7 +117,7 @@ The execution engine executes commands from the bytecode loaded into the data ar
 
 <br>
 
-#### Memory Model
+### Memory Model
 
 
 The Java memory model is built on the concept of automatic memory management. When an object is no longer referenced by an application, a garbage collector discards it and this frees up memory. This is different from many other programming languages, where you have to manually unload the object from memory.
