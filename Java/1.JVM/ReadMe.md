@@ -60,7 +60,35 @@ A virtual machine (VM) is a software implementation of a machine (i.e. a compute
 * **Guarantees platform independence by clearly defining the primitive data type:** A traditional language such as C/C++ has different int type size according to the platform. The JVM clearly defines the primitive data type to maintain its compatibility and guarantee platform independence.
 * **Network byte order:** The Java class file uses the network byte order. To maintain platform independence between the little endian used by Intel x86 Architecture and the big endian used by the RISC Series Architecture, a fixed byte order must be kept. Therefore, JVM uses the network byte order, which is used for network transfer. The network byte order is the big endian.
 
-Sun Microsystems developed Java. However, any vendor can develop and provide a JVM by following the Java Virtual Machine Specification. For this reason, there are various JVMs, including Oracle Hotspot JVM and IBM JVM. The Dalvik VM in Google's Android operating system is a kind of JVM, though it does not follow the Java Virtual Machine Specification. Unlike Java VMs, which are stack machines, the Dalvik VM is a register-based architecture. Java bytecode is also converted into an register-based instruction set used by the Dalvik VM.
+Sun Microsystems developed Java. However, **any vendor can develop and provide a JVM by following the Java Virtual Machine Specification**. For this reason, there are various JVMs, including _Oracle Hotspot JVM and IBM JVM_. The Dalvik VM in Google's Android operating system is a kind of JVM, though it does not follow the Java Virtual Machine Specification. Unlike Java VMs, which are stack machines, the Dalvik VM is a register-based architecture. Java bytecode is also converted into an register-based instruction set used by the Dalvik VM.
+
+
+The architecture of the JVM enables detailed control over the actions that a Java application performs. **It runs in a sandbox environment and ensures** that the application does not have access to the local file system, processes, and networking without proper permission. In case of remote execution, code should be signed with a certificate.
+
+
+#### Architecture
+The JVM specification defines the subsystems and their external behavior. _The JVM has the following major subsystems_:
+
+- **Class Loader** -  Responsible for reading Java source code and loading classes into the data areas.
+- **Execution Engine** - Responsible for executing instructions from the data areas.
+
+The data areas occupy memory that is allocated by the JVM from the underlying OS
+
+<br>
+![](/Java/ResourcesFiles/Pictures/jvm-SubSystems.png?raw=true)
+
+<br>
+
+##### The JVM uses different class loaders organized into the following hierarchy:
+
+- **The bootstrap class loader** is the parent for other class loaders. It loads the core Java libraries and is the only one written in native code.
+- **The extension class loader** is a child of the bootstrap class loader. It loads the extension libraries.
+- **The system class loader** is a child of the extension class loader. It loads the application class files that are found in the classpath.
+- **A user-defined class loader** is a child of the system class loader or another user-defined class loader.
+
+
+
+
 
 
 JVM turns into an occurrence of JRE at runtime of a Java program. It is generally known as a runtime interpreter. JVM — to a great extent — helps in the deliberation of internal execution from the software engineers who make utilization of libraries for their projects from JDK.
@@ -147,7 +175,7 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 
 # TakeAways :
 
-## Compilation at JDK Level
+#### Compilation at JDK Level
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
 - Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
@@ -159,6 +187,17 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 -	Generate: Generates ‘.Class’ files.
 
 
+
+> How can we verify that the JVM successfully executes the class file verification process? How can we verify that various JVMs from various JVM vendors satisfy the JVM specifications? For verification, Oracle provides a test tool, TCK (Technology Compatibility Kit).
+
+<br>
+
+#### JVM VS Hotspot
+The definition of what exactly is a Java Virtual Machine is stated in the Java Virtual Machine Specification
+
+The JVM is by definition a virtual machine, i. e. a software machine that simulates what a real machine does. Like a real machine, it has an instruction set, a virtual computer architecture and an execution model. It is capable of running code written with this virtual instruction set, pretty much like a real machine can run machine code.
+
+HotSpot is an  **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
 
 
 # Know it Better : bit deeper explanation
@@ -173,4 +212,5 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 # Reference and Our Thanks to these... 
 
 - https://www.cubrid.org/blog/understanding-jvm-internals/
+- https://anturis.com/blog/java-virtual-machine-the-essential-guide/
 
