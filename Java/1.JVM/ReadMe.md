@@ -13,12 +13,11 @@ Table of Contents
    * [<strong>JRE</strong> = JVM   libraries to run Java application.](#jre--jvm--libraries-to-run-java-application)
    * [<strong>JDK</strong> = JRE   Development/debugging tools](#jdk--jre--developmentdebugging-tools)
       * [Example jdk tools :](#example-jdk-tools-)
-   * [Extra Mile Coverage](#extra-mile-coverage)
-      * [Interview Questions](#interview-questions)
-      * [Advanced Topics](#advanced-topics)
-      * [Sometimes ignore is not bliss :)](#sometimes-ignore-is-not-bliss-)
-      * [Reference and Our Thanks to these...](#reference-and-our-thanks-to-these)
-   * [More Images](#more-images)
+   * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Memory out of Concepts](#school_satchel-memory-out-of-concepts)
+      * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#ballot_box_with_check-advanced-topics)
+      * [<g-emoji class="g-emoji" alias="exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png">❗️</g-emoji> Sometimes ignorance is not bliss](#exclamation-sometimes-ignorance-is-not-bliss)
+      * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#link-pray-reference-and-our-thanks-to-these)
+      * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#microscope-more-images)
 
 
 # **Lets Jump into internals of Java**, 
@@ -313,12 +312,26 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 
 
-# Extra Mile Coverage
+# :school_satchel: Memory out of Concepts
 
 
-## Interview Questions
 
-** `Compilation at JDK Level`**
+## :ballot_box_with_check: Advanced Topics
+ - [`javap`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html)
+ - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
+ - `Abstract Syntax Tree`
+
+
+
+
+## :exclamation: Sometimes ignorance is not bliss 
+:bulb: **`JavaApi`**  : Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
+
+---
+
+<!-- ## :envelope: Interview Questions -->
+
+:bulb: **`Compilation at JDK Level`**
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
 -   Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
@@ -330,8 +343,9 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 -	Generate: Generates ‘.Class’ files.
 
 
-
 <br>
+
+---
 
 > How can we verify that the JVM successfully executes the class file verification process? How can we verify that various JVMs from various JVM vendors satisfy the JVM specifications? For verification, Oracle provides a test tool, TCK (Technology Compatibility Kit).
 
@@ -339,7 +353,7 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 
 ---
 
-**`JVM VS Hotspot`**
+:bulb: **`JVM VS Hotspot`**
 The definition of what exactly is a Java Virtual Machine is stated in the Java Virtual Machine Specification
 
 The JVM is by definition a virtual machine, i. e. a software machine that simulates what a real machine does. Like a real machine, it has an instruction set, a virtual computer architecture and an execution model. It is capable of running code written with this virtual instruction set, pretty much like a real machine can run machine code.
@@ -348,19 +362,8 @@ HotSpot is an **implementation of the JVM concept**. It was originally developed
 
 ---
 
-## Advanced Topics
- - [`javap`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html)
- - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
- - `Abstract Syntax Tree`
 
-
-
-
-## Sometimes ignore is not bliss :)
-- **JavaApi**  : Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
-
-
-## Reference and Our Thanks to these... 
+## :link: :pray: Reference and Our Thanks to these... 
 
 - [**JVM8 Specifications PDF**](/Java/ResourcesFiles/BasicJavaTopics/JVM8_Specifications.pdf)
 - https://www.cubrid.org/blog/understanding-jvm-internals/
@@ -373,7 +376,7 @@ HotSpot is an **implementation of the JVM concept**. It was originally developed
 
 
 
-# More Images
+## :microscope: More Images
 
 <br>
 
