@@ -16,8 +16,8 @@ Table of Contents
    * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Memory out of Concepts](#school_satchel-memory-out-of-concepts)
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#ballot_box_with_check-advanced-topics)
       * [<g-emoji class="g-emoji" alias="exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png">❗️</g-emoji> Sometimes ignorance is not bliss](#exclamation-sometimes-ignorance-is-not-bliss)
-      * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#link-pray-reference-and-our-thanks-to-these)
       * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#microscope-more-images)
+      * [<g-emoji class="g-emoji" alias="arrows_counterclockwise" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f504.png">🔄</g-emoji> UnWind/Recap](#arrows_counterclockwise-unwindrecap)
 
 
 # **Lets Jump into internals of Java**, 
@@ -69,9 +69,9 @@ let’s understand how a Java source file is executed.
 # **JVM** = Class loader system + runtime data area + Execution Engine.
 
 
-Every developer who uses Java knows that Java bytecode runs in a JRE (Java Runtime Environment). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
+Every developer who uses Java knows that Java bytecode runs in a JRE (Java `Runtime Environment` <sup>[3]()</sup> ). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
 
-The JRE is composed of the Java API and the JVM. The role of the JVM is to read the Java application through the Class Loader and execute it along with the __[Java API](#javaApi)__.
+The JRE is composed of the Java API and the JVM. `The role of the JVM is to read the Java application through the Class Loader and execute it along with the Java API`.
 
 > Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
@@ -320,6 +320,7 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
  - [`javap`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html)
  - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
  - `Abstract Syntax Tree`
+ - Stack based VM 
 
 
 
@@ -361,8 +362,20 @@ The JVM is by definition a virtual machine, i. e. a software machine that simula
 HotSpot is an **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
 
 ---
+:bulb: **`3. What Runtime basically mean`**
+
+There are a few components that make up the runtime environment. Not all components are applicable to all environments (e.g. assembler, C++, and C# all have different runtime facilities), but they generally comprise the following:
+
+- The CPU and hardware platform on which the program runs.
+- The operating system that runs the program, including device drivers that interface with the hardware.
+- _Any interpreter that sits between the program and the operating system_, such as the CLR, **JVM**, shell (for e.g. a Bash script), Perl/Python interpreter, et al.
+- Standard libraries available to the language and platform. Certain environments (e.g. embedded) may pare down the relevant standard library due to space concerns.
+- Frameworks and other libraries linked into the program either statically or dynamically.
 
 
+---
+
+<br>
 ## :link: :pray: Reference and Our Thanks to these... 
 
 - [**JVM8 Specifications PDF**](/Java/ResourcesFiles/BasicJavaTopics/JVM8_Specifications.pdf)
@@ -384,3 +397,9 @@ HotSpot is an **implementation of the JVM concept**. It was originally developed
 <p align="center">
   <img width="600" height="800" src="/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true" alt="Total in and out of Java program">
 </p>
+
+## :arrows_counterclockwise: UnWind/Recap
+- What Runtime Mean ?
+- what is Java Runtime Mean ? 
+    - jvm + JavaApi(what are these api/classes - see jdk folder structure)
+- What is a VM and JVM
