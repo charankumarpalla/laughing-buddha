@@ -1,6 +1,7 @@
 Table of Contents
 =================
 
+   * [Table of Contents](#table-of-contents)
    * [<strong>Lets Jump into internals of Java</strong>,](#lets-jump-into-internals-of-java)
    * [<strong>JVM</strong> = Class loader system   runtime data area   Execution Engine.](#jvm--class-loader-system--runtime-data-area--execution-engine)
       * [Architecture](#architecture)
@@ -15,11 +16,8 @@ Table of Contents
       * [Example jdk tools :](#example-jdk-tools-)
    * [Extra Mile Coverage](#extra-mile-coverage)
       * [Interview Questions](#interview-questions)
-         * [Compilation at JDK Level](#compilation-at-jdk-level)
-         * [JVM VS Hotspot](#jvm-vs-hotspot)
       * [Advanced Topics](#advanced-topics)
       * [Sometimes ignore is not bliss :)](#sometimes-ignore-is-not-bliss-)
-         * [javaApi :](#javaapi-)
       * [Reference and Our Thanks to these...](#reference-and-our-thanks-to-these)
    * [More Images](#more-images)
 
@@ -321,7 +319,7 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 ## Interview Questions
 
-**`Compilation at JDK Level`**
+** `Compilation at JDK Level`**
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
 -   Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
@@ -347,7 +345,7 @@ The definition of what exactly is a Java Virtual Machine is stated in the Java V
 
 The JVM is by definition a virtual machine, i. e. a software machine that simulates what a real machine does. Like a real machine, it has an instruction set, a virtual computer architecture and an execution model. It is capable of running code written with this virtual instruction set, pretty much like a real machine can run machine code.
 
-HotSpot is an  **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
+HotSpot is an **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
 
 ---
 
@@ -355,8 +353,6 @@ HotSpot is an  **implementation of the JVM concept**. It was originally develope
  - [`javap`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html)
  - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
  - `Abstract Syntax Tree`
- - 
-
 
 
 
