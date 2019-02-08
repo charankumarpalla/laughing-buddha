@@ -1,7 +1,6 @@
 Table of Contents
 =================
 
-   * [Table of Contents](#table-of-contents)
    * [<strong>Lets Jump into internals of Java</strong>,](#lets-jump-into-internals-of-java)
    * [<strong>JVM</strong> = Class loader system   runtime data area   Execution Engine.](#jvm--class-loader-system--runtime-data-area--execution-engine)
       * [Architecture](#architecture)
