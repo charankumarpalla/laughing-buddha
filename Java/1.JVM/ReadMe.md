@@ -3,7 +3,9 @@ let’s understand how a Java source file is executed.
 
 <br>
 
-![](/Java/ResourcesFiles/Pictures/Java_Source_to_machinelevelcode.jpg?raw=true)
+<p align="center">
+  <img src="/Java/ResourcesFiles/Pictures/Java_Source_to_machinelevelcode.jpg?raw=true">
+</p>
 
 
 <br>
@@ -15,13 +17,21 @@ let’s understand how a Java source file is executed.
 
 <br>
 
-![LifeCycle of Java Program](/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true)
+
+<p align="center">
+  <img src="/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true" alt="LifeCycle of Java Program">
+</p>
 
 
 <br>
 
-![ ](/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true)
 
+<p align="center">
+  <img src="/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true" alt="">
+</p>
+
+
+<br>
 
 
 * A Java Program in its lifecycle right from source code -> bytecode -> Execution goes below phases
@@ -34,7 +44,9 @@ let’s understand how a Java source file is executed.
 <br>
 
 
-![](/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true)
+<p align="center">
+  <img src="/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true" alt="">
+</p>
 
 
 <br>
@@ -96,7 +108,14 @@ The data areas occupy memory that is allocated by the JVM from the underlying OS
 
 JVM turns into an occurrence of JRE at runtime of a Java program. It is generally known as a runtime interpreter. JVM — to a great extent — helps in the deliberation of internal execution from the software engineers who make utilization of libraries for their projects from JDK.
 
-![](/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true)
+<br>
+
+<p align="center">
+  <img src="/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="">
+</p>
+
+<br>
+
 
 
 
@@ -168,7 +187,9 @@ for more information check  [Pdf](https://github.com/charankumarpalla/laughing-b
 
 <br> 
 
-![ ](/Java/ResourcesFiles/Pictures/j2se5.gif?raw=true)
+<p align="center">
+  <img src="/Java/ResourcesFiles/Pictures/j2se5.gif?raw=true" alt="">
+</p>
 
 <br> 
 
