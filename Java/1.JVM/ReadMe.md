@@ -75,7 +75,10 @@ The JVM specification defines the subsystems and their external behavior. _The J
 The data areas occupy memory that is allocated by the JVM from the underlying OS
 
 <br>
-![](/Java/ResourcesFiles/Pictures/jvm-SubSystems.png?raw=true)
+
+<p align="center">
+  <img src="/Java/ResourcesFiles/Pictures/jvm-SubSystems.png?raw=true">
+</p>
 
 <br>
 
