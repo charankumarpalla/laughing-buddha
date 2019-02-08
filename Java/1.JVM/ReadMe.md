@@ -1,3 +1,6 @@
+Table of Contents
+=================
+
    * [<strong>Lets Jump into internals of Java</strong>,](#lets-jump-into-internals-of-java)
    * [<strong>JVM</strong> = Class loader system   runtime data area   Execution Engine.](#jvm--class-loader-system--runtime-data-area--execution-engine)
       * [Architecture](#architecture)
@@ -9,17 +12,17 @@
       * [HotSpot JVM](#hotspot-jvm)
    * [<strong>JRE</strong> = JVM   libraries to run Java application.](#jre--jvm--libraries-to-run-java-application)
    * [<strong>JDK</strong> = JRE   Development/debugging tools](#jdk--jre--developmentdebugging-tools)
-         * [Example jdk tools :](#example-jdk-tools-)
-   * [TakeAways :](#takeaways-)
-            * [Compilation at JDK Level](#compilation-at-jdk-level)
-            * [JVM VS Hotspot](#jvm-vs-hotspot)
-            * [Know it Better : bit deeper explanation](#know-it-better--bit-deeper-explanation)
-                  * [javaApi :](#javaapi-)
-            * [Interview Questions](#interview-questions)
-            * [Advanced Topics](#advanced-topics)
-            * [Reference and Our Thanks to these...](#reference-and-our-thanks-to-these)
-            
-
+      * [Example jdk tools :](#example-jdk-tools-)
+   * [Extra Mile Coverage](#extra-mile-coverage)
+      * [Interview Questions](#interview-questions)
+         * [Compilation at JDK Level](#compilation-at-jdk-level)
+         * [JVM VS Hotspot](#jvm-vs-hotspot)
+      * [Advanced Topics](#advanced-topics)
+      * [Sometimes ignore is not bliss :)](#sometimes-ignore-is-not-bliss-)
+         * [javaApi :](#javaapi-)
+      * [Reference and Our Thanks to these...](#reference-and-our-thanks-to-these)
+   * [More Images](#more-images)
+   
 
 # **Lets Jump into internals of Java**, 
 let’s understand how a Java source file is executed.
@@ -27,7 +30,7 @@ let’s understand how a Java source file is executed.
 <br>
 
 <p align="center">
-  <img src="/Java/ResourcesFiles/Pictures/Java_Source_to_machinelevelcode.jpg?raw=true">
+  <img width="600" height="400" src="/Java/ResourcesFiles/Pictures/Java_Source_to_machinelevelcode.jpg?raw=true">
 </p>
 
 
@@ -42,16 +45,9 @@ let’s understand how a Java source file is executed.
 
 
 <p align="center">
-  <img src="/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true" alt="LifeCycle of Java Program">
+  <img width="600" height="200" src="/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true" alt="LifeCycle of Java Program">
 </p>
 
-
-<br>
-
-
-<p align="center">
-  <img src="/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true" alt="">
-</p>
 
 <br>
 
@@ -67,7 +63,7 @@ let’s understand how a Java source file is executed.
 
 
 <p align="center">
-  <img src="/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true" alt="">
+  <img width="600" height="400" src="/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true" alt="">
 </p>
 
 
@@ -114,7 +110,7 @@ The data areas occupy memory that is allocated by the JVM from the underlying OS
 <br>
 
 <p align="center">
-  <img src="/Java/ResourcesFiles/Pictures/jvm-SubSystems.png?raw=true">
+  <img width="600" height="400" src="/Java/ResourcesFiles/Pictures/jvm-SubSystems.png?raw=true">
 </p>
 
 <br>
@@ -234,7 +230,7 @@ Here we discuss about Oracle implementation of JVM specifications i.e HotSpot JV
 <br>
 
 <p align="center">
-  <img src="/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="">
+  <img width="500" height="400" src="/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="">
 </p>
 
 <br>
@@ -288,7 +284,7 @@ Usually, if you only care about running Java programs on computer you will only 
 
 Sometimes, even if you are not planning to do any Java development on a computer, you still need the JDK installed. For example, if you are deploying a web application with JSP, you are technically just running Java programs inside the application server. Why would you need the JDK then? Because the application server will convert JSP into Java servlets and needs to use the JDK to compile the servlets.
 
-### Example jdk tools : 
+## Example jdk tools : 
 for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Tools%20with%20Names.pdf)  or  [url](https://www.cs.mun.ca/java-api-1.5/tooldocs/index.html)
 
 **General**
@@ -320,13 +316,15 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 
 
-# TakeAways :
+# Extra Mile Coverage
 
 
-#### Compilation at JDK Level
+## Interview Questions
+
+### Compilation at JDK Level
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
-- Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
+-   Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
 - 	Enter: Enters symbols for the definitions into the symbol table.
 -	Process annotations: If Requested, processes annotations found in the specifed compilation units.
 -	Attribute: Attributes the Syntax trees. This step includes name resolution, type checking and constant folding.
@@ -340,7 +338,7 @@ First, the source ‘.java’ file is passed through the compiler, which then en
 
 <br>
 
-#### JVM VS Hotspot
+### JVM VS Hotspot
 The definition of what exactly is a Java Virtual Machine is stated in the Java Virtual Machine Specification
 
 The JVM is by definition a virtual machine, i. e. a software machine that simulates what a real machine does. Like a real machine, it has an instruction set, a virtual computer architecture and an execution model. It is capable of running code written with this virtual instruction set, pretty much like a real machine can run machine code.
@@ -348,22 +346,34 @@ The JVM is by definition a virtual machine, i. e. a software machine that simula
 HotSpot is an  **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
 
 
-#### Know it Better : bit deeper explanation
-- ###### javaApi : 
+## Advanced Topics
+
+
+
+
+
+## Sometimes ignore is not bliss :)
+### javaApi : 
     - Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
 
-#### Interview Questions
-
-
-#### Advanced Topics
-
-
-
-#### Reference and Our Thanks to these... 
+## Reference and Our Thanks to these... 
 
 - [**JVM8 Specifications PDF**](/Java/ResourcesFiles/BasicJavaTopics/JVM8_Specifications.pdf)
 - https://www.cubrid.org/blog/understanding-jvm-internals/
 - https://anturis.com/blog/java-virtual-machine-the-essential-guide/
 - https://dzone.com/articles/a-detailed-breakdown-of-the-jvm
 
+
+
+
+
+
+# More Images
+
+<br>
+
+
+<p align="center">
+  <img width="600" height="800" src="/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true" alt="Total in and out of Java program">
+</p>
