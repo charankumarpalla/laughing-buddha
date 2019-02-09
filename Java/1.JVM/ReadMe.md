@@ -1,3 +1,5 @@
+
+
 Table of Contents
 =================
 
@@ -6,7 +8,7 @@ Table of Contents
       * [JVM Architecture](#jvm-architecture)
          * [Class Loader](#class-loader)
          * [Execution Engine](#execution-engine)
-         * [Memory Model](#memory-model)
+         * [Memory Model(Runtime Data Areas of JVM)](#memory-modelruntime-data-areas-of-jvm)
             * [Performance Optimization](#performance-optimization)
             * [Performance Monitoring](#performance-monitoring)
       * [HotSpot JVM](#hotspot-jvm)
@@ -17,9 +19,10 @@ Table of Contents
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#ballot_box_with_check-advanced-topics)
       * [<g-emoji class="g-emoji" alias="exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png">❗️</g-emoji> Sometimes ignorance is not bliss](#exclamation-sometimes-ignorance-is-not-bliss)
       * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#link-pray-reference-and-our-thanks-to-these)
-      * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#microscope-more-images)
       * [<g-emoji class="g-emoji" alias="arrows_counterclockwise" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f504.png">🔄</g-emoji> UnWind/Recap](#arrows_counterclockwise-unwindrecap)
+      * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#microscope-more-images)
 
+      
 
 # **Lets Jump into internals of Java**, 
 let’s understand how a Java source file is executed.
@@ -375,6 +378,7 @@ There are a few components that make up the runtime environment. Not all compone
 - Standard libraries available to the language and platform. Certain environments (e.g. embedded) may pare down the relevant standard library due to space concerns.
 - Frameworks and other libraries linked into the program either statically or dynamically.
 
+<br>
 
 ---
 
@@ -387,9 +391,31 @@ There are a few components that make up the runtime environment. Not all compone
 - https://anturis.com/blog/java-virtual-machine-the-essential-guide/
 - https://dzone.com/articles/a-detailed-breakdown-of-the-jvm
 - https://github.com/deephacks/awesome-jvm#nix-tools
+- https://www.artima.com/insidejvm/ed2/lifetype.html <sup>[*]()[*]()</sup>
+- Loading Class : https://www.programcreek.com/2013/01/when-and-how-a-java-class-is-loaded-and-initialized/
+- https://www.youtube.com/watch?v=ZBJ0u9MaKtM
 
 
+<br>
 
+---
+
+
+## :arrows_counterclockwise: UnWind/Recap
+- What Runtime Mean ?
+- what is Java Runtime Mean ? 
+    - jvm + JavaApi(what are these api/classes - see jdk folder structure)
+- What is a VM and JVM
+- What are features required to say a vm as jvm ?
+- Why many jvm in market ?
+- How JVM has Control over the the applications it run ? (sandbox env)
+- JVM Architecture at high level
+- Deep dive into how JVM works(HotSpot JVM)
+
+<br>
+
+
+---
 
 
 
@@ -402,13 +428,12 @@ There are a few components that make up the runtime environment. Not all compone
   <img width="600" height="800" src="/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true" alt="Total in and out of Java program">
 </p>
 
-## :arrows_counterclockwise: UnWind/Recap
-- What Runtime Mean ?
-- what is Java Runtime Mean ? 
-    - jvm + JavaApi(what are these api/classes - see jdk folder structure)
-- What is a VM and JVM
-- What are features required to say a vm as jvm ?
-- Why many jvm in market ?
-- How JVM has Control over the the applications it run ? (sandbox env)
-- JVM Architecture at high level
-- Deep dive into how JVM works(HotSpot JVM)
+
+<br>
+
+<p align="center">
+  <img width="600" height="800" src="/Java/ResourcesFiles/Pictures/jvm-SubSystems_1.jpg?raw=true" alt="Inside JVM">
+  
+  
+<br>
+
