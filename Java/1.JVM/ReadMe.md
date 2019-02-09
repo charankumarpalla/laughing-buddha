@@ -1,12 +1,14 @@
+
+
 Table of Contents
 =================
 
    * [<strong>Lets Jump into internals of Java</strong>,](#lets-jump-into-internals-of-java)
-   * [<strong>JVM</strong> = Class loader system   runtime data area   Execution Engine.](#jvm--class-loader-system--runtime-data-area--execution-engine)
-      * [Architecture](#architecture)
+   * [<strong>1. JVM</strong> = Class loader system   runtime data area   Execution Engine.](#1-jvm--class-loader-system--runtime-data-area--execution-engine)
+      * [JVM Architecture](#jvm-architecture)
          * [Class Loader](#class-loader)
          * [Execution Engine](#execution-engine)
-         * [Memory Model](#memory-model)
+         * [Memory Model(Runtime Data Areas of JVM)](#memory-modelruntime-data-areas-of-jvm)
             * [Performance Optimization](#performance-optimization)
             * [Performance Monitoring](#performance-monitoring)
       * [HotSpot JVM](#hotspot-jvm)
@@ -17,8 +19,10 @@ Table of Contents
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#ballot_box_with_check-advanced-topics)
       * [<g-emoji class="g-emoji" alias="exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png">❗️</g-emoji> Sometimes ignorance is not bliss](#exclamation-sometimes-ignorance-is-not-bliss)
       * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#link-pray-reference-and-our-thanks-to-these)
+      * [<g-emoji class="g-emoji" alias="arrows_counterclockwise" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f504.png">🔄</g-emoji> UnWind/Recap](#arrows_counterclockwise-unwindrecap)
       * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#microscope-more-images)
 
+      
 
 # **Lets Jump into internals of Java**, 
 let’s understand how a Java source file is executed.
@@ -44,19 +48,19 @@ let’s understand how a Java source file is executed.
   <img width="600" height="200" src="/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true" alt="LifeCycle of Java Program">
 </p>
 
-
 <br>
 
-
 * A Java Program in its lifecycle right from source code -> bytecode -> Execution goes below phases
+
     * **JVM = Class loader system + runtime data area + Execution Engine.**
     * **JRE = JVM + libraries to run Java application.**
     * **JDK = JRE + tools to develop Java Application.**
-    
-> In layman terms: JDK is grandfather JRE is father and JVM is their son. [i.e. JDK > JRE > JVM ]
 
 <br>
 
+> In layman terms: JDK is grandfather JRE is father and JVM is their son. [i.e. JDK > JRE > JVM ]
+
+<br>
 
 <p align="center">
   <img width="600" height="400" src="/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true" alt="">
@@ -66,12 +70,12 @@ let’s understand how a Java source file is executed.
 <br>
 
 
-# **JVM** = Class loader system + runtime data area + Execution Engine.
+# **1. JVM** = Class loader system + runtime data area + Execution Engine.
 
 
-Every developer who uses Java knows that Java bytecode runs in a JRE (Java Runtime Environment). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
+Every developer who uses Java knows that Java bytecode runs in a JRE (Java `Runtime Environment` <sup>[3]()</sup> ). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
 
-The JRE is composed of the Java API and the JVM. The role of the JVM is to read the Java application through the Class Loader and execute it along with the __[Java API](#javaApi)__.
+The JRE is composed of the Java API and the JVM. `The role of the JVM is to read the Java application through the Class Loader and execute it along with the Java API`.
 
 > Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
@@ -86,7 +90,7 @@ A virtual machine (VM) is a software implementation of a machine (i.e. a compute
 * **Guarantees platform independence by clearly defining the primitive data type:** A traditional language such as C/C++ has different int type size according to the platform. The JVM clearly defines the primitive data type to maintain its compatibility and guarantee platform independence.
 * **Network byte order:** The Java class file uses the network byte order. To maintain platform independence between the little endian used by Intel x86 Architecture and the big endian used by the RISC Series Architecture, a fixed byte order must be kept. Therefore, JVM uses the network byte order, which is used for network transfer. The network byte order is the big endian.
 
-Sun Microsystems developed Java. However, **any vendor can develop and provide a JVM by following the Java Virtual Machine Specification**. For this reason, there are various JVMs, including _Oracle Hotspot JVM and IBM JVM_. The Dalvik VM in Google's Android operating system is a kind of JVM, though it does not follow the Java Virtual Machine Specification. Unlike Java VMs, which are stack machines, the Dalvik VM is a register-based architecture. Java bytecode is also converted into an register-based instruction set used by the Dalvik VM.
+Sun Microsystems developed Java. However, **any vendor can develop and provide a JVM by following the Java Virtual Machine Specification**. For this reason, there are various JVMs, including _Oracle Hotspot JVM and IBM JVM_. The Dalvik VM in Google's Android operating system is a kind of JVM, though it does not follow the Java Virtual Machine Specification. _`Unlike Java VMs, which are stack machines, the Dalvik VM is a register-based architecture`_. Java bytecode is also converted into an register-based instruction set used by the Dalvik VM.
 
 
 The architecture of the JVM enables detailed control over the actions that a Java application performs. **It runs in a sandbox environment and ensures** that the application does not have access to the local file system, processes, and networking without proper permission. In case of remote execution, code should be signed with a certificate.
@@ -94,7 +98,7 @@ The architecture of the JVM enables detailed control over the actions that a Jav
 
 > The JVM is the virtual machine on which Java code executes. It's responsible for converting byte code into machine-specific code.
 
-## Architecture
+## JVM Architecture
 The JVM specification defines the subsystems and their external behavior. _The JVM has the following major subsystems_:
 
 - **Class Loader** -  Responsible for reading Java source code and loading classes into the data areas.
@@ -134,7 +138,7 @@ The execution engine executes commands from the bytecode loaded into the data ar
 
 <br>
 
-### Memory Model
+### Memory Model(Runtime Data Areas of JVM)
 
 
 The Java memory model is built on the concept of automatic memory management. When an object is no longer referenced by an application, a garbage collector discards it and this frees up memory. This is different from many other programming languages, where you have to manually unload the object from memory.
@@ -161,13 +165,13 @@ The heap size is dynamic. Memory is allocated to the heap only if it is required
 #### Performance Optimization
 
 
-The performance of the JVM depends on how well it is configured to match the functionality of the application. Although memory is automatically managed using garbage collection and memory reallocation processes, you have control over their frequency. In general, the more memory you have available for your application, the less memory management processes are required, which pause your application.
+The performance of the JVM depends on how well it is configured to match the functionality of the application. Although memory is automatically managed using garbage collection and memory reallocation processes, you have control over their frequency. In general, _`the more memory you have available for your application, the less memory management processes are required`_, which pause your application.
 
-If garbage collections are occurring more frequently than you would want, you can start the JVM with more maximum heap size. The longer it takes for a generation of the heap to fill up, the fewer garbage collections occur. To configure the maximum heap size, use the -Xmx option when you start the JVM. By default, the maximum heap size is set to either 1/4th of the physical memory available to the OS, or to 1 GB (whichever is the smallest).
+-> If garbage collections are occurring more frequently than you would want, you can start the JVM with more maximum heap size. _`The longer it takes for a generation of the heap to fill up, the fewer garbage collections occur`_. To configure the maximum heap size, use the **-Xmx** option when you start the JVM. By default, the maximum heap size is set to either 1/4th of the physical memory available to the OS, or to 1 GB (whichever is the smallest).
 
-If the problem is with memory reallocation, you can set the initial heap size to be the same as the maximum. This means that the JVM will never need to allocate more memory to the heap. However, you will also lose the adaptive memory optimization gained from dynamic heap sizing. The heap will be of fixed size from the moment you start your application. To configure the initial heap size, use the -Xms option when you start the JVM. By default, the initial heap size is set to either 1/64th of the physical memory available to the OS, or to some reasonable minimum that is different for different platforms (whichever is the largest).
+-> If the problem is with memory reallocation, you can set the initial heap size to be the same as the maximum. This means that the JVM will never need to allocate more memory to the heap. However, you will also lose the adaptive memory optimization gained from dynamic heap sizing. The heap will be of fixed size from the moment you start your application. To configure the initial heap size, use the **-Xms** option when you start the JVM. By default, _`the initial heap size is set to either 1/64th of the physical memory available to the OS, or to some reasonable minimum that is different for different platforms (whichever is the largest).`_
 
-If you know which garbage collections (minor or major) are causing performance degradation, you can set the ratio between the young and old generations without changing the overall heap size. For applications that create a lot of short-lived objects, increase the size of the young generation (this will leave less memory for the old generation). For applications that operate with a lot of longer surviving objects, increase the size of the old generation (by setting less memory for the young generation). The following ways can be used to control the sizes of the young and old generations.
+-> If you know which garbage collections (minor or major) are causing performance degradation, you can set the ratio between the young and old generations without changing the overall heap size. For applications that create a lot of short-lived objects, increase the size of the young generation (this will leave less memory for the old generation). For applications that operate with a lot of longer surviving objects, increase the size of the **old generation**<sup>[*]()</sup> (by setting less memory for the young generation). The following ways can be used to control the sizes of the young and old generations.
 
 
 - Specify the ratio between the young and old generation using the -XX:NewRatio option when you start the JVM. For example, to make the old generation five times larger than the young generation, specify -XX:NewRatio=5. By default, the ratio is set to 2 (the old generation occupies ⅔ of the heap, and the young generation occupies ⅓).
@@ -226,7 +230,7 @@ Here we discuss about Oracle implementation of JVM specifications i.e HotSpot JV
 <br>
 
 <p align="center">
-  <img width="500" height="400" src="/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="">
+  <img width="500" height="400" src="/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="key components of HotSpot JVM for performance">
 </p>
 
 <br>
@@ -320,6 +324,9 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
  - [`javap`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html)
  - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
  - `Abstract Syntax Tree`
+ - Stack based VM 
+ - Heap Memory - Old and Young Generations
+ - [ByteCode](https://dzone.com/articles/understanding-jvm-internals#Reasons)
 
 
 
@@ -361,7 +368,21 @@ The JVM is by definition a virtual machine, i. e. a software machine that simula
 HotSpot is an **implementation of the JVM concept**. It was originally developed by Sun and now it is owned by Oracle. There are other implementations of the JVM specification, like JRockit, IBM J9, among many others.
 
 ---
+:bulb: **`3. What Runtime basically mean`**
 
+There are a few components that make up the runtime environment. Not all components are applicable to all environments (e.g. assembler, C++, and C# all have different runtime facilities), but they generally comprise the following:
+
+- The CPU and hardware platform on which the program runs.
+- The operating system that runs the program, including device drivers that interface with the hardware.
+- _Any interpreter that sits between the program and the operating system_, such as the CLR, **JVM**, shell (for e.g. a Bash script), Perl/Python interpreter, et al.
+- Standard libraries available to the language and platform. Certain environments (e.g. embedded) may pare down the relevant standard library due to space concerns.
+- Frameworks and other libraries linked into the program either statically or dynamically.
+
+<br>
+
+---
+
+<br>
 
 ## :link: :pray: Reference and Our Thanks to these... 
 
@@ -370,9 +391,31 @@ HotSpot is an **implementation of the JVM concept**. It was originally developed
 - https://anturis.com/blog/java-virtual-machine-the-essential-guide/
 - https://dzone.com/articles/a-detailed-breakdown-of-the-jvm
 - https://github.com/deephacks/awesome-jvm#nix-tools
+- https://www.artima.com/insidejvm/ed2/lifetype.html <sup>[*]()[*]()</sup>
+- Loading Class : https://www.programcreek.com/2013/01/when-and-how-a-java-class-is-loaded-and-initialized/
+- https://www.youtube.com/watch?v=ZBJ0u9MaKtM
 
 
+<br>
 
+---
+
+
+## :arrows_counterclockwise: UnWind/Recap
+- What Runtime Mean ?
+- what is Java Runtime Mean ? 
+    - jvm + JavaApi(what are these api/classes - see jdk folder structure)
+- What is a VM and JVM
+- What are features required to say a vm as jvm ?
+- Why many jvm in market ?
+- How JVM has Control over the the applications it run ? (sandbox env)
+- JVM Architecture at high level
+- Deep dive into how JVM works(HotSpot JVM)
+
+<br>
+
+
+---
 
 
 
@@ -384,3 +427,13 @@ HotSpot is an **implementation of the JVM concept**. It was originally developed
 <p align="center">
   <img width="600" height="800" src="/Java/ResourcesFiles/Pictures/java-execution-process.png?raw=true" alt="Total in and out of Java program">
 </p>
+
+
+<br>
+
+<p align="center">
+  <img width="600" height="800" src="/Java/ResourcesFiles/Pictures/jvm-SubSystems_1.jpg?raw=true" alt="Inside JVM">
+  
+  
+<br>
+
