@@ -135,7 +135,7 @@ The execution engine executes commands from the bytecode loaded into the data ar
 
 <br>
 
-### Memory Model
+### Memory Model(Runtime Data Areas of JVM)
 
 
 The Java memory model is built on the concept of automatic memory management. When an object is no longer referenced by an application, a garbage collector discards it and this frees up memory. This is different from many other programming languages, where you have to manually unload the object from memory.
@@ -162,13 +162,13 @@ The heap size is dynamic. Memory is allocated to the heap only if it is required
 #### Performance Optimization
 
 
-The performance of the JVM depends on how well it is configured to match the functionality of the application. Although memory is automatically managed using garbage collection and memory reallocation processes, you have control over their frequency. In general, the more memory you have available for your application, the less memory management processes are required, which pause your application.
+The performance of the JVM depends on how well it is configured to match the functionality of the application. Although memory is automatically managed using garbage collection and memory reallocation processes, you have control over their frequency. In general, _`the more memory you have available for your application, the less memory management processes are required`_, which pause your application.
 
-If garbage collections are occurring more frequently than you would want, you can start the JVM with more maximum heap size. The longer it takes for a generation of the heap to fill up, the fewer garbage collections occur. To configure the maximum heap size, use the -Xmx option when you start the JVM. By default, the maximum heap size is set to either 1/4th of the physical memory available to the OS, or to 1 GB (whichever is the smallest).
+-> If garbage collections are occurring more frequently than you would want, you can start the JVM with more maximum heap size. _`The longer it takes for a generation of the heap to fill up, the fewer garbage collections occur`_. To configure the maximum heap size, use the **-Xmx** option when you start the JVM. By default, the maximum heap size is set to either 1/4th of the physical memory available to the OS, or to 1 GB (whichever is the smallest).
 
-If the problem is with memory reallocation, you can set the initial heap size to be the same as the maximum. This means that the JVM will never need to allocate more memory to the heap. However, you will also lose the adaptive memory optimization gained from dynamic heap sizing. The heap will be of fixed size from the moment you start your application. To configure the initial heap size, use the -Xms option when you start the JVM. By default, the initial heap size is set to either 1/64th of the physical memory available to the OS, or to some reasonable minimum that is different for different platforms (whichever is the largest).
+-> If the problem is with memory reallocation, you can set the initial heap size to be the same as the maximum. This means that the JVM will never need to allocate more memory to the heap. However, you will also lose the adaptive memory optimization gained from dynamic heap sizing. The heap will be of fixed size from the moment you start your application. To configure the initial heap size, use the **-Xms** option when you start the JVM. By default, _`the initial heap size is set to either 1/64th of the physical memory available to the OS, or to some reasonable minimum that is different for different platforms (whichever is the largest).`_
 
-If you know which garbage collections (minor or major) are causing performance degradation, you can set the ratio between the young and old generations without changing the overall heap size. For applications that create a lot of short-lived objects, increase the size of the young generation (this will leave less memory for the old generation). For applications that operate with a lot of longer surviving objects, increase the size of the old generation (by setting less memory for the young generation). The following ways can be used to control the sizes of the young and old generations.
+-> If you know which garbage collections (minor or major) are causing performance degradation, you can set the ratio between the young and old generations without changing the overall heap size. For applications that create a lot of short-lived objects, increase the size of the young generation (this will leave less memory for the old generation). For applications that operate with a lot of longer surviving objects, increase the size of the **old generation**<sup>[*]()</sup> (by setting less memory for the young generation). The following ways can be used to control the sizes of the young and old generations.
 
 
 - Specify the ratio between the young and old generation using the -XX:NewRatio option when you start the JVM. For example, to make the old generation five times larger than the young generation, specify -XX:NewRatio=5. By default, the ratio is set to 2 (the old generation occupies ⅔ of the heap, and the young generation occupies ⅓).
@@ -227,7 +227,7 @@ Here we discuss about Oracle implementation of JVM specifications i.e HotSpot JV
 <br>
 
 <p align="center">
-  <img width="500" height="400" src="/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="">
+  <img width="500" height="400" src="/Java/ResourcesFiles/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="key components of HotSpot JVM for performance">
 </p>
 
 <br>
@@ -322,6 +322,8 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
  - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
  - `Abstract Syntax Tree`
  - Stack based VM 
+ - Heap Memory - Old and Young Generations
+ - [ByteCode](https://dzone.com/articles/understanding-jvm-internals#Reasons)
 
 
 
@@ -408,3 +410,5 @@ There are a few components that make up the runtime environment. Not all compone
 - What are features required to say a vm as jvm ?
 - Why many jvm in market ?
 - How JVM has Control over the the applications it run ? (sandbox env)
+- JVM Architecture at high level
+- Deep dive into how JVM works(HotSpot JVM)
