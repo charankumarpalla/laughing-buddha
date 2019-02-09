@@ -2,8 +2,8 @@ Table of Contents
 =================
 
    * [<strong>Lets Jump into internals of Java</strong>,](#lets-jump-into-internals-of-java)
-   * [<strong>JVM</strong> = Class loader system   runtime data area   Execution Engine.](#jvm--class-loader-system--runtime-data-area--execution-engine)
-      * [Architecture](#architecture)
+   * [<strong>1. JVM</strong> = Class loader system   runtime data area   Execution Engine.](#1-jvm--class-loader-system--runtime-data-area--execution-engine)
+      * [JVM Architecture](#jvm-architecture)
          * [Class Loader](#class-loader)
          * [Execution Engine](#execution-engine)
          * [Memory Model](#memory-model)
@@ -16,6 +16,7 @@ Table of Contents
    * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Memory out of Concepts](#school_satchel-memory-out-of-concepts)
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#ballot_box_with_check-advanced-topics)
       * [<g-emoji class="g-emoji" alias="exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png">❗️</g-emoji> Sometimes ignorance is not bliss](#exclamation-sometimes-ignorance-is-not-bliss)
+      * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#link-pray-reference-and-our-thanks-to-these)
       * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#microscope-more-images)
       * [<g-emoji class="g-emoji" alias="arrows_counterclockwise" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f504.png">🔄</g-emoji> UnWind/Recap](#arrows_counterclockwise-unwindrecap)
 
@@ -44,19 +45,19 @@ let’s understand how a Java source file is executed.
   <img width="600" height="200" src="/Java/ResourcesFiles/Pictures/What-is-difference-between-JDK-JRE-and-JVM.jpg?raw=true" alt="LifeCycle of Java Program">
 </p>
 
-
 <br>
 
-
 * A Java Program in its lifecycle right from source code -> bytecode -> Execution goes below phases
+
     * **JVM = Class loader system + runtime data area + Execution Engine.**
     * **JRE = JVM + libraries to run Java application.**
     * **JDK = JRE + tools to develop Java Application.**
-    
-> In layman terms: JDK is grandfather JRE is father and JVM is their son. [i.e. JDK > JRE > JVM ]
 
 <br>
 
+> In layman terms: JDK is grandfather JRE is father and JVM is their son. [i.e. JDK > JRE > JVM ]
+
+<br>
 
 <p align="center">
   <img width="600" height="400" src="/Java/ResourcesFiles/Pictures/JDK_JRE_JVM.jpg?raw=true" alt="">
@@ -66,7 +67,7 @@ let’s understand how a Java source file is executed.
 <br>
 
 
-# **JVM** = Class loader system + runtime data area + Execution Engine.
+# **1. JVM** = Class loader system + runtime data area + Execution Engine.
 
 
 Every developer who uses Java knows that Java bytecode runs in a JRE (Java `Runtime Environment` <sup>[3]()</sup> ). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
@@ -86,7 +87,7 @@ A virtual machine (VM) is a software implementation of a machine (i.e. a compute
 * **Guarantees platform independence by clearly defining the primitive data type:** A traditional language such as C/C++ has different int type size according to the platform. The JVM clearly defines the primitive data type to maintain its compatibility and guarantee platform independence.
 * **Network byte order:** The Java class file uses the network byte order. To maintain platform independence between the little endian used by Intel x86 Architecture and the big endian used by the RISC Series Architecture, a fixed byte order must be kept. Therefore, JVM uses the network byte order, which is used for network transfer. The network byte order is the big endian.
 
-Sun Microsystems developed Java. However, **any vendor can develop and provide a JVM by following the Java Virtual Machine Specification**. For this reason, there are various JVMs, including _Oracle Hotspot JVM and IBM JVM_. The Dalvik VM in Google's Android operating system is a kind of JVM, though it does not follow the Java Virtual Machine Specification. Unlike Java VMs, which are stack machines, the Dalvik VM is a register-based architecture. Java bytecode is also converted into an register-based instruction set used by the Dalvik VM.
+Sun Microsystems developed Java. However, **any vendor can develop and provide a JVM by following the Java Virtual Machine Specification**. For this reason, there are various JVMs, including _Oracle Hotspot JVM and IBM JVM_. The Dalvik VM in Google's Android operating system is a kind of JVM, though it does not follow the Java Virtual Machine Specification. _`Unlike Java VMs, which are stack machines, the Dalvik VM is a register-based architecture`_. Java bytecode is also converted into an register-based instruction set used by the Dalvik VM.
 
 
 The architecture of the JVM enables detailed control over the actions that a Java application performs. **It runs in a sandbox environment and ensures** that the application does not have access to the local file system, processes, and networking without proper permission. In case of remote execution, code should be signed with a certificate.
@@ -94,7 +95,7 @@ The architecture of the JVM enables detailed control over the actions that a Jav
 
 > The JVM is the virtual machine on which Java code executes. It's responsible for converting byte code into machine-specific code.
 
-## Architecture
+## JVM Architecture
 The JVM specification defines the subsystems and their external behavior. _The JVM has the following major subsystems_:
 
 - **Class Loader** -  Responsible for reading Java source code and loading classes into the data areas.
@@ -376,6 +377,7 @@ There are a few components that make up the runtime environment. Not all compone
 ---
 
 <br>
+
 ## :link: :pray: Reference and Our Thanks to these... 
 
 - [**JVM8 Specifications PDF**](/Java/ResourcesFiles/BasicJavaTopics/JVM8_Specifications.pdf)
@@ -403,3 +405,6 @@ There are a few components that make up the runtime environment. Not all compone
 - what is Java Runtime Mean ? 
     - jvm + JavaApi(what are these api/classes - see jdk folder structure)
 - What is a VM and JVM
+- What are features required to say a vm as jvm ?
+- Why many jvm in market ?
+- How JVM has Control over the the applications it run ? (sandbox env)
