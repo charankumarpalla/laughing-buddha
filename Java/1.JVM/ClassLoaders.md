@@ -1,10 +1,10 @@
-# ClassLoaders
 
 Table of Contents
 =================
 
    * [Introduction to Class Loaders](#introduction-to-class-loaders)
    * [What does it mean by saying "load a class"?](#what-does-it-mean-by-saying-load-a-class)
+   * [How does Java ClassLoader Work?](#how-does-java-classloader-work)
    * [Types of Built-in Class Loaders](#types-of-built-in-class-loaders)
    * [ClassLoader Principles](#classloader-principles)
       * [a. <strong>delegation :</strong>](#a-delegation-)
@@ -17,7 +17,6 @@ Table of Contents
       * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#--reference-and-our-thanks-to-these)
       * [<g-emoji class="g-emoji" alias="arrows_counterclockwise" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f504.png">🔄</g-emoji> UnWind/Recap](#-unwindrecap)
       * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#-more-images)
-      
 
 
 # Introduction to Class Loaders

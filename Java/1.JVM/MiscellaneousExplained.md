@@ -21,12 +21,17 @@ All classloaders, with the exception of the null classloader, are implemented as
 
 
 
+<br>
+
+
+- https://javarevisited.blogspot.com/2011/06/noclassdeffounderror-exception-in.html
 
 
 
+<br>
 
-
-## :bulb: 
+## :bulb: java-classnotfoundexception-and-noclassdeffounderror
+https://www.baeldung.com/java-classnotfoundexception-and-noclassdeffounderror
 
 
 ## :bulb: 
