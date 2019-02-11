@@ -128,6 +128,45 @@ Classes are introduced into the Java environment when they are referenced by nam
 <br>
 
 
+# Types of Built-in Class Loaders
+
+Let’s start by learning how different classes are loaded using various class loaders using a simple example:
+```
+public void printClassLoaders() throws ClassNotFoundException {
+ 
+    System.out.println("Classloader of this class:"
+        + PrintClassLoader.class.getClassLoader());
+ 
+    System.out.println("Classloader of Logging:"
+        + Logging.class.getClassLoader());
+ 
+    System.out.println("Classloader of ArrayList:"
+        + ArrayList.class.getClassLoader());
+}
+```
+
+When executed the above method prints:
+
+
+```
+Class loader of this class:sun.misc.Launcher$AppClassLoader@18b4aac2
+Class loader of Logging:sun.misc.Launcher$ExtClassLoader@3caeaf62
+Class loader of ArrayList:null
+```
+
+As we can see, there are three different class loaders here; **application, extension, and bootstrap** (displayed as null).
+
+The **application** class loader loads the class where the example method is contained. An application or system class loader loads our own files in the classpath.
+
+Next, the **extension** one loads the Logging class. Extension class loaders load classes that are an extension of the standard core Java classes.
+
+Finally, the **bootstrap** one loads the ArrayList class. A bootstrap or primordial class loader is the parent of all the others.
+
+> However, we can see that the last out, for the ArrayList it displays null in the output. This is because the bootstrap class loader is written in native code, not Java – so it doesn’t show up as a Java class. Due to this reason, the behavior of the bootstrap class loader will differ across JVMs.
+
+
+
+
 # ClassLoader Principles 
 ClassLoader in Java works on three principle :
 
@@ -150,7 +189,51 @@ Primordial will look for that class in rt.jar and since that class is not there,
 Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
 
 
-According to visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader but vice-versa is not true. Which mean if class Abc is loaded by Application class loader than trying to load class ABC explicitly using extension ClassLoader will throw either ```java.lang.ClassNotFoundException```<sup>[:bulb:]()</sup>. as shown in below Example
+According to visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader but vice-versa is not true. Which mean if class Abc is loaded by Application class loader than trying to load class ABC explicitly using extension ClassLoader will throw either **```java.lang.ClassNotFoundException```**<sup>[:bulb:](/Java/1.JVM/MiscellaneousExplained.md#)</sup>. as shown in below Example
+
+```
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ * Java program to demonstrate How ClassLoader works in Java,
+ * in particular about visibility principle of ClassLoader.
+ */
+
+public class ClassLoaderTest {
+  
+    public static void main(String args[]) {
+        try {          
+            //printing ClassLoader of this class
+            System.out.println("ClassLoaderTest.getClass().getClassLoader() : "
+                                 + ClassLoaderTest.class.getClassLoader());
+
+          
+            //trying to explicitly load this class again using Extension class loader
+            Class.forName("test.ClassLoaderTest", true 
+                            ,  ClassLoaderTest.class.getClassLoader().getParent());
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ClassLoaderTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+}
+```
+
+**OutPut :**
+
+```
+ClassLoaderTest.getClass().getClassLoader() : sun.misc.Launcher$AppClassLoader@6d06d69c
+Feb 11, 2019 6:59:17 AM ClassLoaderTest main
+SEVERE: null
+java.lang.ClassNotFoundException: test.ClassLoaderTest
+  at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+  at java.lang.Class.forName0(Native Method)
+  at java.lang.Class.forName(Class.java:348)
+  at ClassLoaderTest.main(ClassLoaderTest.java:21)
+```
 
 
 
