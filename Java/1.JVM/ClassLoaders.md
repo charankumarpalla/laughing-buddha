@@ -1,13 +1,14 @@
+
+
 Table of Contents
 =================
 
    * [Introduction to Class Loaders](#introduction-to-class-loaders)
    * [What does it mean by saying "load a class"?](#what-does-it-mean-by-saying-load-a-class)
-   * [What class loaders do /work](#what-class-loaders-do-work)
-      * [ClassLoader Principles](#classloader-principles)
-         * [a. <strong>delegation :</strong>](#a-delegation-)
-         * [b. <strong>visibility :</strong>](#b-visibility-)
-         * [c. <strong>uniqueness :</strong>](#c-uniqueness-)
+   * [ClassLoader Principles](#classloader-principles)
+      * [a. <strong>delegation :</strong>](#a-delegation-)
+      * [b. <strong>visibility :</strong>](#b-visibility-)
+      * [c. <strong>uniqueness :</strong>](#c-uniqueness-)
    * [<g-emoji class="g-emoji" alias="soon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f51c.png">🔜</g-emoji> Create own class loader](#soon-create-own-class-loader)
    * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Memory out of Concepts](#-memory-out-of-concepts)
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#️-advanced-topics)
@@ -15,7 +16,7 @@ Table of Contents
       * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#--reference-and-our-thanks-to-these)
       * [<g-emoji class="g-emoji" alias="arrows_counterclockwise" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f504.png">🔄</g-emoji> UnWind/Recap](#-unwindrecap)
       * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#-more-images)
-
+      
 
 
 # Introduction to Class Loaders
@@ -114,8 +115,8 @@ A.class is loaded only when it is used. In summary, a class is loaded:
 
 
 
-# What class loaders do /work 
-Classes are introduced into the Java environment when they are referenced by name in a class that is already running. There is a bit of magic that goes on to get the first class running (which is why you have to declare the main() method as static, taking a string array as an argument), but once that class is running, future attempts at loading classes are done by the class loader.
+<!-- # What class loaders do /work 
+Classes are introduced into the Java environment when they are referenced by name in a class that is already running. There is a bit of magic that goes on to get the first class running (which is why you have to declare the main() method as static, taking a string array as an argument), but once that class is running, future attempts at loading classes are done by the class loader. -->
 
 <br>
 
@@ -124,9 +125,10 @@ Classes are introduced into the Java environment when they are referenced by nam
   <img width="600" height="350" src="/Java/ResourcesFiles/Pictures/ClassLoader_Internals.jpg?raw=true" alt="ClassLoader internals">
 </p>
 
+<br>
 
 
-## ClassLoader Principles 
+# ClassLoader Principles 
 ClassLoader in Java works on three principle :
 
 * **delegation**
@@ -135,15 +137,25 @@ ClassLoader in Java works on three principle :
 
 
 
-### a. **delegation :**
+## a. **delegation :**
 Delegation principle forward request of class loading to parent class loader and only loads the class, if parent is not able to find or load class
 
+When a class is loaded in Java, when its needed. Suppose you have an application specific class called Abc.class, first request of loading this class will come to Application ClassLoader which will delegate to its parent Extension ClassLoader which further delegates to **_Primordial_** or Bootstrap class loader. 
 
-### b. **visibility :**
+Primordial will look for that class in rt.jar and since that class is not there, request comes to Extension class loader which looks on jre/lib/ext directory and tries to locate this class there, if class is found there than Extension class loader will load that class and Application class loader will never load that class but if its not loaded by extension class-loader than Application class loader loads it from Classpath in Java. Remember Classpath is used to load class files while PATH is used to locate executable like javac or java command.
+
+
+
+## b. **visibility :**
 Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
 
 
-### c. **uniqueness :**
+According to visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader but vice-versa is not true. Which mean if class Abc is loaded by Application class loader than trying to load class ABC explicitly using extension ClassLoader will throw either ```java.lang.ClassNotFoundException```<sup>[:bulb:]()</sup>. as shown in below Example
+
+
+
+
+## c. **uniqueness :**
 Uniqueness principle allows to load a class exactly once, which is basically achieved by delegation and ensures that child ClassLoader doesn't reload the class already loaded by parent.  
 
 
