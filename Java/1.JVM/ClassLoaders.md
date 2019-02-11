@@ -5,6 +5,7 @@ Table of Contents
 
    * [Introduction to Class Loaders](#introduction-to-class-loaders)
    * [What does it mean by saying "load a class"?](#what-does-it-mean-by-saying-load-a-class)
+   * [Types of Built-in Class Loaders](#types-of-built-in-class-loaders)
    * [ClassLoader Principles](#classloader-principles)
       * [a. <strong>delegation :</strong>](#a-delegation-)
       * [b. <strong>visibility :</strong>](#b-visibility-)
