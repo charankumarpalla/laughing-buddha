@@ -1,4 +1,5 @@
 
+# ReadMe
 
 Table of Contents
 =================
@@ -36,10 +37,10 @@ let’s understand how a Java source file is executed.
 
 <br>
 
-1.	We write the Java source code in Simple.Java file using an editor or IDE (integrated development environment) e.g. Eclipse or IntelliJ Idea.
-2.	Program has to be compiled into bytecode. Java compiler (javac) compiles the sourcecode to Simple.class file.
-3.	This class file can be executed in any platform/OS by JVM (Java virtual machine).
-4.	JVM translates bytecode into native machine code which machines can execute.
+1.  We write the Java source code in Simple.Java file using an editor or IDE (integrated development environment) e.g. Eclipse or IntelliJ Idea.
+2.  Program has to be compiled into bytecode. Java compiler (javac) compiles the sourcecode to Simple.class file.
+3.  This class file can be executed in any platform/OS by JVM (Java virtual machine).
+4.  JVM translates bytecode into native machine code which machines can execute.
 
 <br>
 
@@ -291,21 +292,21 @@ Sometimes, even if you are not planning to do any Java development on a computer
 for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Tools%20with%20Names.pdf)  or  [url](https://www.cs.mun.ca/java-api-1.5/tooldocs/index.html)
 
 **General**
--	General Information (file structure, classpath, how classes are found, changes)  
+- General Information (file structure, classpath, how classes are found, changes)  
 
 **Standard JDK Tools and Utilities**
 - Basic Tools (javac, java, javadoc, apt, appletviewer, jar, jdb, javah, javap, extcheck)  
--	Security Tools (keytool, jarsigner, policytool, kinit, klist, ktab)  
--	Internationalization Tools (native2ascii)
--	Remote Method Invocation (RMI) Tools (rmic, rmiregistry, rmid, serialver)
--	Java IDL and RMI-IIOP Tools (tnameserv, idlj, orbd, servertool)
--	Java Deployment Tools (pack200, unpack200)
--	Java Plug-in Tools (htmlconverter)
--	Java Web Start Tools (javaws)
+- Security Tools (keytool, jarsigner, policytool, kinit, klist, ktab)  
+- Internationalization Tools (native2ascii)
+- Remote Method Invocation (RMI) Tools (rmic, rmiregistry, rmid, serialver)
+- Java IDL and RMI-IIOP Tools (tnameserv, idlj, orbd, servertool)
+- Java Deployment Tools (pack200, unpack200)
+- Java Plug-in Tools (htmlconverter)
+- Java Web Start Tools (javaws)
 
 **Experimental JDK Tools and Utilities**
--	Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
--	Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)      
+- Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
+- Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)      
 
 <br> 
 
@@ -345,12 +346,12 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
 -   Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
-- 	Enter: Enters symbols for the definitions into the symbol table.
--	Process annotations: If Requested, processes annotations found in the specifed compilation units.
--	Attribute: Attributes the Syntax trees. This step includes name resolution, type checking and constant folding.
--	Flow: Performs dataflow analysis on the trees from the previous step. This includes checks for assignments and reachability.
--	Desugar: Rewrites the AST and translates away some syntactic sugar.
--	Generate: Generates ‘.Class’ files.
+-   Enter: Enters symbols for the definitions into the symbol table.
+- Process annotations: If Requested, processes annotations found in the specifed compilation units.
+- Attribute: Attributes the Syntax trees. This step includes name resolution, type checking and constant folding.
+- Flow: Performs dataflow analysis on the trees from the previous step. This includes checks for assignments and reachability.
+- Desugar: Rewrites the AST and translates away some syntactic sugar.
+- Generate: Generates ‘.Class’ files.
 
 
 <br>

@@ -1,4 +1,4 @@
-
+# ClassLoaders
 
 Table of Contents
 =================
@@ -128,6 +128,19 @@ Classes are introduced into the Java environment when they are referenced by nam
 
 <br>
 
+---
+
+
+# How does Java ClassLoader Work?
+
+When JVM requests for a class, it invokes `loadClass` function of the ClassLoader by passing the fully classified name of the Class.
+
+loadClass function calls for `findLoadedClass()` method to check that the class has been already loaded or not. It’s required to avoid loading the class multiple times.
+
+If the Class is not already loaded then it will delegate the request to parent ClassLoader to load the class.
+
+If the parent ClassLoader is not finding the Class then it will invoke findClass() method to look for the classes in the file system.
+
 --- 
 # Types of Built-in Class Loaders
 
@@ -182,6 +195,16 @@ When a class is loaded in Java, when its needed. Suppose you have an application
 
 Primordial will look for that class in rt.jar and since that class is not there, request comes to Extension class loader which looks on jre/lib/ext directory and tries to locate this class there, if class is found there than Extension class loader will load that class and Application class loader will never load that class but if its not loaded by extension class-loader than Application class loader loads it from Classpath in Java. Remember Classpath is used to load class files while PATH is used to locate executable like javac or java command.
 
+
+<br>
+
+
+<p align="center">
+  <img width="500" height="600" src="/Java/ResourcesFiles/Pictures/jvmclassloader_delegation.jpg?raw=true" alt="jvmclassloader_delegation">
+</p>
+
+
+<br>
 
 
 ## b. **visibility :**
@@ -257,6 +280,7 @@ Correct understanding of class loader is must to resolve issues like NoClassDefF
 - https://www.javaworld.com/article/2077260/learn-java/learn-java-the-basics-of-java-class-loaders.html
 - https://www.baeldung.com/java-classloaders
 - https://www.journaldev.com/349/java-classloader
+- https://www.journaldev.com/349/java-classloader#why-write-a-custom-classloader-in-java
 
 <br>
 
@@ -275,5 +299,10 @@ Correct understanding of class loader is must to resolve issues like NoClassDefF
 ## ☑️ Advanced Topics
 ## ❗️ Sometimes ignorance is not bliss
 ## 🔗 🙏 Reference and Our Thanks to these...
+- https://javarevisited.blogspot.com/2011/08/classnotfoundexception-in-java-example.html#axzz5fBEERW8K
+- https://www.baeldung.com/java-classloaders
+- https://www.journaldev.com/349/java-classloader
+- 
 ## 🔄 UnWind/Recap
+
 ## 🔬 More Images
