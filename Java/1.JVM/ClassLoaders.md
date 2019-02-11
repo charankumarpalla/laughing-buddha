@@ -5,6 +5,9 @@ Table of Contents
    * [What does it mean by saying "load a class"?](#what-does-it-mean-by-saying-load-a-class)
    * [What class loaders do /work](#what-class-loaders-do-work)
       * [ClassLoader Principles](#classloader-principles)
+         * [a. <strong>delegation :</strong>](#a-delegation-)
+         * [b. <strong>visibility :</strong>](#b-visibility-)
+         * [c. <strong>uniqueness :</strong>](#c-uniqueness-)
    * [<g-emoji class="g-emoji" alias="soon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f51c.png">🔜</g-emoji> Create own class loader](#soon-create-own-class-loader)
    * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Memory out of Concepts](#-memory-out-of-concepts)
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#️-advanced-topics)
@@ -126,9 +129,23 @@ Classes are introduced into the Java environment when they are referenced by nam
 ## ClassLoader Principles 
 ClassLoader in Java works on three principle :
 
-1. **delegation** : Delegation principle forward request of class loading to parent class loader and only loads the class, if parent is not able to find or load class
-2. **visibility** : Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
-3. **uniqueness** : Uniqueness principle allows to load a class exactly once, which is basically achieved by delegation and ensures that child ClassLoader doesn't reload the class already loaded by parent. 
+* **delegation**
+* **visibility** 
+* **uniqueness** 
+
+
+
+### a. **delegation :**
+Delegation principle forward request of class loading to parent class loader and only loads the class, if parent is not able to find or load class
+
+
+### b. **visibility :**
+Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
+
+
+### c. **uniqueness :**
+Uniqueness principle allows to load a class exactly once, which is basically achieved by delegation and ensures that child ClassLoader doesn't reload the class already loaded by parent.  
+
 
 
 Correct understanding of class loader is must to resolve issues like NoClassDefFoundError in Java and java.lang.ClassNotFoundException, which are related to class loading. 
