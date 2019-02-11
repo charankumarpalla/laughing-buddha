@@ -128,7 +128,7 @@ Classes are introduced into the Java environment when they are referenced by nam
 
 <br>
 
-
+--- 
 # Types of Built-in Class Loaders
 
 Let’s start by learning how different classes are loaded using various class loaders using a simple example:
@@ -164,8 +164,6 @@ Next, the **extension** one loads the Logging class. Extension class loaders loa
 Finally, the **bootstrap** one loads the ArrayList class. A bootstrap or primordial class loader is the parent of all the others.
 
 > However, we can see that the last out, for the ArrayList it displays null in the output. This is because the bootstrap class loader is written in native code, not Java – so it doesn’t show up as a Java class. Due to this reason, the behavior of the bootstrap class loader will differ across JVMs.
-
-
 
 
 # ClassLoader Principles 
