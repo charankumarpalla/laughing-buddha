@@ -34,7 +34,31 @@ All classloaders, with the exception of the null classloader, are implemented as
 https://www.baeldung.com/java-classnotfoundexception-and-noclassdeffounderror
 
 
-## :bulb: 
+## :bulb: Primitive Vs Reference Data Types 
+
+ primitive variables and object reference variables differ from each other in multiple ways. The basic difference is that primitive variables store the actual values, whereas reference variables store the addresses of the objects
+
+Predefined by the language and named by a keyword
+
+Total no = 8
+```
+boolean
+char
+byte
+short
+integer
+long
+float
+double
+```
 
 
-## :bulb: 
+Reference/Object Data Types :
+
+* Created using defined constructors of the classes
+* Used to access objects
+* Default value of any reference variable is null
+* Reference variable can be used to refer to any object of the declared type or any compatible type.
+
+
+## :bulb:  http://blog.jamesdbloom.com/JVMInternals.html#constant_pool
