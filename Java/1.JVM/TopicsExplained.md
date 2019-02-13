@@ -76,4 +76,5 @@ http://blog.jamesdbloom.com/JVMInternals.html#constant_pool
 
 
 # Best Links for reference
-- JVM : http://mihaimoldovan.com/download/Inside-Java-Virtual-Machine.pdf
+- **JVM** : [PDF](/Java/ResourcesFiles/BasicJavaTopics/Inside-Java-Virtual-Machine.pdf) or [click here](http://mihaimoldovan.com/download/Inside-Java-Virtual-Machine.pdf) 
+
