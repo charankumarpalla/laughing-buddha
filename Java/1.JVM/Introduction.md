@@ -1,4 +1,5 @@
 
+# ReadMe
 
 Table of Contents
 =================
@@ -36,10 +37,10 @@ let’s understand how a Java source file is executed.
 
 <br>
 
-1.	We write the Java source code in Simple.Java file using an editor or IDE (integrated development environment) e.g. Eclipse or IntelliJ Idea.
-2.	Program has to be compiled into bytecode. Java compiler (javac) compiles the sourcecode to Simple.class file.
-3.	This class file can be executed in any platform/OS by JVM (Java virtual machine).
-4.	JVM translates bytecode into native machine code which machines can execute.
+1.  We write the Java source code in Simple.Java file using an editor or IDE (integrated development environment) e.g. Eclipse or IntelliJ Idea.
+2.  Program has to be compiled into bytecode. Java compiler (javac) compiles the sourcecode to Simple.class file.
+3.  This class file can be executed in any platform/OS by JVM (Java virtual machine).
+4.  JVM translates bytecode into native machine code which machines can execute.
 
 <br>
 
@@ -84,6 +85,9 @@ The JRE is composed of the Java API and the JVM. `The role of the JVM is to read
 A virtual machine (VM) is a software implementation of a machine (i.e. a computer) that executes programs like a physical machine. Originally, Java was designed to run based on a virtual machine separated from a physical machine for implementing WORA (Write Once Run Anywhere), although this goal has been mostly forgotten. Therefore, the JVM runs on all kinds of hardware to execute the Java Bytecode without changing the Java execution code.
 
 ***The features of JVM are as follows:***
+
+A specification where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Sun and other companies.
+
 * **Stack-based virtual machine**: The most popular computer architectures such as Intel x86 Architecture and ARM Architecture run based on a register. However, JVM runs based on a stack.
 * **Symbolic reference:** All types (class and interface) except for primitive data types are referred to through symbolic reference, instead of through explicit memory address-based reference. 
 * **Garbage collection:** A class instance is explicitly created by the user code and automatically destroyed by garbage collection.
@@ -288,21 +292,21 @@ Sometimes, even if you are not planning to do any Java development on a computer
 for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Tools%20with%20Names.pdf)  or  [url](https://www.cs.mun.ca/java-api-1.5/tooldocs/index.html)
 
 **General**
--	General Information (file structure, classpath, how classes are found, changes)  
+- General Information (file structure, classpath, how classes are found, changes)  
 
 **Standard JDK Tools and Utilities**
 - Basic Tools (javac, java, javadoc, apt, appletviewer, jar, jdb, javah, javap, extcheck)  
--	Security Tools (keytool, jarsigner, policytool, kinit, klist, ktab)  
--	Internationalization Tools (native2ascii)
--	Remote Method Invocation (RMI) Tools (rmic, rmiregistry, rmid, serialver)
--	Java IDL and RMI-IIOP Tools (tnameserv, idlj, orbd, servertool)
--	Java Deployment Tools (pack200, unpack200)
--	Java Plug-in Tools (htmlconverter)
--	Java Web Start Tools (javaws)
+- Security Tools (keytool, jarsigner, policytool, kinit, klist, ktab)  
+- Internationalization Tools (native2ascii)
+- Remote Method Invocation (RMI) Tools (rmic, rmiregistry, rmid, serialver)
+- Java IDL and RMI-IIOP Tools (tnameserv, idlj, orbd, servertool)
+- Java Deployment Tools (pack200, unpack200)
+- Java Plug-in Tools (htmlconverter)
+- Java Web Start Tools (javaws)
 
 **Experimental JDK Tools and Utilities**
--	Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
--	Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)      
+- Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
+- Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)      
 
 <br> 
 
@@ -342,12 +346,12 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 First, the source ‘.java’ file is passed through the compiler, which then encodes the source code into a machine independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate ‘.class’ file. While converting the source code into the bytecode, the compiler follows the following steps:
 
 -   Parse: Reads a set of *.java source files and maps the resulting token sequence into AST (_**Abstract Syntax Tree**_)-Nodes.
-- 	Enter: Enters symbols for the definitions into the symbol table.
--	Process annotations: If Requested, processes annotations found in the specifed compilation units.
--	Attribute: Attributes the Syntax trees. This step includes name resolution, type checking and constant folding.
--	Flow: Performs dataflow analysis on the trees from the previous step. This includes checks for assignments and reachability.
--	Desugar: Rewrites the AST and translates away some syntactic sugar.
--	Generate: Generates ‘.Class’ files.
+-   Enter: Enters symbols for the definitions into the symbol table.
+- Process annotations: If Requested, processes annotations found in the specifed compilation units.
+- Attribute: Attributes the Syntax trees. This step includes name resolution, type checking and constant folding.
+- Flow: Performs dataflow analysis on the trees from the previous step. This includes checks for assignments and reachability.
+- Desugar: Rewrites the AST and translates away some syntactic sugar.
+- Generate: Generates ‘.Class’ files.
 
 
 <br>
