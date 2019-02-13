@@ -1,7 +1,4 @@
 
-
-# MiscellaneousExplained
-
 # ClassLoaders
 
 ## :bulb: java.lang.ClassNotFoundException.
@@ -61,4 +58,22 @@ Reference/Object Data Types :
 * Reference variable can be used to refer to any object of the declared type or any compatible type.
 
 
-## :bulb:  http://blog.jamesdbloom.com/JVMInternals.html#constant_pool
+## :bulb: Constant Pool
+
+http://blog.jamesdbloom.com/JVMInternals.html#constant_pool
+
+
+## :bulb: [symbolic reference](https://stackoverflow.com/questions/17406159/symbolic-references-in-java)
+
+
+
+## :bulb: 
+
+- http://princekapoor82.blogspot.com/2013/11/java-virtual-machine-loading-linking.html
+- https://learning.oreilly.com/library/view/java-in-a/9781449371296/ch11.html
+
+
+
+
+# Best Links for reference
+- JVM : http://mihaimoldovan.com/download/Inside-Java-Virtual-Machine.pdf
