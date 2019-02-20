@@ -42,7 +42,7 @@ You express the program in source files written in the _**Java programming langu
 As your program runs, it fulfills your program's Java API calls by invoking methods in class files that implement the Java API. You can see the relationship between these four parts in Figure 
 
 <p align="center">
-  <img width="350" height="200" src="/Java/ResourcesFiles/Pictures/The_Java_programming_env.jpg?raw=true" alt="The Java programming environment">
+  <img width="750" height="350" src="/Java/ResourcesFiles/Pictures/The_Java_programming_env.jpg?raw=true" alt="The Java programming environment">
 </p>
 
 
