@@ -39,7 +39,11 @@ Java's architecture arises out of four distinct but interrelated technologies:
 
 You express the program in source files written in the _**Java programming language**_, compile the source to _**Java class**_ files, and run the class files on a _**Java virtual machine**_. When you write your program, you access system resources (such as I/O, for example) by calling methods in the classes that implement the _**Java Application Programming Interface**_, or Java API. 
 
-As your program runs, it fulfills your program's Java API calls by invoking methods in class files that implement the Java API. You can see the relationship between these four parts in Figure 1-1.
+As your program runs, it fulfills your program's Java API calls by invoking methods in class files that implement the Java API. You can see the relationship between these four parts in Figure 
+
+<p align="center">
+  <img width="350" height="200" src="/Java/ResourcesFiles/Pictures/The_Java_programming_env.jpg?raw=true" alt="The Java programming environment">
+</p>
 
 
 # Thanks
