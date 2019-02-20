@@ -81,7 +81,7 @@ A Java virtual machine's main job is to load class files and execute the bytecod
 <br>
 
 <p align="center">
-  <img width="700" height="250" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JVM_Block_Diagram.jpg?raw=true" alt="A basic block diagram of the Java virtual machine">
+  <img width="600" height="250" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JVM_Block_Diagram.jpg?raw=true" alt="A basic block diagram of the Java virtual machine">
 </p>
 
 <br>
@@ -100,7 +100,7 @@ Native methods are stored in a dynamically linked library whose exact form is pl
 <br>
 
 <p align="center">
-  <img width="400" height="500" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JVM_Block_Diagram_2.jpg?raw=true" alt="A Java virtual machine implemented in software on top of a host operating system.">
+  <img width="600" height="400" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JVM_Block_Diagram_2.jpg?raw=true" alt="A Java virtual machine implemented in software on top of a host operating system.">
 </p>
 
 <br>
