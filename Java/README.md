@@ -13,6 +13,13 @@ Table of Contents
 At the heart of Java technology lies the Java Virtual Machine--the abstract computer on which all Java programs run. Although the name ``"Java"`` is generally used to refer to the Java programming language,
 there is more to Java than the language. **`The Java Virtual Machine, Java API, and Java class file work together with the Java language to make the Java phenomenon possible.`**
 
+<br>
+
+<p align="center">
+  <img width="500" height="350" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JavaPhenomenon.png?raw=true" alt="The Java programming Phenomenon">
+</p>
+
+<br>
 
 Here we show how the Java Virtual Machine fits into the big picture, show how the virtual machine relates to the other components of Javaís architecture: the class file, API, and language. They describe the motivation behind--and the implications of--the overall design of Java technology.
 
