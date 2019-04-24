@@ -33,7 +33,7 @@
 	- [ ] Search
 
 - [ ] Navigation
-	- [ ] [Tabs](#####tabs)
+	- [ ] <a href="#Tabs">Tabs</a>
 	- [ ] Dialogs
 	- [ ] Routes
 	- [ ] Navigation Drawer
@@ -74,7 +74,7 @@
 
 
 
-##### Tabs 
+#### <a name="Tabs">Tabs</a> 
 
 
  <p align="center"> 
