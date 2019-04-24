@@ -77,7 +77,11 @@
 ##### Tabs 
 
 
-![Tabs Demo](Images/TabBarDemo.gif)
+ <p align="center"> 
+    <img src="Images/TabBarDemo.gif" alt="Tabs Demo">
+ </p>
+ 
+ 
 ```
 import 'package:flutter/material.dart';
 
