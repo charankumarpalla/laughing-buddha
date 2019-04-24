@@ -1,5 +1,5 @@
 # Flutter Catalog
-- [ ] Widgets
+- [ ] **Widgets**
 	- [ ] Icon
 	- [ ] text
 	- [ ] TextField
@@ -10,14 +10,14 @@
 	- [ ] DropdownButton,MenuButton
 	- [ ] other stateful widgets
 
-- [ ] Layouts
+- [ ] **Layouts**
 	- [ ] Container
 	- [ ] Row,Column
 	- [ ] Wrap
 	- [ ] Expanded
 	- [ ] Stack
 
-- [ ] Lists
+- [ ] **Lists**
 	- [ ] ListTile
 	- [ ] ListView.builder
 	- [ ] GridList
@@ -26,14 +26,14 @@
 	- [ ] Reorderable list
 	- [ ] Data Table
 
-- [ ] AppBar
+- [ ] **AppBar**
 	- [ ] Basic AppBar
 	- [ ] Bottom AppBar
 	- [ ] Sliver AppBar
 	- [ ] Search
 
-- [ ] Navigation
-	- [ ] <a href="#Tabs">Tabs</a>
+- [ ] **Navigation**
+	- [x] <a href="#Tabs">Tabs</a>
 	- [ ] Dialogs
 	- [ ] Routes
 	- [ ] Navigation Drawer
@@ -41,15 +41,15 @@
 	- [ ] Bottom navigation Bar
 	- [ ] Page Selector
 
-- [ ] Animation
+- [ ] **Animation**
 	- [ ] Opacity
 	- [ ] Hero
 
-- [ ] Persistence
+- [ ] **Persistence**
 	- [ ] Shared preference
 	- [ ] local file read/write
 
-- [ ] State Management
+- [ ] **State Management**
 	- [ ] StreamBuilder(timer app)
 	- [ ] StreamController
 	- [ ] InheritWidget
@@ -57,13 +57,13 @@
 	- [ ] BLoc Pattern
 	- [ ] Easier BLoc pattern
 
-- [ ] Plugins
+- [ ] **Plugins**
 	- [ ] Image picker
 	- [ ] Web View
 	- [ ] Markdown rendering
 	- [ ] Local auth
 
-- [ ] Firebase
+- [ ] **Firebase**
 	- [ ] Firebase login
 	- [ ] Firebase voting app
 	- [ ] Chat room
@@ -74,28 +74,32 @@
 
 
 
-#### <a name="Tabs">Tabs</a> 
+### <a name="Tabs">Tabs</a> 
 
 Flutter includes a convenient way to create tab layouts as part of the material library.
 
-1. Create a TabController
+1.  Create a  `TabController`
+2.  Create the tabs
+3.  Create content for each tab
 
-	In order for tabs to work, we’ll need to keep the selected tab and content sections in sync. This is the job of the TabController.
+**1. Create a TabController**
 
-	We can either manually create a TabController or use the DefaultTabController Widget. Using the DefaultTabController is the simplest option, since it will create a TabController for us and make it available to all descendant Widgets.
+In order for tabs to work, we’ll need to keep the selected tab and content sections in sync. This is the job of the TabController.
 
-2. Create the tabs
+We can either manually create a TabController or use the DefaultTabController Widget. Using the DefaultTabController is the simplest option, since it will create a TabController for us and make it available to all descendant Widgets.
 
-	Now that we have a TabController to work with, we can create our tabs using the TabBar Widget. In this example, we’ll create a TabBar with 3 Tab Widgets and place it within an AppBar.
+**2. Create the tabs**
 
-	By default, the TabBar looks up the Widget tree for the nearest DefaultTabController. If you’re manually creating a TabController, you’ll need to pass it to the TabBar.
+Now that we have a TabController to work with, we can create our tabs using the TabBar Widget. In this example, we’ll create a TabBar with 3 Tab Widgets and place it within an AppBar.
+
+By default, the TabBar looks up the Widget tree for the nearest DefaultTabController. If you’re manually creating a TabController, you’ll need to pass it to the TabBar.
 
 
-3. Create content for each tab
+**3. Create content for each tab**
 
-	Now that we have tabs, we’ll want to display content when a tab is selected. For this purpose, we’ll employ the TabBarView Widget.
+Now that we have tabs, we’ll want to display content when a tab is selected. For this purpose, we’ll employ the TabBarView Widget.
 
-	*Note*: Order is important and must correspond to the order of the tabs in the TabBar!
+_*Note*_: Order is important and must correspond to the order of the tabs in the TabBar!
 
 
 
