@@ -33,7 +33,7 @@
 	- [ ] Search
 
 - [ ] Navigation
-	- [ ] [Tabs](#tabs)
+	- [ ] [Tabs](#####tabs)
 	- [ ] Dialogs
 	- [ ] Routes
 	- [ ] Navigation Drawer
@@ -74,7 +74,8 @@
 
 
 
-##### Tabs <sup>[1](https://flutter.dev/docs/cookbook/design/tabs)</sup>
+##### Tabs 
+
 
 ![Tabs Demo](Images/TabBarDemo.gif)
 ```
@@ -111,6 +112,7 @@ class TabBarDemo extends StatelessWidget {
 }
 
 ```
+> Ref : <sup>[1](https://flutter.dev/docs/cookbook/design/tabs)</sup>
 
 
 # Awesome Links
