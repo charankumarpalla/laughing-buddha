@@ -70,6 +70,10 @@
 	- [ ] Firebase ML Kit
 
 
+# Challengers
+- [ ] Flutter App to display an hexagonal eqvivalent color in a small box while enetered in a text feild - [here](https://flutterawesome.com/convert-hexadecimal-colors-to-rgb-colors-and-vise-versa/)
+
+- [ ] Calculator - [here](https://flutterawesome.com/a-simple-calculator-app-made-to-show-capablities-of-flutter/)
 ---
 
 
@@ -148,6 +152,10 @@ class TabBarDemo extends StatelessWidget {
 
 # Awesome Links
 
+- https://flutterawesome.com/
+- https://material.io/design/components/app-bars-top.html#anatomy
+
+
 # Resources
 
  - [ ] Best Apps
@@ -155,3 +163,11 @@ class TabBarDemo extends StatelessWidget {
 - [ ]  Links
 	- [ ] [https://github.com/Solido/awesome-flutter](https://github.com/Solido/awesome-flutter)
 	- [ ] [https://github.com/felangel/bloc](https://github.com/felangel/bloc)
+	- [ ] Stateless Vs StateFull Widgets
+	  - https://proandroiddev.com/flutter-a-hitchhiker-guide-to-stateless-and-stateful-widgets-cc9f9295253b
+
+
+
+# Explore 
+
+https://flutterbyexample.com/stateful-widget-lifecycle	
