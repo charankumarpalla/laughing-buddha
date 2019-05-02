@@ -11,7 +11,7 @@ There are cases where you’ll create widgets that don’t need to manage any fo
 For example, we can look at several widgets that we know of which are stateless widgets:
 
  <p align="center"> 
-    <img src="Images/StateLessWidgets.png" alt="StateLessWidgets">
+    <img src="../Images/StateLessWidgets.png" alt="StateLessWidgets">
  </p>
 
 All three of these widgets here are just a few of the stateless widgets from the flutter widget catalog. **But what exactly makes these stateless?** To begin with, it really helps to dive into the source of these widgets . If we open up the source for say, the Text widget, we’ll notice that `there is no state of the widget which can be changed.` 
@@ -19,7 +19,7 @@ All three of these widgets here are just a few of the stateless widgets from the
 The Text widget is instantiated using a constructor and then these properties are used to build the widget to be displayed on the screen — `the parent widget is essentially in control of managing the state which is presented by this widget`.
 
  <p align="center"> 
-    <img src="Images/StateLessProperties.png" alt="StateLessProperties">
+    <img src="../Images/StateLessProperties.png" alt="StateLessProperties">
  </p>
 
  So in the case of the Text widget — this is passed properties such as text, alignment, direction etc by it’s parent which it will then use as its configuration.
@@ -37,9 +37,9 @@ Now on the other hand, stateful widgets **are dynamic**. They allow us to create
 
 For example, we can look at several widgets that we know of which are stateful widgets:
 
- <!-- <p align="center"> 
-    <img src="Images/StateFulWidgets.png" alt="StateFulWidgets">
- </p> -->
+ <p align="center"> 
+    <img src="../Images/StateFulWidgets.png" alt="StateFulWidgets">
+ </p>
 
 
 
@@ -128,7 +128,7 @@ We are taking one example in which, we will add a button and a card. The card co
 
 
  <p align="center"> 
-    <img src="Images/StatefulWidget.gif" alt="StatefulWidget">
+    <img src="../Images/StatefulWidget.gif" alt="StatefulWidget">
  </p>
 
 
