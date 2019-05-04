@@ -72,6 +72,9 @@
 	- [ ] Chat room
 	- [ ] Firebase ML Kit
 
+- [ ] **Misc**
+	- [ ] [Gesture](./AllReadMe/Gesture.md)
+
 
 # Challengers
 - [ ] Flutter App to display an hexagonal eqvivalent color in a small box while enetered in a text feild - [here](https://flutterawesome.com/convert-hexadecimal-colors-to-rgb-colors-and-vise-versa/)
