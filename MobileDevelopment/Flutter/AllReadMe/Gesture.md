@@ -44,8 +44,7 @@ class MyGesture extends StatelessWidget {
 When Clicked on the Screen ,the result looks like below
 
 <p align="center"> 
-    <img width="210" height="300" src="../Images/Gesture_a_DeviceScreen.png
-    " alt="Tabs Demo">
+    <img width="210" height="300" src="../Images/Gesture_a_DeviceScreen.png" alt="Tabs Demo">
  </p>
 
 
@@ -63,8 +62,7 @@ Challengers :
 
 - https://github.com/flutter/flutter/blob/master/examples/layers/widgets/gestures.dart
 <p align="center"> 
-    <img width="210" height="300" src="../Images/Gesture_challener_a.png
-    " alt="Tabs Demo">
+    <img width="210" height="300" src="../Images/Gesture_challener_a.png" alt="Tabs Demo">
  </p>
  
 
