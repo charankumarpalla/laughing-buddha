@@ -103,9 +103,6 @@ class _MyGestureState extends State<MyGesturePage> {
               print("oneTap : " + oneTap.toString());
             });
           },
-          child: Container(
-            child: Text("Click Anywhere on Screen"),
-          ),
           onDoubleTap: () {
             setState(() {
               doubleTap++;

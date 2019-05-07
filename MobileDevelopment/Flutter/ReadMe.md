@@ -79,11 +79,16 @@
 # Challengers
 - [ ] Flutter App to display an hexagonal eqvivalent color in a small box while enetered in a text feild - [here](https://flutterawesome.com/convert-hexadecimal-colors-to-rgb-colors-and-vise-versa/)
 
+- Clap like Medium - [here](https://proandroiddev.com/flutter-animation-creating-mediums-clap-animation-in-flutter-3168f047421e)
+
+- Avatar generator - [here](https://github.com/tomwyr/avataaar-image)
+
 - [ ] Calculator - [here](https://flutterawesome.com/a-simple-calculator-app-made-to-show-capablities-of-flutter/)
 ---
 
 # Awesome Links
 
+- Essential Flutter Skills : https://hackernoon.com/essential-flutter-skills-2466d91d3926
 - https://flutterawesome.com/
 - https://material.io/design/components/app-bars-top.html#anatomy
 - https://kodestat.gitbook.io/flutter/
@@ -112,6 +117,10 @@
 		- https://flutter.dev/docs/development/ui/layout
 			-	 Rows and Columns
 				- https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
+
+# Tutorials :
+ - https://www.youtube.com/playlist?list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
+ - https://fluttercrashcourse.com/lessons/materialapp-scaffold-appbar-text
 
 
 # Explore 
