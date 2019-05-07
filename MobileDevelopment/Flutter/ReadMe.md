@@ -119,8 +119,9 @@
 				- https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
 
 # Tutorials :
+ - https://fluttercrashcourse.com/courses/basics :clap: :wave:
  - https://www.youtube.com/playlist?list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
- - https://fluttercrashcourse.com/lessons/materialapp-scaffold-appbar-text
+ 
 
 
 # Explore 
