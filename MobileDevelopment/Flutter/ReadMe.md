@@ -79,11 +79,13 @@
 # Challengers
 - [ ] Flutter App to display an hexagonal eqvivalent color in a small box while enetered in a text feild - [here](https://flutterawesome.com/convert-hexadecimal-colors-to-rgb-colors-and-vise-versa/)
 
-- Clap like Medium - [here](https://proandroiddev.com/flutter-animation-creating-mediums-clap-animation-in-flutter-3168f047421e)
+- [ ] Clap like Medium - [here](https://proandroiddev.com/flutter-animation-creating-mediums-clap-animation-in-flutter-3168f047421e)
 
-- Avatar generator - [here](https://github.com/tomwyr/avataaar-image)
+- [ ] Avatar generator - [here](https://github.com/tomwyr/avataaar-image)
 
 - [ ] Calculator - [here](https://flutterawesome.com/a-simple-calculator-app-made-to-show-capablities-of-flutter/)
+
+- [ ] Calculator Another - [here](https://github.com/praharshbhatt/Flutter_Calculator)
 ---
 
 # Awesome Links
@@ -92,6 +94,7 @@
 - https://flutterawesome.com/
 - https://material.io/design/components/app-bars-top.html#anatomy
 - https://kodestat.gitbook.io/flutter/
+- :heart: https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
 
 
 
@@ -121,9 +124,12 @@
 # Tutorials :
  - https://fluttercrashcourse.com/courses/basics :clap: :wave:
  - https://www.youtube.com/playlist?list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
- 
+
+ - https://www.youtube.com/watch?v=bPXFqQG66iA&list=PL__UlMMmv_ryxZun7zAdI8KWufcYLXA-_
 
 
 # Explore 
 
-https://flutterbyexample.com/stateful-widget-lifecycle	
+- https://flutterbyexample.com/stateful-widget-lifecycle
+- https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
+	
