@@ -74,6 +74,7 @@
 
 - [ ] **Misc**
 	- [ ] [Gesture](./AllReadMe/Gesture.md)
+	- [ ] [BrushUp](./AllReadMe/BrushUp.md)
 
 
 # Challengers
@@ -94,12 +95,12 @@
 - https://flutterawesome.com/
 - https://material.io/design/components/app-bars-top.html#anatomy
 - https://kodestat.gitbook.io/flutter/
-- :heart: https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
 
 
 
 # Explore Examples:
 - https://github.com/flutter/flutter/tree/master/examples
+- [Apps that won FlutterCreate Contents](https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md) :heart: 
 
 
 # yet to Make Notes  
@@ -121,11 +122,17 @@
 			-	 Rows and Columns
 				- https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
 
-# Tutorials :
- - https://fluttercrashcourse.com/courses/basics :clap: :wave:
- - https://www.youtube.com/playlist?list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
- - https://www.youtube.com/watch?v=bPXFqQG66iA&list=PL__UlMMmv_ryxZun7zAdI8KWufcYLXA-_
+# Tutorials :
+## Level 1: 
+ - All Flutter Basic by [Flutter By RajaYogan](https://www.youtube.com/playlist?list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi)
+
+## Level 2: 
+ This is for those who had or can create a basic flutter app up and running with minial understanding of flutter concepts
+  - Build and App step by step - [The Flutter Crash Course](https://www.youtube.com/watch?v=bPXFqQG66iAlist=PL__UlMMmv_ryxZun7zAdI8KWufcYLXA-_)
+		
+	`Layout, Image,Constraints,BoxDecoration etc`
+
 
 
 # Explore 
