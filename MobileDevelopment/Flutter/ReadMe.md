@@ -139,4 +139,5 @@
 
 - https://flutterbyexample.com/stateful-widget-lifecycle
 - https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
+- https://medium.com/@dev.n
 	
