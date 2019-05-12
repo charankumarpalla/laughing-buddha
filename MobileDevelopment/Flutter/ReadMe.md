@@ -87,6 +87,7 @@
 - [ ] Calculator - [here](https://flutterawesome.com/a-simple-calculator-app-made-to-show-capablities-of-flutter/)
 
 - [ ] Calculator Another - [here](https://github.com/praharshbhatt/Flutter_Calculator)
+- [ ] [Projects and Series & Curriculum](https://busy.org/@tensor/building-custom-scroll-physics-and-simulations-with-dart-s-flutter-framework)
 ---
 
 # Awesome Links
@@ -101,6 +102,14 @@
 # Explore Examples:
 - https://github.com/flutter/flutter/tree/master/examples
 - [Apps that won FlutterCreate Contents](https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md) :heart: 
+- [Flutter Thursday Series](https://medium.com/@afegbua/flutter-thursday-series-9564d04e63a7)
+- [PageView](https://medium.com/flutter-community/a-deep-dive-into-pageview-in-flutter-with-custom-transitions-581d9ea6dded)
+	* [TextFields](https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a)
+	* [FloatingActionButtons](https://proandroiddev.com/a-deep-dive-into-floatingactionbutton-in-flutter-bf95bee11627)
+	*  [Hero Widget](https://medium.com/flutter-community/a-deep-dive-into-hero-widgets-in-flutter-d34f441eb026)
+	* [Transform Widget](https://medium.com/flutter-community/a-deep-dive-into-transform-widgets-in-flutter-4dc32cd575a9)
+	* [Draggable/DragTarget](https://medium.com/flutter-community/a-deep-dive-into-draggable-and-dragtarget-in-flutter-487919f6f1e4)
+	* [PageViews](https://medium.com/flutter-community/a-deep-dive-into-pageview-in-flutter-with-custom-transitions-581d9ea6dded)
 
 
 # yet to Make Notes  
@@ -121,7 +130,6 @@
 		- https://flutter.dev/docs/development/ui/layout
 			-	 Rows and Columns
 				- https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
-
 
 # Tutorials :
 ## Level 1: 

@@ -88,6 +88,12 @@ Let’s look at the types of ListViews there are:
 3.  **ListView.separated**
 4.  **ListView.custom**
 
+
+
+<p align="center"> 
+    <img width="600" height="220" src="../Images/ListView_types.png" alt="ListView_types">
+ </p>
+
 ## 1.  ListView
 
 This is the default constructor of the ListView class. A ListView simply takes a list of children and makes it scrollable.
@@ -204,8 +210,111 @@ This implementation can also be used for inserting other types of elements (adve
 
 The custom() constructor as its name suggests, lets you build ListViews with custom functionality for how the children of the list are built. The main parameter required for this is a SliverChildDelegate which builds the items. The types of SliverChildDelegates are
  
-  1.  **SliverChildListDelegate**
-  2.  **SliverChildBuilderDelegate**
+  * **SliverChildListDelegate**
+  * **SliverChildBuilderDelegate**
+
+
+SliverChildListDelegate accepts a direct list of children whereas SliverChildBuiderDelegate accepts an IndexedWidgetBuilder (The builder function we use).
+
+You can either use or subclass these for building your own delegates.
+
+> ListView.builder is essentially a ListView.custom with a SliverChildBuilderDelegate.
+
+> The ListView default constructor behaves like a ListView.custom with a SliverChildListDelegate
+
+
+Now that we’re done with the types of ListViews, let’s take a look at ScrollPhysics.
+
+### :soon: Exploring ScrollPhysics
+
+To control the way scrolling takes place, we set the physics parameter in the ListView constructor. The different types of physics are:
+
+* `NeverScrollablePhysics` renders the list non-scrollable. Use this to disable scrolling of the ListView completely.
+
+* `BouncingScrollPhysics` bounces back the list when the list ends. A similar effect is used on iOS.
+
+<p align="center"> 
+    <img src="../Images/ListView_BouncingScrollPhysics.gif" alt="BouncingScrollPhysics">
+ </p>
+
+ * `ClampingScrollPhysics`
+This is the default scrolling physics used on Android. The list stops at the end and gives an effect indicating it.
+
+<p align="center"> 
+    <img src="../Images/ListView_ClampingScrollPhysics.gif" alt="ClampingScrollPhysics">
+ </p>
+
+
+* `FixedExtentScrollPhysics` 
+This is slightly different than the other ones in this list in the sense that it only works with FixedExtendScrollControllers and lists that use them. For an example we will take a ListWheelScrollView which makes a wheel-like list.
+
+FixedExtentScrollPhysics only scrolls to items instead of any offset in between.
+
+<p align="center"> 
+    <img src="../Images/ListView_FixedExtentScrollPhysics.gif" alt="FixedExtentScrollPhysics">
+ </p>
+
+
+The code for this example is incredibly simple:
+
+```
+FixedExtentScrollController fixedExtentScrollController =
+    new FixedExtentScrollController();
+ListWheelScrollView(
+  controller: fixedExtentScrollController,
+  physics: FixedExtentScrollPhysics(),
+  children: monthsOfTheYear.map((month) {
+    return Card(
+        child: Row(
+      children: <Widget>[
+        Expanded(
+            child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            month,
+            style: TextStyle(fontSize: 18.0),
+          ),
+        )),
+      ],
+    ));
+  }).toList(),
+  itemExtent: 60.0,
+),
+```
+**A few more things to know**
+
+***1. How to keep elements that get destroyed alive in a list?***
+
+Flutter provides a KeepAlive() widget which keeps an item alive which would have otherwise be destroyed. In a list, elements are wrapped by default in a AutomaticKeepAlive widget.
+
+```
+  ListView.builder({
+    Key key,
+    Axis scrollDirection = Axis.vertical,
+    bool reverse = false,
+    ScrollController controller,
+    bool primary,
+    ScrollPhysics physics,
+    bool shrinkWrap = false,
+    EdgeInsetsGeometry padding,
+    this.itemExtent,
+    @required IndexedWidgetBuilder itemBuilder,
+    int itemCount,
+    bool addAutomaticKeepAlives = true,
+    bool addRepaintBoundaries = true,
+    bool addSemanticIndexes = true,
+    double cacheExtent,
+    int semanticChildCount,
+    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+  })
+
+```
+
+
+AutomaticKeepAlives can be disabled by setting the addAutomaticKeepAlives field to false. This is useful in cases where the elements don’t need to be kept alive or for a custom implementation of KeepAlive.
+
+***2.  Why does my ListView have space between the list and the outer widget?***
+By default, a ListView has padding between it and the outer widget, to remove it, set padding to EdgeInsets.all(0.0).
 
 
 ###### tags: `Templates` `Documentation`
@@ -230,9 +339,9 @@ The main difference between ListView and ListView.builder is that the default Li
 # Examples : 
 - [An example showing how we can tap on a ListTile to open a PopUpMenuButton in Flutter.](https://gist.github.com/MaskyS/987f85e7893b487e4575faef02f70c28)
 
-# References 
+# :link: References 
 - Basics : 
-    - https://medium.com/@dev.n/the-complete-flutter-series-article-3-lists-and-grids-in-flutter-b20d1a393e39 : **Read** 
+    - :ballot_box_with_check: https://medium.com/@dev.n/the-complete-flutter-series-article-3-lists-and-grids-in-flutter-b20d1a393e39 : **Read** 
     -   https://medium.com/@studymongolian/a-complete-guide-to-flutters-listtile-597a20a3d449
 - https://proandroiddev.com/flutter-thursday-02-beautiful-list-ui-and-detail-page-a9245f5ceaf0
 - https://pusher.com/tutorials/flutter-listviews
