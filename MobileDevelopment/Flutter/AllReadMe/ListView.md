@@ -88,15 +88,6 @@ Let’s look at the types of ListViews there are:
 3.  **ListView.separated**
 4.  **ListView.custom**
 
-```mermaid
-graph TD;
-    ListView-->ListView.;
-    ListView-->ListView.Builder;
-    ListView-->ListView.Seperate;
-    ListView-->ListView.Custom;
-```
-
-
 ## 1.  ListView
 
 This is the default constructor of the ListView class. A ListView simply takes a list of children and makes it scrollable.
