@@ -1,5 +1,3 @@
-
-
 Table of Contents
 =================
 
@@ -8,11 +6,13 @@ Table of Contents
       * [1.  ListView](#1--listview)
       * [2. ListView.builder()](#2-listviewbuilder)
       * [3. ListView.separated()](#3-listviewseparated)
+      * [4. ListView.custom()](#4-listviewcustom)
+         * [<g-emoji class="g-emoji" alias="soon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f51c.png">🔜</g-emoji> Exploring ScrollPhysics](#soon-exploring-scrollphysics)
+                  * [tags: Templates Documentation](#tags-templates-documentation)
    * [Examples :](#examples-)
-   * [References](#references)
+   * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> References](#link-pray-references)
 
-
-
+   
 # Introduction to ListView in Flutter
 
 Exploring the ListView Widget and its Features in Depth
@@ -339,9 +339,10 @@ The main difference between ListView and ListView.builder is that the default Li
 # Examples : 
 - [An example showing how we can tap on a ListTile to open a PopUpMenuButton in Flutter.](https://gist.github.com/MaskyS/987f85e7893b487e4575faef02f70c28)
 
-# :link: References 
+# :link: :pray: References 
 - Basics : 
-    - :ballot_box_with_check: https://medium.com/@dev.n/the-complete-flutter-series-article-3-lists-and-grids-in-flutter-b20d1a393e39 : **Read** 
+    - :ballot_box_with_check: [The Flutter Series: Lists and Grids](https://medium.com/@dev.n/the-complete-flutter-series-article-3-lists-and-grids-in-flutter-b20d1a393e39) : **Read** 
+    - :ballot_box_with_check: [Flutter ListView and ScrollPhysics: A Detailed Look](https://medium.com/flutter-community/flutter-listview-and-scrollphysics-a-detailed-look-7f0912df2754) :  **Read**
     -   https://medium.com/@studymongolian/a-complete-guide-to-flutters-listtile-597a20a3d449
 - https://proandroiddev.com/flutter-thursday-02-beautiful-list-ui-and-detail-page-a9245f5ceaf0
 - https://pusher.com/tutorials/flutter-listviews
