@@ -1,4 +1,20 @@
 
+
+Table of Contents
+=================
+
+   * [Introduction to ListView in Flutter](#introduction-to-listview-in-flutter)
+   * [Exploring the types of ListView](#exploring-the-types-of-listview)
+      * [1.  ListView](#1--listview)
+      * [2. ListView.builder()](#2-listviewbuilder)
+      * [3. ListView.separated()](#3-listviewseparated)
+   * [Examples :](#examples-)
+   * [References](#references)
+
+
+
+# Introduction to ListView in Flutter
+
 Exploring the ListView Widget and its Features in Depth
 
 A ListView in Flutter is a linear list of scrollable items. We can use it to make a list of items scrollable or make a list of repeating items.
@@ -8,7 +24,6 @@ Lists: Working with a List or RecyclerView in Android meant writing a list item,
 Flutter `simplifies` writing lists by eliminating most of the parts that took time in Android: No adapter, no separate list item, no attaching adapters to views.
 
 
-# Introduction to ListView in Flutter
 A list in Flutter is created using the ListView widget.
 
 There are two types of lists:
