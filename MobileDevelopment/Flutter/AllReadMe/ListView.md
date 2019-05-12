@@ -11,7 +11,6 @@ Table of Contents
       * [3. ListView.separated()](#3-listviewseparated)
       * [4. ListView.custom()](#4-listviewcustom)
          * [<g-emoji class="g-emoji" alias="soon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f51c.png">🔜</g-emoji> Exploring ScrollPhysics](#soon-exploring-scrollphysics)
-                  * [tags: Templates Documentation](#tags-templates-documentation)
    * [Examples :](#examples-)
    * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> References](#link-pray-references)
 
