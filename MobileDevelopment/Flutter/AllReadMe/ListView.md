@@ -1,3 +1,6 @@
+
+###### tags: `ListView`
+
 Table of Contents
 =================
 
@@ -12,7 +15,7 @@ Table of Contents
    * [Examples :](#examples-)
    * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> References](#link-pray-references)
 
-   
+
 # Introduction to ListView in Flutter
 
 Exploring the ListView Widget and its Features in Depth
@@ -316,8 +319,6 @@ AutomaticKeepAlives can be disabled by setting the addAutomaticKeepAlives field 
 ***2.  Why does my ListView have space between the list and the outer widget?***
 By default, a ListView has padding between it and the outer widget, to remove it, set padding to EdgeInsets.all(0.0).
 
-
-###### tags: `Templates` `Documentation`
 ---
 
 A more advanced example
