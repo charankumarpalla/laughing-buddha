@@ -88,6 +88,14 @@ Let’s look at the types of ListViews there are:
 3.  **ListView.separated**
 4.  **ListView.custom**
 
+```mermaid
+graph TD;
+    ListView-->ListView.;
+    ListView-->ListView.Builder;
+    ListView-->ListView.Seperate;
+    ListView-->ListView.Custom;
+```
+
 
 ## 1.  ListView
 
@@ -199,6 +207,17 @@ This implementation can also be used for inserting other types of elements (adve
 
 **Note:** The separator list length is 1 less than the item list as a separator does not exist after the last element.
 
+
+
+## 4. ListView.custom()
+
+The custom() constructor as its name suggests, lets you build ListViews with custom functionality for how the children of the list are built. The main parameter required for this is a SliverChildDelegate which builds the items. The types of SliverChildDelegates are
+ 
+  1.  **SliverChildListDelegate**
+  2.  **SliverChildBuilderDelegate**
+
+
+###### tags: `Templates` `Documentation`
 ---
 
 A more advanced example
