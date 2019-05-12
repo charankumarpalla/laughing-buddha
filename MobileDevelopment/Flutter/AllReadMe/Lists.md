@@ -135,14 +135,54 @@ ListView.builder(
 ),
 ```
 <p align="center"> 
-    <img width="200" height="330" src="../Images/ListView_lazyList.gif" alt="ListView_lazyList">
+    <img width="200" height="330" src="../Images/ListView_demo.gif" alt="ListView_lazyList">
  </p>
 
 
 ## 3. ListView.separated()
 In the separated() constructor, we generate a list and we can specify the separator between each item.
 
+<p align="center"> 
+    <img width="200" height="330" src="../Images/ListView_seperated.gif" alt="ListView_seperated">
+ </p>
 
+
+In essence, we **construct two interweaved lists**: one as the main list, one as the separator list.
+
+Note that the infinite count discussed in the earlier constructor cannot be used here and this constructor enforces an itemCount.
+
+The code for this type goes as:
+
+```
+  body: ListView.separated(
+    itemBuilder: (context,position){
+      return Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Text("Count : $position"),
+        ),
+      );
+    },
+    separatorBuilder: (context,position){
+      return Card(
+        color: Colors.red,
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Text("Seperator $position"),
+        ),
+      );
+    },
+    itemCount: 10,
+  ),
+
+```
+
+This type of list lets you dynamically define separators, have different types of separators for different types of items, add or remove separators when needed, etc.
+
+This implementation can also be used for inserting other types of elements (advertisements for example) easily and without any modification to the main list in the middle of the list items.
+
+
+**Note:** The separator list length is 1 less than the item list as a separator does not exist after the last element.
 
 ---
 
