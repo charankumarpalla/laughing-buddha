@@ -221,26 +221,29 @@ Here is the code if you would like to play around with it some more.
 
 
   <p align="center"> 
-    <img height="250" src="../Images/ListTile_SupplementalCode.png" alt="ListTile_SupplementalCode">
+    <img height="380" src="../Images/ListTile_examplee.png" alt="ListTile_SupplementalCode">
  </p>
 
 
 ```
+
 import 'package:flutter/material.dart';
+import 'package:toast/toast.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyListTile());
 
-class MyApp extends StatelessWidget {
+class MyListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'My App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('ListTile guide')),
+        appBar: AppBar(
+          title: Text("ListTile Demo"),
+        ),
         body: BodyWidget(),
       ),
     );
@@ -258,70 +261,44 @@ class BodyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
-        ListTile(
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(horseUrl),
-          ),
-          title: Text('Horse'),
-          subtitle: Text('A strong animal'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {
-            print('horse');
-          },
-          selected: true,
-        ),
-        ListTile(
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(cowUrl),
-          ),
-          title: Text('Cow'),
-          subtitle: Text('Provider of milk'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {
-            print('cow');
-          },
-        ),
-        ListTile(
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(camelUrl),
-          ),
-          title: Text('Camel'),
-          subtitle: Text('Comes with humps'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {
-            print('camel');
-          },
-          enabled: false,
-        ),
-        ListTile(
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(sheepUrl),
-          ),
-          title: Text('Sheep'),
-          subtitle: Text('Provides wool'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {
-            print('sheep');
-          },
-        ),
-        ListTile(
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(goatUrl),
-          ),
-          title: Text('Goat'),
-          subtitle: Text('Some have horns'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {
-            print('goat');
-          },
-        ),
+        _getTile(horseUrl, "Horse", "horse",context),
+        _getTile(cowUrl, "Cow", "cow",context),
+        _getTile(camelUrl, "Camel", "camel",context),
+        _getTile(sheepUrl, "Sheep", "sheep",context),
+        _getTile(goatUrl, "Goat", "goat",context),
       ],
     );
   }
 }
 
-```
+Widget _getTile(String myurl, String title, String subtitle,BuildContext context) {
+  return ListTile(
+    leading: CircleAvatar(
+      backgroundImage: NetworkImage(myurl),
+      // child: Icon(Icons.hourglass_full),
+    ),
+    title: Text(title),
+    subtitle: Text(subtitle),
+    trailing: Icon(Icons.keyboard_arrow_right),
+    // dense: true,
+    selected: true,
+    // enabled: false,
+    onTap: (){
+      Toast.show(title, context, duration: Toast.LENGTH_LONG, gravity:  Toast.BOTTOM);
+      // Scaffold.of(context).showSnackBar(new SnackBar(
+      // content: new Text("Sending Message")),
+    // );
+    },
+  );
+}
 
+```
+**Note :** Add toast dependency in pubspec.yaml
+
+```
+dependencies:
+  toast: ^0.1.3
+```
 
  -----
 

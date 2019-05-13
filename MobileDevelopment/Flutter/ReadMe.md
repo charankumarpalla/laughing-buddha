@@ -75,6 +75,8 @@
 - [ ] **Misc**
 	- [ ] [Gesture](./AllReadMe/Gesture.md)
 	- [ ] [BrushUp](./AllReadMe/BrushUp.md)
+	- [ ] AlertDialogue
+	- [ ] Toast
 
 
 # Challengers
@@ -125,7 +127,9 @@
 		
 	- [ ] Text Input
 		- https://flutterdoc.com/implementing-text-input-in-flutter-apps-3630afb49ecd
-
+	- [ ] [Alert Dialogue](http://androidkt.com/flutter-alertdialog-example/)
+	- [ ] Toast
+		-	https://stackoverflow.com/questions/45948168/how-to-create-toast-in-flutter
 	- [ ] Flutter Layout
 		- https://flutter.dev/docs/development/ui/layout
 			-	 Rows and Columns
