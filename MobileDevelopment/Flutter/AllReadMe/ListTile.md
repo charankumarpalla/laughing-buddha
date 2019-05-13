@@ -1,10 +1,29 @@
 
 
+
+Table of Contents
+=================
+
+   * [a.   title](#a---title)
+   * [b.   subtitle](#b---subtitle)
+   * [c.   dense](#c---dense)
+   * [d.   leading](#d---leading)
+   * [e.   trailing](#e---trailing)
+   * [f.   contentPadding](#f---contentpadding)
+   * [g.   selected](#g---selected)
+   * [h.   Gesture recognition](#h---gesture-recognition)
+   * [i.   enabled](#i---enabled)
+   * [j.   ListTile.divideTiles](#j---listtiledividetiles)
+   * [Supplemental code](#supplemental-code)
+
+
+
+
 A ListTile is generally what you use to populate a ListView in Flutter
 
 
 
-## a.   title
+ # a.   title
 
 The title can take any widget, but it is generally going to be a Text widget.
 
@@ -17,7 +36,7 @@ ListTile(
     <img height="250" src="../Images/ListTile_title.png" alt="ListTile_title">
  </p>
 
-## b.   subtitle
+# b.   subtitle
 The subtitle is smaller text below the title.
 
 ```
@@ -30,7 +49,7 @@ ListTile(
     <img height="250" src="../Images/ListTile_subtitle.png" alt="ListTile_Subtitle">
  </p>
 
-## c.   dense
+# c.   dense
 The dense parameter makes the text smaller and packs everything together.
 
 ```
@@ -46,7 +65,7 @@ ListTile(
  </p>
 
 
-## d.   leading
+# d.   leading
 You can add an image or an icon to the start of the ListTile. This is usually a CircleAvatar or an Icon.
 
 
@@ -75,7 +94,7 @@ ListTile(
     <img height="250" src="../Images/ListTile_leading_icon.png" alt="ListTile_leading_icon">
  </p>
 
-## e.   trailing
+# e.   trailing
 Setting the trailing places an image at the end of the ListTile. This is particularly useful for indicating a master-detail layout.
 
 ```
@@ -92,7 +111,7 @@ ListTile(
  </p>
 
 
-## f.   contentPadding
+# f.   contentPadding
 You can change how much the content is inset on the left and right (but not the top or bottom) by setting the contentPadding. The default is 16.0 but here we will set to 0.0:
 
 ```
@@ -107,7 +126,7 @@ ListTile(
     <img height="250" src="../Images/ListTile_contentPadding.png" alt="ListTile_contentPadding">
  </p>
 
-## g.   selected
+# g.   selected
 If a ListTile is selected, the color of the text and icons become the theme’s primary color.
 
 ```
@@ -124,7 +143,7 @@ ListTile(
  </p>
 
 
-## h.   Gesture recognition
+# h.   Gesture recognition
 ListTiles can detect taps or long presses if you include a callback for the onTap or onLongPress parameters. The splash animation is built in.
 
 ```
@@ -147,7 +166,7 @@ ListTiles can detect taps or long presses if you include a callback for the onTa
 
 
 
-## i.   enabled
+# i.   enabled
 You can disable gesture detection by setting enabled to false.
 ```
 ListTile(
@@ -163,7 +182,7 @@ ListTile(
     <img height="250" src="../Images/ListTile_enabled.png" alt="ListTile_enabled">
  </p>
 
-## j.   ListTile.divideTiles
+# j.   ListTile.divideTiles
 The static method divideTiles can be used to add a divider between the tiles. It is pretty faint. You have to look carefully.
 
 ```
@@ -197,7 +216,7 @@ ListView(
  </p>
 
 
-## Supplemental code
+# Supplemental code
 Here is the code if you would like to play around with it some more.
 
 
@@ -315,4 +334,4 @@ class BodyWidget extends StatelessWidget {
 
 
 Reference 
-- [A complete guide to Flutter’s ListTile](https://medium.com/@studymongolian/a-complete-guide-to-flutters-listtile-597a20a3d449)
+- :ballot_box_with_check: [A complete guide to Flutter’s ListTile](https://medium.com/@studymongolian/a-complete-guide-to-flutters-listtile-597a20a3d449) **Read**
