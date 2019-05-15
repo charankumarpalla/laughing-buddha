@@ -21,8 +21,8 @@
 	- [ ] Stack
 
 - [ ] **Lists**
-	- [ ] ListTile
-	- [ ] ListView.builder
+	- [ ] [ListTile](./AllReadMe/ListTile.md)
+	- [ ] [ListView](./AllReadMe/ListView.md)
 	- [ ] GridList
 	- [ ] ExpansionTile
 	- [ ] Swipe to dismiss
@@ -75,6 +75,10 @@
 - [ ] **Misc**
 	- [ ] [Gesture](./AllReadMe/Gesture.md)
 	- [ ] [BrushUp](./AllReadMe/BrushUp.md)
+	- [ ] AlertDialogue
+	- [ ] Toast
+	- [ ] Future
+	- [ ] async
 
 
 # Challengers
@@ -87,6 +91,7 @@
 - [ ] Calculator - [here](https://flutterawesome.com/a-simple-calculator-app-made-to-show-capablities-of-flutter/)
 
 - [ ] Calculator Another - [here](https://github.com/praharshbhatt/Flutter_Calculator)
+- [ ] [Projects and Series & Curriculum](https://busy.org/@tensor/building-custom-scroll-physics-and-simulations-with-dart-s-flutter-framework)
 ---
 
 # Awesome Links
@@ -95,12 +100,23 @@
 - https://flutterawesome.com/
 - https://material.io/design/components/app-bars-top.html#anatomy
 - https://kodestat.gitbook.io/flutter/
+- http://tphangout.com/category/flutter/
 
 
 
 # Explore Examples:
 - https://github.com/flutter/flutter/tree/master/examples
 - [Apps that won FlutterCreate Contents](https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md) :heart: 
+- [Flutter Thursday Series](https://medium.com/@afegbua/flutter-thursday-series-9564d04e63a7)
+- [PageView](https://medium.com/flutter-community/a-deep-dive-into-pageview-in-flutter-with-custom-transitions-581d9ea6dded)
+	* [TextFields](https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a)
+	* [FloatingActionButtons](https://proandroiddev.com/a-deep-dive-into-floatingactionbutton-in-flutter-bf95bee11627)
+	*  [Hero Widget](https://medium.com/flutter-community/a-deep-dive-into-hero-widgets-in-flutter-d34f441eb026)
+	* [Transform Widget](https://medium.com/flutter-community/a-deep-dive-into-transform-widgets-in-flutter-4dc32cd575a9)
+	* [Draggable/DragTarget](https://medium.com/flutter-community/a-deep-dive-into-draggable-and-dragtarget-in-flutter-487919f6f1e4)
+	* [PageViews](https://medium.com/flutter-community/a-deep-dive-into-pageview-in-flutter-with-custom-transitions-581d9ea6dded)
+- [Flutter – Phone Authentication](http://tphangout.com/flutter-phone-authentication/) 
+- [Flutter – Charts and Stopwatches ](http://tphangout.com/flutter-charts-and-stopwatches/)
 
 
 # yet to Make Notes  
@@ -116,12 +132,13 @@
 		
 	- [ ] Text Input
 		- https://flutterdoc.com/implementing-text-input-in-flutter-apps-3630afb49ecd
-
+	- [ ] [Alert Dialogue](http://androidkt.com/flutter-alertdialog-example/)
+	- [ ] Toast
+		-	https://stackoverflow.com/questions/45948168/how-to-create-toast-in-flutter
 	- [ ] Flutter Layout
 		- https://flutter.dev/docs/development/ui/layout
 			-	 Rows and Columns
 				- https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
-
 
 # Tutorials :
 ## Level 1: 
@@ -139,4 +156,6 @@
 
 - https://flutterbyexample.com/stateful-widget-lifecycle
 - https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
+- https://medium.com/@dev.n
+- https://pub.dev/
 	
