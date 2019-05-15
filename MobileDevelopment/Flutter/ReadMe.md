@@ -78,6 +78,7 @@
 	- [ ] AlertDialogue
 	- [ ] Toast
 	- [ ] Future
+	- [ ] async
 
 
 # Challengers
@@ -99,6 +100,7 @@
 - https://flutterawesome.com/
 - https://material.io/design/components/app-bars-top.html#anatomy
 - https://kodestat.gitbook.io/flutter/
+- http://tphangout.com/category/flutter/
 
 
 
@@ -114,6 +116,7 @@
 	* [Draggable/DragTarget](https://medium.com/flutter-community/a-deep-dive-into-draggable-and-dragtarget-in-flutter-487919f6f1e4)
 	* [PageViews](https://medium.com/flutter-community/a-deep-dive-into-pageview-in-flutter-with-custom-transitions-581d9ea6dded)
 - [Flutter – Phone Authentication](http://tphangout.com/flutter-phone-authentication/) 
+- [Flutter – Charts and Stopwatches ](http://tphangout.com/flutter-charts-and-stopwatches/)
 
 
 # yet to Make Notes  
@@ -154,4 +157,5 @@
 - https://flutterbyexample.com/stateful-widget-lifecycle
 - https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
 - https://medium.com/@dev.n
+- https://pub.dev/
 	

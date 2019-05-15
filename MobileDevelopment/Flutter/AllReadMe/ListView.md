@@ -161,6 +161,32 @@ ListView.builder(
  </p>
 
 
+
+**Horizontal ListView**
+
+It's also really easy to make a horizontally scrolling ListView. All you have to do is specify the scrollDirection as horizontal. Since ListTiles aren't designed for horizontal ListViews, we will use a simple custom layout.
+
+
+
+```
+      body: ListView.builder(
+        itemCount: 150,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, position) {
+          return Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text("charan $position", style: TextStyle(fontSize: 22.0),),
+            ),
+          );
+        },
+      ),
+```
+
+<p align="center"> <img height="380" src="../Images/ListView_AxisSxrolHorizontal.gif" alt="ListView_AxisSxrolHorizontal">
+ </p>
+
+
 ## 3. ListView.separated()
 In the separated() constructor, we generate a list and we can specify the separator between each item.
 
@@ -335,11 +361,12 @@ ListView Vs ListView.builder
 The main difference between ListView and ListView.builder is that the default ListView constructor requires us to create all items at once whereas the ListView.builder constructor will create items as they are scrolled onto the screen like on demand.
 
 
-
-
 # Examples : 
 - BrushUp:
   - [ListView With AlertDialogue](BrushUp.md#b-listview-with-alertdialogue)
+  - :book: Yet to Read [Updating list data](BrushUp.md#updating-list-data)
+    - :book: Yet to Read [a. Adding and deleting rows in a ListView](BrushUp.md#a-adding-and-deleting-rows-in-a-listview)
+    - :book: Yet to Read  [b. Adding and deleting rows in an AnimatedList](BrushUp.md#b-adding-and-deleting-rows-in-an-animatedlist)
 - [An example showing how we can tap on a ListTile to open a PopUpMenuButton in Flutter.](https://gist.github.com/MaskyS/987f85e7893b487e4575faef02f70c28)
 
 # :link: :pray: References 
