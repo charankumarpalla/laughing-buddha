@@ -77,6 +77,7 @@
 	- [ ] [BrushUp](./AllReadMe/BrushUp.md)
 	- [ ] AlertDialogue
 	- [ ] Toast
+	- [ ] Future
 
 
 # Challengers
@@ -112,6 +113,7 @@
 	* [Transform Widget](https://medium.com/flutter-community/a-deep-dive-into-transform-widgets-in-flutter-4dc32cd575a9)
 	* [Draggable/DragTarget](https://medium.com/flutter-community/a-deep-dive-into-draggable-and-dragtarget-in-flutter-487919f6f1e4)
 	* [PageViews](https://medium.com/flutter-community/a-deep-dive-into-pageview-in-flutter-with-custom-transitions-581d9ea6dded)
+- [Flutter – Phone Authentication](http://tphangout.com/flutter-phone-authentication/) 
 
 
 # yet to Make Notes  

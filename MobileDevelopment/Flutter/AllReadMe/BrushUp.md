@@ -1,4 +1,16 @@
 
+Table of Contents
+=================
+
+   * [Toursim&amp;Co](#toursimco)
+         * [1. Build a basic flutter app with layout](#1-build-a-basic-flutter-app-with-layout)
+         * [2. Refactor the Code](#2-refactor-the-code)
+         * [3. Minimise the repetitions.](#3-minimise-the-repetitions)
+   * [LISTS:](#lists)
+      * [a. ListTile with Toast](#a-listtile-with-toast)
+               * [tags : ListTile Toast](#tags--listtile-toast)
+      * [b. ListView With AlertDialogue](#b-listview-with-alertdialogue)
+
 
 # Toursim&Co
 Thanks to 
@@ -256,4 +268,95 @@ Widget _getTile(String myurl, String title, String subtitle,BuildContext context
 ```
 dependencies:
   toast: ^0.1.3
+```
+
+
+## b. ListView With AlertDialogue
+
+tags : `Future`, `alertdialogue`
+
+<p align="center"> 
+    <img src="../Images/BrushUp_ListView_AlertDialogue.png" alt="BrushUp_ListView_AlertDialogue">
+ </p>
+
+```
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyListAlert());
+
+class MyListAlert extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        // backgroundColor: Colors.blue,
+      ),
+      home: WidgetScreen(),
+    );
+  }
+}
+
+class WidgetScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("MyListAlert Demo"),
+        toolbarOpacity: 0.7,
+      ),
+      body: ListView.builder(
+        itemBuilder: (context, position) {
+          return _MyListView(context, position);
+        },
+        itemCount: 20,
+      ),
+    );
+  }
+}
+
+Widget _MyListView(BuildContext context, int position) {
+  return new ListTile(
+    leading: CircleAvatar(
+      backgroundImage: NetworkImage('https://i.stack.imgur.com/Dw6f7.png'),
+    ),
+    title: Text("$position"),
+    subtitle: Text("$position :  subtitle"),
+    trailing: new RaisedButton(
+      onPressed: () {
+        deleteDialogue(context).then((value) {
+          print('Value if $value');
+        });
+      },
+      child: Text("Remove"),
+    ),
+  );
+}
+
+Future<bool> deleteDialogue(BuildContext context) {
+  return showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return new AlertDialog(
+          title: new Text("Are you Sure.?"),
+          actions: <Widget>[
+            new FlatButton(
+              child: Text('Yes'),
+              onPressed: () {
+                Navigator.of(context).pop(true);
+              },
+            ),
+            new FlatButton(
+              child: Text('No'),
+              onPressed: () {
+                Navigator.of(context).pop(true);
+              },
+            ),
+          ],
+        );
+      });
+}
+
 ```
