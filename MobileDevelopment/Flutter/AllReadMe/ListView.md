@@ -3,7 +3,6 @@
 
 Table of Contents
 =================
-
    * [Introduction to ListView in Flutter](#introduction-to-listview-in-flutter)
    * [Exploring the types of ListView](#exploring-the-types-of-listview)
       * [1.  ListView](#1--listview)
@@ -13,7 +12,6 @@ Table of Contents
          * [<g-emoji class="g-emoji" alias="soon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f51c.png">🔜</g-emoji> Exploring ScrollPhysics](#soon-exploring-scrollphysics)
    * [Examples :](#examples-)
    * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> References](#link-pray-references)
-
 
 # Introduction to ListView in Flutter
 
@@ -364,9 +362,9 @@ The main difference between ListView and ListView.builder is that the default Li
 # Examples : 
 - BrushUp:
   - [ListView With AlertDialogue](BrushUp.md#b-listview-with-alertdialogue)
-  - :book: Yet to Read [Updating list data](BrushUp.md#updating-list-data)
-    - :book: Yet to Read [a. Adding and deleting rows in a ListView](BrushUp.md#a-adding-and-deleting-rows-in-a-listview)
-    - :book: Yet to Read  [b. Adding and deleting rows in an AnimatedList](BrushUp.md#b-adding-and-deleting-rows-in-an-animatedlist)
+  - :soon: :book: [Updating list data](BrushUp.md#updating-list-data)
+    - :soon: :book: [a. Adding and deleting rows in a ListView](BrushUp.md#a-adding-and-deleting-rows-in-a-listview)
+    - :soon: :book: [b. Adding and deleting rows in an AnimatedList](BrushUp.md#b-adding-and-deleting-rows-in-an-animatedlist)
 - [An example showing how we can tap on a ListTile to open a PopUpMenuButton in Flutter.](https://gist.github.com/MaskyS/987f85e7893b487e4575faef02f70c28)
 
 # :link: :pray: References 
