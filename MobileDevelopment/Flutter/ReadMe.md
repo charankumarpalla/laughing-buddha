@@ -105,7 +105,6 @@
 
 
 
-
 # Explore Examples:
 - https://github.com/flutter/flutter/tree/master/examples
 - [Apps that won FlutterCreate Contents](https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md) :heart: 
