@@ -10,7 +10,7 @@ Table of Contents
       * [3. ListView.separated()](#3-listviewseparated)
       * [4. ListView.custom()](#4-listviewcustom)
          * [<g-emoji class="g-emoji" alias="soon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f51c.png">🔜</g-emoji> Exploring ScrollPhysics](#soon-exploring-scrollphysics)
-   * [Examples :](#examples-)
+   * [Examples](#examples-)
    * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> References](#link-pray-references)
 
 # Introduction to ListView in Flutter
@@ -359,7 +359,7 @@ ListView Vs ListView.builder
 The main difference between ListView and ListView.builder is that the default ListView constructor requires us to create all items at once whereas the ListView.builder constructor will create items as they are scrolled onto the screen like on demand.
 
 
-# Examples : 
+# Examples 
 - BrushUp:
   - [ListView With AlertDialogue](BrushUp.md#b-listview-with-alertdialogue)
   - :soon: :book: [Updating list data](BrushUp.md#updating-list-data)
@@ -369,8 +369,8 @@ The main difference between ListView and ListView.builder is that the default Li
 
 # :link: :pray: References 
 - Basics : 
-    - :ballot_box_with_check: [The Flutter Series: Lists and Grids](https://medium.com/@dev.n/the-complete-flutter-series-article-3-lists-and-grids-in-flutter-b20d1a393e39) : **Read** 
-    - :ballot_box_with_check: [Flutter ListView and ScrollPhysics: A Detailed Look](https://medium.com/flutter-community/flutter-listview-and-scrollphysics-a-detailed-look-7f0912df2754) :  **Read**
+    - :ballot_box_with_check: [The Flutter Series: Lists and Grids](https://medium.com/@dev.n/the-complete-flutter-series-article-3-lists-and-grids-in-flutter-b20d1a393e39) : **Done** 
+    - :ballot_box_with_check: [Flutter ListView and ScrollPhysics: A Detailed Look](https://medium.com/flutter-community/flutter-listview-and-scrollphysics-a-detailed-look-7f0912df2754) :  **Done**
     -   https://medium.com/@studymongolian/a-complete-guide-to-flutters-listtile-597a20a3d449
 - https://proandroiddev.com/flutter-thursday-02-beautiful-list-ui-and-detail-page-a9245f5ceaf0
-- https://pusher.com/tutorials/flutter-listviews
+- :ballot_box_with_check: https://pusher.com/tutorials/flutter-listviews **Done** 
