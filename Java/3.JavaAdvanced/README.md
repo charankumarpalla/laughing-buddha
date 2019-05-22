@@ -1,7 +1,7 @@
 
 
 Table of Contents
-# [Java Patterns](../3.JavaExternals/a.JavaPatterns/ReadMe.md)
+# [Java Patterns](../3.JavaAdvanced/a.JavaPatterns/ReadMe.md)
 
 
 
