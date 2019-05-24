@@ -100,12 +100,12 @@ The serializable class SerialDemo does not declare a static final serialVersionU
 Most of us used to ignore this message as we always do for a warning. My general note is, always pay attention to the java warning messages. It will help you to learn a lot of fundamentals.
 
 <p align="center"> 
-    <img src="../ResourcesFiles/Concepts/serialize-deserialize-java_c_SerialVersionUID.png" alt="serialize-deserialize-java_c_SerialVersionUID">
+    <img width="450" src="../ResourcesFiles/Concepts/serialize-deserialize-java_c_SerialVersionUID.png" alt="serialize-deserialize-java_c_SerialVersionUID">
  </p>
 
 serialVersionUID is a must in serialization process. But it is optional for the developer to add it in java source file. If you are not going to add it in java source file, serialization runtime will generate a serialVersionUID and associate it with the class. The serialized object will contain this serialVersionUID along with other data.
 
-Even though serialVersionUID is a static field, it gets serialized along with the object. This is one exception to the general serialization rule that, “static fields are not serialized”.
+**Even though serialVersionUID is a static field, it gets serialized along with the object. This is one exception to the general serialization rule that, “static fields are not serialized”**.
 
 
 ## How serialVersionUID is generated?
@@ -114,7 +114,9 @@ serialVersionUID is a 64-bit hash of the class name, interface class names, meth
 
 It is advised to have serialVersionUID as unique as possible. Thats why the java runtime chose to have such a complex algorithm to generate it.
 
-If you want help in generating it, jdk tools provides a tool named serialver. Use *`serialver -show`* to start the gui version of the tool as shown below.
+If you want help in generating it, jdk tools provides a tool named serialver. 
+
+Use *`serialver -show`* to start the gui version of the tool as shown below.
 
 
 ## How serialVersionUID works?
