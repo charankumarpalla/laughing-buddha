@@ -15,6 +15,9 @@ Table of Contents
       * [How serialVersionUID works?](#how-serialversionuid-works)
       * [Demonstrate serialVersionUID](#demonstrate-serialversionuid)
    * [Exploring Java Serialization](#exploring-java-serialization)
+   * [Transient Keyword](#transient-keyword)
+      * [Transient Vs. Static](#transient-vs-static)
+      * [Final Vs. Transient](#final-vs-transient)
    * [<g-emoji class="g-emoji" alias="exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png">❗️</g-emoji> Sometimes ignorance is not bliss](#exclamation-sometimes-ignorance-is-not-bliss)
    * [Reference](#reference)
 
@@ -149,15 +152,6 @@ If the loaded class is not having a serialVersionUID declared, then it is automa
 
 ## Demonstrate serialVersionUID
 
-- :on:  https://javapapers.com/core-java/serialversionuid-in-java-serialization/
-
-
-<!-- ### serialver
-The serialver is a tool that comes with JDK. It is used to get serialVersionUID number for Java classes.
-You can run the following command to get serialVersionUID
-
->   serialver [-classpath classpath] [-show] [classname…] -->
-
 Initial class to be serialized has a serialVersionUID as 1L.
 
 ```
@@ -258,16 +252,108 @@ In the image, I have underline a unit of information in a separate color for you
 *  0a – 10 the value – This is the persisted value of the property in our sample
 
 
+# Transient Keyword
+The transient modifier/keyword is applicable only for variables but not for methods and classes.
+At the time of serialization, if we don't want to serialize the value of a particular variable to meet security constraints, then we should declare that variable as transient.
+
+While performing serialization, the JVM ignores the original value of the transient variable and save default value to the file. **`Hence, transient means not to serialize`**.
+
+## Transient Vs. Static
+A static variable is not part of an object state, and hence, it won't participate in serialization. Due to this declaring static variable as transient, there is no use.
+
+## Final Vs. Transient
+Final variables will be participated in serialization directly by the value. Hence, declaring a final variable as transient causes no impact.
+
+
+
 # :exclamation: Sometimes ignorance is not bliss 
 
 :bulb: **`Only non-static data members are saved via Serialization process`** : 
 
 
+:bulb: **`What if We Are Trying to Serialize a Non-Serializable Object?`**
+We will get a RuntimeException saying: Exception in thread "main" java.io.NotSerializableException: java.io.ObjectOutputStream.
+
+
+
+:bulb: **`Java Serialization with Inheritance (IS-A Relationship)`**
+
+If a class implements serializable then all its sub classes will also be serializable. Let's see the example given below:
+```
+import java.io.Serializable;  
+class Person implements Serializable{  
+ int id;  
+ String name;  
+ Person(int id, String name) {  
+  this.id = id;  
+  this.name = name;  
+ }  
+}  
+```
+```
+class Student extends Person{  
+ String course;  
+ int fee;  
+ public Student(int id, String name, String course, int fee) {  
+  super(id,name);  
+  this.course=course;  
+  this.fee=fee;  
+ }  
+}  
+```
+Now you can serialize the Student class object that extends the Person class which is Serializable. Parent class properties are inherited to subclasses so if parent class is Serializable, subclass would also be.
+
+:bulb: **`Java Serialization with Aggregation (HAS-A Relationship)`**
+If a class has a reference to another class, all the references must be Serializable otherwise serialization process will not be performed. In such case, NotSerializableException is thrown at runtime.
+```
+class Address{  
+ String addressLine,city,state;  
+ public Address(String addressLine, String city, String state) {  
+  this.addressLine=addressLine;  
+  this.city=city;  
+  this.state=state;  
+ }  
+}  
+```
+```
+import java.io.Serializable;  
+public class Student implements Serializable{  
+ int id;  
+ String name;  
+ Address address;//HAS-A  
+ public Student(int id, String name) {  
+  this.id = id;  
+  this.name = name;  
+ }  
+} 
+```
+
+> Since Address is not Serializable, you can not serialize the instance of Student class.
+
+**Note: All the objects within an object must be Serializable.**
+
+:bulb: **`Java Serialization with the static data member`**
+
+If there is any static data member in a class, it will not be serialized **because static is the part of class not object**.
+
+```
+class Employee implements Serializable{  
+ int id;  
+ String name;  
+ static String company="SSS IT Pvt Ltd";//it won't be serialized  
+ public Student(int id, String name) {  
+  this.id = id;  
+  this.name = name;  
+ }  
+}  
+```
 
 
 #   Reference
 - https://www.geeksforgeeks.org/serialization-in-java/
+-  :on: [Serialization in Java – Java Serialization](https://www.journaldev.com/2452/serialization-in-java)
+-   - :ballot_box_with_check: [Serialization and De-Serialization in Java](https://dzone.com/articles/serialization-amp-de-serialization-in-java) **done**
 - serialversionuid
-    -   :heart: https://javapapers.com/core-java/serialversionuid-in-java-serialization/
+    -   - :ballot_box_with_check: :heart: https://javapapers.com/core-java/serialversionuid-in-java-serialization/ **Done**
     -   https://www.mkyong.com/java-best-practices/understand-the-serialversionuid/
-    -    https://javapapers.com/core-java/java-serialization/
+    -    - :ballot_box_with_check: https://javapapers.com/core-java/java-serialization/ **Done**
