@@ -85,6 +85,9 @@ public final Object readObject()
 4. Constructor of object is never called when an object is deserialized.
 5. Associated objects must be implementing Serializable interface.
 
+
+---
+
 # serialVersionUID
 ## What Is the serialVersionUID?
 
@@ -227,6 +230,8 @@ Exception in thread "main" java.io.InvalidClassException: Lion; local class inco
 
    ```
 
+---
+
 # Exploring Java Serialization
 
 
@@ -252,6 +257,9 @@ In the image, I have underline a unit of information in a separate color for you
 *  0a – 10 the value – This is the persisted value of the property in our sample
 
 
+
+---
+
 # Transient Keyword
 The transient modifier/keyword is applicable only for variables but not for methods and classes.
 At the time of serialization, if we don't want to serialize the value of a particular variable to meet security constraints, then we should declare that variable as transient.
@@ -264,6 +272,8 @@ A static variable is not part of an object state, and hence, it won't participat
 ## Final Vs. Transient
 Final variables will be participated in serialization directly by the value. Hence, declaring a final variable as transient causes no impact.
 
+
+---
 
 
 # :exclamation: Sometimes ignorance is not bliss 
