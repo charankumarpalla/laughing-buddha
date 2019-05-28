@@ -1,8 +1,8 @@
 
 
 Table of Contents
-# [Java Patterns](../3.JavaAdvanced/a.JavaPatterns/ReadMe.md)
-
+- [ ]   [Java Patterns](./a.JavaPatterns/ReadMe.md)
+- [ ]   [Java Collections](./b.JavaCollections/README.md)
 
 
 
