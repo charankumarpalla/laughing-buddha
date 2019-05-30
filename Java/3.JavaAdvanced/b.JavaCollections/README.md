@@ -52,7 +52,7 @@ Some useful classes which implement List interface are –**` ArrayList, CopyOnW
 
 **Sets** represents a collection of **sorted** elements. Sets do not allow the duplicate elements. Set interface does not provides no guarantee to return the elements in any predictable order; though some Set implementations store elements in their natural ordering and guarantee this order.
 
-Some useful classes which implement Set interface are – C**`oncurrentSkipListSet, CopyOnWriteArraySet, EnumSet, HashSet, LinkedHashSet and TreeSet`**.
+Some useful classes which implement Set interface are – **`ConcurrentSkipListSet, CopyOnWriteArraySet, EnumSet, HashSet, LinkedHashSet and TreeSet`**.
 
 ##  Map
 
@@ -145,7 +145,7 @@ The code is easier to read as well because of consistent class and method names.
 
 
 # 7.  Java collection examples
-- [ ] Array
+- [ ] [Array](./Collections/Array/README.md)
 - [ ] ArrayList
 - [ ] LinkedList
 - [ ] HashMap
