@@ -152,7 +152,7 @@ The code is easier to read as well because of consistent class and method names.
 - [ ] Hashtable
 - [ ] LinkedHashMap
 - [ ] TreeMap
-- [ ] HashSet
+- [ ] [HashSet](./Collections/HashSet/README.md)
 - [ ] LinkedHashSet
 - [ ] TreeSet
 - [ ] Comparable
@@ -169,8 +169,8 @@ The code is easier to read as well because of consistent class and method names.
 - [ ] Collection Sorting
 - [ ] Interview Questions
 
-# Explore
+#  Explore
 -  :on: [Java Collections - by howtodoinjava](https://howtodoinjava.com/java-collections/)
 
-# References
+#  References
 
