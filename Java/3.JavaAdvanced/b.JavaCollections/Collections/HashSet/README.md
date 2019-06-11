@@ -21,7 +21,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 As shown above, HashMap implements `Map interface` and extends `AbstractMap class`.
 
 <p align="center">
-  <img height="350" src="../../../../ResourcesFiles/JavaAdvanced/Java-collections-HashMap.png" alt="Java-collections-HashMap.png">
+  <img height="300" src="../../../../ResourcesFiles/JavaAdvanced/Java-collections-HashMap.png" alt="Java-collections-HashMap.png">
 </p>
 
 
