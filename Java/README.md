@@ -1,14 +1,20 @@
 
+
 Table of Contents
 =================
 
-   * [Why Java?](#why-java)
-   * [The Challenges and Opportunities of Networks](#the-challenges-and-opportunities-of-networks)
-   * [The Java Architecture](#the-java-architecture)
-      * [Java Platform](#java-platform)
-      * [The Java Virtual Machine](#the-java-virtual-machine)
-      * [Java Methods](#java-methods)
+   * [Java Internals](#java-internals)
+      * [Why Java?](#why-java)
+      * [The Challenges and Opportunities of Networks](#the-challenges-and-opportunities-of-networks)
+      * [The Java Architecture](#the-java-architecture)
+         * [Java Platform](#java-platform)
+         * [The Java Virtual Machine](#the-java-virtual-machine)
+         * [Java Methods](#java-methods)
+   * [Java Concepts](#java-concepts)
+   * [Java Advanced](#java-advanced)
    * [Thanks](#thanks)
+
+# Java Internals
 
 At the heart of Java technology lies the Java Virtual Machine--the abstract computer on which all Java programs run. Although the name ``"Java"`` is generally used to refer to the Java programming language,
 there is more to Java than the language. **`The Java Virtual Machine, Java API, and Java class file work together with the Java language to make the Java phenomenon possible.`**
@@ -30,16 +36,16 @@ This chapter gives an introduction to Java as a technology. It gives an overview
 
 
 
-# Why Java?
+## Why Java?
 
 
 
-# The Challenges and Opportunities of Networks
+## The Challenges and Opportunities of Networks
  - platform-independent programs
  - Security
  - Robustness
 
-# The Java Architecture
+## The Java Architecture
 Java's architecture arises out of four distinct but interrelated technologies:
 
 * the Java programming language
@@ -62,7 +68,7 @@ As your program runs, it fulfills your program's Java API calls by invoking meth
 
 <br>
 
-## Java Platform
+### Java Platform
 Together, `the Java virtual machine and Java API form a "platform" for which all Java programs are compiled`. In addition to being called the Java runtime system, the combination of the Java virtual machine and Java API is called the Java Platform (or, starting with version 1.2, the Java 2 Platform). Java programs can run on many different kinds of computers because the Java Platform can itself be implemented in software. As you can see in Figure 1- 2, 
 > a Java program can run anywhere the **Java Platform** is present.
 
@@ -75,7 +81,7 @@ Together, `the Java virtual machine and Java API form a "platform" for which all
 
 <br>
 
-## The Java Virtual Machine
+### The Java Virtual Machine
 
 The Java virtual machine is an abstract computer. `Its specification defines certain features every Java virtual machine must have, but leaves many choices to the designers of each implementation.` 
 
@@ -97,7 +103,7 @@ A Java virtual machine's main job is to load class files and execute the bytecod
 
 <br>
 
-## Java Methods
+### Java Methods
 When running on a Java virtual machine that is implemented in software on top of a host operating system, a Java program interacts with the host by invoking native methods. 
 
 In Java, there are two kinds of methods: 
@@ -122,6 +128,12 @@ You can use native methods to give your Java programs direct access to the resou
 One native method interface--the Java Native Interface, or JNI--enables native methods to work with any Java Platform implementation on a particular host computer. Vendors of the Java Platform, however, are not necessarily required to support JNI. They may provide their own proprietary native method interfaces in addition to (or depending on their contract, in place of) JNI.
 
 Java gives you a choice. If you want to access resources of a particular host that are unavailable through the Java API, you can write a platform-specific Java program that calls native methods. If you want to keep your program platform independent, **```however, you must access the system resources of the underlying operating system only through the Java API```**.
+
+#  [Java Concepts](./2.JavaConcepts/ReadMe.md)
+
+#  [Java Advanced](./3.JavaAdvanced/README.md)
+
+
 
 # Thanks
 **`Inside-Java-Virtual-Machine`** by **`Bill Venners`**
