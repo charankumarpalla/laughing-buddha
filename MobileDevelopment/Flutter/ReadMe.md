@@ -93,7 +93,10 @@
 
 - [ ] Calculator Another - [here](https://github.com/praharshbhatt/Flutter_Calculator)
 - [ ] [Projects and Series & Curriculum](https://busy.org/@tensor/building-custom-scroll-physics-and-simulations-with-dart-s-flutter-framework)
+
+- [ ]	[flutter_lessons ](https://github.com/lohanidamodar/flutter_lessons)
 ---
+
 
 # Awesome Links
 
@@ -102,7 +105,7 @@
 - https://material.io/design/components/app-bars-top.html#anatomy
 - https://kodestat.gitbook.io/flutter/
 - http://tphangout.com/category/flutter/
-
+- [flutter_ui_challenges](https://github.com/lohanidamodar/flutter_ui_challenges)
 
 
 # Explore Examples:
