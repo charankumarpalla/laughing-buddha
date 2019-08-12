@@ -366,6 +366,7 @@ The main difference between ListView and ListView.builder is that the default Li
     - :soon: :book: [a. Adding and deleting rows in a ListView](BrushUp.md#a-adding-and-deleting-rows-in-a-listview)
     - :soon: :book: [b. Adding and deleting rows in an AnimatedList](BrushUp.md#b-adding-and-deleting-rows-in-an-animatedlist)
 - [An example showing how we can tap on a ListTile to open a PopUpMenuButton in Flutter.](https://gist.github.com/MaskyS/987f85e7893b487e4575faef02f70c28)
+- https://blog.usejournal.com/flutter-search-in-listview-1ffa40956685
 
 # :link: :pray: References 
 - Basics : 
