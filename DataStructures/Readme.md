@@ -1,11 +1,14 @@
 
 
-Table Of Contents
+<!-- #   Table Of Contents-  -->
+#   :loudspeaker: Hakuna Matata :high_brightness: :tada:
+- [:loudspeaker: Hakuna Matata :high_brightness: :tada:](#loudspeaker-hakuna-matata-highbrightness-tada)
 - [Data Structures](#data-structures)
   - [a. Characteristics of a Data Structure](#a-characteristics-of-a-data-structure)
   - [b. Need for Data Structure](#b-need-for-data-structure)
   - [c. Execution Time Cases](#c-execution-time-cases)
   - [d. Basic Terminology](#d-basic-terminology)
+  - [:bookmark: List Of DataStructures](#bookmark-list-of-datastructures)
 - [Algorithms](#algorithms)
   - [a. Characteristics of an Algorithm](#a-characteristics-of-an-algorithm)
   - [b. How to Write an Algorithm?](#b-how-to-write-an-algorithm)
@@ -13,6 +16,7 @@ Table Of Contents
   - [d. Algorithm Complexity](#d-algorithm-complexity)
     - [i. Space Complexity](#i-space-complexity)
     - [ii. Time Complexity](#ii-time-complexity)
+  - [:bookmark: List Of Algorithms](#bookmark-list-of-algorithms)
 - [Awesome Links](#awesome-links)
 - [References](#references)
 
@@ -73,6 +77,13 @@ There are three cases which are usually used to compare various data structure's
 * **File** − File is a collection of records of the entities in a given entity set.
 
 
+##  :bookmark: List Of DataStructures
+
+`B` - Beginner, `A` - Advanced
+
+
+---
+
 
 #   Algorithms 
 
@@ -91,7 +102,7 @@ From the data structure point of view, following are some important categories o
 * **Delete** − Algorithm to delete an existing item from a data structure.
 
 
-##  a.  Characteristics of an Algorithm
+##  a. Characteristics of an Algorithm
 `Not all procedures can be called an algorithm`. An algorithm should have the following characteristics −
 
 * **Unambiguous** − Algorithm should be clear and unambiguous. Each of its steps (or phases), and their inputs/outputs should be clear and must lead to only one meaning.
@@ -107,7 +118,7 @@ From the data structure point of view, following are some important categories o
 * **Independent** − An algorithm should have step-by-step directions, which should be independent of any programming code.
 
 
-##  b.  How to Write an Algorithm?
+##  b. How to Write an Algorithm?
 There are no well-defined standards for writing algorithms. Rather, it is problem and resource dependent. Algorithms are never written to support a particular programming code.
 
 As we know that all programming languages share basic code constructs like loops (do, for, while), flow-control (if-else), etc. These common constructs can be used to write an algorithm.
@@ -154,7 +165,7 @@ We design an algorithm to get a solution of a given problem. A problem can be so
 Hence, many solution algorithms can be derived for a given problem. The next step is to **analyze** those proposed solution algorithms and implement the best suitable solution.
 
 
-##  c.  Algorithm Analysis
+##  c. Algorithm Analysis
 Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following −
 
 * **A Priori Analysis** − This is a theoretical analysis of an algorithm. Efficiency of an algorithm is measured by assuming that all other factors, for example, processor speed, are constant and have no effect on the implementation.
@@ -165,7 +176,7 @@ We shall learn about a `priori algorithm` analysis. Algorithm analysis deals wit
 
 
 
-##  d.  Algorithm Complexity
+##  d. Algorithm Complexity
 Suppose **X** is an algorithm and **n** is the size of input data, the time and space used by the algorithm X are the two main factors, which decide the efficiency of X.
 
 * **Time Factor** − Time is measured by counting the number of key operations such as comparisons in the sorting algorithm.
@@ -174,7 +185,7 @@ Suppose **X** is an algorithm and **n** is the size of input data, the time and 
 
 The complexity of an algorithm **f(n)** gives the running time and/or the storage space required by the algorithm in terms of **n** as the size of input data.
 
-### i.  Space Complexity
+### i. Space Complexity
 Space complexity of an algorithm represents the amount of memory space required by the algorithm in its life cycle. The space required by an algorithm is equal to the sum of the following two components −
 
 * A fixed part that is a space required to store certain data and variables, that are independent of the size of the problem. For example, simple variables and constants used, program size, etc.
@@ -198,6 +209,15 @@ Time complexity of an algorithm represents the amount of time required by the al
 
 For example, addition of two n-bit integers takes n steps. Consequently, the total computational time is T(n) = c ∗ n, where c is the time taken for the addition of two bits. Here, we observe that T(n) grows linearly as the input size increases.
 
+
+
+##  :bookmark: List Of Algorithms
+
+`B` - Beginner, `A` - Advanced
+
+
+- **Sorting**
+  - [ ] [Selection Sort](./Algorithms/SelectionSort/ReadMe.md)
 
 
 
