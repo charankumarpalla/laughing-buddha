@@ -2,17 +2,17 @@
 
 Table Of Contents
 - [Data Structures](#data-structures)
-  - [Characteristics of a Data Structure](#characteristics-of-a-data-structure)
-  - [Need for Data Structure](#need-for-data-structure)
-  - [Execution Time Cases](#execution-time-cases)
-  - [Basic Terminology](#basic-terminology)
+  - [a. Characteristics of a Data Structure](#a-characteristics-of-a-data-structure)
+  - [b. Need for Data Structure](#b-need-for-data-structure)
+  - [c. Execution Time Cases](#c-execution-time-cases)
+  - [d. Basic Terminology](#d-basic-terminology)
 - [Algorithms](#algorithms)
-  - [Characteristics of an Algorithm](#characteristics-of-an-algorithm)
-  - [How to Write an Algorithm?](#how-to-write-an-algorithm)
-  - [Algorithm Analysis](#algorithm-analysis)
-  - [Algorithm Complexity](#algorithm-complexity)
-    - [Space Complexity](#space-complexity)
-    - [Time Complexity](#time-complexity)
+  - [a. Characteristics of an Algorithm](#a-characteristics-of-an-algorithm)
+  - [b. How to Write an Algorithm?](#b-how-to-write-an-algorithm)
+  - [c. Algorithm Analysis](#c-algorithm-analysis)
+  - [d. Algorithm Complexity](#d-algorithm-complexity)
+    - [i. Space Complexity](#i-space-complexity)
+    - [ii. Time Complexity](#ii-time-complexity)
 - [Awesome Links](#awesome-links)
 - [References](#references)
 
@@ -25,7 +25,7 @@ Table Of Contents
 
 -   **Implementation** − Implementation provides the internal representation of a data structure. Implementation also provides the definition of the algorithms used in the operations of the data structure.
 
-## Characteristics of a Data Structure
+##  a. Characteristics of a Data Structure
 - **Correctness** − Data structure implementation should implement its interface correctly.
 
 - **Time Complexity** − Running time or the execution time of operations of data structure must be as small as possible.
@@ -33,7 +33,7 @@ Table Of Contents
 - **Space Complexity** − Memory usage of a data structure operation should be as little as possible.
 
 
-##  Need for Data Structure
+##  b.  Need for Data Structure
 As applications are getting complex and data rich, there are three common problems that applications face now-a-days.
 
 * **Data Search** − Consider an inventory of 1 million items of a store. If the application is to search an item, it has to search an item in 1 million items every time slowing down the search. As data grows, search will become slower.
@@ -44,7 +44,7 @@ As applications are getting complex and data rich, there are three common proble
 
 To solve the above-mentioned problems, data structures come to rescue. Data can be organized in a data structure in such a way that all items may not be required to be searched, and the required data can be searched almost instantly.
 
-##   Execution Time Cases
+##   c. Execution Time Cases
 There are three cases which are usually used to compare various data structure's execution time in a relative manner.
 
 * **Worst Case** − This is the scenario where a particular data structure operation takes maximum time it can take. If an operation's worst case time is ƒ(n) then this operation will not take more than ƒ(n) time where ƒ(n) represents function of n.
@@ -53,7 +53,7 @@ There are three cases which are usually used to compare various data structure's
 
 * **Best Case** − This is the scenario depicting the least possible execution time of an operation of a data structure. If an operation takes ƒ(n) time in execution, then the actual operation may take time as the random number which would be maximum as ƒ(n).
 
-##   Basic Terminology
+##   d. Basic Terminology
 * **Data** − Data are values or set of values.
 
 * **Data Item** − Data item refers to single unit of values.
@@ -91,7 +91,7 @@ From the data structure point of view, following are some important categories o
 * **Delete** − Algorithm to delete an existing item from a data structure.
 
 
-##  Characteristics of an Algorithm
+##  a.  Characteristics of an Algorithm
 `Not all procedures can be called an algorithm`. An algorithm should have the following characteristics −
 
 * **Unambiguous** − Algorithm should be clear and unambiguous. Each of its steps (or phases), and their inputs/outputs should be clear and must lead to only one meaning.
@@ -107,7 +107,7 @@ From the data structure point of view, following are some important categories o
 * **Independent** − An algorithm should have step-by-step directions, which should be independent of any programming code.
 
 
-##  How to Write an Algorithm?
+##  b.  How to Write an Algorithm?
 There are no well-defined standards for writing algorithms. Rather, it is problem and resource dependent. Algorithms are never written to support a particular programming code.
 
 As we know that all programming languages share basic code constructs like loops (do, for, while), flow-control (if-else), etc. These common constructs can be used to write an algorithm.
@@ -154,7 +154,7 @@ We design an algorithm to get a solution of a given problem. A problem can be so
 Hence, many solution algorithms can be derived for a given problem. The next step is to **analyze** those proposed solution algorithms and implement the best suitable solution.
 
 
-##  Algorithm Analysis
+##  c.  Algorithm Analysis
 Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following −
 
 * **A Priori Analysis** − This is a theoretical analysis of an algorithm. Efficiency of an algorithm is measured by assuming that all other factors, for example, processor speed, are constant and have no effect on the implementation.
@@ -165,7 +165,7 @@ We shall learn about a `priori algorithm` analysis. Algorithm analysis deals wit
 
 
 
-##  Algorithm Complexity
+##  d.  Algorithm Complexity
 Suppose **X** is an algorithm and **n** is the size of input data, the time and space used by the algorithm X are the two main factors, which decide the efficiency of X.
 
 * **Time Factor** − Time is measured by counting the number of key operations such as comparisons in the sorting algorithm.
@@ -174,7 +174,7 @@ Suppose **X** is an algorithm and **n** is the size of input data, the time and 
 
 The complexity of an algorithm **f(n)** gives the running time and/or the storage space required by the algorithm in terms of **n** as the size of input data.
 
-### Space Complexity
+### i.  Space Complexity
 Space complexity of an algorithm represents the amount of memory space required by the algorithm in its life cycle. The space required by an algorithm is equal to the sum of the following two components −
 
 * A fixed part that is a space required to store certain data and variables, that are independent of the size of the problem. For example, simple variables and constants used, program size, etc.
@@ -193,7 +193,7 @@ Step 3 -  Stop
 
 Here we have three variables A, B, and C and one constant. Hence S(P) = 1 + 3. Now, space depends on data types of given variables and constant types and it will be multiplied accordingly.
 
-### Time Complexity
+### ii. Time Complexity
 Time complexity of an algorithm represents the amount of time required by the algorithm to run to completion. Time requirements can be defined as a numerical function **T(n)**, where T(n) can be measured as the number of steps, provided each step consumes constant time.
 
 For example, addition of two n-bit integers takes n steps. Consequently, the total computational time is T(n) = c ∗ n, where c is the time taken for the addition of two bits. Here, we observe that T(n) grows linearly as the input size increases.
