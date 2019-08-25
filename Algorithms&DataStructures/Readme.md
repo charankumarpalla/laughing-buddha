@@ -219,9 +219,16 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 
 
 - **Sorting**
-  - [ ] [Selection Sort](./Algorithms/SelectionSort/ReadMe.md)
+  - [ ] [Selection Sort](./Algorithms/SelectionSort/SelectionSort.md)
 
 
+
+
+<p align="center">
+  <img width="600" height="300" src="./ResourcesFiles/Images/AllAlgorithms.gif" alt="Algorithm_solutions">
+</p>
+
+---
 
 #   Awesome Links
 
