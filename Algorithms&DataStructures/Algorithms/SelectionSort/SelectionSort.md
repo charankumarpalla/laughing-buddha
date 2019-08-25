@@ -101,12 +101,12 @@ i.e To find the minimum element from the array of  `N` elements, `N-1` compariso
 Therefore   `(N-1)` + `(N-2)` + . . .  + `1`  = `(N.(N-1)/2)` comparisons and `N` swaps result in the overall complexity of **O(N<sup>2</sup>)**.
 
 
-> Average Case
+> **Average Case**
 <p align="center">
   <img width="400" height="180" src="../../ResourcesFiles/Images/SelectionSort_Avg_case.gif" alt="Selection Sort Average Case">
 </p>
 
-> Worst Case
+> **Worst Case**
 
 <p align="center">
   <img width="400" height="180" src="../../ResourcesFiles/Images/SelectionSort_worst_case.gif" alt="Selection Sort Worst Case">

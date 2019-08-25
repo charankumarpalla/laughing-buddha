@@ -1,8 +1,7 @@
 
 
 <!-- #   Table Of Contents-  -->
-#   :loudspeaker: Hakuna Matata :high_brightness: :tada:
-- [:loudspeaker: Hakuna Matata :high_brightness: :tada:](#loudspeaker-hakuna-matata-highbrightness-tada)
+#   :loudspeaker: Hakuna Matata :high_brightness: :tada: <!-- omit in toc -->
 - [Data Structures](#data-structures)
   - [a. Characteristics of a Data Structure](#a-characteristics-of-a-data-structure)
   - [b. Need for Data Structure](#b-need-for-data-structure)
@@ -18,12 +17,11 @@
     - [ii. Time Complexity](#ii-time-complexity)
   - [:bookmark: List Of Algorithms](#bookmark-list-of-algorithms)
 - [Awesome Links](#awesome-links)
-- [Visualize](#visualize)
-- [Interview](#interview)
-- [References](#references)
+  - [Visualize](#visualize)
+  - [Interview](#interview)
+  - [References](#references)
 
 <!-- # Algorithms and Data Structures -->
-
 #  Data Structures
 **Data Structure** is a systematic way to organize data in order to use it efficiently. Following terms are the foundation terms of a data structure.
 
@@ -219,13 +217,11 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 
 
 - **Sorting**
-  - [ ] [Selection Sort](./Algorithms/SelectionSort/SelectionSort.md)
-
-
+  - [X] `B` [Selection Sort](./Algorithms/SelectionSort/SelectionSort.md)
 
 
 <p align="center">
-  <img width="600" height="300" src="./ResourcesFiles/Images/AllAlgorithms.gif" alt="Algorithm_solutions">
+  <img width="700" height="350" src="./ResourcesFiles/Images/AllAlgorithms.gif" alt="AllAlgorithms">
 </p>
 
 ---
@@ -235,17 +231,17 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 - https://github.com/trekhleb/javascript-algorithms
 - https://github.com/TheAlgorithms/Java
 
-# Visualize
+## Visualize
 - https://www.advanced-ict.info/interactive/algorithms.html
 - http://sorting.at/
 - https://visualgo.net/en/sorting
 - https://www.toptal.com/developers/sorting-algorithms/random-initial-order
 
 
-# Interview 
+## Interview 
 
 - https://github.com/rishabh115/Interview-Questions
 
 
-#   References
+##   References
 - https://www.tutorialspoint.com/data_structures_algorithms
