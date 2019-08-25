@@ -18,6 +18,8 @@
     - [ii. Time Complexity](#ii-time-complexity)
   - [:bookmark: List Of Algorithms](#bookmark-list-of-algorithms)
 - [Awesome Links](#awesome-links)
+- [Visualize](#visualize)
+- [Interview](#interview)
 - [References](#references)
 
 <!-- # Algorithms and Data Structures -->
@@ -226,8 +228,14 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 - https://github.com/trekhleb/javascript-algorithms
 - https://github.com/TheAlgorithms/Java
 
+# Visualize
+- https://www.advanced-ict.info/interactive/algorithms.html
+- http://sorting.at/
+- https://visualgo.net/en/sorting
+- https://www.toptal.com/developers/sorting-algorithms/random-initial-order
 
-Interview 
+
+# Interview 
 
 - https://github.com/rishabh115/Interview-Questions
 
