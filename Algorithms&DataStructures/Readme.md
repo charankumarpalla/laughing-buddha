@@ -217,8 +217,19 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 
 
 - **Sorting**
-  - [X] `B` [Selection Sort](./Algorithms/SelectionSort/SelectionSort.md)
 
+
+  - [X] `B` [Selection Sort](./Algorithms/SelectionSort/SelectionSort.md)
+    - [ ] [Mobile Numeric Keypad Problem](https://www.geeksforgeeks.org/mobile-numeric-keypad-problem/) or [Old keypad in a foreign land](https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/practice-problems/algorithm/old-keypad-in-a-foreign-land-24/)
+    - [ ] [Selection Sort](https://practice.geeksforgeeks.org/problems/selection-sort/1)
+
+
+
+Sorting  | Best case | Worst case| Average case| Stable | Method
+:---------:|:----------:|:---------:|:---------:|:---------:|:---------:
+ Selection | **O(N<sup>2</sup>)** | **O(N<sup>2</sup>)** | **O(N<sup>2</sup>)** | No | Selection |
+  |  |  |  |  | |
+ |  |  |  |  | |
 
 <p align="center">
   <img width="700" height="350" src="./ResourcesFiles/Images/AllAlgorithms.gif" alt="AllAlgorithms">
