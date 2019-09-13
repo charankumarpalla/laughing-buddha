@@ -96,6 +96,7 @@
 - [ ] [Projects and Series & Curriculum](https://busy.org/@tensor/building-custom-scroll-physics-and-simulations-with-dart-s-flutter-framework)
 
 - [ ]	[flutter_lessons ](https://github.com/lohanidamodar/flutter_lessons)
+- [ ] [My Quiz App](./AllReadMe/MyQuizApp.md)
 ---
 
 
@@ -163,4 +164,5 @@
 - https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
 - https://medium.com/@dev.n
 - https://pub.dev/
+- [All About Collections - The Spread operator (…) ,`if` in a Collection, `for` in a Collection](https://medium.com/flutter-community/whats-new-in-dart-2-3-1a7050e2408d)
 	
