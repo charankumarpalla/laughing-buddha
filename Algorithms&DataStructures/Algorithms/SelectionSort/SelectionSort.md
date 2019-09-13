@@ -2,6 +2,7 @@
 - [Strategy](#strategy)
 - [Complexity Analysis](#complexity-analysis)
 - [Verdict](#verdict)
+- [:bulb: Challenges](#bulb-challenges)
 - [Links](#links)
 
 
@@ -125,6 +126,12 @@ Selection | Comparison | Swap
  Average Case | **O(N<sup>2</sup>)** | O(N)
  Worst Case | **O(N<sup>2</sup>)** | O(N)
 
+
+
+#  :bulb: Challenges
+- [ ] [Mobile Numeric Keypad Problem](https://www.geeksforgeeks.org/mobile-numeric-keypad-problem/) or [Old keypad in a foreign land](https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/practice-problems/algorithm/old-keypad-in-a-foreign-land-24/)
+
+- [ ] https://practice.geeksforgeeks.org/problems/selection-sort/1
 
 # Links
 - Visualizer - https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/visualize/
