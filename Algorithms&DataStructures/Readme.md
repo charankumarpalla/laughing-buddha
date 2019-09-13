@@ -16,7 +16,7 @@
   - [d. Algorithm Complexity](#d-algorithm-complexity)
     - [i. Space Complexity](#i-space-complexity)
     - [ii. Time Complexity](#ii-time-complexity)
-  - [:bookmark: List Of Algorithms](#bookmark-list-of-algorithms)
+  - [:bookmark: List Of Algorithms **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**](#bookmark-list-of-algorithms-sup1httpswwwgeeksforgeeksorgfundamentals-of-algorithmssup-sup2httpswwwincludehelpcomdata-structure-tutorialalgorithm-and-its-typesaspxsup)
 - [Awesome Links](#awesome-links)
   - [Visualize](#visualize)
   - [Interview](#interview)
@@ -422,7 +422,7 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 
 
 
-##  :bookmark: List Of Algorithms
+##  :bookmark: List Of Algorithms **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
 
 `B` - Beginner, `A` - Advanced
 
@@ -452,7 +452,7 @@ Sorting  | Best case | Worst case| Average case| Stable | Method
 
 - [ ]  https://github.com/trekhleb/javascript-algorithms
 - [ ]  https://github.com/TheAlgorithms/Java
-- [ ]  [phishman3579/java-algorithms-implementation](https://github.com/phishman3579/java-algorithms-implementation#data-structures)
+- [ ]  :bulb: [phishman3579 - All-algorithms-implementation-in-Java](https://github.com/phishman3579/java-algorithms-implementation#data-structures)
 
 ## Visualize
 - [ ]  https://www.advanced-ict.info/interactive/algorithms.html
