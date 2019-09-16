@@ -1,64 +1,67 @@
 import 'package:flutter/material.dart';
-import './question.dart';
-import './answerButton.dart';
+import 'package:flutter_complete_guide/AnswerButtonWiget.dart';
+import './questionWidget.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyQuizApp());
 
-class MyApp extends StatefulWidget {
+class MyQuizApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _MyAppState();
+    return MyQuizAppState();
   }
 }
 
-class _MyAppState extends State<MyApp> {
-  var _questionSet = [
+class MyQuizAppState extends State<MyQuizApp> {
+  final _questionSet = [
     {
-      'Questions': 'Capital of India ?',
-      'Answers': ['Bombay', 'New Delhi', 'Chennai', 'Amaravathi']
+      'question': 'Capital of India ?',
+      'solution': ['Mumbai', 'New Delhi', 'Hyderabad', 'Chennai'],
     },
     {
-      'Questions': 'PM of India',
-      'Answers': ['Jagan', 'Modi', 'KCR', 'Amit Shah']
+      'question': 'PM Of India ?',
+      'solution': ['jagan', 'Modi', 'AmitShah'],
     },
     {
-      'Questions': 'UNO HeadQuarters',
-      'Answers': ['Geneva', 'NewYork', 'LosVegas', 'Paris']
+      'question': 'UNO HeadQuarters',
+      'solution': ['Geneva', 'New Delhi', 'LosVegas', 'NewYork'],
+    },
+    {
+      'question': 'Article 370A valid for Which State in India?',
+      'solution': ['Kashmir', 'AndhraPradesh', 'TamilNadu', 'ArunchalPradesh'],
     },
   ];
 
-  var _questionIndex = 0;
-  void answerButtonAction() {
+  int questionIndex = 0;
+
+  void selectedAnswer() {
     setState(() {
-      _questionIndex += 1;
+      questionIndex += 1;
     });
 
-    print("Clicked $_questionIndex");
-
-    if (_questionIndex >= _questionSet.length) {
-      _questionIndex = 0;
+    if (questionIndex >= _questionSet.length) {
+      questionIndex = 0;
     }
+
+    print("Answer Selected : $questionIndex");
   }
 
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("MyQuizApp"),
-        ),
-        body: Column(
-          children: <Widget>[
-            QuestionsWidget(_questionSet[_questionIndex]['Questions']),
-            ...(_questionSet[_questionIndex]['Answers'] as List<String>)
-                .map((answer) {
-              return AnswerButtonWidget(answerButtonAction, answer);
-            }).toList(),
-
-            // AnswerButtonWidget(answerButtonAction),
-          ],
-        ),
-      ),
+          appBar: AppBar(
+            title: Text("MyQuizApp"),
+          ),
+          body: Column(
+            children: <Widget>[
+              QuestionWidget(_questionSet[questionIndex]['question']),
+              ...(_questionSet[questionIndex]['solution'] as List<String>)
+                  .map((answer) {
+                return AnswerButtonWiget(answer, selectedAnswer);
+              }).toList(),
+              // AnswerButtonWiget("answer", selectedAnswer),
+            ],
+          )),
     );
   }
 }
