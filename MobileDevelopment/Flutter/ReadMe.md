@@ -96,13 +96,18 @@
 - [ ] [Projects and Series & Curriculum](https://busy.org/@tensor/building-custom-scroll-physics-and-simulations-with-dart-s-flutter-framework)
 
 - [ ]	[flutter_lessons ](https://github.com/lohanidamodar/flutter_lessons)
+- [ ] [My Quiz App](./AllReadMe/MyQuizApp.md)
 ---
 
 
 # Awesome Links
 
+- :green_heart: https://flutterawesome.com/
+   <p align="center"> 
+    <img width="700" height="200"  src="./Images/Resource_Awesome.gif" alt="Flutter Awesome Demo">
+ </p>
+  
 - Essential Flutter Skills : https://hackernoon.com/essential-flutter-skills-2466d91d3926
-- https://flutterawesome.com/
 - https://material.io/design/components/app-bars-top.html#anatomy
 - https://kodestat.gitbook.io/flutter/
 - http://tphangout.com/category/flutter/
@@ -163,4 +168,5 @@
 - https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
 - https://medium.com/@dev.n
 - https://pub.dev/
+- [All About Collections - The Spread operator (…) ,`if` in a Collection, `for` in a Collection](https://medium.com/flutter-community/whats-new-in-dart-2-3-1a7050e2408d)
 	
