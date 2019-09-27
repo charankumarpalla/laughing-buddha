@@ -2,85 +2,123 @@
 - [x] [Stateless Vs StateFul Widgets](./AllReadMe/StatelessvsStateFulWidgets.md)
 
 # Flutter Catalog
-- [ ] **Widgets**
-	- [ ] Icon
-	- [ ] text
-	- [ ] TextField
-	- [ ] TextFormFeild
-	- [ ] Image
-	- [ ] Card,Inkwell
-	- [ ] Buttons
-	- [ ] DropdownButton,MenuButton
-	- [ ] other stateful widgets
 
-- [ ] **Layouts**
-	- [ ] Container
-	- [ ] Row,Column
-	- [ ] Wrap
-	- [ ] Expanded
-	- [ ] Stack
 
-- [ ] **Lists**
-	- [ ] [ListTile](./AllReadMe/ListTile.md)
-	- [ ] [ListView](./AllReadMe/ListView.md)
-	- [ ] GridList
-	- [ ] ExpansionTile
-	- [ ] Swipe to dismiss
-	- [ ] Reorderable list
-	- [ ] Data Table
+<!-- <b><h2><p style='color:cyan'>This is some red text.</p></h2><b>
+<b><h2><font color="cyan">This is some text!</font></h2></b> -->
+<!-- These are <b style='color:green'>red words</b>. -->
 
-- [ ] **AppBar**
-	- [ ] Basic AppBar
-	- [ ] Bottom AppBar
-	- [ ] Sliver AppBar
-	- [ ] Search
 
-- [ ] **Navigation**
-	- [x] [Tabs](./AllReadMe/TabController.md#Tab)
-	- [ ] Dialogs
-	- [ ] Routes
-	- [ ] Navigation Drawer
-	- [ ] Bottom tab Bar
-	- [ ] Bottom navigation Bar
-	- [ ] Page Selector
+<details> <summary> <font color="cyan">Widgets</font> </summary>
 
-- [ ] **Animation**
-	- [ ] Opacity
-	- [ ] Hero
+- [ ] Icon
+- [ ] text
+- [ ] TextField
+- [ ] TextFormFeild
+- [ ] Image
+- [ ] Card,Inkwell
+- [ ] Buttons
+- [ ] DropdownButton,MenuButton
+- [ ] other stateful widgets
+</details>
 
-- [ ] **Persistence**
-	- [ ] Shared preference
-	- [ ] local file read/write
+<details> <summary> <font color="cyan">Layouts</font> </summary>
 
-- [ ] **State Management**
-	- [ ] StreamBuilder(timer app)
-	- [ ] StreamController
-	- [ ] InheritWidget
-	- [ ] ScopeModel
-	- [ ] BLoc Pattern
-	- [ ] Easier BLoc pattern
+- [ ] Container
+- [ ] Row,Column
+- [ ] Wrap
+- [ ] Expanded
+- [ ] Stack
+</details>
 
-- [ ] **Plugins**
-	- [ ] Image picker
-	- [ ] Web View
-	- [ ] Markdown rendering
-	- [ ] Local auth
+<details> <summary> <font color="cyan">Lists</font> </summary>
 
-- [ ] **Firebase**
-	- [ ] Firebase login
-	- [ ] Firebase voting app
-	- [ ] Chat room
-	- [ ] Firebase ML Kit
+- [ ] [ListTile](./AllReadMe/ListTile.md)
+- [ ] [ListView](./AllReadMe/ListView.md)
+- [ ] GridList
+- [ ] ExpansionTile
+- [ ] Swipe to dismiss
+- [ ] Reorderable list
+- [ ] Data Table
+</details>
 
-- [ ] **Misc**
-	- [ ] [Gesture](./AllReadMe/Gesture.md)
-	- [ ] [BrushUp](./AllReadMe/BrushUp.md)
-	- [ ] AlertDialogue
-	- [ ] Toast
-	- [ ] Future
-	- [ ] async
-	- [ ] [Http](./AllReadMe/Http.md)
-	- [ ] [DataBase](./AllReadMe/DataBase.md)
+<details> <summary> <font color="cyan">AppBar</font> </summary>
+
+- [ ] Basic AppBar
+- [ ] Bottom AppBar
+- [ ] Sliver AppBar
+- [ ] Search
+</details>
+
+<details> <summary> <font color="cyan">Navigation</font> </summary>
+
+- [x] [Tabs](./AllReadMe/TabController.md#Tab)
+- [ ] Dialogs
+- [ ] Routes
+- [ ] Navigation Drawer
+- [ ] Bottom tab Bar
+- [ ] Bottom navigation Bar
+- [ ] Page Selector
+
+</details>
+<details> <summary> <font color="cyan">Animation</font> </summary>
+
+- [ ] Opacity
+- [ ] Hero
+</details>
+<details> <summary> <font color="cyan">Persistence</font> </summary>
+
+- [ ] Shared preference
+- [ ] local file read/write
+</details>
+
+
+
+<details> <summary> <font color="cyan">State Management</font> </summary>
+
+- [ ] StreamBuilder(timer app)
+- [ ] StreamController
+- [ ] InheritWidget
+- [ ] ScopeModel
+- [ ] BLoc Pattern
+- [ ] Easier BLoc pattern
+</details>
+
+
+<details> <summary> <font color="cyan">Plugins</font> </summary>
+
+- [ ] Image picker
+- [ ] Web View
+- [ ] Markdown rendering
+- [ ] Local auth
+</details>
+
+
+<details> <summary> <font color="cyan">Firebase</font> </summary>
+
+- [ ] Firebase login
+- [ ] Firebase voting app
+- [ ] Chat room
+- [ ] Firebase ML Kit
+
+</details>
+
+<details> <summary> <font color="cyan">Misc</font> </summary>
+
+- [ ] [Gesture](./AllReadMe/Gesture.md)
+- [ ] [BrushUp](./AllReadMe/BrushUp.md)
+- [ ] AlertDialogue
+- [ ] Toast
+- [ ] Future
+- [ ] async
+- [ ] [Http](./AllReadMe/Http.md)
+- [ ] [DataBase](./AllReadMe/DataBase.md)
+</details>
+
+<!-- <details> <summary> <font color="cyan"></font> </summary>
+
+</details> -->
+
 
 
 # Challengers
