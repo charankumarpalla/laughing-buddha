@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_complete_guide/AnswerButtonWiget.dart';
 import './questionWidget.dart';
+import './result.dart';
+import './Quiz.dart';
 
 void main() => runApp(MyQuizApp());
 
@@ -12,34 +14,57 @@ class MyQuizApp extends StatefulWidget {
 }
 
 class MyQuizAppState extends State<MyQuizApp> {
-  final _questionSet = [
+  final _questionSet = const [
     {
       'question': 'Capital of India ?',
-      'solution': ['Mumbai', 'New Delhi', 'Hyderabad', 'Chennai'],
+      'solution': [
+        {'text': 'Mumbai', 'score': -2},
+        {'text': 'Chennai', 'score': -2},
+        {'text': 'New Delhi', 'score': 2},
+        {'text': 'Hyderabad', 'score': -2},
+      ],
     },
     {
       'question': 'PM Of India ?',
-      'solution': ['jagan', 'Modi', 'AmitShah'],
+      'solution': [
+        {'text': 'Jagan', 'score': -2},
+        {'text': 'Modi', 'score': 2},
+        {'text': 'Amit Shah', 'score': -2},
+      ],
     },
     {
       'question': 'UNO HeadQuarters',
-      'solution': ['Geneva', 'New Delhi', 'LosVegas', 'NewYork'],
+      'solution': [
+        {'text': 'Geneva', 'score': 2},
+        {'text': 'NewYork', 'score': -2},
+        {'text': 'LasVegas', 'score': -2},
+        {'text': 'Mumbai', 'score': -2},
+      ],
     },
     {
       'question': 'Article 370A valid for Which State in India?',
-      'solution': ['Kashmir', 'AndhraPradesh', 'TamilNadu', 'ArunchalPradesh'],
+      'solution': [
+        {'text': 'J&K', 'score': 2},
+        {'text': 'Andhra Pradesh', 'score': -2},
+        {'text': 'Maharastra', 'score': -2},
+        {'text': 'Gujarat', 'score': -2},
+        {'text': 'Arunachal Pradesh', 'score': -2},
+      ],
     },
   ];
 
   int questionIndex = 0;
+  var totalScore = 0;
 
-  void selectedAnswer() {
+  void selectedAnswer(int score) {
+    totalScore += score;
     setState(() {
       questionIndex += 1;
     });
 
     if (questionIndex >= _questionSet.length) {
-      questionIndex = 0;
+      print("We have NO More Questionss....");
+      // questionIndex = 0;
     }
 
     print("Answer Selected : $questionIndex");
@@ -49,19 +74,16 @@ class MyQuizAppState extends State<MyQuizApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(
-            title: Text("MyQuizApp"),
-          ),
-          body: Column(
-            children: <Widget>[
-              QuestionWidget(_questionSet[questionIndex]['question']),
-              ...(_questionSet[questionIndex]['solution'] as List<String>)
-                  .map((answer) {
-                return AnswerButtonWiget(answer, selectedAnswer);
-              }).toList(),
-              // AnswerButtonWiget("answer", selectedAnswer),
-            ],
-          )),
+        appBar: AppBar(
+          title: Text("MyQuizApp"),
+        ),
+        body: (questionIndex < _questionSet.length)
+            ? Quiz(
+                questionSet: _questionSet,
+                questionIndex: questionIndex,
+                selectedAnswer: selectedAnswer)
+            : Result(totalScore),
+      ),
     );
   }
 }
