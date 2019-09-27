@@ -171,6 +171,7 @@ The code is easier to read as well because of consistent class and method names.
 
 #  Explore
 -  :on: [Java Collections - by howtodoinjava](https://howtodoinjava.com/java-collections/)
+-  :bulb: https://www.baeldung.com/java-collections
 
 #  References
 
