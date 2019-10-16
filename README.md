@@ -4,7 +4,7 @@ Table of Contents
 
    * [Algorithms&amp;DataStructures](#algorithmsdatastructures)
    * [Java](#java)
-   * [MachineLearning](#machinelearning)
+   * [DataScience](#datascience)
    * [Misc](#misc)
    * [MobileDevelopment](#mobiledevelopment)
    * [NodeJS](#nodejs)
@@ -19,15 +19,22 @@ Table of Contents
 # Java 
 
 🏁 [Your Java - Journey Starts here ---->>>>](Java/README.md)
-# MachineLearning
 
-🏁 [Your MachineLearning - Journey Starts here ---->>>>](MachineLearning/README.md)
+
+# DataScience
+
+🏁 [Your DataScience - Journey Starts here ---->>>>](DataScience/README.md)
+
 
 # Misc
 
+
 # MobileDevelopment
 
+
 🏁 [Your MobileDevelopment:Flutter - Journey Starts here ---->>>>](MobileDevelopment/Flutter/ReadMe.md)
+
+
 # NodeJS
 
 🏁 [Your NodeJS - Journey Starts here ---->>>>](NodeJS/README.md)
