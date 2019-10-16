@@ -1,4 +1,4 @@
-Topic, SubTopic,Comments,Resource/Book/Tutorials, ,,,,,,, 
+Topic, SubTopic,Comments,Resource/Book/Tutorials,Status,,,,,,, 
 Flutter,Gestures,,https://github.com/AdarshMaurya/flutter-getting-started/wiki/Introducing-Gestures-and-Animations,,,,,,,,
 Junit,,,Book : pragmatic-unit-testing,,,,,,,,
 Java,"FunctionalInterface,  lambda expressions",,https://stackoverflow.com/questions/58166625/whats-is-the-functionality-of-in-collection-add-7,,,,,,,,
@@ -19,3 +19,4 @@ Flutter,Gestures,,https://medium.com/flutter-community/flutter-deep-dive-gesture
 Java,Patterns,,https://www.journaldev.com/1827/java-design-patterns-example-tutorial,,,,,,,,
 Java,Collections,,https://www.baeldung.com/java-collections,,,,,,,,
 Flutter,ListTile,Intro to ListTile,https://medium.com/@suragch/a-complete-guide-to-flutters-listtile-597a20a3d449,,,,,,,,
+DataScience,Intro,,https://data-flair.training/blogs/what-is-data-science/,Not Started,__Ê, ,,,,,
