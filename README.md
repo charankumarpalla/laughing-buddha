@@ -21,9 +21,9 @@ Table of Contents
 🏁 [Your Java - Journey Starts here ---->>>>](Java/README.md)
 
 
-# DataScience
+# Data_aka_DL,ML,AI,DS
 
-🏁 [Your DataScience - Journey Starts here ---->>>>](DataScience/README.md)
+🏁 [Your DataScience - Journey Starts here ---->>>>](Data_aka_DL,ML,AI,DS/README.md)
 
 
 # Misc
