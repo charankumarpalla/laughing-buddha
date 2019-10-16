@@ -45,7 +45,7 @@ What is Data Science?
 <br>
 
 <p align="center">
-  <img width="600" height="400" src="ResourcesFiles/AllAboutData.png" alt="AllAboutData">
+  <img width="600" height="400" src="../PlayGround/ResourcesFiles/Data_aka_DL,ML,AI,DS/AI-Ml-Dl-Ds.jpg" alt="AI-Ml-Dl-Ds">
 </p>
 
 <br>
@@ -55,20 +55,21 @@ What is Data Science?
 <br>
 
 <p align="center">
-  <img width="600" height="400" src="ResourcesFiles/DataScience-ML-AI.png" alt="DataScience-ML-AI">
+  <img width="600" height="400" src="../../PlayGround/ResourcesFiles/Data_aka_DL,ML,AI,DS/DataScience-ML-AI.png" alt="DataScience-ML-AI">
 </p>
 
 <br>
 
 
 
-<br>
-
-<p align="center">
-  <img width="600" height="400" src="ResourcesFiles/MachineLearningTypes.png" alt="">
-</p>
 
 
+
+How are all these fields related to each other?
+
+The interdisciplinary field of data science uses key skills of a wide range of fields including machine learning, statistics, visualization etc. It enables us to identify meaning and appropriate information from huge volumes of data to make informed decisions in technology, science, business etc.
+
+For a simpler view on the relation between these technologies, artificial intelligence is applied based on machine learning. And machine learning is a part of data science that draws features from algorithms and statistics to work on the data extracted from and produced by multiple resources. Thus, you can say data science merges together a bunch of algorithms obtained from machine learning to develop a solution, and during the process, lots of ideas from traditional domain expertise, statistics and mathematics are borrowed.
 
 
 # Reference
