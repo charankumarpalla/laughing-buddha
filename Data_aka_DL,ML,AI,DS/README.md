@@ -2,11 +2,13 @@
 
 #  🏗️  .....IN PROGRESS 🚧 
 
-
 Table of Contents
 =================
 
+
+   * [What is Artificial Intelligence?](#what-is-artificial-intelligence)
    * [What is Machine Learning?](#what-is-machine-learning)
+   * [What is Deep Learning?](#what-is-deep-learning)
    * [What is Data Science?](#what-is-data-science)
    * [How are all these fields related to each other?](#how-are-all-these-fields-related-to-each-other)
    * [Reference](#reference)
@@ -46,6 +48,8 @@ As we step into a world fascinated by and obsessed with the term “Artificial I
 
 Artificial Intelligence, fondly abbreviated as AI, is concerned with imparting human intelligence to machines. It focuses on the development of intelligent machines that can think and act like humans; essentially, AI is intelligence such as machines display. An intelligent agent is a device that can perceive its environment and act to optimize its chances of success. Such intelligent machines mimic human cognitive functions like learning and problem-solving.
 
+🏁 [YourArtificial Intelligence - Journey Starts here ---->>>>](3.AI/README.md)
+
 # What is Machine Learning?
 
 >The scientific study and analysis through statistical modeling and computing algorithms that allow systems to make autonomous decisions without explicit intervention is called Machine Learning.
@@ -55,14 +59,31 @@ There are two main operations in machine learning – classification and regress
 **For example**, we provide standardized instructions to the computers for it to execute operations. These instructions can be in a high-level programming language or a low-level machine language. Based on the set of instructions, a computer provides you with the right output. Therefore, there is a constant exchange of inputs and outputs. What if you could train your machine to provide you with the output based on all inputs you provide to it? That’s way, you will not have to undergo a tedious process of feeding it with inputs again and again. This methodology of training your machine on historical data to provide you with the output is called Machine Learning. Data is the life and soul of machine learning algorithms
 
 
+**Machine Learning often deals with the following issues:**
+
+* Collecting data
+* Filtering data
+* Analyzing data
+* Training algorithms
+* Testing algorithms
+* Using algorithms for future predictions
+
 🏁 [Your Machine Learning - Journey Starts here ---->>>>](2.MachineLearning/README.md)
 
 
 
-# Deep Learning
+# What is Deep Learning?
+Deep Learning is an approach to Machine Learning; one that focuses on learning data representations rather than on task-specific algorithms. It makes use of Deep Neural Networks, which are inspired by the structure and function of the human brain.
+
+
 Likewise, Deep Learning is an approach to ML itself and claims to benefit it. Deep Learning makes use of `Deep Neural Networks`, inspired by the structure and function of the human brain. These networks are made of multiple layers that data must pass through before producing the output. Deep Learning improves AI by enabling many of its practical applications- DL makes it possible.
 
-To put it into perspective, AI was birthed first. Then came in ML, which was an approach to AI. Finally, DL stormed in and made possible all that was still only to be dreamed of at the moment.
+
+
+Such networks are made of a huge number of layers (hence, their name). Data transforms through multiple layers before producing the output.
+Deep Learning is used for purposes like Natural Language Processing (NLP), drug discovery and toxicology, bioinformatics, and many more.
+
+> **To put it into perspective, AI was birthed first. Then came in ML, which was an approach to AI. Finally, DL stormed in and made possible all that was still only to be dreamed of at the moment**.
 
 
 
@@ -136,6 +157,7 @@ For a simpler view on the relation between these technologies, artificial intell
 
 - Start here : 
   - :chart_with_upwards_trend: https://dzone.com/articles/data-science-vs-artificial-intelligence-vs-machine
+  - https://data-flair.training/blogs/artificial-intelligence-vs-machine-learning-vs-dl-vs-ds/
   - :chart_with_upwards_trend: Python :
     - https://data-flair.training/blogs/python-tutorials-home/
 -  Tutorial : 
