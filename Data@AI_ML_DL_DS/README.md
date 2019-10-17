@@ -28,7 +28,7 @@ Table of Contents
 <br>
 
 <p align="center">
-  <img src="../PlayGround/ResourcesFiles/Data_aka_DL,ML,AI,DS/Data_DataStorm.jpg" alt="Data_DataStorm">
+  <img src="../PlayGround/ResourcesFiles/Data@AI_ML_DL_DS/Data_DataStorm.jpg" alt="Data_DataStorm">
 </p>
 
 <br>
@@ -105,22 +105,6 @@ It is a vast umbrella term that incorporates all the underlying data operations,
 🏁 [Your Data Science - Journey Starts here ---->>>>](DataScience/README.md)
 
 
-
-
-<br>
-
-<p align="center">
-  <img src="../PlayGround/ResourcesFiles/Data_aka_DL,ML,AI,DS/AI-Ml-Dl-Ds.jpg" alt="AI-Ml-Dl-Ds">
-</p>
-
-<br>
-
-
-
-
-
-
-
 <!-- <br>
 
 
@@ -134,11 +118,15 @@ It is a vast umbrella term that incorporates all the underlying data operations,
 
 
 
-
-
-
-
 # How are all these fields related to each other?
+
+<br>
+
+<p align="center">
+  <img src="../PlayGround/ResourcesFiles/Data@AI_ML_DL_DS/AI-Ml-Dl-Ds.jpg" alt="AI-Ml-Dl-Ds">
+</p>
+
+<br>
 
 The interdisciplinary field of data science uses key skills of a wide range of fields including machine learning, statistics, visualization etc. It enables us to identify meaning and appropriate information from huge volumes of data to make informed decisions in technology, science, business etc.
 
