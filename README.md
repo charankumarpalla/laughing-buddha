@@ -4,10 +4,10 @@ Table of Contents
 
    * [Algorithms&amp;DataStructures](#algorithmsdatastructures)
    * [Java](#java)
-   * [MachineLearning](#machinelearning)
-   * [Misc](#misc)
+   * [Data@AI_ML_DL_DS](#dataai_ml_dl_ds)
    * [MobileDevelopment](#mobiledevelopment)
    * [NodeJS](#nodejs)
+   * [Misc](#misc)
    * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji>  Reference links](#link--reference-links)
 
 
@@ -19,20 +19,25 @@ Table of Contents
 # Java 
 
 🏁 [Your Java - Journey Starts here ---->>>>](Java/README.md)
-# MachineLearning
 
-🏁 [Your MachineLearning - Journey Starts here ---->>>>](MachineLearning/README.md)
 
-# Misc
+# Data@AI_ML_DL_DS
+
+🏁 [Your DataScience - Journey Starts here ---->>>>](Data@AI_ML_DL_DS/README.md)
+
 
 # MobileDevelopment
 
+
 🏁 [Your MobileDevelopment:Flutter - Journey Starts here ---->>>>](MobileDevelopment/Flutter/ReadMe.md)
+
+
 # NodeJS
 
 🏁 [Your NodeJS - Journey Starts here ---->>>>](NodeJS/README.md)
 
 
+# Misc
 
 # :link:  Reference links
 
