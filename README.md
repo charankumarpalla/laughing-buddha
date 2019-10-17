@@ -4,7 +4,7 @@ Table of Contents
 
    * [Algorithms&amp;DataStructures](#algorithmsdatastructures)
    * [Java](#java)
-   * [Data@AI_ML_DL_DS](#dataai_ml_dl_ds)
+   * [AI_ML_DL_DS](#ai_ml_dl_ds)
    * [MobileDevelopment](#mobiledevelopment)
    * [NodeJS](#nodejs)
    * [Misc](#misc)
@@ -21,9 +21,9 @@ Table of Contents
 🏁 [Your Java - Journey Starts here ---->>>>](Java/README.md)
 
 
-# Data@AI_ML_DL_DS
+# AI_ML_DL_DS
 
-🏁 [Your DataScience - Journey Starts here ---->>>>](Data@AI_ML_DL_DS/README.md)
+🏁 [Your DataScience - Journey Starts here ---->>>>](AI_ML_DL_DS/README.md)
 
 
 # MobileDevelopment
