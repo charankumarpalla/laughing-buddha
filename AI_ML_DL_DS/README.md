@@ -28,7 +28,7 @@ Table of Contents
 <br>
 
 <p align="center">
-  <img src="../PlayGround/ResourcesFiles/Data@AI_ML_DL_DS/Data_DataStorm.jpg" alt="Data_DataStorm">
+  <img src="../PlayGround/ResourcesFiles/AI_ML_DL_DS/Data_DataStorm.jpg" alt="Data_DataStorm">
 </p>
 
 <br>
@@ -123,7 +123,7 @@ It is a vast umbrella term that incorporates all the underlying data operations,
 <br>
 
 <p align="center">
-  <img src="../PlayGround/ResourcesFiles/Data@AI_ML_DL_DS/AI-Ml-Dl-Ds.jpg" alt="AI-Ml-Dl-Ds">
+  <img src="../PlayGround/ResourcesFiles/AI_ML_DL_DS/AI-Ml-Dl-Ds.jpg" alt="AI-Ml-Dl-Ds">
 </p>
 
 <br>
@@ -135,7 +135,8 @@ For a simpler view on the relation between these technologies, artificial intell
 
 
 
-
+# Preps
+in order to concur all the above , you need to be well armoured with weapons...that's where the preparation comes up....
 
 
 
