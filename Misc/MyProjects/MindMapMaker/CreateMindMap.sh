@@ -1,11 +1,13 @@
 #!/bin/bash
 
-# echo "Enter Folder Path" 
-# read folder
+
 
 ########################################################
 # Stage 1 : RAW Tree Structure to Final Tree Structure
 ########################################################
+
+echo "Enter Folder Path" 
+read folder
 
 echo "Enter Name For MindMap" 
 read name
@@ -14,10 +16,11 @@ tree_a=$(mktemp /tmp/tree_xXXX)
 tree_final=$(mktemp /tmp/tree_xXXX)
 mm_first=$(mktemp /tmp/tree_xXXX)
 mm_temp=$(mktemp /tmp/tree_xXXX)
+mm_txt=$(mktemp /tmp/tree_xXXX)
 
 # echo "$tree_a" 
 # cat "$tree_a"
-(exec tree -d -L 6) > $tree_a
+(exec tree -d -L 6 $folder) > $tree_a
 # cat $tree_a
 
 (sed   '1d;$d;s/├──/   /g;s/├──/   /g;s/└──/   /g;s/│/ /g;' $tree_a) > $tree_final
@@ -31,7 +34,7 @@ mm_temp=$(mktemp /tmp/tree_xXXX)
 ###############################################
 
 # while loop
-echo "$name" > /Users/charankumar/Downloads/text-to-freemind-master/b.yaml
+echo "$name" > $mm_first
 
 echo -e "\n\n----->>>>>>>"
 
@@ -43,14 +46,14 @@ callCharacters(){
 	n=0
 
 		# echo "In callCharacters()"
-		# tmpfile=$(mktemp /tmp/abc-script.yaml)
+	
 		t='/Users/charankumar/Downloads/text-to-freemind-master/dum.yaml'
 		# tmpfile=$t;
-		echo -e "$line" > "$t"
+		echo -e "$line" > $mm_temp
 
 
 		# echo -e "$line" > $t
-		echo -e "Line is : $line" 
+		# echo -e "Line is : $line" 
 		
 		while IFS= read -r -n1 char
 
@@ -91,10 +94,10 @@ callCharacters(){
 
 
 
-		done < "$t"
+		done < $mm_temp
 		# done < echo -e "$line" 
 	
-	    echo -e "${out//?/$dash}${word}" >> /Users/charankumar/Downloads/text-to-freemind-master/b.yaml
+	    echo -e "${out//?/$dash}${word}" >> $mm_first
 		# cat /Users/charankumar/Downloads/text-to-freemind-master/b.yaml
 
 }
@@ -106,11 +109,13 @@ do
 done < "$tree_final"
 
 
-cat /Users/charankumar/Downloads/text-to-freemind-master/b.yaml
+cat $mm_first
 
-cp /Users/charankumar/Downloads/text-to-freemind-master/b.yaml /Users/charankumar/Downloads/text-to-freemind-master/s.mm.txt
+cp $mm_first $mm_txt
 
 echo -e "\n\n<<<<<<-----"
 
+(exec text-to-freemind $mm_txt > $name".mm") 
 
-(exec text-to-freemind /Users/charankumar/Downloads/text-to-freemind-master/s.mm.txt > /Users/charankumar/Downloads/text-to-freemind-master/s.mm) 
+
+rm /tmp/tree_*
