@@ -1,28 +1,37 @@
 #!/bin/bash
-# data file
-
 
 # echo "Enter Folder Path" 
 # read folder
 
+########################################################
+# Stage 1 : RAW Tree Structure to Final Tree Structure
+########################################################
 
-# echo "Enter Name For MindMap" 
-# read name
+echo "Enter Name For MindMap" 
+read name
 
+tree_a=$(mktemp /tmp/tree_xXXX)
+tree_final=$(mktemp /tmp/tree_xXXX)
+mm_first=$(mktemp /tmp/tree_xXXX)
+mm_temp=$(mktemp /tmp/tree_xXXX)
 
+# echo "$tree_a" 
+# cat "$tree_a"
+(exec tree -d -L 6) > $tree_a
+# cat $tree_a
 
-tmpfile=$(mktemp /tmp/abc-script.yaml)
-echo "dasdsa" >"$tmpfile"
-cat $tmpfile
-rm $tmpfile
+(sed   '1d;$d;s/├──/   /g;s/├──/   /g;s/└──/   /g;s/│/ /g;' $tree_a) > $tree_final
 
-cat $tmpfile
+# cat $tree_final
 
-INPUT='/Users/charankumar/Downloads/text-to-freemind-master/temp.yaml'
+# INPUT='/Users/charankumar/Downloads/text-to-freemind-master/temp.yaml'
+
+###############################################
+# Stage 2 : Convert Spaces to Indentations
+###############################################
 
 # while loop
-echo "Mindmap" > /Users/charankumar/Downloads/text-to-freemind-master/b.yaml
-
+echo "$name" > /Users/charankumar/Downloads/text-to-freemind-master/b.yaml
 
 echo -e "\n\n----->>>>>>>"
 
@@ -94,11 +103,14 @@ while IFS= read -r line
 do
 		callCharacters $line
 		echo -e "$line" > /Users/charankumar/Downloads/text-to-freemind-master/dum.yaml
-done < "$INPUT"
+done < "$tree_final"
 
 
 cat /Users/charankumar/Downloads/text-to-freemind-master/b.yaml
 
-
+cp /Users/charankumar/Downloads/text-to-freemind-master/b.yaml /Users/charankumar/Downloads/text-to-freemind-master/s.mm.txt
 
 echo -e "\n\n<<<<<<-----"
+
+
+(exec text-to-freemind /Users/charankumar/Downloads/text-to-freemind-master/s.mm.txt > /Users/charankumar/Downloads/text-to-freemind-master/s.mm) 
