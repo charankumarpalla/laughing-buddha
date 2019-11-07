@@ -39,6 +39,15 @@ Table of Contents
 
 # Misc
 
+
+
+  <p align="center"> 
+    <img src="PlayGround/ResourcesFiles/Laughing-buddha.jpeg" alt="CheckResources">
+ </p>
+
+
+
+
 # :link:  Reference links
 
 For easy Access of links to Topics , I organized links in [References.csv](References.csv).
