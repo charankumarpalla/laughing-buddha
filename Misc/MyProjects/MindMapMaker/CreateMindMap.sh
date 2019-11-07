@@ -20,7 +20,7 @@ mm_txt=$(mktemp /tmp/tree_xXXX)
 
 # echo "$tree_a" 
 # cat "$tree_a"
-(exec tree -d -L 6 $folder) > $tree_a
+(exec tree -d -L 2 $folder) > $tree_a
 # cat $tree_a
 
 (sed   '1d;$d;s/├──/   /g;s/├──/   /g;s/└──/   /g;s/│/ /g;' $tree_a) > $tree_final
