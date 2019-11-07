@@ -138,6 +138,7 @@ For a simpler view on the relation between these technologies, artificial intell
 # Preps
 in order to concur all the above , you need to be well armoured with weapons...that's where the preparation comes up....
 
+🏁 [Your Preparation for Data Journey Starts here ---->>>>](0.Preps/README.md)
 
 
 
