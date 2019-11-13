@@ -27,7 +27,7 @@ Here we show how the Java Virtual Machine fits into the big picture, show how th
 <br>
 
 <p align="center">
-  <img width="450" height="350" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JavaPhenomenon.png?raw=true" alt="The Java programming Phenomenon">
+  <img width="450" height="350" src="../PlayGround/ResourcesFiles/Java/Pictures/JavaReadMe/JavaPhenomenon.png" alt="The Java programming Phenomenon">
 </p>
 
 <br>
@@ -63,7 +63,7 @@ As your program runs, it fulfills your program's Java API calls by invoking meth
 <br>
 
 <p align="center">
-  <img width="750" height="350" src="/Java/ResourcesFiles/Pictures/The_Java_programming_env.jpg?raw=true" alt="The Java programming environment">
+  <img width="750" height="350" src="../PlayGround/ResourcesFiles/Java/Pictures/The_Java_programming_env.jpg?raw=true" alt="The Java programming environment">
 </p>
 
 <br>
@@ -76,7 +76,7 @@ Together, `the Java virtual machine and Java API form a "platform" for which all
 <br>
 
 <p align="center">
-  <img width="700" height="250" src="/Java/ResourcesFiles/Pictures/JavaReadMe/Java_programs_run_on_top_of_the_Java_Platform.jpg?raw=true" alt="Java programs run on top of the Java Platform">
+  <img width="700" height="250" src="../PlayGround/ResourcesFiles/Java/Pictures/JavaReadMe/Java_programs_run_on_top_of_the_Java_Platform.jpg?raw=true" alt="Java programs run on top of the Java Platform">
 </p>
 
 <br>
@@ -98,8 +98,9 @@ A Java virtual machine's main job is to load class files and execute the bytecod
 <br>
 
 <p align="center">
-  <img width="600" height="250" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JVM_Block_Diagram.jpg?raw=true" alt="A basic block diagram of the Java virtual machine">
+  <img width="600" height="250" src="../PlayGround/ResourcesFiles/Java/Pictures/JavaReadMe/JVM_Block_Diagram.jpg?raw=true" alt="A basic block diagram of the Java virtual machine">
 </p>
+
 
 <br>
 
@@ -111,13 +112,15 @@ In Java, there are two kinds of methods:
  - **Native** : A native method is written in some other language, such as C, C++, or assembly, and compiled to the native machine code of a particular processor. 
 
 
-Native methods are stored in a dynamically linked library whose exact form is platform specific. While Java methods are platform independent, native methods are not. When a running Java program calls a native method, the virtual machine loads the dynamic library that contains the native method and invokes it. As you can see in below Figure, native methods are the connection between a Java program and an underlying host operating system.
+Native methods are stored in a dynamically linked library whose exact form is platform specific. **`While Java methods are platform independent, native methods are not. When a running Java program calls a native method`**, 
+
+The virtual machine loads the dynamic library that contains the native method and invokes it. As you can see in below Figure, native methods are the connection between a Java program and an underlying host operating system.
 
 
 <br>
 
 <p align="center">
-  <img width="600" height="400" src="/Java/ResourcesFiles/Pictures/JavaReadMe/JVM_Block_Diagram_2.jpg?raw=true" alt="A Java virtual machine implemented in software on top of a host operating system.">
+  <img width="600" height="400" src="../PlayGround/ResourcesFiles/Java/Pictures/JavaReadMe/JVM_Block_Diagram_2.jpg?raw=true" alt="A Java virtual machine implemented in software on top of a host operating system.">
 </p>
 
 <br>
