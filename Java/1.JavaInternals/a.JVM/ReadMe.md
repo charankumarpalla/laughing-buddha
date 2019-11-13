@@ -1,4 +1,13 @@
+Table of Contents
+=================
 
+   * [JVM Architecture](#jvm-architecture)
+      * [Class Loader](#class-loader)
+      * [Execution Engine](#execution-engine)
+      * [Memory Model(Runtime Data Areas of JVM)](#memory-modelruntime-data-areas-of-jvm)
+         * [Performance Optimization](#performance-optimization)
+         * [Performance Monitoring](#performance-monitoring)
+   * [HotSpot JVM](#hotspot-jvm)
 
 
 A virtual machine (VM) is a software implementation of a machine (i.e. a computer) that executes programs like a physical machine. Originally, Java was designed to run based on a virtual machine separated from a physical machine for implementing WORA (Write Once Run Anywhere), although this goal has been mostly forgotten. Therefore, the JVM runs on all kinds of hardware to execute the Java Bytecode without changing the Java execution code.
@@ -21,7 +30,7 @@ The architecture of the JVM enables detailed control over the actions that a Jav
 
 > The JVM is the virtual machine on which Java code executes. It's responsible for converting byte code into machine-specific code.
 
-## JVM Architecture
+# JVM Architecture
 The JVM specification defines the subsystems and their external behavior. _The JVM has the following major subsystems_:
 
 - **Class Loader** -  Responsible for reading Java source code and loading classes into the data areas.
@@ -38,7 +47,7 @@ The data areas occupy memory that is allocated by the JVM from the underlying OS
 
 <br>
 
-### Class Loader
+## Class Loader
 The JVM uses different class loaders organized into the following hierarchy:
 
 - **The bootstrap class loader** is the parent for other class loaders. It loads the core Java libraries and is the only one written in native code.
@@ -52,7 +61,7 @@ The JVM uses different class loaders organized into the following hierarchy:
 
 
 
-### Execution Engine
+## Execution Engine
 
 The execution engine executes commands from the bytecode loaded into the data areas one by one. To make the bytecode commands readable to the machine, the execution engine uses two methods.
 
@@ -61,7 +70,7 @@ The execution engine executes commands from the bytecode loaded into the data ar
 
 <br>
 
-### Memory Model(Runtime Data Areas of JVM)
+## Memory Model(Runtime Data Areas of JVM)
 
 
 The Java memory model is built on the concept of automatic memory management. When an object is no longer referenced by an application, a garbage collector discards it and this frees up memory. This is different from many other programming languages, where you have to manually unload the object from memory.
@@ -85,7 +94,7 @@ The heap size is dynamic. Memory is allocated to the heap only if it is required
 
 
 
-#### Performance Optimization
+### Performance Optimization
 
 
 The performance of the JVM depends on how well it is configured to match the functionality of the application. Although memory is automatically managed using garbage collection and memory reallocation processes, you have control over their frequency. In general, _`the more memory you have available for your application, the less memory management processes are required`_, which pause your application.
@@ -107,7 +116,7 @@ Most applications (especially servers) require concurrent execution, handling a 
 Each thread has a stack that holds the method calls, return addresses, and so on. Some memory is allocated for the stack, and if there are too many threads, this can lead to an OutOfMemory error. Even if you have enough heap memory allocated for objects, your application may be unable to start a new thread. In this case, consider limiting the maximum size of the stack in threads. To configure the thread stack size, use the -Xss option when you start the JVM. By default, the thread stack size is set to 320 KB or 1024 KB, depending on the platform.
 
 
-#### Performance Monitoring
+### Performance Monitoring
 
 Whether you are developing or running a Java application, it is important to monitor the performance of the JVM. Configuring the JVM is not a one-time affair, especially if you are dealing with a server running on Java. You have to constantly check the allocation and usage of both heap and non-heap memory, the number of threads that the application creates, and the number of classes that are loaded into memory. These are the core parameters.
 
@@ -128,7 +137,7 @@ _The JVM monitor can measure the following metrics._
 
 
 
-## HotSpot JVM
+# HotSpot JVM
 
 Now that we understood theoritically from above
 
