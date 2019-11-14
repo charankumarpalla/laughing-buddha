@@ -76,7 +76,7 @@ The JRE is composed of the Java API and the JVM. **`The role of the JVM is to re
 
 <div align="right">
 
-[Continue Reading ......](a.JVM/ReadMe.md) ![MORE](../../PlayGround/ResourcesFiles/Java/Pictures/iconmonstr-arrow-75-32.png "MORE") </t> 
+[**Continue Reading ......**](a.JVM/ReadMe.md) 🔬
 </div>
 
 
@@ -103,6 +103,11 @@ JRE comprises the accompanying segments.
 - Other base libraries, including worldwide help, input/yield (I/O), expansion instrument, Beans, Java Management Extensions (JMX), Java Native Interface (JNI), Math, Networking, Override Mechanism, Security, Serialization, and Java for XML Processing (XML JAXP).
 - Lang and util base libraries – It includes lang and util, administration, forming, zip, instrument, reflection, Collections, Concurrency Utilities, Java Archive (JAR), Logging, Preferences API, Ref Objects, and Regular Expressions.
 
+
+<div align="right">
+
+[**Continue Reading ......**](b.JRE/ReadMe.md)  🔬</t> 
+</div>
 
 <br>
 
@@ -142,18 +147,16 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 **Experimental JDK Tools and Utilities**
 - Monitoring and Management Tools (jconsole, jps, jstat, jstatd)
-- Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)      
+- Troubleshooting Tools (jinfo, jmap, jsadebugd, jstack)
 
-<br> 
 
 <p align="center">
-  <img src="/Java/ResourcesFiles/Pictures/j2se5.gif?raw=true" alt="">
+  <img src="../../PlayGround/ResourcesFiles/Java/Pictures/j2se5.gif?raw=true" alt="JDK">
 </p>
+<div align="right">
 
-<br> 
-
-
-
+[**Continue Reading ......**](c.JDK/ReadMe.md)  🔬</t> 
+</div>
 
 
 # :school_satchel: Extras
