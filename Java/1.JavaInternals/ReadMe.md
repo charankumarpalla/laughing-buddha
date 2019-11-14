@@ -71,11 +71,14 @@ The JRE is composed of the Java API and the JVM. **`The role of the JVM is to re
 
 > Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
-![Next](../../PlayGround/ResourcesFiles/Java/Pictures/iconmonstr-book-3-24.png) </t> [More on **JVM**](a.JVM/ReadMe.md)
 
-![MORE](../../PlayGround/ResourcesFiles/Java/Pictures/iconmonstr-book-3-32.png "MORE") </t> [More on **JVM**](a.JVM/ReadMe.md)
 
-![MORE](../../PlayGround/ResourcesFiles/Java/Pictures/iconmonstr-book-3-64.png "MORE") </t> [More on **JVM**](a.JVM/ReadMe.md)
+
+<div align="right">
+
+[Continue Reading ......](a.JVM/ReadMe.md) ![MORE](../../PlayGround/ResourcesFiles/Java/Pictures/iconmonstr-arrow-75-32.png "MORE") </t> 
+</div>
+
 
 # **JRE** = JVM + libraries to run Java application.
 
