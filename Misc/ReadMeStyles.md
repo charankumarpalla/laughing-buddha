@@ -13,7 +13,7 @@
 
 
 
-![alt text](../PlayGround/ResourcesFiles/Java/Pictures/Toilet-Paper.png "goto")   Inline-style: 
+![Next](../PlayGround/ResourcesFiles/Java/Pictures/glyphicons_211_right_arrow.png "Next")      Inline-style: 
 
 
 
@@ -22,5 +22,5 @@
   width="128"
   height="128"
   style="float:left;">
-    # Quite a long title, potentially going over several lines and on and on and on and on and on and on and on and on and on
+     Quite a long title, potentially going over several lines and on and on and on and on and on and on and on and on and on
 </h1>

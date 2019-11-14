@@ -5,17 +5,10 @@ Table of Contents
 
    * [<strong>Lets Jump into internals of Java</strong>,](#lets-jump-into-internals-of-java)
    * [<strong>1. JVM</strong> = Class loader system   runtime data area   Execution Engine.](#1-jvm--class-loader-system--runtime-data-area--execution-engine)
-      * [JVM Architecture](#jvm-architecture)
-         * [Class Loader](#class-loader)
-         * [Execution Engine](#execution-engine)
-         * [Memory Model(Runtime Data Areas of JVM)](#memory-modelruntime-data-areas-of-jvm)
-            * [Performance Optimization](#performance-optimization)
-            * [Performance Monitoring](#performance-monitoring)
-      * [HotSpot JVM](#hotspot-jvm)
    * [<strong>JRE</strong> = JVM   libraries to run Java application.](#jre--jvm--libraries-to-run-java-application)
    * [<strong>JDK</strong> = JRE   Development/debugging tools](#jdk--jre--developmentdebugging-tools)
       * [Example jdk tools :](#example-jdk-tools-)
-   * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Memory out of Concepts](#school_satchel-memory-out-of-concepts)
+   * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Extras](#school_satchel-extras)
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#ballot_box_with_check-advanced-topics)
       * [<g-emoji class="g-emoji" alias="exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png">❗️</g-emoji> Sometimes ignorance is not bliss](#exclamation-sometimes-ignorance-is-not-bliss)
       * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji> <g-emoji class="g-emoji" alias="pray" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png">🙏</g-emoji> Reference and Our Thanks to these...](#link-pray-reference-and-our-thanks-to-these)
@@ -78,7 +71,7 @@ The JRE is composed of the Java API and the JVM. **`The role of the JVM is to re
 
 > Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
-[More on **JVM**](a.JVM/JVMReadMe.md)
+![Next](../../PlayGround/ResourcesFiles/Java/Pictures/glyphicons_211_right_arrow.png) </t> [More on **JVM**](a.JVM/ReadMe.md)
 
 
 
@@ -161,7 +154,7 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 
 
-# :school_satchel: Memory out of Concepts
+# :school_satchel: Extras
 
 
 
