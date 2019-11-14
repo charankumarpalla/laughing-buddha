@@ -7,13 +7,13 @@ assignees: charankumarpalla
 
 ---
 
-**What to do ?** (What is this idea about)
+**What is this idea about:**
 
 
 
-**Show/give an example**
+** Example:**
 
 
-**Technologies**
+**Technologies Needed:**
 
-**Implementation In**
+**Implementation In:**
