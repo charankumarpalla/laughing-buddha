@@ -67,9 +67,9 @@ Search for any topic and you will get reference link for that topis...this makes
 <a alt="Open Issues"><img src="https://img.shields.io/github/issues-raw/charankumarpalla/laughing-buddha?color=Green&logo=Charan"/></a>
 <a alt="Closed Issues"><img src="https://img.shields.io/github/issues-closed-raw/charankumarpalla/laughing-buddha?color=Green&logo=Charan"/></a>
 <a alt="Pull Request Open"><img src="https://img.shields.io/github/issues-pr-raw/charankumarpalla/laughing-buddha?color=Green&logo=Charan"/></a>
-<a alt="Closed PR"><img src="https://img.shields.io/github/issues-pr-closed-raw/charankumarpalla/laughing-buddha?color=Green&label=PR Closed&logo=Charan"/></a>
+<a alt="Closed PR"><img src="https://img.shields.io/github/issues-pr-closed-raw/charankumarpalla/laughing-buddha?color=Green&logo=Charan"/></a>
 <a alt="Commits"><img src="https://img.shields.io/github/commit-activity/y/charankumarpalla/laughing-buddha?color=green&label=Commits"/></a>
-<a alt="Last Commit "><img src="https://img.shields.io/github/last-commit/charankumarpalla/laughing-buddha/development?label=Last Commit To Development&color=green"/></a>
+<a alt="Last Commit "><img src="https://img.shields.io/github/last-commit/charankumarpalla/laughing-buddha/development?color=green"/></a>
 <a alt=""><img src="https://img.shields.io/github/languages/top/charankumarpalla/laughing-buddha?color=green"/></a> 
 <!-- <a alt=""><img src=""/></a>  -->
 
