@@ -7,48 +7,69 @@
 Table of Contents
 =================
 
-   * [Algorithms&amp;DataStructures](#algorithmsdatastructures)
-   * [Java](#java)
-   * [AI_ML_DL_DS](#ai_ml_dl_ds)
-   * [MobileDevelopment](#mobiledevelopment)
-   * [NodeJS](#nodejs)
-   * [Misc](#misc)
+   * [Repo MindMap](#repo-mindmap)
+      * [Algorithms&amp;DataStructures](#algorithmsdatastructures)
+      * [Java](#java)
+      * [AI_ML_DL_DS](#ai_ml_dl_ds)
+      * [MobileDevelopment](#mobiledevelopment)
+      * [NodeJS](#nodejs)
+      * [Misc](#misc)
    * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji>  Reference links](#link--reference-links)
 
 
 
-# Algorithms&DataStructures
-
-
-🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
-# Java 
-
-🏁 [Your Java - Journey Starts here ---->>>>](Java/README.md)
-
-
-# AI_ML_DL_DS
-
-🏁 [Your DataScience - Journey Starts here ---->>>>](AI_ML_DL_DS/README.md)
-
-
-# MobileDevelopment
-
-
-🏁 [Your MobileDevelopment:Flutter - Journey Starts here ---->>>>](MobileDevelopment/Flutter/ReadMe.md)
-
-
-# NodeJS
-
-🏁 [Your NodeJS - Journey Starts here ---->>>>](NodeJS/README.md)
-
-
-# Misc
-
-
+# Repo MindMap
 
   <p align="center"> 
     <img src="PlayGround/ResourcesFiles/Laughing-buddha.jpeg" alt="CheckResources">
  </p>
+
+
+## Algorithms&DataStructures
+
+<div align="right">
+
+🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
+</div>
+
+## Java 
+
+<div align="right">
+
+🏁 [Your Java - Journey Starts here ---->>>>](Java/README.md)
+</div>
+
+## AI_ML_DL_DS
+
+<div align="right">
+
+🏁 [Your DataScience - Journey Starts here ---->>>>](AI_ML_DL_DS/README.md)
+</div>
+
+## MobileDevelopment
+
+<div align="right">
+
+🏁 [Your MobileDevelopment:Flutter - Journey Starts here ---->>>>](MobileDevelopment/Flutter/ReadMe.md)
+</div>
+
+## NodeJS
+
+<div align="right">
+
+🏁 [Your NodeJS - Journey Starts here ---->>>>](NodeJS/README.md)
+
+</div>
+
+
+## Misc
+
+<div align="right">
+
+</div>
+
+
+
 
 
 
@@ -61,9 +82,9 @@ Search for any topic and you will get reference link for that topis...this makes
 
 
 
-  <p align="center"> 
-    <img src="PlayGround/ResourcesFiles/Java/Pictures/CheckResources.gif" alt="CheckResources">
- </p>
+  <a href="References.csv" align="center"> 
+    <img  src="PlayGround/ResourcesFiles/Java/Pictures/CheckResources.gif" alt="CheckResources">
+ </a>
 
 
 <br>

@@ -132,10 +132,24 @@ One native method interface--the Java Native Interface, or JNI--enables native m
 
 Java gives you a choice. If you want to access resources of a particular host that are unavailable through the Java API, you can write a platform-specific Java program that calls native methods. If you want to keep your program platform independent, **```however, you must access the system resources of the underlying operating system only through the Java API```**.
 
-#  [Java Concepts](./2.JavaConcepts/ReadMe.md)
+<div align="right">
 
-#  [Java Advanced](./3.JavaAdvanced/README.md)
+[**Continue Reading ......**](1.JavaInternals/ReadMe.md) 🔬
+</div>
 
+#  Java Concepts
+
+<div align="right">
+
+[**Continue Reading ......**](2.JavaConcepts/ReadMe.md) 🔬
+</div>
+
+#  Java Advanced
+
+<div align="right">
+
+[**Continue Reading ......**](3.JavaAdvanced/README.md) 🔬
+</div>
 
 
 # Thanks
