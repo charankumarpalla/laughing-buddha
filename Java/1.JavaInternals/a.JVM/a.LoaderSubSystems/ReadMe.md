@@ -51,6 +51,12 @@ Class class object can be used by programmer to get class level information like
 
 <a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=plastic&logo=markdown"/></a>
 
+<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=for-the-badge&logo=markdown"/></a>
+
+
+<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+
 [**Continue Reading ......**](a.Loaders.md) 🔬
 </div>
 
