@@ -2,7 +2,6 @@
 Table of Contents
 =================
 
-   * [Introduction to Class Loaders](#introduction-to-class-loaders)
    * [What does it mean by saying "load a class"?](#what-does-it-mean-by-saying-load-a-class)
    * [How does Java ClassLoader Work?](#how-does-java-classloader-work)
    * [Types of Built-in Class Loaders](#types-of-built-in-class-loaders)
@@ -19,16 +18,6 @@ Table of Contents
       * [<g-emoji class="g-emoji" alias="microscope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52c.png">🔬</g-emoji> More Images](#-more-images)
 
 
-# Introduction to Class Loaders
-
-
-
-
-The **`Class loader`** concept, one of the cornerstones of the Java virtual machine, describes the behavior of converting a named class into the bits responsible for implementing that class. Because class loaders exist, the Java run time does not need to know anything about files and file systems when running Java programs.
-
-
-Java classes aren’t loaded into memory all at once, but when required by an application. This is where class loaders come into the picture. They are responsible for loading classes into memory.
-
 In this tutorial, we’re going to talk about different types of built-in class loaders, how they work and an introduction to our own custom implementation.
 
 
@@ -37,6 +26,8 @@ In this tutorial, we’re going to talk about different types of built-in class 
 Source Code in C/C++ is compiled to native machine code first and then it requires a linking step after compilation. What the linking does is combining source files from different places and form an executable program. Java does not do that. The linking-like step for Java is done when they are loaded into JVM.
 
 Different JVMs load classes in different ways, but the basic rule is only loading classes when they are needed. If there are some other classes that are required by the loaded class, they will also be loaded. **```The loading process is recursive```**.
+
+
 
 
 loading policies is handled by a ClassLoader. The following example shows how and when a class is loaded for a simple program.
@@ -176,6 +167,8 @@ Next, the **extension** one loads the Logging class. Extension class loaders loa
 Finally, the **bootstrap** one loads the ArrayList class. A bootstrap or primordial class loader is the parent of all the others.
 
 > However, we can see that the last out, for the ArrayList it displays null in the output. This is because the bootstrap class loader is written in native code, not Java – so it doesn’t show up as a Java class. Due to this reason, the behavior of the bootstrap class loader will differ across JVMs.
+
+
 
 
 # ClassLoader Principles 
