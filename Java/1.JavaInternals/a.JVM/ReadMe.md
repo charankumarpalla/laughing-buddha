@@ -31,6 +31,34 @@ The architecture of the JVM enables detailed control over the actions that a Jav
 > The JVM is the virtual machine on which Java code executes. It's responsible for converting byte code into machine-specific code.
 
 # JVM Architecture
+
+
+
+JVM mainly performs the following activities:
+
+* loads bytecode
+* verifies bytecode
+* executes bytecode
+* provides the runtime environment
+
+<br>
+
+<!-- <p align="center">
+  <img width="600" height="400" src="../../../PlayGround/ResourcesFiles/Java/Pictures/jvm-SubSystems.png?raw=true">
+</p> -->
+
+The following image illustrates the common JVM architecture.
+
+<!-- <br> -->
+
+<p align="center">
+  <img width="600" height="400" src="../../../PlayGround/ResourcesFiles/Java/Pictures/_jvm_jvm-architecture.jpg?raw=true">
+</p>
+
+
+<br>
+
+
 The JVM specification defines the subsystems and their external behavior. _The JVM has the following major subsystems_:
 
 - **Class Loader** -  Responsible for reading Java source code and loading classes into the data areas.
@@ -39,27 +67,29 @@ The JVM specification defines the subsystems and their external behavior. _The J
 
 The data areas occupy memory that is allocated by the JVM from the underlying OS
 
-<br>
-
-<p align="center">
-  <img width="600" height="400" src="../../../PlayGround/ResourcesFiles/Java/Pictures/jvm-SubSystems.png?raw=true">
-</p>
-
-<br>
-
 ## Class Loader
-The JVM uses different class loaders organized into the following hierarchy:
+
+The **`Class loader`** concept, one of the cornerstones of the Java virtual machine, describes the behavior of **`converting a named class into the bits responsible for implementing that class`**. Because class loaders exist, the Java run time does not need to know anything about files and file systems when running Java programs.
+
+
+Java classes aren’t loaded into memory all at once, but when required by an application. This is where class loaders come into the picture. They are responsible for loading classes into memory.
+
+<!-- The JVM uses different class loaders organized into the following hierarchy:
 
 - **The bootstrap class loader** is the parent for other class loaders. It loads the core Java libraries and is the only one written in native code.
 - **The extension class loader** is a child of the bootstrap class loader. It loads the extension libraries.
 - **The system class loader** is a child of the extension class loader. It loads the application class files that are found in the classpath.
-- **A user-defined class loader** is a child of the system class loader or another user-defined class loader.
+- **A user-defined class loader** is a child of the system class loader or another user-defined class loader. -->
 
 
 
-> When a class loader receives a request to load a class, it checks the cache to see if the class has already been loaded, then delegates the request to the parent. If the parent fails to load the class, then the child attempts to load the class itself. A child class loader can check the cache of the parent class loader, but the parent cannot see classes loaded by the child. The design is such because a child class loader should not be allowed to load classes that are already loaded by its parent.
 
+<div align="right">
 
+<a href="a.LoaderSubSystems/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+<!-- [**Continue Reading ......**](a.LoaderSubSystems/ReadMe.md) 🔬 -->
+</div>
 
 ## Execution Engine
 
@@ -162,7 +192,7 @@ Here we discuss about Oracle implementation of JVM specifications i.e HotSpot JV
 <br>
 
 <p align="center">
-  <img width="500" height="400" src="../../PlayGround/ResourcesFiles/Java/Pictures/HotSpot%20JVM%20Architecture.png?raw=true" alt="key components of HotSpot JVM for performance">
+  <img width="500" height="400" src="../../../PlayGround/ResourcesFiles/Java/Pictures/HotSpot&#32;JVM&#32;Architecture.png?raw=true" alt="key components of HotSpot JVM for performance">
 </p>
 
 <br>

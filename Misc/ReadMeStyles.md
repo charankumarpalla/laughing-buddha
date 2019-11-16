@@ -22,6 +22,29 @@ Table of Contents
 
 
 
+
+<div align="right">
+
+<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=plastic&logo=markdown"/></a>
+
+<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=for-the-badge&logo=markdown"/></a>
+
+
+<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+
+[**Continue Reading ......**](a.Loaders.md) 🔬
+</div>
+
+
+<div align="right">
+
+🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
+</div>
+
+<a href="https://www.facebook.com/charanraj11" alt=""><img src="https://img.shields.io/badge/-lightblue?logo=Markdown"/></a>
+
+
 # Best ReadMe Styles
 <img align="left" width="80" height="80" src="https://raw.githubusercontent.com/akarsh/akarsh-seggemu-resume/master/akarsh%20seggemu%20resume/Assets/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png" alt="Resume application project app icon">
 

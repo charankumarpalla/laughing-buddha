@@ -69,6 +69,13 @@ Every developer who uses Java knows that Java bytecode runs in a JRE (Java `Runt
 
 The JRE is composed of the Java API and the JVM. **`The role of the JVM is to read the Java application through the Class Loader and execute it along with the Java API`**.
 
+
+<p align="center">
+  <img src="../../PlayGround/ResourcesFiles/Java/Pictures/_JavaInternals-jvm-SubSystems.png" alt="_JavaInternals-jvm-SubSystems.png">
+</p>
+
+
+
 > Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
 
@@ -76,7 +83,11 @@ The JRE is composed of the Java API and the JVM. **`The role of the JVM is to re
 
 <div align="right">
 
-[**Continue Reading ......**](a.JVM/ReadMe.md) 🔬
+
+<a href="a.JVM/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+
+<!-- [**Continue Reading ......**](a.JVM/ReadMe.md) 🔬 -->
 </div>
 
 
@@ -106,7 +117,8 @@ JRE comprises the accompanying segments.
 
 <div align="right">
 
-[**Continue Reading ......**](b.JRE/ReadMe.md)  🔬</t> 
+<a href="b.JRE/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+<!-- [**Continue Reading ......**](b.JRE/ReadMe.md)  🔬</t>  -->
 </div>
 
 <br>
@@ -155,7 +167,9 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 </p>
 <div align="right">
 
-[**Continue Reading ......**](c.JDK/ReadMe.md)  🔬</t> 
+<a href="c.JDK/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+<!-- [**Continue Reading ......**](c.JDK/ReadMe.md)  🔬</t>  -->
 </div>
 
 

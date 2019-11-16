@@ -27,37 +27,44 @@ Table of Contents
 
 ## Algorithms&DataStructures
 
-<div align="right">
 
-🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
+<div align="right">
+<a href="Algorithms&DataStructures/Readme.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 </div>
+
+
 
 ## Java 
 
 <div align="right">
 
-🏁 [Your Java - Journey Starts here ---->>>>](Java/README.md)
+<a href="" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+
 </div>
 
 ## AI_ML_DL_DS
 
 <div align="right">
+<a href="" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
-🏁 [Your DataScience - Journey Starts here ---->>>>](AI_ML_DL_DS/README.md)
 </div>
 
 ## MobileDevelopment
 
 <div align="right">
 
-🏁 [Your MobileDevelopment:Flutter - Journey Starts here ---->>>>](MobileDevelopment/Flutter/ReadMe.md)
+<a href="" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
 </div>
 
 ## NodeJS
 
+
+
 <div align="right">
 
-🏁 [Your NodeJS - Journey Starts here ---->>>>](NodeJS/README.md)
+<a href="NodeJS/README.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
 </div>
 
