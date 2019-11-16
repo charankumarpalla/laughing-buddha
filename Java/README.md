@@ -140,7 +140,6 @@ Java gives you a choice. If you want to access resources of a particular host th
 
 #  Java Concepts
 
-
 <div align="right">
 <a href="2.JavaConcepts/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
