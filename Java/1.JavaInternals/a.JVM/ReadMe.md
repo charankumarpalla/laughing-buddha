@@ -86,7 +86,9 @@ Java classes aren’t loaded into memory all at once, but when required by an ap
 
 <div align="right">
 
-[**Continue Reading ......**](a.LoaderSubSystems/ReadMe.md) 🔬
+<a href="a.LoaderSubSystems/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+<!-- [**Continue Reading ......**](a.LoaderSubSystems/ReadMe.md) 🔬 -->
 </div>
 
 ## Execution Engine

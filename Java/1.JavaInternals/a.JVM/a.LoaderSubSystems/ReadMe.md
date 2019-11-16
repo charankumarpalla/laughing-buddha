@@ -49,19 +49,13 @@ Class class object can be used by programmer to get class level information like
 
 <div align="right">
 
-<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=plastic&logo=markdown"/></a>
-
-<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=for-the-badge&logo=markdown"/></a>
-
-
 <a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
-
-[**Continue Reading ......**](a.Loaders.md) 🔬
+<!-- [**Continue Reading ......**](a.Loaders.md) 🔬 -->
 </div>
 
 
-<a href="https://www.facebook.com/charanraj11" alt=""><img src="https://img.shields.io/badge/-lightblue?logo=Markdown"/></a>
+
 
 ##  Linking
 
@@ -72,7 +66,9 @@ This component performs the linking of a class or an interface. As this componen
 
 <div align="right">
 
-[**Continue Reading ......**](b.Linkers.md) 🔬
+<a href="b.Linkers.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+<!-- [**Continue Reading ......**](b.Linkers.md) 🔬 -->
 </div>
 
 ##  Initialization
@@ -80,7 +76,9 @@ This component performs the final phase of the class loading where all the stati
 
 <div align="right">
 
-[**Continue Reading ......**](c.Initialising.md) 🔬
+<a href="c.Initialising.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+<!-- [**Continue Reading ......**](c.Initialising.md) 🔬 -->
 </div>
 
 #   References

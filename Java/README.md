@@ -134,21 +134,26 @@ Java gives you a choice. If you want to access resources of a particular host th
 
 <div align="right">
 
-[**Continue Reading ......**](1.JavaInternals/ReadMe.md) 🔬
+<a href="1.JavaInternals/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+<!-- [**Continue Reading ......**](1.JavaInternals/ReadMe.md) 🔬 -->
 </div>
 
 #  Java Concepts
 
-<div align="right">
 
-[**Continue Reading ......**](2.JavaConcepts/ReadMe.md) 🔬
+<div align="right">
+<a href="2.JavaConcepts/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+
+<!-- [**Continue Reading ......**](2.JavaConcepts/ReadMe.md) 🔬 -->
 </div>
 
 #  Java Advanced
 
 <div align="right">
+<a href="3.JavaAdvanced/README.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
-[**Continue Reading ......**](3.JavaAdvanced/README.md) 🔬
+<!-- [**Continue Reading ......**](3.JavaAdvanced/README.md) 🔬 -->
 </div>
 
 

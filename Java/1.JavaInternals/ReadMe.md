@@ -83,7 +83,11 @@ The JRE is composed of the Java API and the JVM. **`The role of the JVM is to re
 
 <div align="right">
 
-[**Continue Reading ......**](a.JVM/ReadMe.md) 🔬
+
+<a href="a.JVM/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+
+<!-- [**Continue Reading ......**](a.JVM/ReadMe.md) 🔬 -->
 </div>
 
 
@@ -113,7 +117,8 @@ JRE comprises the accompanying segments.
 
 <div align="right">
 
-[**Continue Reading ......**](b.JRE/ReadMe.md)  🔬</t> 
+<a href="b.JRE/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+<!-- [**Continue Reading ......**](b.JRE/ReadMe.md)  🔬</t>  -->
 </div>
 
 <br>
@@ -162,7 +167,9 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 </p>
 <div align="right">
 
-[**Continue Reading ......**](c.JDK/ReadMe.md)  🔬</t> 
+<a href="c.JDK/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+<!-- [**Continue Reading ......**](c.JDK/ReadMe.md)  🔬</t>  -->
 </div>
 
 
