@@ -15,6 +15,12 @@ Class loaders are responsible for loading Java classes during runtime dynamicall
 
 Also, these Java classes aren't loaded into memory all at once, but when required by an application. This is where class loaders come into the picture. They are responsible for loading classes into memory.
 
+
+<p align="center">
+  <img width="600" height="350" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_LoaderSubSystems_ClassLoader_Internals.jpg" alt="ClassLoader internals">
+</p>
+
+
 This subsystem handles the dynamic class loading functionality and performs three major functions i.e.:
 
 ##  Loading
@@ -43,9 +49,13 @@ Class class object can be used by programmer to get class level information like
 
 <div align="right">
 
+<a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=plastic&logo=markdown"/></a>
+
 [**Continue Reading ......**](a.Loaders.md) 🔬
 </div>
 
+
+<a href="https://www.facebook.com/charanraj11" alt=""><img src="https://img.shields.io/badge/-lightblue?logo=Markdown"/></a>
 
 ##  Linking
 

@@ -113,7 +113,7 @@ Classes are introduced into the Java environment when they are referenced by nam
 
 
 <p align="center">
-  <img width="600" height="350" src="/Java/ResourcesFiles/Pictures/ClassLoader_Internals.jpg?raw=true" alt="ClassLoader internals">
+  <img width="600" height="350" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_LoaderSubSystems_ClassLoader_Internals.jpg" alt="ClassLoader internals">
 </p>
 
 <br>
