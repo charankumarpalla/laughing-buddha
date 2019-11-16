@@ -38,7 +38,7 @@ Table of Contents
 
 <div align="right">
 
-<a href="" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+<a href="Java/README.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
 
 </div>
@@ -46,7 +46,7 @@ Table of Contents
 ## AI_ML_DL_DS
 
 <div align="right">
-<a href="" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+<a href="AI_ML_DL_DS/README.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
 </div>
 
@@ -54,7 +54,7 @@ Table of Contents
 
 <div align="right">
 
-<a href="" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+<a href="MobileDevelopment/Flutter/ReadMe.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
 </div>
 
