@@ -4,13 +4,13 @@ Table of Contents
    * [ClassLoader](#classloader)
       * [Java Byte-Code](#java-byte-code)
       * [What does it mean by saying - load a class?](#what-does-it-mean-by-saying---load-a-class)
+      * [ClassLoader Principles](#classloader-principles)
+         * [a. <strong>delegation</strong>](#a-delegation)
+         * [b. <strong>visibility</strong>](#b-visibility)
+         * [c. <strong>uniqueness</strong>](#c-uniqueness)
       * [Hierarchy of Classloaders](#hierarchy-of-classloaders)
       * [Finding and Loading a Class](#finding-and-loading-a-class)
-   * [Types of Built-in Class Loaders](#types-of-built-in-class-loaders)
-   * [ClassLoader Principles](#classloader-principles)
-      * [a. <strong>delegation :</strong>](#a-delegation-)
-      * [b. <strong>visibility :</strong>](#b-visibility-)
-      * [c. <strong>uniqueness :</strong>](#c-uniqueness-)
+      * [Types of Built-in Class Loaders](#types-of-built-in-class-loaders)
    * [<g-emoji class="g-emoji" alias="soon" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f51c.png">🔜</g-emoji> Create own class loader](#soon-create-own-class-loader)
    * [<g-emoji class="g-emoji" alias="school_satchel" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f392.png">🎒</g-emoji> Memory out of Concepts](#-memory-out-of-concepts)
       * [<g-emoji class="g-emoji" alias="ballot_box_with_check" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2611.png">☑️</g-emoji> Advanced Topics](#️-advanced-topics)
@@ -165,6 +165,90 @@ A.class is loaded only when it is used. In summary, a class is loaded:
 Classes are introduced into the Java environment when they are referenced by name in a class that is already running. There is a bit of magic that goes on to get the first class running (which is why you have to declare the main() method as static, taking a string array as an argument), but once that class is running, future attempts at loading classes are done by the class loader. -->
 
 
+## ClassLoader Principles 
+ClassLoader in Java works on three principle :
+
+* **delegation**
+* **visibility** 
+* **uniqueness** 
+
+
+
+### a. **delegation**
+**_Delegation principle forward request of class loading to parent class loader and only loads the class, if parent is not able to find or load class_**
+
+When a class is loaded in Java, when its needed. Suppose you have an application specific class called Abc.class, first request of loading this class will come to Application ClassLoader which will delegate to its parent Extension ClassLoader which further delegates to **_Primordial_** or Bootstrap class loader. 
+
+
+<br>
+
+
+<p align="center">
+  <img width="500" height="600" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/jvmclassloader_delegation.jpg" alt="jvmclassloader_delegation">
+</p>
+
+<br>
+
+
+### b. **visibility**
+Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
+
+
+According to visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader but vice-versa is not true. Which mean if class Abc is loaded by Application class loader than trying to load class ABC explicitly using extension ClassLoader will throw either **```java.lang.ClassNotFoundException```**<sup>[:bulb:](/Java/1.JVM/MiscellaneousExplained.md#)</sup>. as shown in below Example
+
+```
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ * Java program to demonstrate How ClassLoader works in Java,
+ * in particular about visibility principle of ClassLoader.
+ */
+
+public class ClassLoaderTest {
+  
+    public static void main(String args[]) {
+        try {          
+            //printing ClassLoader of this class
+            System.out.println("ClassLoaderTest.getClass().getClassLoader() : "
+                                 + ClassLoaderTest.class.getClassLoader());
+
+          
+            //trying to explicitly load this class again using Extension class loader
+            Class.forName("test.ClassLoaderTest", true 
+                            ,  ClassLoaderTest.class.getClassLoader().getParent());
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ClassLoaderTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+}
+```
+
+**OutPut :**
+
+```
+ClassLoaderTest.getClass().getClassLoader() : sun.misc.Launcher$AppClassLoader@6d06d69c
+Feb 11, 2019 6:59:17 AM ClassLoaderTest main
+SEVERE: null
+java.lang.ClassNotFoundException: test.ClassLoaderTest
+  at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+  at java.lang.Class.forName0(Native Method)
+  at java.lang.Class.forName(Class.java:348)
+  at ClassLoaderTest.main(ClassLoaderTest.java:21)
+```
+
+
+
+
+### c. **uniqueness**
+Uniqueness principle allows to load a class exactly once, which is basically achieved by delegation and ensures that child ClassLoader doesn't reload the class already loaded by parent.  
+
+
+
+Correct understanding of class loader is must to resolve issues like NoClassDefFoundError in Java and java.lang.ClassNotFoundException, which are related to class loading. 
 
 ---
 
@@ -192,15 +276,16 @@ The loading of classes happens hierarchically. To load a class, the loadClass() 
 
 
 <p align="center">
-  <img width="650" height="280" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_Loaders-classLoaderExample.jpg" alt="ClassLoader internals">
+  <img src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_Loaders-classLoaderExample.jpg" alt="ClassLoader internals">
 </p>
 
 1. If the Application ClassLoader has already loaded the class it simply returns it. Otherwise, the Application Classloader calls loadClass() on the Extension Classloader (2).
 2. If the Extension Classloader has loaded the class already it returns it. Otherwise, the Extension Classloader calls loadClass() on the Bootstrap Classloader (3).
 3. If the Bootstrap Classloader has loaded the class already it returns it. Otherwise, the Bootstrap Classloader calls loadClass() (4) which calls findClass() (5), which then tries to find the class in $JAVAHOME/jre/lib/rt.jar, caches (stores) and returns it (6). If the Bootstrap Classloader cannot find the class, it delegates it back to the Extension Classloader (6).
 4. The loadClass() method  (7) of the Extension Classloader then calls findClass() (8), which in turn tries to find the class in $JAVAHOME/jre/lib/ext (or in the directories defined in the System-Property java.ext.dirs), caches (stores) and returns it (9). If the Extension Classloader cannot find the class, it delegates it back to the Application Classloader (9).
-5. The loadClass() method (10) of the Application Classloader then calls findClass() (11), which in turn tries to find the class in the application classpath (java -cp or java -classpath), caches (stores) and returns it (12). If the Application Classloader cannot find the class, it throws a java.lang.ClassNotFoundException to the caller (12).
-This principle is also called delegation principle. A child Classloader can see all classes loaded by the parent Classloader (not vice-versa). The parent Classloader cannot see the classes loaded by the child Classloader (visibility principle). Each Classloader contains (loads, caches, stores) the classes it is responsible for (uniqueness principle).
+5. The loadClass() method (10) of the Application Classloader then calls findClass() (11), which in turn tries to find the class in the application classpath (java -cp or java -classpath), caches (stores) and returns it (12). If the Application Classloader cannot find the class, it throws a `java.lang.ClassNotFoundException` to the caller (12).
+
+This principle is also called **`delegation principle`**. A child Classloader can see all classes loaded by the parent Classloader (not vice-versa). The parent Classloader cannot see the classes loaded by the child Classloader `(visibility principle)`. Each Classloader contains `(loads, caches, stores)` the classes it is responsible for (uniqueness principle).
 
 This is a recursive process. To sum it up
 
@@ -292,7 +377,8 @@ A Java program usually consists of many classes that are linked to each other li
 
 
 --- 
-# Types of Built-in Class Loaders
+
+## Types of Built-in Class Loaders
 
 Let’s start by learning how different classes are loaded using various class loaders using a simple example:
 ```
@@ -320,104 +406,15 @@ Class loader of ArrayList:null
 
 As we can see, there are three different class loaders here; **application, extension, and bootstrap** (displayed as null).
 
-The **application** class loader loads the class where the example method is contained. An application or system class loader loads our own files in the classpath.
+* The **application** class loader loads the class where the example method is contained. An application or system class loader loads our own files in the classpath.
 
-Next, the **extension** one loads the Logging class. Extension class loaders load classes that are an extension of the standard core Java classes.
+* Next, the **extension** one loads the Logging class. Extension class loaders load classes that are an extension of the standard core Java classes.
 
-Finally, the **bootstrap** one loads the ArrayList class. A bootstrap or primordial class loader is the parent of all the others.
+* Finally, the **bootstrap** one loads the ArrayList class. A bootstrap or primordial class loader is the parent of all the others.
 
-> However, we can see that the last out, for the ArrayList it displays null in the output. This is because the bootstrap class loader is written in native code, not Java – so it doesn’t show up as a Java class. Due to this reason, the behavior of the bootstrap class loader will differ across JVMs.
-
-
+> 🤔❓ However, we can see that the last out, for the ArrayList it displays null in the output. **This is because the bootstrap class loader is written in native code**, not Java – so it doesn’t show up as a Java class. Due to this reason, the behavior of the bootstrap class loader will differ across JVMs.
 
 
-# ClassLoader Principles 
-ClassLoader in Java works on three principle :
-
-* **delegation**
-* **visibility** 
-* **uniqueness** 
-
-
-
-## a. **delegation :**
-Delegation principle forward request of class loading to parent class loader and only loads the class, if parent is not able to find or load class
-
-When a class is loaded in Java, when its needed. Suppose you have an application specific class called Abc.class, first request of loading this class will come to Application ClassLoader which will delegate to its parent Extension ClassLoader which further delegates to **_Primordial_** or Bootstrap class loader. 
-
-Primordial will look for that class in rt.jar and since that class is not there, request comes to Extension class loader which looks on jre/lib/ext directory and tries to locate this class there, if class is found there than Extension class loader will load that class and Application class loader will never load that class but if its not loaded by extension class-loader than Application class loader loads it from Classpath in Java. Remember Classpath is used to load class files while PATH is used to locate executable like javac or java command.
-
-
-<br>
-
-
-<p align="center">
-  <img width="500" height="600" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/jvmclassloader_delegation.jpg" alt="jvmclassloader_delegation">
-</p>
-
-[]()
-<br>
-
-
-## b. **visibility :**
-Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
-
-
-According to visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader but vice-versa is not true. Which mean if class Abc is loaded by Application class loader than trying to load class ABC explicitly using extension ClassLoader will throw either **```java.lang.ClassNotFoundException```**<sup>[:bulb:](/Java/1.JVM/MiscellaneousExplained.md#)</sup>. as shown in below Example
-
-```
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-/**
- * Java program to demonstrate How ClassLoader works in Java,
- * in particular about visibility principle of ClassLoader.
- */
-
-public class ClassLoaderTest {
-  
-    public static void main(String args[]) {
-        try {          
-            //printing ClassLoader of this class
-            System.out.println("ClassLoaderTest.getClass().getClassLoader() : "
-                                 + ClassLoaderTest.class.getClassLoader());
-
-          
-            //trying to explicitly load this class again using Extension class loader
-            Class.forName("test.ClassLoaderTest", true 
-                            ,  ClassLoaderTest.class.getClassLoader().getParent());
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ClassLoaderTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-}
-```
-
-**OutPut :**
-
-```
-ClassLoaderTest.getClass().getClassLoader() : sun.misc.Launcher$AppClassLoader@6d06d69c
-Feb 11, 2019 6:59:17 AM ClassLoaderTest main
-SEVERE: null
-java.lang.ClassNotFoundException: test.ClassLoaderTest
-  at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-  at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-  at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-  at java.lang.Class.forName0(Native Method)
-  at java.lang.Class.forName(Class.java:348)
-  at ClassLoaderTest.main(ClassLoaderTest.java:21)
-```
-
-
-
-
-## c. **uniqueness :**
-Uniqueness principle allows to load a class exactly once, which is basically achieved by delegation and ensures that child ClassLoader doesn't reload the class already loaded by parent.  
-
-
-
-Correct understanding of class loader is must to resolve issues like NoClassDefFoundError in Java and java.lang.ClassNotFoundException, which are related to class loading. 
 
 
 
