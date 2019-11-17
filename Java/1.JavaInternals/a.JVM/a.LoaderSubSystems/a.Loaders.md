@@ -4,7 +4,8 @@ Table of Contents
    * [ClassLoader](#classloader)
       * [Java Byte-Code](#java-byte-code)
       * [What does it mean by saying - load a class?](#what-does-it-mean-by-saying---load-a-class)
-      * [How does Java ClassLoader Work?](#how-does-java-classloader-work)
+      * [Hierarchy of Classloaders](#hierarchy-of-classloaders)
+      * [Finding and Loading a Class](#finding-and-loading-a-class)
    * [Types of Built-in Class Loaders](#types-of-built-in-class-loaders)
    * [ClassLoader Principles](#classloader-principles)
       * [a. <strong>delegation :</strong>](#a-delegation-)
@@ -72,9 +73,6 @@ public class HelloWorld {
 Source Code in C/C++ is compiled to native machine code first and then it requires a linking step after compilation. What the linking does is combining source files from different places and form an executable program. Java does not do that. The linking-like step for Java is done when they are loaded into JVM.
 
 Different JVMs load classes in different ways, but the basic rule is only loading classes when they are needed. If there are some other classes that are required by the loaded class, they will also be loaded. **```The loading process is recursive```**.
-
-
-
 
 loading policies is handled by a ClassLoader. The following example shows how and when a class is loaded for a simple program.
 
@@ -169,11 +167,49 @@ Classes are introduced into the Java environment when they are referenced by nam
 ---
 
 
-## How does Java ClassLoader Work?
-
-
+## Hierarchy of Classloaders
 
 A Java program usually consists of many classes that are linked to each other. These classes are loaded and initialised when they are needed during runtime. Java provides a hierarchy of different ClassLoaders that are responsible for this job
+
+<br>
+
+
+<p align="center">
+  <img width="600" height="350" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_Loaders-classLoaderHierarchie.jpg" alt="ClassLoader internals">
+</p>
+
+
+* **The Bootstrap Classloader** (aka Primordial Classloader) loads the classes of the JRE, classes that can be found in $JAVAHOME/jre/lib/rt.jar. The Bootstrap Classloader is the root of all other the other Classloaders. Most of the classes are implemented in C.
+* The **Extension Classloader** loads classes from Extension API under $JAVAHOME/jre/lib/ext (or in the directories defined in the System-Property java.ext.dirs). The Extension Classloader is a sub-class of the Bootstrap Classloader. It is implemented in Java.
+* The **Application Classloader** (aka System Classloader) is the default Classloader and loads classes from the classpath (java -cp or java -classpath) or Class-Path attribute of a META-INF/MANIFEST.MF file inside of a jar-file. The System Classloader is also implemented in Java.
+* In addition, **Custom Classloader** can be written that can load classes from any location. These User-Defined Classloaders are derived from java.lang.ClassLoader. Custom Classloader are organised as a tree, each Custom Classloader has a parent, the System Classloader is the root Classloader for all Custom Classloaders
+
+## Finding and Loading a Class
+
+The loading of classes happens hierarchically. To load a class, the loadClass() method of the Application Classloader is called (1).
+
+
+<p align="center">
+  <img width="650" height="280" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_Loaders-classLoaderExample.jpg" alt="ClassLoader internals">
+</p>
+
+1. If the Application ClassLoader has already loaded the class it simply returns it. Otherwise, the Application Classloader calls loadClass() on the Extension Classloader (2).
+2. If the Extension Classloader has loaded the class already it returns it. Otherwise, the Extension Classloader calls loadClass() on the Bootstrap Classloader (3).
+3. If the Bootstrap Classloader has loaded the class already it returns it. Otherwise, the Bootstrap Classloader calls loadClass() (4) which calls findClass() (5), which then tries to find the class in $JAVAHOME/jre/lib/rt.jar, caches (stores) and returns it (6). If the Bootstrap Classloader cannot find the class, it delegates it back to the Extension Classloader (6).
+4. The loadClass() method  (7) of the Extension Classloader then calls findClass() (8), which in turn tries to find the class in $JAVAHOME/jre/lib/ext (or in the directories defined in the System-Property java.ext.dirs), caches (stores) and returns it (9). If the Extension Classloader cannot find the class, it delegates it back to the Application Classloader (9).
+5. The loadClass() method (10) of the Application Classloader then calls findClass() (11), which in turn tries to find the class in the application classpath (java -cp or java -classpath), caches (stores) and returns it (12). If the Application Classloader cannot find the class, it throws a java.lang.ClassNotFoundException to the caller (12).
+This principle is also called delegation principle. A child Classloader can see all classes loaded by the parent Classloader (not vice-versa). The parent Classloader cannot see the classes loaded by the child Classloader (visibility principle). Each Classloader contains (loads, caches, stores) the classes it is responsible for (uniqueness principle).
+
+This is a recursive process. To sum it up
+
+* if the Classloader has already loaded the class and returns the class from its cache,
+* if not it asks their Parent ClassLoader
+* if the Parent ClassLoader doesn’t have the class, the ClassLoader loads it from the associated location
+
+<!-- ## How does Java ClassLoader Work?
+
+
+A Java program usually consists of many classes that are linked to each other like above `TestLoader.java` example. These classes are loaded and initialised when they are needed during runtime. Java provides a hierarchy of different ClassLoaders that are responsible for this job
 
 
 
@@ -183,15 +219,9 @@ A Java program usually consists of many classes that are linked to each other. T
 
 * If the Class is not already loaded then it will delegate the request to parent ClassLoader to load the class.
 
-* If the parent ClassLoader is not finding the Class then it will invoke findClass() method to look for the classes in the file system.
+* If the parent ClassLoader is not finding the Class then it will invoke findClass() method to look for the classes in the file system. -->
 
 
-<br>
-
-
-<p align="center">
-  <img width="600" height="350" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_Loaders-classLoaderHierarchie.jpg" alt="ClassLoader internals">
-</p>
 
 
 --- 
