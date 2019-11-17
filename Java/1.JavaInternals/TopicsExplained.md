@@ -54,6 +54,48 @@ Shutdown Hook is running !
 
  - https://www.geeksforgeeks.org/jvm-shutdown-hook-java/
 
+
+##  Practical Class Loading Examples.
+
+lets see the below flow of class loading 
+
+
+```
+import java.io.File;
+
+public class GetPath {
+  public static void main(String[] args) {
+    String pwd = new File("").getAbsolutePath();
+    System.out.println("Current path : " +pwd);
+    System.out.println("Class loader loaindg this file : "+GetPath.class.getClassLoader());
+  }
+}
+```
+**Output :**
+```
+[03:58:30] root: Charan > javac GetPath.java
+[03:58:36] root: Charan > java GetPath
+Current path : /Users/charankumar/Desktop/Charan
+Class loader loaindg this file : sun.misc.Launcher$AppClassLoader@2a139a55
+```
+
+Now lets execute a small trick... move this class file to jdk lib/ext folder as a jar
+
+```
+[03:58:42] root: Charan > pwd
+/Users/charankumar/Desktop/Charan
+[04:02:36] root: Charan > cp GetPath.class /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/ext
+[04:02:42] root: Charan > jar cvf /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/ext/GetCharanPath.jar GetPath.class
+added manifest
+adding: GetPath.class(in = 870) (out= 505)(deflated 41%)
+[04:03:04] root: Charan > java GetPath
+Current path : /Users/charankumar/Desktop/Charan
+Class loader loaindg this file : sun.misc.Launcher$ExtClassLoader@15db9742
+```
+
+
+You can see though i'm still in same folder where i ran first example which shows `sun.misc.Launcher$AppClassLoader@2a139a55` as class loader initially now when i run second time its shows `sun.misc.Launcher$ExtClassLoader@15db9742` ..... this is the best example of `delegation` ...first it looks in parent class loader and uses the class in lib/ext
+
 ## :bulb:  The Null Classloader
 If Java classes are loaded by classloaders, and classloaders are Java components, who loads the first classloader?
 
