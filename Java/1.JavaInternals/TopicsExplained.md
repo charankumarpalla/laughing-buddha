@@ -3,7 +3,56 @@
 
 ## :bulb: java.lang.ClassNotFoundException.
 
+## ShutDown Hooks
 
+while we execute  a java class we load all claases and here is where shutdown can be seen
+
+
+
+```
+java -verbose:class -classpath . HelloWorld
+
+[Opened /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+[Loaded java.lang.Object from /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+.
+.
+.
+[Loaded java.lang.Void from /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+Hello World.
+[Loaded java.lang.Shutdown from /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+[Loaded java.lang.Shutdown$Lock from /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+```
+
+
+Shutdown Hooks are a special construct that allows developers to plug in a piece of code to be executed when the JVM is shutting down. This comes in handy in cases where we need to do special clean up operations in case the VM is shutting down.
+
+
+```
+public class ShutDownHook 
+{ 
+  public static void main(String[] args) 
+  { 
+  
+    Runtime.getRuntime().addShutdownHook(new Thread() 
+    { 
+      public void run() 
+      { 
+        System.out.println("Shutdown Hook is running !"); 
+      } 
+    }); 
+    System.out.println("Application Terminating ..."); 
+  } 
+} 
+```
+
+**Output:**
+
+```
+Application Terminating ...
+Shutdown Hook is running !
+```
+
+ - https://www.geeksforgeeks.org/jvm-shutdown-hook-java/
 
 ## :bulb:  The Null Classloader
 If Java classes are loaded by classloaders, and classloaders are Java components, who loads the first classloader?

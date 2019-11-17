@@ -1,9 +1,10 @@
-
 Table of Contents
 =================
 
-   * [What does it mean by saying "load a class"?](#what-does-it-mean-by-saying-load-a-class)
-   * [How does Java ClassLoader Work?](#how-does-java-classloader-work)
+   * [ClassLoader](#classloader)
+      * [Java Byte-Code](#java-byte-code)
+      * [What does it mean by saying - load a class?](#what-does-it-mean-by-saying---load-a-class)
+      * [How does Java ClassLoader Work?](#how-does-java-classloader-work)
    * [Types of Built-in Class Loaders](#types-of-built-in-class-loaders)
    * [ClassLoader Principles](#classloader-principles)
       * [a. <strong>delegation :</strong>](#a-delegation-)
@@ -20,8 +21,53 @@ Table of Contents
 
 In this tutorial, we’re going to talk about different types of built-in class loaders, how they work and an introduction to our own custom implementation.
 
+# ClassLoader
+<!-- ## What is Java ClassLoader? -->
+<!-- We know that Java Program runs on Java Virtual Machine (JVM). When we compile a Java Class, it transforms it in the form of bytecode that is platform and machine independent compiled program and stores it as a .class file. After that when we try to use a Class, Java ClassLoader loads that class into memory. -->
 
-# What does it mean by saying "load a class"?
+## Java Byte-Code
+
+When you compile java-code (.java files and resources), the compiler will generate so-called `byte-code` (.class files, or packaged .jar files). This byte-code can’t be executed by the local operating system, but only by the Java Runtime Environment (JRE). The JRE is the environment where a Java Virtual Machine (JVM) runs. The benefits are that the byte-code can run on any machine where a JRE is present (providing you haven’t used any operating-system specific code). In addition, **`the Java application runs in a safe space (sandbox) without having much chance to attack the underlying OS`**. Another advantage can be that the byte-code is executed by a just-in-time compiler (JIT compiler). A JIT compiler compiles byte-code into machine-code that can be read and executed by the underlying OS on-the-fly, often with using profiling information to optimise the machine-code.
+
+
+```
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello World.");
+        }
+    }
+```
+
+<div align="right">
+
+<a alt="NoteMe"><img src="https://img.shields.io/badge/Attention Pls-Blue?style=social&logo=periscope"/></a>
+</div>
+
+You can see the byte by using
+> **javap -c HelloWorld.class**
+
+```
+javap -c HelloWorld.class
+
+Compiled from "HelloWorld.java"
+public class HelloWorld {
+  public HelloWorld();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #3                  // String Hello World.
+       5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       8: return
+}
+
+```
+
+## What does it mean by saying - load a class?
 
 Source Code in C/C++ is compiled to native machine code first and then it requires a linking step after compilation. What the linking does is combining source files from different places and form an executable program. Java does not do that. The linking-like step for Java is done when they are loaded into JVM.
 
@@ -43,7 +89,6 @@ public class TestLoader {
 
 
 **A.java**
-
 ```
 public class A {
   public void method(){
@@ -61,8 +106,8 @@ java -verbose:class -classpath /Laughing-buddha/Java/1.JVM/src TestLoader
 ```
 
 
-
 **Part of Output**
+
 ```
 [Loaded sun.launcher.LauncherHelper$FXHelper from /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar]
 [Loaded java.lang.Class$MethodArray from /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar]
@@ -71,6 +116,9 @@ test
 [Loaded java.lang.Shutdown from /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar]
 [Loaded java.lang.Shutdown$Lock from /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar]
 ```
+<div align="right">
+<a href="../../TopicsExplained.md#shutdown-hooks" alt=""><img src="https://img.shields.io/badge/ShutdownHooks-blue?style=plastic&logo=markdown"/></a>
+</div>
 
 
 **Now If we change TestLoader.java to:**
@@ -121,15 +169,30 @@ Classes are introduced into the Java environment when they are referenced by nam
 ---
 
 
-# How does Java ClassLoader Work?
+## How does Java ClassLoader Work?
 
-When JVM requests for a class, it invokes `loadClass` function of the ClassLoader by passing the fully classified name of the Class.
 
-loadClass function calls for `findLoadedClass()` method to check that the class has been already loaded or not. It’s required to avoid loading the class multiple times.
 
-If the Class is not already loaded then it will delegate the request to parent ClassLoader to load the class.
+A Java program usually consists of many classes that are linked to each other. These classes are loaded and initialised when they are needed during runtime. Java provides a hierarchy of different ClassLoaders that are responsible for this job
 
-If the parent ClassLoader is not finding the Class then it will invoke findClass() method to look for the classes in the file system.
+
+
+* When JVM requests for a class, it invokes `loadClass` function of the ClassLoader by passing the fully classified name of the Class.
+
+* loadClass function calls for `findLoadedClass()` method to check that the class has been already loaded or not. It’s required to avoid loading the class multiple times.
+
+* If the Class is not already loaded then it will delegate the request to parent ClassLoader to load the class.
+
+* If the parent ClassLoader is not finding the Class then it will invoke findClass() method to look for the classes in the file system.
+
+
+<br>
+
+
+<p align="center">
+  <img width="600" height="350" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_Loaders-classLoaderHierarchie.jpg" alt="ClassLoader internals">
+</p>
+
 
 --- 
 # Types of Built-in Class Loaders
@@ -292,6 +355,7 @@ Correct understanding of class loader is must to resolve issues like NoClassDefF
 ## ❗️ Sometimes ignorance is not bliss
 ## 🔗 🙏 Reference and Our Thanks to these...
 - https://javarevisited.blogspot.com/2011/08/classnotfoundexception-in-java-example.html#axzz5fBEERW8K
+- https://dev.vividbreeze.com/jvm-classloading/
 - https://www.baeldung.com/java-classloaders
 - https://www.journaldev.com/349/java-classloader
 - 

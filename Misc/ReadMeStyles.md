@@ -30,8 +30,13 @@ Table of Contents
 <a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=for-the-badge&logo=markdown"/></a>
 
 
+
 <a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
+<div align="right">
+
+<a alt="NoteMe"><img src="https://img.shields.io/badge/Attention Pls-Blue?style=social&logo=periscope"/></a>
+</div>
 
 [**Continue Reading ......**](a.Loaders.md) 🔬
 </div>
@@ -41,6 +46,11 @@ Table of Contents
 
 🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
 </div>
+
+<a alt="NoteMe"><img src="https://img.shields.io/badge/Note - Me-red?style=flat-square&logo=periscope"/></a>
+
+<a alt="NoteMe"><img src="https://img.shields.io/badge/Attention Pls-Blue?style=social&logo=periscope"/></a>
+
 
 <a href="https://www.facebook.com/charanraj11" alt=""><img src="https://img.shields.io/badge/-lightblue?logo=Markdown"/></a>
 
