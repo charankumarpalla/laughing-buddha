@@ -26,6 +26,15 @@ In this tutorial, we’re going to talk about different types of built-in class 
 <!-- ## What is Java ClassLoader? -->
 <!-- We know that Java Program runs on Java Virtual Machine (JVM). When we compile a Java Class, it transforms it in the form of bytecode that is platform and machine independent compiled program and stores it as a .class file. After that when we try to use a Class, Java ClassLoader loads that class into memory. -->
 
+<br>
+
+
+<p align="center">
+  <img width="600" height="350" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_LoaderSubSystems_ClassLoader_Internals.jpg" alt="ClassLoader internals">
+</p>
+
+<br>
+
 ## Java Byte-Code
 
 When you compile java-code (.java files and resources), the compiler will generate so-called `byte-code` (.class files, or packaged .jar files). This byte-code can’t be executed by the local operating system, but only by the Java Runtime Environment (JRE). The JRE is the environment where a Java Virtual Machine (JVM) runs. The benefits are that the byte-code can run on any machine where a JRE is present (providing you haven’t used any operating-system specific code). In addition, **`the Java application runs in a safe space (sandbox) without having much chance to attack the underlying OS`**. Another advantage can be that the byte-code is executed by a just-in-time compiler (JIT compiler). A JIT compiler compiles byte-code into machine-code that can be read and executed by the underlying OS on-the-fly, often with using profiling information to optimise the machine-code.
@@ -74,7 +83,9 @@ Source Code in C/C++ is compiled to native machine code first and then it requir
 
 Different JVMs load classes in different ways, but the basic rule is only loading classes when they are needed. If there are some other classes that are required by the loaded class, they will also be loaded. **```The loading process is recursive```**.
 
-loading policies is handled by a ClassLoader. The following example shows how and when a class is loaded for a simple program.
+loading policies is handled by a ClassLoader. 
+<!-- 
+The following example shows how and when a class is loaded for a simple program.
 
 **TestLoader.java**
 ```
@@ -114,9 +125,7 @@ test
 [Loaded java.lang.Shutdown from /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar]
 [Loaded java.lang.Shutdown$Lock from /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar]
 ```
-<div align="right">
-<a href="../../TopicsExplained.md#shutdown-hooks" alt=""><img src="https://img.shields.io/badge/ShutdownHooks-blue?style=plastic&logo=markdown"/></a>
-</div>
+
 
 
 **Now If we change TestLoader.java to:**
@@ -148,21 +157,14 @@ inside of A
 A.class is loaded only when it is used. In summary, a class is loaded:
 
 - when the new bytecode is executed. For example, SomeClass f = new SomeClass();
-- when the bytecodes make a static reference to a class. For example, System.out.
+- when the bytecodes make a static reference to a class. For example, System.out. -->
 
 
 
 <!-- # What class loaders do /work 
 Classes are introduced into the Java environment when they are referenced by name in a class that is already running. There is a bit of magic that goes on to get the first class running (which is why you have to declare the main() method as static, taking a string array as an argument), but once that class is running, future attempts at loading classes are done by the class loader. -->
 
-<br>
 
-
-<p align="center">
-  <img width="600" height="350" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/_LoaderSubSystems_ClassLoader_Internals.jpg" alt="ClassLoader internals">
-</p>
-
-<br>
 
 ---
 
@@ -205,6 +207,71 @@ This is a recursive process. To sum it up
 * if the Classloader has already loaded the class and returns the class from its cache,
 * if not it asks their Parent ClassLoader
 * if the Parent ClassLoader doesn’t have the class, the ClassLoader loads it from the associated location
+
+You can experiment this behaviour with some classes like this
+```
+public class SuperClass {
+    public static int A = 200;
+    static {
+        System.out.println ("Static part of SuperClass.");
+    }
+    {
+        System.out.println("Non-Static part of SuperClass is initialized");
+    }
+}
+```
+```
+public class SubClass extends SuperClass {
+    public static int A = 100;
+    static {
+        System.out.println ("Static part of SubClass.");
+    }
+    
+    {
+        System.out.println("Non-Static part of SubClass is initialized");
+    }
+}
+```
+
+```
+public class ClassHierarchyDemo {
+    public static void main (String[] args) {
+        System.out.println (SubClass.A);
+        SubClass subClass = new SubClass();
+    }
+}
+```
+
+You can have a further look at when the classes are loaded with
+
+``` java -verbose:class ClassHierarchyDemo  ```
+
+```
+[Opened /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+[Loaded java.lang.Object from /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+....
+....
+....
+....
+....
+[Loaded SubClass from file:/Users/charankumar/]
+Static part of SuperClass.
+Static part of SubClass.
+100
+Non-Static part of SuperClass is initialized
+Non-Static part of SubClass is initialized
+[Loaded java.lang.Shutdown from /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar]
+```
+
+
+In summary, a class is loaded:
+
+- when the new bytecode is executed. For example, SomeClass f = new SomeClass();
+- when the bytecodes make a static reference to a class. For example, System.out.
+
+<div align="right">
+<a href="../../TopicsExplained.md#shutdown-hooks" alt=""><img src="https://img.shields.io/badge/ShutdownHooks-blue?style=plastic&logo=markdown"/></a>
+</div>
 
 <!-- ## How does Java ClassLoader Work?
 
@@ -285,10 +352,10 @@ Primordial will look for that class in rt.jar and since that class is not there,
 
 
 <p align="center">
-  <img width="500" height="600" src="/Java/ResourcesFiles/Pictures/jvmclassloader_delegation.jpg?raw=true" alt="jvmclassloader_delegation">
+  <img width="500" height="600" src="../../../../PlayGround/ResourcesFiles/Java/Pictures/jvmclassloader_delegation.jpg" alt="jvmclassloader_delegation">
 </p>
 
-
+[]()
 <br>
 
 
@@ -370,8 +437,6 @@ Correct understanding of class loader is must to resolve issues like NoClassDefF
 <br>
 
 :envelope:
-
-
 
 - Class Loaders
     - https://www.ibm.com/developerworks/library/j-dyn0429/
