@@ -55,7 +55,7 @@ Shutdown Hook is running !
  - https://www.geeksforgeeks.org/jvm-shutdown-hook-java/
 
 
-##  Practical Class Loading Examples.
+##  Delegation Practical Class Loading Examples.
 
 lets see the below flow of class loading 
 
@@ -95,6 +95,60 @@ Class loader loaindg this file : sun.misc.Launcher$ExtClassLoader@15db9742
 
 
 You can see though i'm still in same folder where i ran first example which shows `sun.misc.Launcher$AppClassLoader@2a139a55` as class loader initially now when i run second time its shows `sun.misc.Launcher$ExtClassLoader@15db9742` ..... this is the best example of `delegation` ...first it looks in parent class loader and uses the class in lib/ext
+
+## NoSuchMethodError
+
+This happens when class A compiles with reference to Class B(invoked in class A) with some methods...and then class B changes its behaviours which is not updated in the class A...
+
+
+```
+public class TestLoader {
+  public static void main(String[] args) {
+    System.out.println("test");
+    A a = new A();
+    a.method();
+  }
+}
+```
+
+```
+public class A {
+  public String method(){
+  	return "inside of A";
+  }
+}
+
+```
+
+
+
+```
+[07:53:35] root:  > javac TestLoader.java
+[07:54:03] root: > javac A.java
+[07:54:25] root: > java TestLoader
+test
+```
+
+Now A.class changed
+
+```
+public class A {
+  public void method(){
+    System.out.println("inside of A");
+  }
+}
+
+```
+
+
+
+```
+[07:56:05] root:  > javac A.java
+[07:56:15] root:  > java TestLoader
+test
+Exception in thread "main" java.lang.NoSuchMethodError: A.method()Ljava/lang/String;
+	at TestLoader.main(TestLoader.java:5)
+  ````
 
 ## :bulb:  The Null Classloader
 If Java classes are loaded by classloaders, and classloaders are Java components, who loads the first classloader?

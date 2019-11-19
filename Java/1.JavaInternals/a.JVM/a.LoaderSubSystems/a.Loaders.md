@@ -191,8 +191,9 @@ When a class is loaded in Java, when its needed. Suppose you have an application
 
 
 <div align="right">
-<a href="../../TopicsExplained.md#practical-class-loading-examples" alt=""><img src="https://img.shields.io/badge/delegation-blue?style=plastic&logo=markdown"/></a>
+<a href="../../TopicsExplained.md#delegation-practical-class-loading-examples" alt=""><img src="https://img.shields.io/badge/delegation-blue?style=plastic&logo=markdown"/></a>
 </div>
+
 ### b. **visibility**
 Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
 
