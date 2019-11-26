@@ -1,0 +1,18 @@
+# applications:
+# - path: .
+#   memory: 256M
+#   instances: 1
+#   domain: mybluemix.net
+#   name: mocksimulator
+#   host: mocksimulator
+#   disk_quota: 256M
+
+
+
+
+---
+applications:
+ - name: mymockdemo
+   host: mymockdemo
+   random-route: true
+   memory: 128M
