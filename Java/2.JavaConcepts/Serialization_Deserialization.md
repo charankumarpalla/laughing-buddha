@@ -40,7 +40,7 @@ Primary purpose of java serialization is to write an object into a stream, so th
 
 
 <p align="center"> 
-    <img src="../ResourcesFiles/Concepts/serialize-deserialize-java_a.png" alt="serialize-deserialize">
+    <img src="../../PlayGround/ResourcesFiles/Java/Concepts/serialize-deserialize-java_d.jpg" alt="serialize-deserialize">
  </p>
 
  `The byte stream created is platform independent. So, the object serialized on one platform can be deserialized on a different platform.`
@@ -51,7 +51,7 @@ Primary purpose of java serialization is to write an object into a stream, so th
 2. To travel an object across a network.
 
 <p align="center"> 
-    <img src="../ResourcesFiles/Concepts/serialize-deserialize-java_b.jpg" alt="serialize-deserialize">
+    <img src="../../PlayGround/ResourcesFiles/Java/Concepts/serialize-deserialize-java_b.jpg" alt="serialize-deserialize">
  </p>
 
 
@@ -117,7 +117,7 @@ The serializable class SerialDemo does not declare a static final serialVersionU
 Most of us used to ignore this message as we always do for a warning. My general note is, always pay attention to the java warning messages. It will help you to learn a lot of fundamentals.
 
 <p align="center"> 
-    <img width="550" src="../ResourcesFiles/Concepts/serialize-deserialize-java_c_SerialVersionUID.png" alt="serialize-deserialize-java_c_SerialVersionUID">
+    <img width="550" src="../../PlayGround/ResourcesFiles/Java/Concepts/serialize-deserialize-java_c_SerialVersionUID.png" alt="serialize-deserialize-java_c_SerialVersionUID">
  </p>
 
 serialVersionUID is a must in serialization process. But it is optional for the developer to add it in java source file. If you are not going to add it in java source file, serialization runtime will generate a serialVersionUID and associate it with the class. The serialized object will contain this serialVersionUID along with other data.
@@ -238,8 +238,9 @@ Exception in thread "main" java.io.InvalidClassException: Lion; local class inco
 Look at following image. After serializing Let us look at contents byte by byte and find out what they are. It starts with “ac ed”. It is is called **`STREAM_MAGIC`**. It is a magic number (java API guys says) that is written to the stream header. It denotes that is start of serialzed content.
 
 <p align="center"> 
-    <img src="../ResourcesFiles/Concepts/serialize-deserialize-java_d.jpg" alt="serialize-deserialize">
+    <img src="../../PlayGround/ResourcesFiles/Java/Concepts/serialize-deserialize-java_d.jpg" alt="serialize-deserialize">
  </p>
+
 
 In the image, I have underline a unit of information in a separate color for you to easily identify.
 
