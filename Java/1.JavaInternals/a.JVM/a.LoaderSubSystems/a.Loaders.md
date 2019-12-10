@@ -190,6 +190,10 @@ When a class is loaded in Java, when its needed. Suppose you have an application
 <br>
 
 
+<div align="right">
+<a href="../../TopicsExplained.md#delegation-practical-class-loading-examples" alt=""><img src="https://img.shields.io/badge/delegation-blue?style=plastic&logo=markdown"/></a>
+</div>
+
 ### b. **visibility**
 Visibility principle allows child class loader to see all the classes loaded by parent ClassLoader, but parent class loader can not see classes loaded by child.
 
@@ -433,8 +437,6 @@ As we can see, there are three different class loaders here; **application, exte
 
 <br>
 
-:envelope:
-
 - Class Loaders
     - https://www.ibm.com/developerworks/library/j-dyn0429/
     - https://www.baeldung.com/java-classloaders
@@ -450,6 +452,7 @@ As we can see, there are three different class loaders here; **application, exte
 - https://dev.vividbreeze.com/jvm-classloading/
 - https://www.baeldung.com/java-classloaders
 - https://www.journaldev.com/349/java-classloader
+- Questions : https://chatrabazar.wordpress.com/java-basics/java-memory-model-and-jvm-details/
 - 
 ## 🔄 UnWind/Recap
 
