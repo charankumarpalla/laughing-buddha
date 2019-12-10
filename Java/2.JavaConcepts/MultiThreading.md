@@ -1,5 +1,4 @@
 
-
 Table of Contents
 =================
 
@@ -16,6 +15,11 @@ Table of Contents
       * [Thread Priority](#thread-priority)
       * [Thread Pool](#thread-pool)
       * [Thread Group](#thread-group)
+      * [Java Shutdown Hook](#java-shutdown-hook)
+         * [When does the JVM shut down?](#when-does-the-jvm-shut-down)
+      * [Performing multiple task](#performing-multiple-task)
+         * [How to perform single task by multiple threads](#how-to-perform-single-task-by-multiple-threads)
+         * [How to perform multiple tasks by multiple threads (multitasking in multithreading)?](#how-to-perform-multiple-tasks-by-multiple-threads-multitasking-in-multithreading)
    * [Thread Scheduler](#thread-scheduler-1)
    * [Reference :](#reference-)
    * [Yet to Read](#yet-to-read)
