@@ -155,6 +155,13 @@ Java gives you a choice. If you want to access resources of a particular host th
 <!-- [**Continue Reading ......**](3.JavaAdvanced/README.md) 🔬 -->
 </div>
 
+#  Interview Questions
+
+<div align="right">
+<a href="4.Interview/Interview.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+</div>
+
 
 # Thanks
 **`Inside-Java-Virtual-Machine`** by **`Bill Venners`**
