@@ -12,6 +12,7 @@ Table of Contents
          * [Java Methods](#java-methods)
    * [Java Concepts](#java-concepts)
    * [Java Advanced](#java-advanced)
+   * [Interview Questions](#interview-questions)
    * [Thanks](#thanks)
 
 # Java Internals
