@@ -7,10 +7,18 @@ come After Some Time :) :)
 
 
 
-`TODO` Write Below Secription
+# `TODO` ---->  Write Below Decription
+
 >https://learning.oreilly.com/library/view/beginning-flutter/9781119550822/c01.xhtml
 
-[](../../PlayGround/ResourcesFiles/Flutter_Dart/StateFulWidget.jpeg)
+
+
+- Flutter is declarative. This means that Flutter builds its user interface to reflect the current state of your app: When the state of your app changes (for example, the user flips a switch in the settings screen), you change the state, and that triggers a redraw of the user interface
+
+<p align="center">
+  <img width="600" height="250" src="../../PlayGround/ResourcesFiles/Flutter_Dart/flutter_declarative-UI.png" alt="flutter_declarative">
+</p>
+
 
 | [<img alt="Andreas Mehlsen" src="../../PlayGround/ResourcesFiles/Flutter_Dart/StatelesWidget.jpeg" width="300" height="300">](https://twitter.com/andreasmehlsen) | [<img alt="You?" src="../../PlayGround/ResourcesFiles/Flutter_Dart/StateFulWidget.jpeg" width="300" height="300">](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
 |:--------------------------------------------------:|:--------------------------------------------------:|
