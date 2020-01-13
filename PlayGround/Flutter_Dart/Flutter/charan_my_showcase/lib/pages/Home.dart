@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:charan_my_showcase/pages/Page2.dart';
+// import 'package:charan_my_showcase/pages/Future.dart';
+import 'package:charan_my_showcase/models/MyButton.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -7,15 +9,15 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  String saa = "charan";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
         title: Container(
-          child: Center(
-            child: Text("data"),
-          )
-        ),
+            child: Center(
+          child: Text("All Widget Showcase"),
+        )),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.info),
@@ -47,14 +49,34 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: new Center(
-        child: new RaisedButton(
-          child: Text("Next Page    -----> "),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (BuildContext context) => Page2()),
-            );
-          },
+        child: Wrap(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          direction: Axis.horizontal,
+          children: <Widget>[
+            new MyButton("hiiii", Icons.arrow_right, null),
+            SizedBox(width: 5),
+            new MyButton("hii", null, null),
+            SizedBox(width: 5),
+            new MyButton("hii", null, null),
+            new RaisedButton.icon(
+              color: Color(0X00FF0000),
+              label: Text("Navigate"),
+              icon: Icon(Icons.arrow_right),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (BuildContext context) => Page2()),
+                );
+              },
+            ),
+            SizedBox(width: 6),
+            new RaisedButton.icon(
+              color: Color(0XFF2233),
+              icon: Icon(Icons.redeem),
+              label: Text("Future"),
+              onPressed: () {},
+            ),
+          ],
         ),
       ),
     );

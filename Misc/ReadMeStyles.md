@@ -1,12 +1,13 @@
 Table of Contents
 =================
 
+   * [Emoji's Status](#emojis-status)
    * [Drop Down Table](#drop-down-table)
       * [➤ Table of Contents](#-table-of-contents)
    * [ReadMore](#readmore)
    * [Best ReadMe Styles](#best-readme-styles)
    * [Resume application project](#resume-application-project)
-   * [Contributors](#-contributors)
+   * [Contributors](#contributors)
    * [Lines](#lines)
    * [Bookmarks](#bookmarks)
       * [Chapter 4](#chapter-4)
@@ -25,6 +26,16 @@ Table of Contents
    * [List](#list)
 
 
+
+# Emoji's Status
+
+
+Emoji| Code                           | Description 
+:--:|:-------------------------------:|:-----------------------------------------------:
+🚧  | `:construction:` | Page still in Progress
+👏  | `:clap:` | References
+⭐️  | `:star:` | Nice Article
+⛽️  | `:fuelpump:` | Important Information
 
 # Drop Down Table
 

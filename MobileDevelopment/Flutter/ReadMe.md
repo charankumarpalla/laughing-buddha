@@ -27,14 +27,6 @@ come After Some Time :) :)
 ![-----------------------------------------------------](../../PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
 
 
-
-
-
-
-
-
-
-
 # Basic
 - [x] [Stateless Vs StateFul Widgets](./AllReadMe/StatelessvsStateFulWidgets.md)
 
@@ -112,12 +104,13 @@ come After Some Time :) :)
 - [ ] **Misc**
 	- [ ] [Gesture](./AllReadMe/Gesture.md)
 	- [ ] [BrushUp](./AllReadMe/BrushUp.md)
-	- [ ] [AlertDialogue](./AllReadMe/AlertDialogue.md)
+	- [ ] [AlertDialogue](./AllReadMe/AlertDialogue.md) :construction:
 	- [ ] Toast
-	- [ ] Future
+	- [ ] [Future](./AllReadMe/Future.md) :construction:
 	- [ ] async
 	- [ ] [Http](./AllReadMe/Http.md)
 	- [ ] [DataBase](./AllReadMe/DataBase.md)
+	- [ ] [Stack](./AllReadMe/Stack.md) :construction: 
 
 
 # Challengers

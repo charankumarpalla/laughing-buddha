@@ -51,8 +51,9 @@ class Page2 extends StatelessWidget {
         ),
         body: new Center(
           child: new Container(
-            child: new RaisedButton(
-              child: Text("Back"),
+            child: new RaisedButton.icon(
+              label: Text("Back"),
+              icon: Icon(Icons.reply_all),
               onPressed: () {
                 Navigator.pop(context);
               },
