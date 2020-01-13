@@ -1,3 +1,32 @@
+
+
+#  🏗️【Flutter Building 】.......〖In PROGRESS〗 🚧
+
+
+come After Some Time :) :) 
+
+
+
+`TODO` Write Below Secription
+>https://learning.oreilly.com/library/view/beginning-flutter/9781119550822/c01.xhtml
+
+[](../../PlayGround/ResourcesFiles/Flutter_Dart/StateFulWidget.jpeg)
+
+| [<img alt="Andreas Mehlsen" src="../../PlayGround/ResourcesFiles/Flutter_Dart/StatelesWidget.jpeg" width="300" height="300">](https://twitter.com/andreasmehlsen) | [<img alt="You?" src="../../PlayGround/ResourcesFiles/Flutter_Dart/StateFulWidget.jpeg" width="300" height="300">](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                         Stateless Widget                                                                          |                                                                                   StateFul Widget                                                                                   |
+
+![-----------------------------------------------------](../../PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
+
+<br>
+<p align="center"> <img src="../../PlayGround/ResourcesFiles/Flutter_Dart/MaterialVsScaffold.gif" alt="MaterialVsScaffold">
+</p>
+
+
+
+![-----------------------------------------------------](../../PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
+
+
 # Basic
 - [x] [Stateless Vs StateFul Widgets](./AllReadMe/StatelessvsStateFulWidgets.md)
 
@@ -75,12 +104,13 @@
 - [ ] **Misc**
 	- [ ] [Gesture](./AllReadMe/Gesture.md)
 	- [ ] [BrushUp](./AllReadMe/BrushUp.md)
-	- [ ] AlertDialogue
+	- [ ] [AlertDialogue](./AllReadMe/AlertDialogue.md) :construction:
 	- [ ] Toast
-	- [ ] Future
+	- [ ] [Future](./AllReadMe/Future.md) :construction:
 	- [ ] async
 	- [ ] [Http](./AllReadMe/Http.md)
 	- [ ] [DataBase](./AllReadMe/DataBase.md)
+	- [ ] [Stack](./AllReadMe/Stack.md) :construction: 
 
 
 # Challengers
@@ -152,6 +182,7 @@
 
 # Tutorials :
 ## Level 1: 
+ -  [Understanding Basic Dart - dart by Example](http://jpryan.me/dartbyexample/)
  - All Flutter Basic by [Flutter By RajaYogan](https://www.youtube.com/playlist?list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi)
 
 ## Level 2: 

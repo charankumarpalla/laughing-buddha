@@ -17,7 +17,10 @@ Table of Contents
 
       
 
-# **Lets Jump into internals of Java**, 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#lets-jump-into-internals-of-java-)
+
+# ➤ **Lets Jump into internals of Java**, 
 let’s understand how a Java source file is executed.
 
 <br>
@@ -62,7 +65,10 @@ let’s understand how a Java source file is executed.
 <br>
 
 
-# **1. JVM** = Class loader system + runtime data area + Execution Engine.
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#1-jvm--class-loader-system--runtime-data-area--execution-engine)
+
+# ➤ **1. JVM** = Class loader system + runtime data area + Execution Engine.
 
 
 Every developer who uses Java knows that Java bytecode runs in a JRE (Java `Runtime Environment` <sup>[3]()</sup> ). The most important element of the JRE is Java Virtual Machine (JVM), which analyzes and executes Java byte code. Java developers do not need to know how JVM works. So many great applications and libraries have already been developed without developers understanding JVM deeply. However, if you understand JVM, you will understand Java more, and will be able to solve the problems which seem to be so simple but unsolvable.
@@ -91,7 +97,10 @@ The JRE is composed of the Java API and the JVM. **`The role of the JVM is to re
 </div>
 
 
-# **JRE** = JVM + libraries to run Java application.
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#jre--jvm--libraries-to-run-java-application)
+
+# ➤ **JRE** = JVM + libraries to run Java application.
 
 
 > In simple words JRE = JVM + rt.jar
@@ -124,7 +133,10 @@ JRE comprises the accompanying segments.
 <br>
 
 
-# **JDK** = JRE + Development/debugging tools
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#jdk--jre--developmentdebugging-tools)
+
+# ➤ **JDK** = JRE + Development/debugging tools
 
 - It is a bundle of software that you can use to develop Java based applications.
 - Java Development Kit is needed for developing java applications.provides tools for 
@@ -141,7 +153,10 @@ Usually, if you only care about running Java programs on computer you will only 
 
 Sometimes, even if you are not planning to do any Java development on a computer, you still need the JDK installed. For example, if you are deploying a web application with JSP, you are technically just running Java programs inside the application server. Why would you need the JDK then? Because the application server will convert JSP into Java servlets and needs to use the JDK to compile the servlets.
 
-## Example jdk tools : 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#example-jdk-tools--)
+
+## ➤ Example jdk tools : 
 for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Tools%20with%20Names.pdf)  or  [url](https://www.cs.mun.ca/java-api-1.5/tooldocs/index.html)
 
 **General**
@@ -175,12 +190,18 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
 
-# :school_satchel: Extras
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#school_satchel-extras)
+
+# ➤ :school_satchel: Extras
 
 [![start with Charan](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
 
 
-## :ballot_box_with_check: Advanced Topics
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#ballot_box_with_check-advanced-topics)
+
+## ➤ :ballot_box_with_check: Advanced Topics
  - [`javap`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html)
  - [`jstack`](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstack.html)
  - `Abstract Syntax Tree`
@@ -191,7 +212,10 @@ for more information check  [Pdf](/Java/ResourcesFiles/BasicJavaTopics/JDK%20Too
 
 
 
-## :exclamation: Sometimes ignorance is not bliss 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#exclamation-sometimes-ignorance-is-not-bliss-)
+
+## ➤ :exclamation: Sometimes ignorance is not bliss 
 :bulb: **`JavaApi`**  : Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 
 ---
@@ -244,7 +268,10 @@ There are a few components that make up the runtime environment. Not all compone
 
 <br>
 
-## :link: :pray: Reference and Our Thanks to these... 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#link-pray-reference-and-our-thanks-to-these-)
+
+## ➤ :link: :pray: Reference and Our Thanks to these... 
 
 - [**JVM8 Specifications PDF**](/Java/ResourcesFiles/BasicJavaTopics/JVM8_Specifications.pdf)
 - https://www.cubrid.org/blog/understanding-jvm-internals/
@@ -261,7 +288,10 @@ There are a few components that make up the runtime environment. Not all compone
 ---
 
 
-## :arrows_counterclockwise: UnWind/Recap
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#arrows_counterclockwise-unwindrecap)
+
+## ➤ :arrows_counterclockwise: UnWind/Recap
 - What Runtime Mean ?
 - what is Java Runtime Mean ? 
     - jvm + JavaApi(what are these api/classes - see jdk folder structure)
@@ -279,7 +309,10 @@ There are a few components that make up the runtime environment. Not all compone
 
 
 
-## :microscope: More Images
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#microscope-more-images)
+
+## ➤ :microscope: More Images
 
 <br>
 
