@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:charan_my_showcase/pages/Page2.dart';
-// import 'package:charan_my_showcase/pages/Future.dart';
-import 'package:charan_my_showcase/models/MyButton.dart';
+import 'package:charan_my_showcase/pages/MyFuture.dart';
+import 'package:charan_my_showcase/pages/MyAlertDialogue.dart';
+import 'package:charan_my_showcase/pages/MySpacer.dart';
+
+// import 'package:charan_my_showcase/models/MyButton.dart';
+import 'package:charan_my_showcase/pages/MyTabController.dart';
+// import 'package:charan_my_showcase/pages/WidgetWithCodeView.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -53,11 +58,36 @@ class _HomeState extends State<Home> {
           // mainAxisAlignment: MainAxisAlignment.center,
           direction: Axis.horizontal,
           children: <Widget>[
-            new MyButton("hiiii", Icons.arrow_right, null),
+            new RaisedButton.icon(
+              label: Text("AlertDialogue"),
+              icon: Icon(Icons.add_alert),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyAlertDialogue()));
+              },
+            ),
+            // new MyButton("AlertDialogue", Icons.add_alert, null),
             SizedBox(width: 5),
-            new MyButton("hii", null, null),
+            new RaisedButton.icon(
+              label: Text("Spacer"),
+              icon: Icon(Icons.space_bar),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MySpacer()));
+              },
+            ),
             SizedBox(width: 5),
-            new MyButton("hii", null, null),
+            new RaisedButton.icon(
+              label: Text("TabController"),
+              icon: Icon(Icons.tab),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyTabController()));
+              },
+            ),
+            // new MyButton("hii", null, null),
+            SizedBox(width: 5),
+            // new MyButton("hii", null, null),
             new RaisedButton.icon(
               color: Color(0X00FF0000),
               label: Text("Navigate"),
@@ -74,7 +104,10 @@ class _HomeState extends State<Home> {
               color: Color(0XFF2233),
               icon: Icon(Icons.redeem),
               label: Text("Future"),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyFuture()));
+              },
             ),
           ],
         ),
