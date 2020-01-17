@@ -9,7 +9,7 @@ class MyButton extends StatelessWidget {
   MyButton(this.label, this.icon, this.color);
   // MyButton({this.label});
 
-  String m = "page2";
+  final String m = "page2";
 
   @override
   Widget build(BuildContext context) {
