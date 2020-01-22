@@ -61,19 +61,19 @@ Page Status : <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
 
 [dasdas](https://github.com/charankumarpalla/laughing-buddha/blob/CharandevFlutter/PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
 
-![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/)
+![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
 
-- "aqua" ![-----------------------------------------------------](https://github.com/charankumarpalla/laughing-buddha/blob/CharandevFlutter/PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
-- "cloudy" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/cloudy.png)
-- "colored" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/colored.png)
-- "cut" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
-- "dark" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/dark.png)
-- "fire" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/fire.png)
-- "grass" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/grass.png)
-- "rainbow" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/rainbow.png)
-- "solar" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/solar.png)
-- "vintage" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/vintage.png)
-- "water" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/water.png)
+- "aqua" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
+- "cloudy" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/cloudy.png)
+- "colored" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/colored.png)
+- "cut" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
+- "dark" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/dark.png)
+- "fire" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/fire.png)
+- "grass" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/grass.png)
+- "rainbow" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/rainbow.png)
+- "solar" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/solar.png)
+- "vintage" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/vintage.png)
+- "water" ![-----------------------------------------------------](/PlayGround/ResourcesFiles/ReadMeResources/lines/water.png)
 
 # Bookmarks
 
