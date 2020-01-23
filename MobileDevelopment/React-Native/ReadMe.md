@@ -72,9 +72,110 @@ For example, one basic React Native component is the `Image`. When you create an
 
 ## Deep-Dive into Components
 
+## bind(this)
+
+the value of this inside a function depends upon how that function is invoked.
+
+**Default Binding**
+
+```
+function display(){
+ console.log(this); // 'this' will point to the global object
+}
+
+display();
+```
+
+This is a plain function call. The value of `this` inside the `display()` method in this case is the window — or the global — object in non-strict mode. In strict mode, the `this` value is `undefined`.
+
+**Implicit binding**
+
+```
+var obj = {
+ name: 'Saurabh',
+ display: function(){
+   console.log(this.name); // 'this' points to obj
+  }
+};
+
+obj.display(); // Saurabh
+```
+
+When we call a function in this manner — preceded by a context object — the `this` value inside `display()` is set to `obj`.
+
+But when we assign this function reference to some other variable and invoke the function using this new function reference, we get a different value of `this` inside `display()` .
+
+```
+var name = "uh oh! global";
+var outerDisplay = obj.display;
+outerDisplay(); // uh oh! global
+```
+
+In the above example, when we call outerDisplay(), we don’t specify a context object. It is a plain function call without an owner object. In this case, the value of this inside display() falls back to default binding. It points to the global object or undefined if the function being invoked uses strict mode.
+
+**Explicit Hard Binding**
+
+To avoid this, we can explicitly hard bind the this value to a function by using the bind() method.
+
+```
+var name = "uh oh! global";
+obj.display = obj.display.bind(obj);
+var outerDisplay = obj.display;
+outerDisplay();
+
+// Saurabh
+```
+
+there fore
+
+**WITHOUT BIND**
+
+```
+class Foo {
+  constructor(name){
+    this.name = name
+  }
+
+  display(){
+    console.log(this.name);
+  }
+}
+
+var foo = new Foo('Saurabh');
+foo.display(); // Saurabh
+
+// The assignment operation below simulates loss of context
+// similar to passing the handler as a callback in the actual
+// React Component
+var display = foo.display;
+display(); // TypeError: this is undefined
+```
+
+**With BIND**
+
+```
+class Foo {
+  constructor(name){
+    this.name = name
+    this.display = this.display.bind(this);
+  }
+
+  display(){
+    console.log(this.name);
+  }
+}
+
+var foo = new Foo('Saurabh');
+foo.display(); // Saurabh
+
+var display = foo.display;
+display(); // Saurabh
+```
+
 ### PROPERTIES
 
 # Links
 
 - [Best Components - Awesome](https://github.com/jondot/awesome-react-native#components) :star: :star: :star: :star: :star:
 - [use-cases](https://github.com/react-native-community/lottie-react-native) :star: :star: :star: :star: :star:
+- [**this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react**](https://www.freecodecamp.org/news/this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react-f7ea1a6f93eb/) :star: :star: :star: :star: :star: :star: :star: :star:
