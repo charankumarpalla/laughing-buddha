@@ -7,6 +7,13 @@ Google is also working on Flutter desktop embedding and Flutter for the Web (Hum
 
 The Flutter UI is implemented by using widgets from a modern reactive framework. Flutter uses its own rendering engine to draw widgets.
 
+# Types of Widget
+
+We can split the Flutter widget into two categories:
+
+- Visible (Output and Input)
+- Invisible (Layout and Control)
+
 <div align="right">
 
 <a href="AllReadMe/Introduction.md" alt="AllReadMe/Introduction.md"><img src="https://img.shields.io/badge/Introduction-...-green?style=for-the-badge&logo=markdown"/></a>
