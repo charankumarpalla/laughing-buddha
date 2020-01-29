@@ -1,44 +1,31 @@
-Table of Contents
-=================
+# Table of Contents
 
-   * [Emoji's Status](#emojis-status)
-   * [Drop Down Table](#drop-down-table)
-      * [➤ Table of Contents](#-table-of-contents)
-   * [ReadMore](#readmore)
-   * [Best ReadMe Styles](#best-readme-styles)
-   * [Resume application project](#resume-application-project)
-   * [Contributors](#contributors)
-   * [Lines](#lines)
-   * [Bookmarks](#bookmarks)
-      * [Chapter 4](#chapter-4)
-   * [HTML <blockquote> for Quotations</blockquote>](#html--for-quotations)
-   * [Colors](#colors)
-   * [Hello World](#hello-world)
-   * [Hello World](#hello-world-1)
-   * [Keep It Secret ](#keep-it-secret-)
-   * [Hello World](#hello-world-2)
-   * [Hello World](#hello-world-3)
-   * [Background Image](#background-image)
-      * [CSS Layout Float](#css-layout-float)
-      * [Cities](#cities)
-   * [London](#london)
-   * [Table](#table)
-   * [List](#list)
-
-
+- [Table of Contents](#table-of-contents)
+- [Emoji's Status](#emojis-status)
+- [Drop Down Table](#drop-down-table)
+  - [➤ Table of Contents](#%e2%9e%a4-table-of-contents)
+- [ReadMore](#readmore)
+- [Best ReadMe Styles](#best-readme-styles)
+- [Resume application project](#resume-application-project)
+- [Contributors](#contributors)
+- [Lines](#lines)
+- [Bookmarks](#bookmarks)
+- [HTML <blockquote> for Quotations](#html-blockquote-for-quotations)
+- [Colors](#colors)
+- [Background Image](#background-image)
+- [Table](#table)
+- [List](#list)
 
 # Emoji's Status
 
-
-Emoji| Code                           | Description 
-:--:|:-------------------------------:|:-----------------------------------------------:
-🚧  | `:construction:` | Page still in Progress
-👏  | `:clap:` | References
-⭐️  | `:star:` | Nice Article
-⛽️  | `:fuelpump:` | Important Information
+| Emoji |       Code       |      Description       |
+| :---: | :--------------: | :--------------------: |
+|  🚧   | `:construction:` | Page still in Progress |
+|  👏   |     `:clap:`     |       References       |
+|  ⭐️  |     `:star:`     |      Nice Article      |
+|  ⛽️  |   `:fuelpump:`   | Important Information  |
 
 # Drop Down Table
-
 
 <details>
 <summary>📖 Table of Contents</summary>
@@ -48,49 +35,45 @@ Emoji| Code                           | Description
 
 ## ➤ Table of Contents
 
-* [➤ Installation](#-installation)
-* [➤ Getting Started (quick)](#-getting-started-quick)
-* [➤ Getting Started (slower)](#-getting-started-slower)
-	* [Blueprint](#blueprint)
-	* [Usage](#usage)
-	* [Configuration](#configuration)
-* [➤ Templates](#-templates)
-	* [Title](#title)
-	* [Logo](#logo)
-	* [Badges](#badges)
-	* [Description](#description)
-	* [Table of Contents](#table-of-contents)
-	* [Contributors](#contributors)
-* [➤ Contributors](#-contributors)
-	* [License](#license)
-* [➤ License](#-license)
-* [➤ Load markdown files](#-load-markdown-files)
-* [➤ Automatic documentation](#-automatic-documentation)
-	* [my-button](#my-button)
-		* [Properties](#properties)
-		* [Slots](#slots)
-* [➤ A bit about this readme](#-a-bit-about-this-readme)
-* [➤ Custom templates](#-custom-templates)
-* [➤ Advanced!](#-advanced)
-	* [Check broken links](#check-broken-links)
-	* [New template syntax](#new-template-syntax)
-	* [Variables](#variables)
-		* [Objects](#objects)
-		* [1D Arrays](#1d-arrays)
-		* [2D Arrays](#2d-arrays)
-	* [Different colored lines](#different-colored-lines)
-	* [Different formatted headings](#different-formatted-headings)
-* [➤ Featured README's](#-featured-readmes)
-* [➤ Future work](#-future-work)
-* [➤ FAQ](#-faq)
-	* [Can I see how my README file is going to look before I commit it?](#can-i-see-how-my-readme-file-is-going-to-look-before-i-commit-it)
-	* [How can I get involved?](#how-can-i-get-involved)
-	* [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
-	* [How can I support you?](#how-can-i-support-you)
-* [➤ Contributors](#-contributors-1)
-* [➤ License](#-license-1)
-</details>
-
+- [➤ Installation](#-installation)
+- [➤ Getting Started (quick)](#-getting-started-quick)
+- [➤ Getting Started (slower)](#-getting-started-slower)
+  _ [Blueprint](#blueprint)
+  _ [Usage](#usage) \* [Configuration](#configuration)
+- [➤ Templates](#-templates)
+  _ [Title](#title)
+  _ [Logo](#logo)
+  _ [Badges](#badges)
+  _ [Description](#description)
+  _ [Table of Contents](#table-of-contents)
+  _ [Contributors](#contributors)
+- [➤ Contributors](#-contributors) \* [License](#license)
+- [➤ License](#-license)
+- [➤ Load markdown files](#-load-markdown-files)
+- [➤ Automatic documentation](#-automatic-documentation)
+  _ [my-button](#my-button)
+  _ [Properties](#properties) \* [Slots](#slots)
+- [➤ A bit about this readme](#-a-bit-about-this-readme)
+- [➤ Custom templates](#-custom-templates)
+- [➤ Advanced!](#-advanced)
+  _ [Check broken links](#check-broken-links)
+  _ [New template syntax](#new-template-syntax)
+  _ [Variables](#variables)
+  _ [Objects](#objects)
+  _ [1D Arrays](#1d-arrays)
+  _ [2D Arrays](#2d-arrays)
+  _ [Different colored lines](#different-colored-lines)
+  _ [Different formatted headings](#different-formatted-headings)
+- [➤ Featured README's](#-featured-readmes)
+- [➤ Future work](#-future-work)
+- [➤ FAQ](#-faq)
+  _ [Can I see how my README file is going to look before I commit it?](#can-i-see-how-my-readme-file-is-going-to-look-before-i-commit-it)
+  _ [How can I get involved?](#how-can-i-get-involved)
+  _ [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
+  _ [How can I support you?](#how-can-i-support-you)
+- [➤ Contributors](#-contributors-1)
+- [➤ License](#-license-1)
+  </details>
 
 # ReadMore
 
@@ -100,52 +83,43 @@ Emoji| Code                           | Description
 
 <a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-blue?style=for-the-badge&logo=markdown"/></a>
 
-
-
 <a href="a.Loaders.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
 <div align="right">
 
 <a alt="NoteMe"><img src="https://img.shields.io/badge/Attention Pls-Blue?style=social&logo=periscope"/></a>
+
 </div>
 
 [**Continue Reading ......**](a.Loaders.md) 🔬
-</div>
 
+</div>
 
 <div align="right">
 
 🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
+
 </div>
 
 <a alt="NoteMe"><img src="https://img.shields.io/badge/Note - Me-red?style=flat-square&logo=periscope"/></a>
 
 <a alt="NoteMe"><img src="https://img.shields.io/badge/Attention Pls-Blue?style=social&logo=periscope"/></a>
 
+<a alt="NoteMe"><img src="https://img.shields.io/badge/Attention Pls-Blue"/></a>
 
 <a href="https://www.facebook.com/charanraj11" alt=""><img src="https://img.shields.io/badge/-lightblue?logo=Markdown"/></a>
 
-
 # Best ReadMe Styles
+
 <img align="left" width="80" height="80" src="https://raw.githubusercontent.com/akarsh/akarsh-seggemu-resume/master/akarsh%20seggemu%20resume/Assets/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png" alt="Resume application project app icon">
 
 # Resume application project
 
-
-
-
 <br>
-
 
 <a href="#C4">Jump to Chapter 4</a>
 
-
-
-
-![Next](../PlayGround/ResourcesFiles/Java/Pictures/glyphicons_211_right_arrow.png "Next")      Inline-style: 
-
-
-
+![Next](../PlayGround/ResourcesFiles/Java/Pictures/glyphicons_211_right_arrow.png "Next") Inline-style:
 
 <h1> <img src="https://raw.githubusercontent.com/akarsh/akarsh-seggemu-resume/master/akarsh%20seggemu%20resume/Assets/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png"
   width="128"
@@ -154,14 +128,11 @@ Emoji| Code                           | Description
      Quite a long title, potentially going over several lines and on and on and on and on and on and on and on and on and on
 </h1>
 
-
-
 This is a <mark>new</mark> element in HTML 5.
 
 <p style="color:red;">I am red</p>
 <p style="color:blue;">I am blue</p>
 <p style="font-size:50px;">I am big</p>
-
 
 <pre>
   My Bonnie lies over the ocean.
@@ -173,35 +144,31 @@ This is a <mark>new</mark> element in HTML 5.
   Oh, bring back my Bonnie to me.
 </pre>
 
-
-
 [](../PlayGround/ResourcesFiles/Flutter_Dart/StateFulWidget.jpeg)
 
 # Contributors
-	
 
 | [<img alt="Andreas Mehlsen" src="https://avatars1.githubusercontent.com/u/6267397?s=460&v=4" width="100">](https://twitter.com/andreasmehlsen) | [<img alt="You?" src="https://joeschmoe.io/api/v1/random" width="100">](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
-|:--------------------------------------------------:|:--------------------------------------------------:|
-| [Andreas Mehlsen](https://twitter.com/andreasmehlsen) | [You?](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
-| 🔥    
+| :--------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: |
+|                                             [Andreas Mehlsen](https://twitter.com/andreasmehlsen)                                              |                                 [You?](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md)                                  |
+
+| 🔥
 
 # Lines
 
 ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/dark.png)
 
-
-* "aqua" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
-* "cloudy" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/cloudy.png)
-* "colored" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/colored.png)
-* "cut" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
-* "dark" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/dark.png)
-* "fire" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/fire.png)
-* "grass" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/grass.png)
-* "rainbow" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/rainbow.png)
-* "solar" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/solar.png)
-* "vintage" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/vintage.png)
-* "water" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/water.png)
-
+- "aqua" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/aqua.png)
+- "cloudy" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/cloudy.png)
+- "colored" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/colored.png)
+- "cut" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
+- "dark" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/dark.png)
+- "fire" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/fire.png)
+- "grass" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/grass.png)
+- "rainbow" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/rainbow.png)
+- "solar" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/solar.png)
+- "vintage" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/vintage.png)
+- "water" ![-----------------------------------------------------](../PlayGround/ResourcesFiles/ReadMeResources/lines/water.png)
 
 # Bookmarks
 
@@ -209,8 +176,8 @@ This is a <mark>new</mark> element in HTML 5.
 
 <h2 id="C4">Chapter 4</h2>
 
-
 # HTML <blockquote> for Quotations
+
 <p>Here is a quote from WWF's website:</p>
 <blockquote cite="http://www.worldwildlife.org/who/index.html">
 For 50 years, WWF has been protecting the future of nature.
@@ -221,6 +188,7 @@ close to 5 million globally.
 </blockquote>
 
 # Colors
+
 <h1 style="background-color:DodgerBlue;">Hello World</h1>
 <p style="background-color:green;">Lorem ipsum...</p>
 <h1 style="color:Tomato;">Hello World</h1>
@@ -232,8 +200,6 @@ close to 5 million globally.
 <h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
 
 <h1 style="border: 2px solid Violet;">Hello World</h1>
-
-
 
 # Background Image
 
@@ -249,9 +215,6 @@ where it is specified. (Try resizing the<br>
 browser window to see how the<br>
 background image behaves.
 </div>
-
-
-
 
 <style>
 * {
@@ -348,10 +311,8 @@ footer {
   <p>Footer</p>
 </footer>
 
-
-
-
 # Table
+
 <table style="width:100%">
   <tr>
     <th>Firstname</th>
@@ -370,8 +331,8 @@ footer {
   </tr>
 </table>
 
-
 # List
+
 <ol>
   <li>Coffee</li>
   <li>Tea</li>
@@ -413,7 +374,7 @@ footer {
   <li>Milk</li>
 </ol>
 
-<!-- 
+<!--
 <style>
 ul {
   list-style-type: none;

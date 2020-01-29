@@ -3,7 +3,7 @@ import 'package:charan_my_showcase/pages/Page2.dart';
 import 'package:charan_my_showcase/pages/MyFuture.dart';
 import 'package:charan_my_showcase/pages/MyAlertDialogue.dart';
 import 'package:charan_my_showcase/pages/MySpacer.dart';
-
+import 'package:charan_my_showcase/pages/MyTextFeild.dart';
 // import 'package:charan_my_showcase/models/MyButton.dart';
 import 'package:charan_my_showcase/pages/MyTabController.dart';
 // import 'package:charan_my_showcase/pages/WidgetWithCodeView.dart';
@@ -107,6 +107,16 @@ class _HomeState extends State<Home> {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => MyFuture()));
+              },
+            ),
+            SizedBox(width: 6),
+            new RaisedButton.icon(
+              color: Color(0XFF2233),
+              icon: Icon(Icons.text_fields),
+              label: Text("TextField"),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyTextField()));
               },
             ),
           ],
