@@ -1,18 +1,20 @@
-# Flutter
+- [Introduction](#introduction)
+- [Widget Catalog](#widget-catalog)
+- [Challengers](#challengers)
+- [Awesome Links](#awesome-links)
+- [Explore Examples:](#explore-examples)
+- [yet to Make Notes](#yet-to-make-notes)
+- [Tutorials :](#tutorials)
+  - [Level 1:](#level-1)
+  - [Level 2:](#level-2)
+- [Explore](#explore)
 
-# All About Flutter Introduction
+# Introduction
 
 Flutter is Google's portable UI framework for building modern, native, and reactive applications for iOS and Android.
 Google is also working on Flutter desktop embedding and Flutter for the Web (Hummingbird) and embedded devices (Raspberry Pi, home, automotive, and more). Flutter is an open‐source project hosted on GitHub with contributions from Google and the community. Flutter uses Dart, a modern object‐oriented language that compiles to native ARM code and production‐ready JavaScript code.
 
 The Flutter UI is implemented by using widgets from a modern reactive framework. Flutter uses its own rendering engine to draw widgets.
-
-# Types of Widget
-
-We can split the Flutter widget into two categories:
-
-- Visible (Output and Input)
-- Invisible (Layout and Control)
 
 <div align="right">
 
@@ -20,11 +22,19 @@ We can split the Flutter widget into two categories:
 
 </div>
 
-# Basic
+**Types of Widget**
 
-- [x] [Stateless Vs StateFul Widgets](./AllReadMe/StatelessvsStateFulWidgets.md)
+We can split the Flutter widget into two categories:
 
-# Flutter Catalog
+- Visible (Output and Input)
+- Invisible (Layout and Control)
+
+# Widget Catalog
+
+- [ ] **Basics**
+
+  - [x] [Stateless Vs StateFul Widgets](./AllReadMe/StatelessvsStateFulWidgets.md)
+  - [ ] [State Management](./AllReadMe/StateManagement.md) :construction:
 
 - [ ] **Widgets**
 
@@ -107,7 +117,8 @@ We can split the Flutter widget into two categories:
   - [ ] Firebase ML Kit
 
 * [ ] **Misc**
-  - [ ] [Gesture](./AllReadMe/Gesture.md)
+
+  - [ ] [Gesture](./AllReadMe/Gesture.md) :construction:
   - [ ] [BrushUp](./AllReadMe/BrushUp.md)
   - [ ] [AlertDialogue](./AllReadMe/AlertDialogue.md) :construction:
   - [ ] Toast
@@ -116,6 +127,10 @@ We can split the Flutter widget into two categories:
   - [ ] [Http](./AllReadMe/Http.md)
   - [ ] [DataBase](./AllReadMe/DataBase.md)
   - [ ] [Stack](./AllReadMe/Stack.md) :construction:
+  - [ ] [Splash Screen](./AllReadMe/SplashScreen.md) :construction:
+
+* [ ] **UX/Visual**
+  - [ ] [Best UX](./AllReadMe/UX.md) :construction:
 
 # Challengers
 
@@ -151,6 +166,7 @@ We can split the Flutter widget into two categories:
 
 # Explore Examples:
 
+- [Liquid Swipe](https://flutterawesome.com/a-flutter-based-liquid-swipe/) :star:
 - https://github.com/flutter/flutter/tree/master/examples
 - [Apps that won FlutterCreate Contents](https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md) :heart:
 - [Flutter Thursday Series](https://medium.com/@afegbua/flutter-thursday-series-9564d04e63a7)
@@ -205,6 +221,7 @@ This is for those who had or can create a basic flutter app up and running with 
 
 # Explore
 
+- http://flutterexamples.com/ :star: :star: :star:
 - https://flutterbyexample.com/stateful-widget-lifecycle
 - https://github.com/pinkeshdarji/FlutterCreateSubmissions2019/blob/master/README.md
 - https://medium.com/@dev.n

@@ -18,6 +18,7 @@
     - [Example 1](#example-1)
     - [Gesture count with Stateful widget :](#gesture-count-with-stateful-widget)
   - [Challengers :](#challengers)
+  - [Thanks ...Refer:](#thanks-refer)
 
 <p align="center">
 
@@ -293,7 +294,7 @@ Results as below
       <img width="210" height="300" src="../Images/Gesture_challener_a.png" alt="Tabs Demo">
    </p>
 
-#Thanks ...Refer:
+## Thanks ...Refer:
 
 - https://tphangout.com/flutter-gestures/ (Example 1)
 - https://github.com/AdarshMaurya/flutter-getting-started/wiki/Introducing-Gestures-and-Animations
