@@ -142,6 +142,14 @@ in order to concur all the above , you need to be well armoured with weapons...t
 
 
 
+<br>
+
+<p align="center">
+  <img src="../PlayGround/ResourcesFiles/AI_ML_DL_DS/_The-Ultimate-Learning-Path-for-deep-learning.jpg" alt="The-Ultimate-Learning-Path-for-deep-learning">
+</p>
+
+<br>
+
 
 # Reference
 
