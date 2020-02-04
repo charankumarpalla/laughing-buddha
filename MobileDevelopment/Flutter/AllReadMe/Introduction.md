@@ -22,6 +22,8 @@ come After Some Time :) :)
 
 ---
 
+- [Flutter Widgets Explained | Understand How Flutter Works!](https://www.youtube.com/watch?v=FU2Eeizo95o)
+
 https://learning.oreilly.com/library/view/beginning-flutter/9781119550822/c05.xhtml
 
 three ways to create a shallow widget tree by refactoring: with a constant, with a method, and with a widget class

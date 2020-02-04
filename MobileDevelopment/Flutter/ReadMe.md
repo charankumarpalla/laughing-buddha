@@ -128,6 +128,11 @@ We can split the Flutter widget into two categories:
   - [ ] [DataBase](./AllReadMe/DataBase.md)
   - [ ] [Stack](./AllReadMe/Stack.md) :construction:
   - [ ] [Splash Screen](./AllReadMe/SplashScreen.md) :construction:
+  - [ ] [SafeArea](./AllReadMe/SafeArea.md)
+
+* [ ] **Features**
+
+  - [ ] [Maps](./AllReadMe/Features.md#maps) :construction:
 
 * [ ] **UX/Visual**
   - [ ] [Best UX](./AllReadMe/UX.md) :construction:
