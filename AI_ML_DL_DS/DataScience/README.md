@@ -79,6 +79,7 @@ Page Status : <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
 ## Basic Links
 
 - https://medium.com/towards-artificial-intelligence/the-data-science-methodology-50d60175a06a
+- https://towardsdatascience.com/data-science-methodology-101-ce9f0d660336
 
 ## ReadMore
 
