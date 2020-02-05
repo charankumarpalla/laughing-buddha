@@ -25,7 +25,23 @@ DataScience is a vast combination of data tasks which may include any one partic
 
 Being said and heard more about of Data Science there's been more confusion or no particular definition as one concludes one set of operations as Data Scientist job in converse with other defining it differently.
 
-on reason for such confusion s
+on reason for such confusions
+
+<p align="center">
+  <img width="600" height="400" src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling2.jpeg" alt="ML_MachineLearningTypes">
+</p>
+
+<p align="center">
+  <img src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling2.jpeg" alt="ML_MachineLearningTypes">
+</p>
+
+<p align="center">
+  <img  src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling.jpeg" alt="ML_MachineLearningTypes">
+</p>
+
+<p align="center">
+  <img width="600" height="400" src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling.jpeg" alt="ML_MachineLearningTypes">
+</p>
 
 Collect -> Store -> Process/Analyse -> Describe -> Model
 
@@ -62,7 +78,7 @@ Page Status : <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
 
 ## Basic Links
 
-<!-- Links TO start witn the Topic -->
+- https://medium.com/towards-artificial-intelligence/the-data-science-methodology-50d60175a06a
 
 ## ReadMore
 
