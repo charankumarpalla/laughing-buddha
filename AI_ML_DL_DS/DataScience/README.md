@@ -28,19 +28,7 @@ Being said and heard more about of Data Science there's been more confusion or n
 on reason for such confusions
 
 <p align="center">
-  <img width="600" height="400" src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling2.jpeg" alt="ML_MachineLearningTypes">
-</p>
-
-<p align="center">
-  <img src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling2.jpeg" alt="ML_MachineLearningTypes">
-</p>
-
-<p align="center">
-  <img  src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling.jpeg" alt="ML_MachineLearningTypes">
-</p>
-
-<p align="center">
-  <img width="600" height="400" src="../../PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling.jpeg" alt="ML_MachineLearningTypes">
+  <img width="600" height="400" src="/PlayGround/ResourcesFiles/AI_ML_DL_DS/DataScience/DataModelling_.jpeg" alt="DataModelling">
 </p>
 
 Collect -> Store -> Process/Analyse -> Describe -> Model
@@ -49,7 +37,7 @@ with the segregation of tasks involved in data science, Now let's define Data Sc
 
 ### Collecting
 
-So what is involved in COllecting data and this is again depends on
+So what is involved in Collecting data and this is again depends on
 
 - Depends on the environment
 
