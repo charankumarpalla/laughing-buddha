@@ -9,7 +9,7 @@
 - [MindMap](#mindmap)
 
 <p align="center">
-Page Status : <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
+<a alt="NoteMe"><img src="https://img.shields.io/badge/ -Blue?style=social&logo=periscope"/></a> <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
 <a><img src="https://img.shields.io/badge/InProgress-green"/></a>
 </p>
 

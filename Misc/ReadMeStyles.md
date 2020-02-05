@@ -18,12 +18,15 @@
 
 # Emoji's Status
 
-| Emoji |       Code       |      Description       |
-| :---: | :--------------: | :--------------------: |
-|  🚧   | `:construction:` | Page still in Progress |
-|  👏   |     `:clap:`     |       References       |
-|  ⭐️  |     `:star:`     |      Nice Article      |
-|  ⛽️  |   `:fuelpump:`   | Important Information  |
+| Emoji |           Code            |      Description       |
+| :---: | :-----------------------: | :--------------------: |
+|  🚧   |     `:construction:`      | Page still in Progress |
+|  👏   |         `:clap:`          |       References       |
+|  ⭐️  |         `:star:`          |      Nice Article      |
+|  ⛽️  |       `:fuelpump:`        | Important Information  |
+|  ✔️   |   `:heavy_check_mark:`    |     Done and Read      |
+|  ☑️   | `:ballot_box_with_check:` |          Done          |
+|  ✅   |   `:white_check_mark:`    |        Revisit         |
 
 # Drop Down Table
 

@@ -4,6 +4,8 @@ import 'package:charan_my_showcase/pages/MyFuture.dart';
 import 'package:charan_my_showcase/pages/MyAlertDialogue.dart';
 import 'package:charan_my_showcase/pages/MySpacer.dart';
 import 'package:charan_my_showcase/pages/MyTextFeild.dart';
+import 'package:charan_my_showcase/pages/MyExpanded.dart';
+
 // import 'package:charan_my_showcase/models/MyButton.dart';
 import 'package:charan_my_showcase/pages/MyTabController.dart';
 // import 'package:charan_my_showcase/pages/WidgetWithCodeView.dart';
@@ -66,7 +68,6 @@ class _HomeState extends State<Home> {
                     MaterialPageRoute(builder: (context) => MyAlertDialogue()));
               },
             ),
-            // new MyButton("AlertDialogue", Icons.add_alert, null),
             SizedBox(width: 5),
             new RaisedButton.icon(
               label: Text("Spacer"),
@@ -85,11 +86,9 @@ class _HomeState extends State<Home> {
                     MaterialPageRoute(builder: (context) => MyTabController()));
               },
             ),
-            // new MyButton("hii", null, null),
             SizedBox(width: 5),
-            // new MyButton("hii", null, null),
             new RaisedButton.icon(
-              color: Color(0X00FF0000),
+              color: Color(0X00FF2200),
               label: Text("Navigate"),
               icon: Icon(Icons.arrow_right),
               onPressed: () {
@@ -117,6 +116,16 @@ class _HomeState extends State<Home> {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => MyTextField()));
+              },
+            ),
+            SizedBox(width: 6),
+            new RaisedButton.icon(
+              color: Color(0XFF6633),
+              icon: Icon(Icons.expand_more),
+              label: Text("Expanded"),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyExpanded()));
               },
             ),
           ],
