@@ -34,6 +34,8 @@ three ways to create a shallow widget tree by refactoring: with a constant, with
 
 To make the example code more readable and maintainable, you'll refactor major sections of the code into separate entities. You have multiple refactor options, and the most common techniques are constants, methods, and widget classes.
 
+- https://www.youtube.com/watch?v=Xu92WAlf0vI
+
 ## Refactoring With A Constant
 
 Refactoring with a constant initializes the widget to a `final` variable. This approach allows you to separate widgets into sections, making for better code readability. When widgets are initialized with a constant, they rely on the `BuildContext object of the parent widget`.

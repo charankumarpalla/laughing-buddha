@@ -15,6 +15,10 @@
 
 # Introdcution
 
+ <p align="center"> 
+    <img src="../Images/TabBarDemo.gif" alt="Tabs Demo">
+ </p>
+ 
 # Resources
 
 ## Basic Links
