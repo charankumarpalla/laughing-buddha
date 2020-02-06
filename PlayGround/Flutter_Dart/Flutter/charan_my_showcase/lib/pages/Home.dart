@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:charan_my_showcase/pages/Page2.dart';
-import 'package:charan_my_showcase/pages/MyFuture.dart';
-import 'package:charan_my_showcase/pages/MyAlertDialogue.dart';
-import 'package:charan_my_showcase/pages/MySpacer.dart';
-import 'package:charan_my_showcase/pages/MyTextFeild.dart';
-import 'package:charan_my_showcase/pages/MyExpanded.dart';
+import 'package:charan_showcase/pages/Page2.dart';
+import 'package:charan_showcase/pages/MyFuture.dart';
+import 'package:charan_showcase/pages/MyAlertDialogue.dart';
+import 'package:charan_showcase/pages/MySpacer.dart';
+import 'package:charan_showcase/pages/MyTextFeild.dart';
+import 'package:charan_showcase/pages/MyExpanded.dart';
 
-// import 'package:charan_my_showcase/models/MyButton.dart';
-import 'package:charan_my_showcase/pages/MyTabController.dart';
-// import 'package:charan_my_showcase/pages/WidgetWithCodeView.dart';
+// import 'package:charan_showcase/models/MyButton.dart';
+import 'package:charan_showcase/pages/MyTabController.dart';
+// import 'package:charan_showcase/pages/WidgetWithCodeView.dart';
 
 class Home extends StatefulWidget {
   @override

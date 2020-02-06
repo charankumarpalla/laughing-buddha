@@ -1,4 +1,4 @@
-import 'package:charan_my_showcase/pages/Page2.dart';
+import 'package:charan_showcase/pages/Page2.dart';
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
