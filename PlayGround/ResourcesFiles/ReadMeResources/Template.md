@@ -87,3 +87,7 @@
 <h2 id="C4">Chapter 4</h2>
 
 # MindMap
+
+| NOTE:            |
+| :--------------- |
+| Work in progress |

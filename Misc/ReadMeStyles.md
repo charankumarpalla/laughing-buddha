@@ -28,6 +28,10 @@
 |  ☑️   | `:ballot_box_with_check:` |          Done          |
 |  ✅   |   `:white_check_mark:`    |        Revisit         |
 
+| NOTE:            |
+| :--------------- |
+| Work in progress |
+
 # Drop Down Table
 
 <details>
