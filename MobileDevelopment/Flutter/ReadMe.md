@@ -87,6 +87,7 @@ We can split the Flutter widget into two categories:
 
   - [ ] Opacity
   - [ ] Hero
+  - [ ] [AnimatedContainer](AllReadMe/WeeklyWidget.md#animatedcontainer)
 
 * [ ] **Persistence**
 

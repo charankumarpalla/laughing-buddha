@@ -5,6 +5,7 @@ import 'package:charan_showcase/pages/MyAlertDialogue.dart';
 import 'package:charan_showcase/pages/MySpacer.dart';
 import 'package:charan_showcase/pages/MyTextFeild.dart';
 import 'package:charan_showcase/pages/MyExpanded.dart';
+import 'package:charan_showcase/pages/MyWrap.dart';
 
 // import 'package:charan_showcase/models/MyButton.dart';
 import 'package:charan_showcase/pages/MyTabController.dart';
@@ -126,6 +127,19 @@ class _HomeState extends State<Home> {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => MyExpanded()));
+              },
+            ),
+            SizedBox(width: 6),
+            new RaisedButton.icon(
+              color: Color(0XFF6633),
+              icon: Icon(Icons.wrap_text),
+              label: Text("Wrap"),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MyWrap(),
+                    ));
               },
             ),
           ],

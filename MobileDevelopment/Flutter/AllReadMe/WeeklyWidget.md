@@ -1,5 +1,6 @@
 - [Expanded](#expanded)
 - [| Wrap](#wrap)
+- [| AnimatedContainer](#animatedcontainer)
 -
 
 # Expanded
@@ -23,3 +24,5 @@ The wrap widget is similar to Row or a Column widget with an added advantage tha
  <p align="center"> 
     <img src="PlayGround/ResourcesFiles/Flutter_Dart/Widget_Wrap_.jpeg" alt="Widget_Wrap_">
  </p>
+
+# | AnimatedContainer
