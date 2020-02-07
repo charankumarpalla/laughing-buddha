@@ -52,8 +52,8 @@ We can split the Flutter widget into two categories:
 
   - [ ] Container
   - [ ] Row,Column
-  - [ ] Wrap
-  - [ ] Expanded
+  - [ ] [Wrap](AllReadMe/WeeklyWidget.md#wrap)
+  - [ ] [Expanded](AllReadMe/WeeklyWidget.md#Expanded)
   - [ ] Stack
 
 - [ ] **Lists**
@@ -87,6 +87,7 @@ We can split the Flutter widget into two categories:
 
   - [ ] Opacity
   - [ ] Hero
+  - [ ] [AnimatedContainer](AllReadMe/WeeklyWidget.md#animatedcontainer)
 
 * [ ] **Persistence**
 
@@ -128,6 +129,11 @@ We can split the Flutter widget into two categories:
   - [ ] [DataBase](./AllReadMe/DataBase.md)
   - [ ] [Stack](./AllReadMe/Stack.md) :construction:
   - [ ] [Splash Screen](./AllReadMe/SplashScreen.md) :construction:
+  - [ ] [SafeArea](./AllReadMe/SafeArea.md)
+
+* [ ] **Features**
+
+  - [ ] [Maps](./AllReadMe/Features.md#maps) :construction:
 
 * [ ] **UX/Visual**
   - [ ] [Best UX](./AllReadMe/UX.md) :construction:

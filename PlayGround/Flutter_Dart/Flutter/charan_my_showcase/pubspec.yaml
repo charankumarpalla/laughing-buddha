@@ -1,4 +1,4 @@
-name: charan_my_showcase
+name: charan_showcase
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -29,6 +29,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.7.3"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/ic_launcher.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

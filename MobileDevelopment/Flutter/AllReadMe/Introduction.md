@@ -22,6 +22,8 @@ come After Some Time :) :)
 
 ---
 
+- [Flutter Widgets Explained | Understand How Flutter Works!](https://www.youtube.com/watch?v=FU2Eeizo95o)
+
 https://learning.oreilly.com/library/view/beginning-flutter/9781119550822/c05.xhtml
 
 three ways to create a shallow widget tree by refactoring: with a constant, with a method, and with a widget class
@@ -31,6 +33,8 @@ three ways to create a shallow widget tree by refactoring: with a constant, with
 - with a widget class
 
 To make the example code more readable and maintainable, you'll refactor major sections of the code into separate entities. You have multiple refactor options, and the most common techniques are constants, methods, and widget classes.
+
+- https://www.youtube.com/watch?v=Xu92WAlf0vI
 
 ## Refactoring With A Constant
 

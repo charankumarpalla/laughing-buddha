@@ -9,12 +9,16 @@
 - [MindMap](#mindmap)
 
 <p align="center">
-Page Status : <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
+<a alt="NoteMe"><img src="https://img.shields.io/badge/ -Blue?style=social&logo=periscope"/></a> <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
 <a><img src="https://img.shields.io/badge/InProgress-green"/></a>
 </p>
 
 # Introdcution
 
+ <p align="center"> 
+    <img src="../Images/TabBarDemo.gif" alt="Tabs Demo">
+ </p>
+ 
 # Resources
 
 ## Basic Links
@@ -83,3 +87,7 @@ Page Status : <a><img src="https://img.shields.io/badge/yestToStart-Red"/></a>
 <h2 id="C4">Chapter 4</h2>
 
 # MindMap
+
+| NOTE:            |
+| :--------------- |
+| Work in progress |
