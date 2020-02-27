@@ -179,3 +179,8 @@ display(); // Saurabh
 - [Best Components - Awesome](https://github.com/jondot/awesome-react-native#components) :star: :star: :star: :star: :star:
 - [use-cases](https://github.com/react-native-community/lottie-react-native) :star: :star: :star: :star: :star:
 - [**this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react**](https://www.freecodecamp.org/news/this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react-f7ea1a6f93eb/) :star: :star: :star: :star: :star: :star: :star: :star:
+
+* Resources :
+  - Login Screen
+    - https://www.npmjs.com/package/react-native-login-screen
+    - https://www.bootdey.com/react-native-snippet/9/Login-form-ui-example
