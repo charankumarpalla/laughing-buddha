@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:charan_my_showcase/pages/TabPages.dart';
+import 'package:charan_showcase/pages/TabPages.dart';
 
 class MyTabController extends StatelessWidget {
   @override

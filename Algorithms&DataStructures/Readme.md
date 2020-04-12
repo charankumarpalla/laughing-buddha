@@ -2,9 +2,12 @@
 
 <!-- #   Table Of Contents-  -->
 #   :loudspeaker: Hakuna Matata :high_brightness: :tada: <!-- omit in toc -->
+- [Big O Notations :construction:](#big-o-notations-construction)
+  - [Time Complexity](#time-complexity)
+  - [Space Complexity](#space-complexity)
 - [Data Structures](#data-structures)
   - [a. Characteristics of a Data Structure](#a-characteristics-of-a-data-structure)
-  - [b. Need for Data Structure](#b-need-for-data-structure)
+  - [b.  Need for Data Structure](#b-need-for-data-structure)
   - [c. Execution Time Cases](#c-execution-time-cases)
   - [d. Basic Terminology](#d-basic-terminology)
   - [:bookmark: List Of DataStructures](#bookmark-list-of-datastructures)
@@ -16,13 +19,25 @@
   - [d. Algorithm Complexity](#d-algorithm-complexity)
     - [i. Space Complexity](#i-space-complexity)
     - [ii. Time Complexity](#ii-time-complexity)
-  - [:bookmark: List Of Algorithms **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**](#bookmark-list-of-algorithms-sup1httpswwwgeeksforgeeksorgfundamentals-of-algorithmssup-sup2httpswwwincludehelpcomdata-structure-tutorialalgorithm-and-its-typesaspxsup)
+  - [:bookmark: List Of Algorithms **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**](#bookmark-list-of-algorithms-sup1sup-sup2sup)
 - [Awesome Links](#awesome-links)
   - [Visualize](#visualize)
   - [Interview](#interview)
   - [References](#references)
 
 <!-- # Algorithms and Data Structures -->
+#  Big O Notations :construction:
+## Time Complexity
+## Space Complexity
+
+<div align="right">
+
+<a href="./Big-O-notation.md" alt="./Big-O-notation.md"><img src="https://img.shields.io/badge/Big O notation-...-green?style=for-the-badge&logo=markdown"/></a>
+
+</div>
+
+
+
 #  Data Structures
 **Data Structure** is a systematic way to organize data in order to use it efficiently. Following terms are the foundation terms of a data structure.
 
@@ -464,8 +479,13 @@ Sorting  | Best case | Worst case| Average case| Stable | Method
 
 ## Interview 
 
-- [ ] https://github.com/rishabh115/Interview-Questions
-- [ ] https://github.com/yangshun/tech-interview-handbook
+
+<div align="right">
+
+<a href="../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#DataStructures&Algorithms" alt=".../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#DataStrutures&Algorithms"><img src="https://img.shields.io/badge/Big O notation-...-green?style=for-the-badge&logo=markdown"/></a>
+
+</div>
+
 
 
 ##   References
