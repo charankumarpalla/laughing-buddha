@@ -1,63 +1,12 @@
-<!-- #   Table Of Contents-  -->
-
-# :loudspeaker: Hakuna Matata :high_brightness: :tada: <!-- omit in toc -->
-
-- [Big O Notations :construction:](#big-o-notations-construction)
-  - [Time Complexity](#time-complexity)
-  - [Space Complexity](#space-complexity)
-- [Data Structures](#data-structures)
-- [Algorithms](#algorithms)
-  - [a. Characteristics of an Algorithm](#a-characteristics-of-an-algorithm)
-  - [b. How to Write an Algorithm?](#b-how-to-write-an-algorithm)
-  - [c. Algorithm Analysis](#c-algorithm-analysis)
-  - [d. Algorithm Complexity](#d-algorithm-complexity)
-    - [i. Space Complexity](#i-space-complexity)
-    - [ii. Time Complexity](#ii-time-complexity)
-  - [:bookmark: List Of Algorithms **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**](#bookmark-list-of-algorithms-sup1sup-sup2sup)
-- [Awesome Links](#awesome-links)
-  - [Visualize](#visualize)
-  - [Interview](#interview)
-  - [References](#references)
-
-<!-- # Algorithms and Data Structures -->
-
-# Big O Notations :construction:
-
-## Time Complexity
-
-## Space Complexity
-
-<div align="right">
-
-<a href="./Big-O-notation.md" alt="./Big-O-notation.md"><img src="https://img.shields.io/badge/Big O notation-...-green?style=for-the-badge&logo=markdown"/></a>
-
-</div>
-
-**Algorithms + Data Structures = Programs**
-
-# Data Structures
-
-**Data Structure** is a systematic way to organize data in order to use it efficiently. Following terms are the foundation terms of a data structure.
-
-<div align="right">
-
-<a href="./DataStructures/README.md" alt="./Big-O-notation.md"><img src="https://img.shields.io/badge/Data Structures-...-green?style=for-the-badge&logo=markdown"/></a>
-
-</div>
-
----
-
-# Algorithms
+- [a. Characteristics of an Algorithm](#a-characteristics-of-an-algorithm)
+- [b. How to Write an Algorithm?](#b-how-to-write-an-algorithm)
+- [c. Algorithm Analysis](#c-algorithm-analysis)
+- [d. Algorithm Complexity](#d-algorithm-complexity)
+  - [i. Space Complexity](#i-space-complexity)
+  - [ii. Time Complexity](#ii-time-complexity)
+- [List Of Algorithms](#list-of-algorithms)
 
 **Algorithm** is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
-
-[](Algorithms/README.md)
-
-<div align="right">
-
-<a href="Algorithms/README.md" alt="./Big-O-notation.md"><img src="https://img.shields.io/badge/Algorithms-...-green?style=for-the-badge&logo=markdown"/></a>
-
-</div>
 
 From the data structure point of view, following are some important categories of algorithms −
 
@@ -127,7 +76,7 @@ Writing **step numbers**, is optional.
 We design an algorithm to get a solution of a given problem. A problem can be solved in more than one ways.
 
 <p align="center">
-  <img width="400" height="400" src="./ResourcesFiles/Images/Algorithm_solutions.png" alt="Algorithm_solutions">
+  <img width="400" height="400" src="../ResourcesFiles/Images/Algorithm_solutions.png" alt="Algorithm_solutions">
 </p>
 
 Hence, many solution algorithms can be derived for a given problem. The next step is to **analyze** those proposed solution algorithms and implement the best suitable solution.
@@ -178,7 +127,9 @@ Time complexity of an algorithm represents the amount of time required by the al
 
 For example, addition of two n-bit integers takes n steps. Consequently, the total computational time is T(n) = c ∗ n, where c is the time taken for the addition of two bits. Here, we observe that T(n) grows linearly as the input size increases.
 
-## :bookmark: List Of Algorithms **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
+## List Of Algorithms
+
+**<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
 
 `B` - Beginner, `A` - Advanced
 
@@ -195,33 +146,5 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 |           |                      |                      |                      |        |
 
 <p align="center">
-  <img width="700" height="350" src="./ResourcesFiles/Images/AllAlgorithms.gif" alt="AllAlgorithms">
+  <img width="700" height="350" src="../ResourcesFiles/Images/AllAlgorithms.gif" alt="AllAlgorithms">
 </p>
-
----
-
-# Awesome Links
-
-- [ ] https://github.com/trekhleb/javascript-algorithms
-- [ ] https://github.com/TheAlgorithms/Java
-- [ ] :bulb: [phishman3579 - All-algorithms-implementation-in-Java](https://github.com/phishman3579/java-algorithms-implementation#data-structures)
-
-## Visualize
-
-- [ ] https://www.advanced-ict.info/interactive/algorithms.html
-- [ ] http://sorting.at/
-- [ ] https://visualgo.net/en/sorting
-- [ ] https://www.toptal.com/developers/sorting-algorithms/random-initial-order
-- [ ] [gaerae/awesome-algorithms-education#visualizations](https://github.com/gaerae/awesome-algorithms-education#visualizations)
-
-## Interview
-
-<div align="right">
-
-<a href="../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#DataStructures&Algorithms" alt=".../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#DataStrutures&Algorithms"><img src="https://img.shields.io/badge/Big O notation-...-green?style=for-the-badge&logo=markdown"/></a>
-
-</div>
-
-## References
-
-- https://www.tutorialspoint.com/data_structures_algorithms
