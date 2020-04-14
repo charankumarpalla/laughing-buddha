@@ -8,8 +8,8 @@
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
 - [Awesome Links](#awesome-links)
+  - [Challenges](#challenges)
   - [Visualize](#visualize)
-  - [Interview](#interview)
   - [References](#references)
 
 <!-- # Algorithms and Data Structures -->
@@ -58,6 +58,12 @@
 - [ ] https://github.com/TheAlgorithms/Java
 - [ ] :bulb: [phishman3579 - All-algorithms-implementation-in-Java](https://github.com/phishman3579/java-algorithms-implementation#data-structures)
 
+## Challenges
+
+|     |                                                                                 Topic                                                                                 | Solution | Comment |
+| :-: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------: | :-----: |
+| [ ] | [Cats and a Mouse ](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=30-day-campaign) |          |         |
+
 ## Visualize
 
 - [ ] https://www.advanced-ict.info/interactive/algorithms.html
@@ -65,8 +71,6 @@
 - [ ] https://visualgo.net/en/sorting
 - [ ] https://www.toptal.com/developers/sorting-algorithms/random-initial-order
 - [ ] [gaerae/awesome-algorithms-education#visualizations](https://github.com/gaerae/awesome-algorithms-education#visualizations)
-
-## Interview
 
 <div align="right">
 

@@ -4,6 +4,7 @@
 - [d. Basic Terminology](#d-basic-terminology)
 - [:bookmark: List Of DataStructures](#bookmark-list-of-datastructures)
 - [:bulb: Choosing the right Data Structure](#bulb-choosing-the-right-data-structure)
+- [AwesomeLink](#awesomelink)
 
 **Data Structure** is a systematic way to organize data in order to use it efficiently. Following terms are the foundation terms of a data structure.
 
@@ -289,3 +290,9 @@ Data structure is a way how data is stored in the computer. We should choose dat
   - Represent the graph.
   - Represent quadratic forms and linear algebra solution.
 ```
+
+## AwesomeLink
+
+|     |     Topic     | ReadMe |
+| :-: | :-----------: | :----: |
+| [ ] | DatStructures |  link  |

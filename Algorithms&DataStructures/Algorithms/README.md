@@ -5,20 +5,20 @@
   - [i. Space Complexity](#i-space-complexity)
   - [ii. Time Complexity](#ii-time-complexity)
 - [List Of Algorithms](#list-of-algorithms)
+  - [Types oF Algorithms](#types-of-algorithms)
 
 **Algorithm** is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
 
 From the data structure point of view, following are some important categories of algorithms −
 
+- **Sort** − Algorithm to sort items in a certain order.
 - **Search** − Algorithm to search an item in a data structure.
 
-- **Sort** − Algorithm to sort items in a certain order.
+* **Insert** − Algorithm to insert item in a data structure.
 
-- **Insert** − Algorithm to insert item in a data structure.
+* **Update** − Algorithm to update an existing item in a data structure.
 
-- **Update** − Algorithm to update an existing item in a data structure.
-
-- **Delete** − Algorithm to delete an existing item from a data structure.
+* **Delete** − Algorithm to delete an existing item from a data structure.
 
 ## a. Characteristics of an Algorithm
 
@@ -129,9 +129,32 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 
 ## List Of Algorithms
 
-**<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
+### Types oF Algorithms
 
 `B` - Beginner, `A` - Advanced
+
+**----> TO-DO** : [1](https://www.includehelp.com/algorithms/), [2](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)
+
+Well there are many types of algorithm but the most fundamental types of algorithm are:
+
+- Sorting Algorithms
+- Searching Algorithms
+- Dynamic programming algorithm
+- Graph Algorithms
+- Backtracking Algorithms
+- Recursive algorithms
+- Divide and conquer algorithm
+- Greedy algorithm
+- Algorithms Implementation
+- Brute Force algorithm
+- Randomized algorithm
+- Operating system algorithms
+
+|     |   Topic    | ReadMe | Complexity |
+| :-: | :--------: | :----: | :--------: |
+| [ ] | Algorithms |  link  |    `B`     |
+
+**<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
 
 - **Sorting**
 
