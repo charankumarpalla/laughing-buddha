@@ -38,6 +38,9 @@ This algorithm is not suitable for large data sets as its average and worst case
 
 ```
 
+
+import java.util.*;
+
 class SelectionSort {
     void sort(int a[]) {
 
@@ -58,9 +61,10 @@ class SelectionSort {
             }
         }
         System.out.println("Sorted Number : ");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]);
-        }
+        print(a);
+        // for (int i = 0; i < a.length; i++) {
+        // System.out.print(a[i]);
+        // }
         System.out.println("\n\n");
     }
 
@@ -72,7 +76,7 @@ class SelectionSort {
         for (int i = 0; i < length - 1; i++) {
             min_index = i;
             for (int j = i + 1; j < length; j++) {
-                if (a[j].compareTo(a[min_index]) < 0) {
+                if (a[min_index].compareTo(a[j]) > 0) {
                     min_index = j;
                 }
             }
@@ -84,17 +88,44 @@ class SelectionSort {
             }
         }
         System.out.println("Sorted Strings :\n");
+        print(a);
+
+    }
+
+    void print(int a[]) {
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
     }
 
+    void print(String a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+    }
+
+    void reverse(int a[]) {
+        int i, t, n = a.length;
+
+        for (i = 0; i < n / 2; i++) {
+            t = a[i];
+            a[i] = a[n - i - 1];
+            a[n - i - 1] = t;
+        }
+        System.out.println("\nReverese String print:\n");
+        print(a);
+    }
+
     public static void main(String args[]) {
         SelectionSort s = new SelectionSort();
-        int b[] = { 2, 3, 1, 4, 9, 5, 6 };
-        String name[] = { "Charan", "Advaitha", "Varun", "Bablu", "David" };
+        int b[] = { 2, 3, 1, 4, 9, 5, 6, 7 };
+        String name[] = { "Charan", "Advaitha", "Varun", "AAdvaitha", "Bablu", "David" };
         s.sort(b);
         s.sort(name);
+
+        // USing Array Library directly to sort
+        Arrays.sort(b);
+        s.reverse(b);
     }
 }
 ```
@@ -103,17 +134,36 @@ class SelectionSort {
 
 ```
 Sorted Number : 
-1234569
+1
+2
+3
+4
+5
+6
+7
+9
+
 
 
 Sorted Strings :
 
+AAdvaitha
 Advaitha
 Bablu
 Charan
 David
 Varun
 
+Reverese String print:
+
+9
+7
+6
+5
+4
+3
+2
+1
 ```
 
 ## Complexity Analysis
@@ -148,6 +198,8 @@ Therefore `(N-1)` + `(N-2)` + . . . + `1` = `(N.(N-1)/2)` comparisons and `N` sw
   <img width="400" height="180" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/SelectionSort_worst_case_.gif" alt="Selection Sort Worst Case">
 </p>
 
+
+
 ## Verdict
 
 - The efficiency of Selection Sort does not depend on the initial arrangement of the data.
@@ -162,6 +214,7 @@ Therefore `(N-1)` + `(N-2)` + . . . + `1` = `(N.(N-1)/2)` comparisons and `N` sw
 
 ## Few More Donut
 
+-  [Stable Selection Sort](https://www.geeksforgeeks.org/stable-selection-sort/) :star:
 - [String Sort](../../../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#StringSort)
 
 

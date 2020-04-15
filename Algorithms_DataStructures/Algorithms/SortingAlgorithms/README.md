@@ -31,3 +31,25 @@ Points to Explore
 
 - [ ] [Selection Sort](AllSortingAlgorithms.md#selection-sort)
 
+
+
+<!-- 
+|       |   Topic    | ReadMe | Complexity |
+| :---: | :--------: | :----: | :--------: |
+|  [ ]  | Algorithms |  link  |    `B`     |
+ -->
+
+**<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
+
+
+
+
+|  Sorting  |      Best case       |      Worst case      |     Average case     | Stable |  Method   |
+| :-------: | :------------------: | :------------------: | :------------------: | :----: | :-------: |
+| Selection | **O(N<sup>2</sup>)** | **O(N<sup>2</sup>)** | **O(N<sup>2</sup>)** |   No   | Selection |
+|           |                      |                      |                      |        |
+|           |                      |                      |                      |        |
+
+<p align="center">
+  <img width="700" height="350" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/AllAlgorithms_.gif" alt="AllAlgorithms">
+</p>
