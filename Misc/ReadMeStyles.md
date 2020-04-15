@@ -104,7 +104,7 @@
 
 <div align="right">
 
-🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
+🏁 [Your Journey Starts here ---->>>>](Algorithms_DataStructures/Readme.md)
 
 </div>
 

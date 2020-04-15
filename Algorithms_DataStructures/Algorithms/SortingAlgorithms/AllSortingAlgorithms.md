@@ -14,7 +14,7 @@
 3. Repeat the process until all items are sorted
 
 <p align="center">
-  <img width="450" height="250" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/selectionSort_.gif" alt="Algorithm_solutions">
+  <img width="450" height="250" src="../../../PlayGround/ResourcesFiles/Algorithms&DataStructures/sorting/selectionSort_.gif" alt="Algorithm_solutions">
 </p>
 
 Selection sort is a simple sorting algorithm. This sorting algorithm is an [`in-place comparison-based`](/PlayGround/Playground.md#swap-in-place-numbers) algorithm in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.
@@ -31,7 +31,7 @@ In every iteration of selection sort, the minimum element (considering ascending
 This algorithm is not suitable for large data sets as its average and worst case complexities are of **O(N<sup>2</sup>)**., where n is the number of items.
 
 <p align="center">
-  <img width="600" height="300" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/SelectionSort_.jpg" alt="Algorithm_solutions">
+  <img width="600" height="300" src="../../../PlayGround/ResourcesFiles/Algorithms&DataStructures/sorting/SelectionSort_.jpg" alt="Algorithm_solutions">
 </p>
 
 ```
@@ -100,13 +100,13 @@ Therefore `(N-1)` + `(N-2)` + . . . + `1` = `(N.(N-1)/2)` comparisons and `N` sw
 > **Average Case**
 
 <p align="center">
-  <img width="400" height="180" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/SelectionSort_Avg_case_.gif" alt="Selection Sort Average Case">
+  <img width="400" height="180" src="../../../PlayGround/ResourcesFiles/Algorithms&DataStructures/sorting/SelectionSort_Avg_case_.gif" alt="Selection Sort Average Case">
 </p>
 
 > **Worst Case**
 
 <p align="center">
-  <img width="400" height="180" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/SelectionSort_worst_case_.gif" alt="Selection Sort Worst Case">
+  <img width="400" height="180" src="../../../PlayGround/ResourcesFiles/Algorithms&DataStructures/sorting/SelectionSort_worst_case_.gif" alt="Selection Sort Worst Case">
 </p>
 
 ## Verdict

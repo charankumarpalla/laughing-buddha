@@ -25,11 +25,11 @@ Table of Contents
  </p>
 
 
-## Algorithms&DataStructures
+## Algorithms_DataStructures
 
 
 <div align="right">
-<a href="Algorithms&DataStructures/Readme.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+<a href="Algorithms_DataStructures/Readme.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 </div>
 
 
