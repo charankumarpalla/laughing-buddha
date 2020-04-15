@@ -76,7 +76,7 @@ Writing **step numbers**, is optional.
 We design an algorithm to get a solution of a given problem. A problem can be solved in more than one ways.
 
 <p align="center">
-  <img width="400" height="400" src="../../PlayGround/ResourcesFiles/Algorithms&DataStructures/sorting/Algorithm_solutions_.png" alt="Algorithm_solutions">
+  <img width="400" height="400" src="../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Algorithm_solutions_.png" alt="Algorithm_solutions">
 </p>
 
 Hence, many solution algorithms can be derived for a given problem. The next step is to **analyze** those proposed solution algorithms and implement the best suitable solution.
@@ -150,9 +150,9 @@ Well there are many types of algorithm but the most fundamental types of algorit
 - Randomized algorithm
 - Operating system algorithms
 
-|     |   Topic    | ReadMe | Complexity |
-| :-: | :--------: | :----: | :--------: |
-| [ ] | Algorithms |  link  |    `B`     |
+|       |   Topic    | ReadMe | Complexity |
+| :---: | :--------: | :----: | :--------: |
+|  [ ]  | Algorithms |  link  |    `B`     |
 
 **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
 
@@ -169,5 +169,5 @@ Well there are many types of algorithm but the most fundamental types of algorit
 |           |                      |                      |                      |        |
 
 <p align="center">
-  <img width="700" height="350" src="../../PlayGround/ResourcesFiles/Algorithms&DataStructures/sorting/AllAlgorithms_.gif" alt="AllAlgorithms">
+  <img width="700" height="350" src="../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/AllAlgorithms_.gif" alt="AllAlgorithms">
 </p>
