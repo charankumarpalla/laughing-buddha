@@ -2,6 +2,7 @@
   - [Strategy](#strategy)
   - [Complexity Analysis](#complexity-analysis)
   - [Verdict](#verdict)
+  - [Few More Donut](#few-more-donut)
   - [:bulb: Challenges](#bulb-challenges)
   - [Links](#links)
 
@@ -34,47 +35,85 @@ This algorithm is not suitable for large data sets as its average and worst case
   <img width="600" height="300" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/SelectionSort_.jpg" alt="Algorithm_solutions">
 </p>
 
+
 ```
-public class SelectionSort {
 
-    public void sort(int arr[]){
-        System.out.println("Sorting Started...!!!");
+class SelectionSort {
+    void sort(int a[]) {
 
-        for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
-                 System.out.println("-------->>  Comparing "+arr[i]+" & "+arr[j]);
-                if(arr[i]>arr[j]){
-                    System.out.println(+arr[i]+" > "+arr[j]);
-                    arr[i]=arr[i]+arr[j];
-                    arr[j]=arr[i]-arr[j];
-                    arr[i]=arr[i]-arr[j];
-                    System.out.println(+arr[i]+" < "+arr[j]);
-                    // continue;
+        int length = a.length;
+        int min_index;
+
+        for (int i = 0; i < length - 1; i++) {
+            min_index = i;
+            for (int j = i + 1; j < length; j++) {
+                if (a[j] < a[min_index]) {
+                    min_index = j;
                 }
             }
+            if (i != min_index) {
+                a[i] = a[i] + a[min_index];
+                a[min_index] = a[i] - a[min_index];
+                a[i] = a[i] - a[min_index];
+            }
+        }
+        System.out.println("Sorted Number : ");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+        }
+        System.out.println("\n\n");
+    }
+
+    void sort(String a[]) {
+
+        int length = a.length;
+        int min_index;
+
+        for (int i = 0; i < length - 1; i++) {
+            min_index = i;
+            for (int j = i + 1; j < length; j++) {
+                if (a[j].compareTo(a[min_index]) < 0) {
+                    min_index = j;
+                }
+            }
+            // Swap Strings
+            if (i != min_index) {
+                a[i] = a[i] + a[min_index];
+                a[min_index] = a[i].substring(0, a[i].length() - a[min_index].length());
+                a[i] = a[i].substring(a[min_index].length());
+            }
+        }
+        System.out.println("Sorted Strings :\n");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
         }
     }
 
-    public void printArray(int arr[]){
-        for(int i=0;i<arr.length;i++){
-            System.out.println(arr[i]);
-        }
-    }
-
-    public static void main(String[] args) {
-        SelectionSort ss = new SelectionSort();
-        int arr[] = { 10, 5, 13, 8, 7, 3 ,1,15,9};
-
-        System.out.println("Before Sorting...!!!!");
-        ss.printArray(arr);
-
-        ss.sort(arr);
-
-        System.out.println("After Sorting...!!!!");
-        ss.printArray(arr);
-
+    public static void main(String args[]) {
+        SelectionSort s = new SelectionSort();
+        int b[] = { 2, 3, 1, 4, 9, 5, 6 };
+        String name[] = { "Charan", "Advaitha", "Varun", "Bablu", "David" };
+        s.sort(b);
+        s.sort(name);
     }
 }
+```
+
+**OutPut :**
+
+```
+Sorted Number : 
+1234569
+
+
+Sorted Strings :
+
+Advaitha
+Bablu
+Charan
+David
+Varun
+
 ```
 
 ## Complexity Analysis
@@ -120,6 +159,11 @@ Therefore `(N-1)` + `(N-2)` + . . . + `1` = `(N.(N-1)/2)` comparisons and `N` sw
 | Best Case    | **O(N<sup>2</sup>)** | O(N) |
 | Average Case | **O(N<sup>2</sup>)** | O(N) |
 | Worst Case   | **O(N<sup>2</sup>)** | O(N) |
+
+## Few More Donut
+
+- [String Sort](../../../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#StringSort)
+
 
 ## :bulb: Challenges
 

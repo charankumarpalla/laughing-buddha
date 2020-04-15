@@ -137,18 +137,18 @@ For example, addition of two n-bit integers takes n steps. Consequently, the tot
 
 Well there are many types of algorithm but the most fundamental types of algorithm are:
 
-- [Sorting Algorithms](./SortingAlgorithms/README.md)
-- Searching Algorithms
-- Dynamic programming algorithm
-- Graph Algorithms
-- Backtracking Algorithms
-- Recursive algorithms
-- Divide and conquer algorithm
-- Greedy algorithm
-- Algorithms Implementation
-- Brute Force algorithm
-- Randomized algorithm
-- Operating system algorithms
+- [ ] [Sorting Algorithms](./SortingAlgorithms/README.md)
+- [ ] Searching Algorithms
+- [ ] Dynamic programming algorithm
+- [ ] Graph Algorithms
+- [ ] Backtracking Algorithms
+- [ ] Recursive algorithms
+- [ ] Divide and conquer algorithm
+- [ ] Greedy algorithm
+- [ ] Algorithms Implementation
+- [ ] Brute Force algorithm
+- [ ] Randomized algorithm
+- [ ] Operating system algorithms
 
 |       |   Topic    | ReadMe | Complexity |
 | :---: | :--------: | :----: | :--------: |

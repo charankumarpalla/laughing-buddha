@@ -60,15 +60,16 @@
 
 ## Challenges
 
-|     |                                                                                 Topic                                                                                 | Solution | Comment |
-| :-: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------: | :-----: |
-| [ ] | [Cats and a Mouse ](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=30-day-campaign) |          |         |
-| [ ] |                                               [geeksforgeeks aticles ](https://www.geeksforgeeks.org/category/sorting/)                                               |          |         |
+|       |                                                                                 Topic                                                                                 | Solution | Comment |
+| :---: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------: | :-----: |
+|   -   | [Cats and a Mouse ](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=30-day-campaign) |          |         |
+|   -   |                                               [geeksforgeeks aticles ](https://www.geeksforgeeks.org/category/sorting/)                                               |          |         |
 
 ## Visualize
 
+- [ ]  https://www.hackerearth.com/practice/algorithms/ :star::star::star::star::star:
+- [ ] http://sorting.at/ :star::star::star::star::star:
 - [ ] https://www.advanced-ict.info/interactive/algorithms.html
-- [ ] http://sorting.at/
 - [ ] https://visualgo.net/en/sorting
 - [ ] https://www.toptal.com/developers/sorting-algorithms/random-initial-order
 - [ ] [gaerae/awesome-algorithms-education#visualizations](https://github.com/gaerae/awesome-algorithms-education#visualizations)

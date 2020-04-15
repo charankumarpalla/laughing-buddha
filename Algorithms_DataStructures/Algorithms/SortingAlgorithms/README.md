@@ -22,7 +22,7 @@ Points to Explore
 > 
 > in JS its so simple to Swap two array elements as
 > 
-> FSwaaping i & j elemenets of Array a ---> [a[i],a[j]]=[a[j],a[i]]
+> Swapping i & j elements of Array a ---> [a[i],a[j]]=[a[j],a[i]]
 
 
 
