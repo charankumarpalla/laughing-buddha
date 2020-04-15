@@ -130,3 +130,4 @@ Therefore `(N-1)` + `(N-2)` + . . . + `1` = `(N.(N-1)/2)` comparisons and `N` sw
 ## Links
 
 - Visualizer - https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/visualize/
+- https://www.geeksforgeeks.org/external-sorting/

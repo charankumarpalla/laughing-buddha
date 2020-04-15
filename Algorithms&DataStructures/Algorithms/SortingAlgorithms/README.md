@@ -12,6 +12,22 @@ Points to Explore
   - Which sorting algorithms are unstable?
   - Can we make any sorting algorithm stable?
 
+
+
+
+
+<img src="https://img.shields.io/badge/🔖TidBit-orange?style=plastic"/>
+
+> ➤➤➤ SWAP
+> 
+> in JS its so simple to Swap two array elements as
+> 
+> FSwaaping i & j elemenets of Array a ---> [a[i],a[j]]=[a[j],a[i]]
+
+
+
+
 # Sorting Algorithms
 
-- [ ] Selection Sort https://www.geeksforgeeks.org/external-sorting/
+- [ ] [Selection Sort](AllSortingAlgorithms.md#selection-sort)
+
