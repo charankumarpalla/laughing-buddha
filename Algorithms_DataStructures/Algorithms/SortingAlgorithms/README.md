@@ -1,4 +1,7 @@
-# PAGE UNDER PROGRESSSSSSSSS
+<h1>PAGE UNDER PROGRESSSSSSSSS </h1>
+
+- [Sorting Algorithms](#sorting-algorithms)
+- [Conclusion](#conclusion)
 
 Points to Explore
 
@@ -12,28 +15,20 @@ Points to Explore
   - Which sorting algorithms are unstable?
   - Can we make any sorting algorithm stable?
 
-
-
-
-
-<img src="https://img.shields.io/badge/🔖TidBit-orange?style=plastic"/>
+<!-- <img src="https://img.shields.io/badge/🔖TidBit-orange?style=plastic"/> -->
 
 > ➤➤➤ SWAP
-> 
+>
 > in JS its so simple to Swap two array elements as
-> 
+>
 > Swapping i & j elements of Array a ---> [a[i],a[j]]=[a[j],a[i]]
-
-
-
 
 # Sorting Algorithms
 
-- [ ] [Selection Sort](AllSortingAlgorithms.md#selection-sort)
+- [ ] [Bubble Sort](AllSortingAlgorithms.md#bubble-sort)
+- [x] [Selection Sort](AllSortingAlgorithms.md#selection-sort)
 
-
-
-<!-- 
+<!--
 |       |   Topic    | ReadMe | Complexity |
 | :---: | :--------: | :----: | :--------: |
 |  [ ]  | Algorithms |  link  |    `B`     |
@@ -41,8 +36,7 @@ Points to Explore
 
 **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
 
-
-
+# Conclusion
 
 |  Sorting  |      Best case       |      Worst case      |     Average case     | Stable |  Method   |
 | :-------: | :------------------: | :------------------: | :------------------: | :----: | :-------: |
@@ -53,3 +47,11 @@ Points to Explore
 <p align="center">
   <img width="700" height="350" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/AllAlgorithms_.gif" alt="AllAlgorithms">
 </p>
+
+  <a align="center"> 
+    <img  src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/BubbleVsSelection-Comparison.jpg" alt="BubbleVsSelection">
+ </a>
+
+  <a align="center"> 
+    <img  src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Sorts_Compare_.jpg" alt="Sorts_Compare">
+ </a>

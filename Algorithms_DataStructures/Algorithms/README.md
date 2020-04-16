@@ -1,11 +1,10 @@
 - [a. Characteristics of an Algorithm](#a-characteristics-of-an-algorithm)
 - [b. How to Write an Algorithm?](#b-how-to-write-an-algorithm)
-- [c. Algorithm Analysis](#c-algorithm-analysis)
-- [d. Algorithm Complexity](#d-algorithm-complexity)
+- [c. Algorithm Complexity](#c-algorithm-complexity)
   - [i. Space Complexity](#i-space-complexity)
   - [ii. Time Complexity](#ii-time-complexity)
-- [List Of Algorithms](#list-of-algorithms)
-  - [Types oF Algorithms](#types-of-algorithms)
+- [Algorithms Analysis :star: :construction:](#algorithms-analysis-star-construction)
+- [Types oF Algorithms](#types-of-algorithms)
 
 **Algorithm** is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
 
@@ -81,17 +80,7 @@ We design an algorithm to get a solution of a given problem. A problem can be so
 
 Hence, many solution algorithms can be derived for a given problem. The next step is to **analyze** those proposed solution algorithms and implement the best suitable solution.
 
-## c. Algorithm Analysis
-
-Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following −
-
-- **A Priori Analysis** − This is a theoretical analysis of an algorithm. Efficiency of an algorithm is measured by assuming that all other factors, for example, processor speed, are constant and have no effect on the implementation.
-
-- **A Posterior Analysis** − This is an empirical analysis of an algorithm. The selected algorithm is implemented using programming language. This is then executed on target computer machine. In this analysis, actual statistics like running time and space required, are collected.
-
-We shall learn about a `priori algorithm` analysis. Algorithm analysis deals with the execution or running time of various operations involved. The running time of an operation can be defined as the number of computer instructions executed per operation.
-
-## d. Algorithm Complexity
+## c. Algorithm Complexity
 
 Suppose **X** is an algorithm and **n** is the size of input data, the time and space used by the algorithm X are the two main factors, which decide the efficiency of X.
 
@@ -127,13 +116,22 @@ Time complexity of an algorithm represents the amount of time required by the al
 
 For example, addition of two n-bit integers takes n steps. Consequently, the total computational time is T(n) = c ∗ n, where c is the time taken for the addition of two bits. Here, we observe that T(n) grows linearly as the input size increases.
 
-## List Of Algorithms
+## Algorithms Analysis :star: :construction:
 
-### Types oF Algorithms
+Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following −
 
-`B` - Beginner, `A` - Advanced
+- **A Priori Analysis** − This is a theoretical analysis of an algorithm. Efficiency of an algorithm is measured by assuming that all other factors, for example, processor speed, are constant and have no effect on the implementation.
 
-**----> TO-DO** : [1](https://www.includehelp.com/algorithms/), [2](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)
+- **A Posterior Analysis** − This is an empirical analysis of an algorithm. The selected algorithm is implemented using programming language. This is then executed on target computer machine. In this analysis, actual statistics like running time and space required, are collected.
+
+We shall learn about a `priori algorithm` analysis. Algorithm analysis deals with the execution or running time of various operations involved. The running time of an operation can be defined as the number of computer instructions executed per operation.
+
+<!-- TODO -->
+
+- https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/ :construction:
+- https://www.geeksforgeeks.org/fundamentals-of-algorithms/#AnalysisofAlgorithms :construction:
+
+## Types oF Algorithms
 
 Well there are many types of algorithm but the most fundamental types of algorithm are:
 
@@ -150,3 +148,6 @@ Well there are many types of algorithm but the most fundamental types of algorit
 - [ ] Randomized algorithm
 - [ ] Operating system algorithms
 
+`B` - Beginner, `A` - Advanced
+
+**----> TO-DO** : [1](https://www.includehelp.com/algorithms/), [2](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)
