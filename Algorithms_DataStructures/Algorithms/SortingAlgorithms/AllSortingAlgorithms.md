@@ -43,57 +43,131 @@ So as we can see in the representation above, after the first iteration, `6` is 
 
 Similarly after the second iteration, `5` will be at the second last index, and so on.
 
-```
-function BubbleSort(a){
-    for (var i=0;i<a.length;i++){
-        for(var j=i+1;j<a.length;j++){
-            if(a[j]<a[i]){
-               a[i]=a[i]*a[j];
-               a[j]=a[i]/a[j];
-               a[i]=a[i]/a[j];
-            }
-            console.log(a)
+<h2>Bubble Sort 1</h2>
 
-        }
+```
+// ###############################################################################
+//  -------->>>>>> 1. Basic Bubble sort
+//  -------->>>>>> Notice : Irrespective it always loops for array.length times each time
+// Before Sorting [ 5, 1, 6, 2, 4, 3 ]
+// [ 5, 1, 6, 2, 4, 3 ] 5 1
+// [ 1, 5, 6, 2, 4, 3 ] 5 6
+// [ 1, 5, 6, 2, 4, 3 ] 6 2
+// [ 1, 5, 2, 6, 4, 3 ] 6 4
+// [ 1, 5, 2, 4, 6, 3 ] 6 3
+
+// --- + One More FOR Loop Done
+// [ 1, 5, 2, 4, 3, 6 ] 1 5
+// [ 1, 5, 2, 4, 3, 6 ] 5 2
+// [ 1, 2, 5, 4, 3, 6 ] 5 4
+// [ 1, 2, 4, 5, 3, 6 ] 5 3
+// [ 1, 2, 4, 3, 5, 6 ] 5 6
+
+// --- + One More FOR Loop Done
+// [ 1, 2, 4, 3, 5, 6 ] 1 2
+// [ 1, 2, 4, 3, 5, 6 ] 2 4
+// [ 1, 2, 4, 3, 5, 6 ] 4 3
+// [ 1, 2, 3, 4, 5, 6 ] 4 5
+// [ 1, 2, 3, 4, 5, 6 ] 5 6
+
+// --- + One More FOR Loop Done   // No Swap But we Still Loop
+// [ 1, 2, 3, 4, 5, 6 ] 1 2
+// [ 1, 2, 3, 4, 5, 6 ] 2 3
+// [ 1, 2, 3, 4, 5, 6 ] 3 4
+// [ 1, 2, 3, 4, 5, 6 ] 4 5
+// [ 1, 2, 3, 4, 5, 6 ] 5 6
+
+// --- + One More FOR Loop Done   // No Swap But we Still Loop
+// [ 1, 2, 3, 4, 5, 6 ] 1 2
+// [ 1, 2, 3, 4, 5, 6 ] 2 3
+// [ 1, 2, 3, 4, 5, 6 ] 3 4
+// [ 1, 2, 3, 4, 5, 6 ] 4 5
+// [ 1, 2, 3, 4, 5, 6 ] 5 6
+
+// --- + One More FOR Loop Done
+// After Sorting [ 1, 2, 3, 4, 5, 6 ]
+
+function BubbleSort(a) {
+  for (let i = 0; i < a.length - 1; i++) {
+    for (let j = 0; j < a.length - 1; j++) {
+      console.log(a, a[j], a[j + 1]); // SOMETIMES Comapring with undefined
+      if (a[j] > a[j + 1]) {
+        a[j] = a[j] * a[j + 1];
+        a[j + 1] = a[j] / a[j + 1];
+        a[j] = a[j] / a[j + 1];
+      }
     }
+    console.log("\n--- + One More FOR Loop Done ");
+  }
 }
-a=[5, 1, 6, 2, 4, 3]
 
+a = [5, 1, 6, 2, 4, 3];
 
-console.log("Before Sorting",a);
-BubbleSort(a)
-console.log("After Sorting",a);
+console.log("Before Sorting", a);
+BubbleSort(a);
+console.log("After Sorting", a);
+```
+**Problem** In Above Bubble Sort We Always loop for array length, which is not needed and fixed in below Bubble sort
+
+<h2>Bubble Sort 2</h2>
 
 ```
 
-**OUTPUT**
+// ###############################################################################
+//  -------->>>>>> 2.  Bubble sort with no 'undefined comparisions'
+//  -------->>>>>> Notice :  We Dont Do unwanted inner for loop as already Biggest number bubbled and we descreas the comparision
+// Before Sorting [ 5, 1, 6, 2, 4, 3 ]
+// [ 5, 1, 6, 2, 4, 3 ] 5 1
+// [ 1, 5, 6, 2, 4, 3 ] 5 6
+// [ 1, 5, 6, 2, 4, 3 ] 6 2
+// [ 1, 5, 2, 6, 4, 3 ] 6 4
+// [ 1, 5, 2, 4, 6, 3 ] 6 3
 
+// --- + One More FOR Loop Done
+// [ 1, 5, 2, 4, 3, 6 ] 1 5
+// [ 1, 5, 2, 4, 3, 6 ] 5 2
+// [ 1, 2, 5, 4, 3, 6 ] 5 4
+// [ 1, 2, 4, 5, 3, 6 ] 5 3
+
+// --- + One More FOR Loop Done
+// [ 1, 2, 4, 3, 5, 6 ] 1 2
+// [ 1, 2, 4, 3, 5, 6 ] 2 4
+// [ 1, 2, 4, 3, 5, 6 ] 4 3
+
+// --- + One More FOR Loop Done
+// [ 1, 2, 3, 4, 5, 6 ] 1 2
+// [ 1, 2, 3, 4, 5, 6 ] 2 3
+
+// --- + One More FOR Loop Done
+// [ 1, 2, 3, 4, 5, 6 ] 1 2
+
+// --- + One More FOR Loop Done
+
+// --- + One More FOR Loop Done
+// After Sorting [ 1, 2, 3, 4, 5, 6 ]
+function BubbleSort2(a) {
+  for (let i = a.length; i > 0; i--) {
+    for (let j = 0; j < i - 1; j++) {
+      console.log(a, a[j], a[j + 1]);
+      if (a[j] > a[j + 1]) {
+        a[j] = a[j] * a[j + 1];
+        a[j + 1] = a[j] / a[j + 1];
+        a[j] = a[j] / a[j + 1];
+      }
+    }
+    console.log("\n--- + One More FOR Loop Done ");
+  }
+}
+
+a = [5, 1, 6, 2, 4, 3];
+
+console.log("Before Sorting", a);
+BubbleSort2(a);
+console.log("After Sorting", a);
 ```
-
-Sort_Bubble:11 Before Sorting (6) [5, 1, 6, 2, 4, 3]
-Sort_Bubble:11 (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:11 (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:11 (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:11 (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:11 (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:11 (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:11 (6) [1, 2, 6, 5, 4, 3]
-Sort_Bubble:11 (6) [1, 2, 6, 5, 4, 3]
-Sort_Bubble:11 (6) [1, 2, 6, 5, 4, 3]
-Sort_Bubble:11 (6) [1, 2, 5, 6, 4, 3]
-Sort_Bubble:11 (6) [1, 2, 4, 6, 5, 3]
-Sort_Bubble:11 (6) [1, 2, 3, 6, 5, 4]
-Sort_Bubble:11 (6) [1, 2, 3, 5, 6, 4]
-Sort_Bubble:11 (6) [1, 2, 3, 4, 6, 5]
-Sort_Bubble:11 (6) [1, 2, 3, 4, 5, 6]
-Sort_Bubble:22 After Sorting (6) [1, 2, 3, 4, 5, 6]
-
-
-```
-
-**Although the above logic will sort an unsorted array, still the above algorithm is not efficient because as per the above logic, the outer for loop will keep on executing for 6 iterations even if the array gets sorted after the second iteration.**
-
 <h2>Optimized Bubble Sort Algorithm</h2>
+
+**Problem** When an array is nearly sorted or already sorted, Bubble Sort will again try to sort and does all the loop so there has to be some optimization if array is already sorted .
 
 To optimize our bubble sort algorithm, we can introduce a `flag` to monitor whether elements are getting swapped inside the inner `for` loop.
 
@@ -101,66 +175,96 @@ Hence, in the inner `for` loop, we check whether swapping of elements is taking 
 
 If for a particular iteration, no swapping took place, it means the array has been sorted and we can jump out of the `for` loop, instead of executing all the iterations.
 
-Let's consider an array with values `{11, 17, 18, 26, 23}`
 
-Below, we have a pictorial representation of how the optimized bubble sort will sort the given array.
 
-<p align="center">
-  <img width="450" height="450" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/enhanced-bubble-sort_.png" alt="enhanced-bubble-sort_.png">
-</p>
+Example : if a=[1,2,3,4,5] , Bubble sort will have below looping
+
+```
+
+Before Sorting [ 1, 2, 3, 4, 5, 6 ]
+[ 1, 2, 3, 4, 5, 6 ] 1 2
+[ 1, 2, 3, 4, 5, 6 ] 2 3
+[ 1, 2, 3, 4, 5, 6 ] 3 4
+[ 1, 2, 3, 4, 5, 6 ] 4 5
+[ 1, 2, 3, 4, 5, 6 ] 5 6
+
+--- + One More FOR Loop Done 
+[ 1, 2, 3, 4, 5, 6 ] 1 2
+[ 1, 2, 3, 4, 5, 6 ] 2 3
+[ 1, 2, 3, 4, 5, 6 ] 3 4
+[ 1, 2, 3, 4, 5, 6 ] 4 5
+
+--- + One More FOR Loop Done 
+[ 1, 2, 3, 4, 5, 6 ] 1 2
+[ 1, 2, 3, 4, 5, 6 ] 2 3
+[ 1, 2, 3, 4, 5, 6 ] 3 4
+
+--- + One More FOR Loop Done 
+[ 1, 2, 3, 4, 5, 6 ] 1 2
+[ 1, 2, 3, 4, 5, 6 ] 2 3
+
+--- + One More FOR Loop Done 
+[ 1, 2, 3, 4, 5, 6 ] 1 2
+
+--- + One More FOR Loop Done 
+
+--- + One More FOR Loop Done 
+After Sorting [ 1, 2, 3, 4, 5, 6 ]
 
 ```
 
 
-function BubbleSort(a){
-    for (var i=0;i<a.length;i++){
-        for(var j=i+1;j<a.length;j++){
+**Solution** : 
 
-            var flag=0;
-            if(a[j]<a[i]){
-               a[i]=a[i]*a[j];
-               a[j]=a[i]/a[j];
-               a[i]=a[i]/a[j];
-                flag=1;
-            }
+if in inner-loop if no swap happens then it means the array is already sorted, there by the upcoming loops wont swap. so lets break the function by checking a introducing a flag.
 
-            console.log("Current : ",a);
-            if(flag==1){
-                console.log("Flagged Now");
-                break;
-            }
-            console.log("NOT Flagged");
 
-        }
+```
+
+// ###############################################################################
+//  -------->>>>>> 3.  Bubble sort with OPTIMIZATION i.e with FLag
+//  -------->>>>>> Notice :  We Dont Do unwanted inner for loop as already the array is sorted
+
+function BubbleSort3(a) {
+  for (let i = a.length; i > 0; i--) {
+    swap = false;
+    for (let j = 0; j < i - 1; j++) {
+      console.log(a, a[j], a[j + 1]);
+      if (a[j] > a[j + 1]) {
+        [a[j], a[j + 1]] = [a[j + 1], a[j]];
+        swap = true;
+      } // SWAP ARRAY ELEMENTS
     }
+
+    if (!swap) {
+      console.log("Array Already Sorted So No More Loops");
+      break;
+    }
+    console.log("\n--- + One PASS Done ");
+  }
 }
-a=[5, 1, 6, 2, 4, 3]
 
+// a = [5, 1, 6, 2, 4, 3];
 
-console.log("Before Sorting",a);
-BubbleSort(a)
-console.log("After Sorting",a);
+a = [2, 1, 3, 4, 5, 6];
 
-```
-
-**OUTPUT**
+console.log("Before Sorting", a);
+BubbleSort3(a);
+console.log("After Sorting", a);
 
 ```
-Sort_Bubble:   Before Sorting (6) [5, 1, 6, 2, 4, 3]
-Sort_Bubble:14 Current :  (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:16 Flagged Now
-Sort_Bubble:14 Current :  (6) [1, 5, 6, 2, 4, 3]
-Sort_Bubble:19 NOT Flagged
-Sort_Bubble:14 Current :  (6) [1, 2, 6, 5, 4, 3]
-Sort_Bubble:16 Flagged Now
-Sort_Bubble:14 Current :  (6) [1, 2, 5, 6, 4, 3]
-Sort_Bubble:16 Flagged Now
-Sort_Bubble:14 Current :  (6) [1, 2, 5, 4, 6, 3]
-Sort_Bubble:16 Flagged Now
-Sort_Bubble:14 Current :  (6) [1, 2, 5, 4, 3, 6]
-Sort_Bubble:16 Flagged Now
-Sort_Bubble:29 After Sorting (6) [1, 2, 5, 4, 3, 6]
-```
+
+
+
+**Although the above logic will sort an unsorted array, still the above algorithm is not efficient because as per the above logic, the outer for loop will keep on executing for 6 iterations even if the array gets sorted after the second iteration.**
+
+
+
+<div style="text-align: center"><table><tr>
+     <td align="center"><a><img src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Bubble_Optimised.png" width="300" height="450" alt="userlist"/><br /><b>Non - Optmised</b></td>
+          <td align="center"><a><img src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Bubble_normal.png" width="300" height="450" alt="userlist"/><br /><b>Optmised</b></td>
+
+</tr></table></div>
 
 ## Complexity Analysis
 
