@@ -74,11 +74,11 @@
 - [ ] https://www.toptal.com/developers/sorting-algorithms/random-initial-order
 - [ ] [gaerae/awesome-algorithms-education#visualizations](https://github.com/gaerae/awesome-algorithms-education#visualizations)
 
-<div align="right">
+<!-- <div align="right">
 
 <a href="../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#DataStructures&Algorithms" alt=".../PlayGround/ResourcesFiles/ReadMeResources/Interview.md#DataStrutures&Algorithms"><img src="https://img.shields.io/badge/Big O notation-...-green?style=for-the-badge&logo=markdown"/></a>
 
-</div>
+</div> -->
 
 ## References
 
