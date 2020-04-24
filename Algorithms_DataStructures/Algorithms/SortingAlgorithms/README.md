@@ -77,8 +77,9 @@ Now it works fine as shown below
 
 # Sorting Algorithms
 
-- [ ] [Bubble Sort](AllSortingAlgorithms.md#bubble-sort)
+- [x] [Bubble Sort](AllSortingAlgorithms.md#bubble-sort)
 - [x] [Selection Sort](AllSortingAlgorithms.md#selection-sort)
+- [ ] [Insertion Sort](AllSortingAlgorithms.md#insertion-sort)
 
 <!--
 |       |   Topic    | ReadMe | Complexity |

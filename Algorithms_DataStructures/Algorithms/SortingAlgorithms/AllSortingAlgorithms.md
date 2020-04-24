@@ -12,6 +12,14 @@
   - [Few More Donut](#few-more-donut-1)
   - [:bulb: Challenges](#bulb-challenges-1)
   - [Links](#links-1)
+- [Insertion Sort](#insertion-sort)
+  - [Strategy](#strategy-2)
+  - [Complexity Analysis](#complexity-analysis-2)
+  - [Verdict](#verdict-2)
+  - [Few More Donut](#few-more-donut-2)
+  - [:bulb: Challenges](#bulb-challenges-2)
+  - [Links](#links-2)
+- [Bubble Vs Selection Vs Insertion Sorting](#bubble-vs-selection-vs-insertion-sorting)
 
 # Bubble Sort
 
@@ -86,7 +94,9 @@ Similarly after the second iteration, `5` will be at the second last index, and 
 
 // --- + One More FOR Loop Done
 // After Sorting [ 1, 2, 3, 4, 5, 6 ]
+// LOOPS : 25
 
+var loop=0;
 function BubbleSort(a) {
   for (let i = 0; i < a.length - 1; i++) {
     for (let j = 0; j < a.length - 1; j++) {
@@ -106,7 +116,9 @@ a = [5, 1, 6, 2, 4, 3];
 console.log("Before Sorting", a);
 BubbleSort(a);
 console.log("After Sorting", a);
+console.log("LOOPS :",loop)
 ```
+
 **Problem** In Above Bubble Sort We Always loop for array length, which is not needed and fixed in below Bubble sort
 
 <h2>Bubble Sort 2</h2>
@@ -145,6 +157,9 @@ console.log("After Sorting", a);
 
 // --- + One More FOR Loop Done
 // After Sorting [ 1, 2, 3, 4, 5, 6 ]
+// LOOPS : 15
+
+var loop=0
 function BubbleSort2(a) {
   for (let i = a.length; i > 0; i--) {
     for (let j = 0; j < i - 1; j++) {
@@ -164,7 +179,9 @@ a = [5, 1, 6, 2, 4, 3];
 console.log("Before Sorting", a);
 BubbleSort2(a);
 console.log("After Sorting", a);
+console.log("LOOPS :",loop)
 ```
+
 <h2>Optimized Bubble Sort Algorithm</h2>
 
 **Problem** When an array is nearly sorted or already sorted, Bubble Sort will again try to sort and does all the loop so there has to be some optimization if array is already sorted .
@@ -174,8 +191,6 @@ To optimize our bubble sort algorithm, we can introduce a `flag` to monitor whet
 Hence, in the inner `for` loop, we check whether swapping of elements is taking place or not, everytime.
 
 If for a particular iteration, no swapping took place, it means the array has been sorted and we can jump out of the `for` loop, instead of executing all the iterations.
-
-
 
 Example : if a=[1,2,3,4,5] , Bubble sort will have below looping
 
@@ -188,36 +203,34 @@ Before Sorting [ 1, 2, 3, 4, 5, 6 ]
 [ 1, 2, 3, 4, 5, 6 ] 4 5
 [ 1, 2, 3, 4, 5, 6 ] 5 6
 
---- + One More FOR Loop Done 
+--- + One More FOR Loop Done
 [ 1, 2, 3, 4, 5, 6 ] 1 2
 [ 1, 2, 3, 4, 5, 6 ] 2 3
 [ 1, 2, 3, 4, 5, 6 ] 3 4
 [ 1, 2, 3, 4, 5, 6 ] 4 5
 
---- + One More FOR Loop Done 
+--- + One More FOR Loop Done
 [ 1, 2, 3, 4, 5, 6 ] 1 2
 [ 1, 2, 3, 4, 5, 6 ] 2 3
 [ 1, 2, 3, 4, 5, 6 ] 3 4
 
---- + One More FOR Loop Done 
+--- + One More FOR Loop Done
 [ 1, 2, 3, 4, 5, 6 ] 1 2
 [ 1, 2, 3, 4, 5, 6 ] 2 3
 
---- + One More FOR Loop Done 
+--- + One More FOR Loop Done
 [ 1, 2, 3, 4, 5, 6 ] 1 2
 
---- + One More FOR Loop Done 
+--- + One More FOR Loop Done
 
---- + One More FOR Loop Done 
+--- + One More FOR Loop Done
 After Sorting [ 1, 2, 3, 4, 5, 6 ]
 
 ```
 
-
-**Solution** : 
+**Solution** :
 
 if in inner-loop if no swap happens then it means the array is already sorted, there by the upcoming loops wont swap. so lets break the function by checking a introducing a flag.
-
 
 ```
 
@@ -254,15 +267,11 @@ console.log("After Sorting", a);
 
 ```
 
-
-
 **Although the above logic will sort an unsorted array, still the above algorithm is not efficient because as per the above logic, the outer for loop will keep on executing for 6 iterations even if the array gets sorted after the second iteration.**
 
-
-
 <div style="text-align: center"><table><tr>
-     <td align="center"><a><img src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Bubble_Optimised.png" width="300" height="450" alt="userlist"/><br /><b>Non - Optmised</b></td>
-          <td align="center"><a><img src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Bubble_normal.png" width="300" height="450" alt="userlist"/><br /><b>Optmised</b></td>
+     <td align="center"><a><img src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Bubble_Optimised_.png" width="300" height="450" alt="userlist"/><br /><b>Non - Optmised</b></td>
+          <td align="center"><a><img src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Bubble_normal_.png" width="300" height="450" alt="userlist"/><br /><b>Optmised</b></td>
 
 </tr></table></div>
 
@@ -270,13 +279,11 @@ console.log("After Sorting", a);
 
 In Bubble Sort, n-1 comparisons will be done in the 1st pass, n-2 in 2nd pass, n-3 in 3rd pass and so on. So the total number of comparisons will be,
 
-```
-(n-1) + (n-2) + (n-3) + ..... + 3 + 2 + 1
-Sum = n(n-1)/2
-i.e O(n2)
-```
+> (n-1) + (n-2) + (n-3) + ..... + 3 + 2 + 1
+> Sum = n(n-1)/2
+> i.e **O(N<sup>2</sup>)**
 
-Hence the time complexity of Bubble Sort is O(n2).
+Hence the time complexity of Bubble Sort is **O(N<sup>2</sup>)**.
 
 The main advantage of Bubble Sort is the simplicity of the algorithm.
 
@@ -294,6 +301,8 @@ Following are the Time and Space complexity for the Bubble Sort algorithm.
 - Space Complexity: O(1)
 
 ## Few More Donut
+
+- [recursive-bubble-sort](https://www.geeksforgeeks.org/recursive-bubble-sort/)
 
 ## :bulb: Challenges
 
@@ -527,3 +536,173 @@ Therefore `(N-1)` + `(N-2)` + . . . + `1` = `(N.(N-1)/2)` comparisons and `N` sw
 - **Visualizer** - https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/visualize/
 
 ![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
+
+# Insertion Sort
+
+Consider you have 10 cards out of a deck of cards in your hand. And they are sorted, or arranged in the ascending order of their numbers.
+
+If I give you another card, and ask you to insert the card in just the right position, so that the cards in your hand are still sorted. What will you do?
+
+Well, you will have to go through each card from the starting or the back and find the right position for the new card, comparing it's value with each card. Once you find the right position, you will insert the card there.
+
+Similarly, if more new cards are provided to you, you can easily repeat the same process and insert the new cards and keep the cards sorted too.
+
+This is exactly how **insertion sort** works. It starts from the index 1(not 0), and each index starting from index 1 is like a new card, that you have to place at the right position in the sorted subarray on the left.
+
+Following are some of the important characteristics of Insertion Sort:
+
+- It is efficient for smaller data sets, but very inefficient for larger lists.
+- Insertion Sort is adaptive, that means it reduces its total number of steps if a partially sorted array is provided as input, making it efficient.
+- It is better than Selection Sort and Bubble Sort algorithms.
+- Its space complexity is less. Like bubble Sort, insertion sort also requires a single additional memory space.
+- It is a stable sorting technique, as it does not change the relative order of elements which are equal.
+
+## Strategy
+
+Following are the steps involved in insertion sort:
+
+* We start by making the second element of the given array, i.e. element at index 1, the key. The key element here is the new card that we need to add to our existing sorted set of cards(remember the example with cards above).
+* We compare the key element with the element(s) before it, in this case, element at index 0:
+* If the key element is less than the first element, we insert the key element before the first element.
+* If the key element is greater than the first element, then we insert it after the first element.
+* Then, we make the third element of the array as key and will compare it with elements to it's left and insert it at the right position.
+* And we go on repeating this, until the array is sorted.
+
+
+ Let's consider an array with values {5, 1, 6, 2, 4, 3}
+
+ <p align="center">
+  <img width="450" height="450" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/basic-insertion-sort_.png" alt="basic-insertion-sort_">
+</p>
+
+
+As you can see in the diagram above, after picking a `key`, we start iterating over the elements to the left of the `key`.
+
+We continue to move towards left if the elements are greater than the `key` element and stop when we find the element which is less than the `key` element.
+
+And, insert the `key` element after the element which is less than the `key` element.
+
+
+
+```
+
+// // ###############################################################################
+// //  -------->>>>>> 1. Basic Bubble sort
+// //  -------->>>>>> Notice : Irrespective it always loops for array.length times each time
+// // Before Sorting [ 5, 1, 6, 2, 4, 3 ]
+// // Key to Insert:1         Array to check : [5]
+// // After One Loop Pass : [ 1, 5, 6, 2, 4, 3 ]
+// // Key to Insert:6         Array to check : [1,5]
+// // After One Loop Pass : [ 1, 5, 6, 2, 4, 3 ]
+// // Key to Insert:2         Array to check : [1,5,6]
+// // After One Loop Pass : [ 1, 2, 5, 6, 4, 3 ]
+// // Key to Insert:4         Array to check : [1,2,5,6]
+// // After One Loop Pass : [ 1, 2, 4, 5, 6, 3 ]
+// // Key to Insert:3         Array to check : [1,2,4,5,6]
+// // After One Loop Pass : [ 1, 2, 3, 4, 5, 6 ]
+// // After Sorting [ 1, 2, 3, 4, 5, 6 ]
+// // Total LOOPs: 8
+
+var loops = 0;
+function InsertionSort(a) {
+  for (let i = 1; i < a.length; i++) {
+    var key = a[i];
+    let j = i - 1;
+    console.log(
+      "\nKey to Insert:" +key +"\t\tArray to check : [" +a.slice(0, j + 1) +"]"
+    );
+    for (j; j >= 0 && a[j] > key; j--) {
+      a[j + 1] = a[j];
+      loops++;
+      //   console.log(a[(0, 0, 2)]);
+    }
+    a[j + 1] = key;
+    console.log("After One Loop Pass :", a);
+  }
+}
+
+a = [5, 1, 6, 2, 4, 3];
+
+console.log("\nBefore Sorting", a);
+InsertionSort(a);
+console.log("\nAfter Sorting", a);
+console.log("\nTotal LOOPs :", loops);
+
+```
+
+
+Now let's try to understand the above simple insertion sort algorithm.
+
+We took an array with 6 integers. We took a variable `key`, in which we put each element of the array, during each pass, starting from the second element, that is a[1].
+
+Then using the for loop, we iterate, until j becomes equal to zero or we find an element which is greater than `key`, and then we insert the `key` at that position.
+
+We keep on doing this, until j becomes equal to zero, or we encounter an element which is smaller than the `key`, and then we stop. The current key is now at the right position.
+
+We then make the next element as `key` and then repeat the same process.
+
+In the above array, first we pick 1 as `key`, we compare it with 5(element before 1), 1 is smaller than 5, we insert 1 before 5. Then we pick 6 as `key`, and compare it with 5 and 1, no shifting in position this time. Then 2 becomes the `key` and is compared with 6 and 5, and then 2 is inserted after 1. And this goes on until the complete array gets sorted.
+
+
+with a=[1,2,3,4,5,6]
+
+
+```
+Before Sorting [ 1, 2, 3, 4, 5, 6 ]
+
+After Sorting [ 1, 2, 3, 4, 5, 6 ]
+
+Total LOOPs : 0
+```
+
+## Complexity Analysis
+
+As we mentioned above that insertion sort is an efficient sorting algorithm, as it does not run on preset conditions using for loops, but instead it uses one while loop, which avoids extra steps once the array gets sorted.
+
+Even though insertion sort is efficient, still, if we provide an already sorted array to the insertion sort algorithm, it will still execute the outer for loop, thereby requiring n steps to sort an already sorted array of n elements, which makes its best case time complexity a linear function of n.
+
+
+## Verdict
+
+* Worst Case Time Complexity [ Big-O ]: **O(N<sup>2</sup>)** 
+
+* Best Case Time Complexity [Big-omega]: **O(n)**
+
+* Average Time Complexity [Big-theta]: **O(N<sup>2</sup>)** 
+
+* Space Complexity: O(1)
+
+
+## Few More Donut
+- [Recursive-Insertion-Sort](https://www.geeksforgeeks.org/recursive-insertion-sort/?ref=rp)
+- [Binary Search](https://www.geeksforgeeks.org/binary-insertion-sort/?ref=rp)
+  
+We can use binary search to reduce the number of comparisons in normal insertion sort. Binary Insertion Sort uses binary search to find the proper location to insert the selected item at each iteration.
+In normal insertion sort, it takes O(n^2) comparisons(at nth iteration) in worst case. We can reduce it to **O(log n)** by using binary search.
+
+## :bulb: Challenges
+
+## Links
+
+![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
+
+<!-- # Insertion Sort
+
+## Strategy
+
+## Complexity Analysis
+
+## Verdict
+
+## Few More Donut
+
+## :bulb: Challenges
+
+## Links
+
+![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png) -->
+
+# Bubble Vs Selection Vs Insertion Sorting
+
+**TODO**
+- https://www.geeksforgeeks.org/comparison-among-bubble-sort-selection-sort-and-insertion-sort/?ref=rp
