@@ -79,7 +79,10 @@ Now it works fine as shown below
 
 - [x] [Bubble Sort](AllSortingAlgorithms.md#bubble-sort)
 - [x] [Selection Sort](AllSortingAlgorithms.md#selection-sort)
-- [ ] [Insertion Sort](AllSortingAlgorithms.md#insertion-sort)
+- [x] [Insertion Sort](AllSortingAlgorithms.md#insertion-sort)
+- [ ] `DC` [Merge Sort](AllSortingAlgorithms.md#merge-sort)
+
+`DC` - [Divide and Conquer](AllSortingAlgorithms.md#divide-and-conquer-algorithms)
 
 <!--
 |       |   Topic    | ReadMe | Complexity |
@@ -89,12 +92,11 @@ Now it works fine as shown below
 
 **<sup>[[1]](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)</sup>** **<sup>[[2]](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)</sup>**
 
-
 <h1> Bubble Vs Selection Vs Insertion Sorting</h1>
 
 **TODO**
-- https://www.geeksforgeeks.org/comparison-among-bubble-sort-selection-sort-and-insertion-sort/?ref=rp
 
+- https://www.geeksforgeeks.org/comparison-among-bubble-sort-selection-sort-and-insertion-sort/?ref=rp
 
 # Conclusion
 

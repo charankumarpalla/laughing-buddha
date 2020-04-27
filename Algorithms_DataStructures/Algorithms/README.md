@@ -128,6 +128,7 @@ We shall learn about a `priori algorithm` analysis. Algorithm analysis deals wit
 
 <!-- TODO -->
 
+- https://www.javatpoint.com/daa-asymptotic-analysis-of-algorithms :construction: :star:
 - https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/ :construction:
 - https://www.geeksforgeeks.org/fundamentals-of-algorithms/#AnalysisofAlgorithms :construction:
 
@@ -151,3 +152,5 @@ Well there are many types of algorithm but the most fundamental types of algorit
 `B` - Beginner, `A` - Advanced
 
 **----> TO-DO** : [1](https://www.includehelp.com/algorithms/), [2](https://www.includehelp.com/data-structure-tutorial/algorithm-and-its-types.aspx)
+
+- https://www.javatpoint.com/daa-tutorial

@@ -20,6 +20,18 @@
   - [:bulb: Challenges](#bulb-challenges-2)
   - [Links](#links-2)
 - [Bubble Vs Selection Vs Insertion Sorting](#bubble-vs-selection-vs-insertion-sorting)
+- [Divide and Conquer Algorithms](#divide-and-conquer-algorithms)
+  - [Divide/Break](#dividebreak)
+  - [Conquer/Solve](#conquersolve)
+  - [Merge/Combine](#mergecombine)
+  - [Fundamental of Divide & Conquer Strategy:](#fundamental-of-divide--conquer-strategy)
+- [Merge Sort](#merge-sort)
+  - [Strategy](#strategy-3)
+  - [Complexity Analysis](#complexity-analysis-3)
+  - [Verdict](#verdict-3)
+  - [Few More Donut](#few-more-donut-3)
+  - [:bulb: Challenges](#bulb-challenges-3)
+  - [Links](#links-3)
 
 # Bubble Sort
 
@@ -699,3 +711,94 @@ In normal insertion sort, it takes O(n^2) comparisons(at nth iteration) in worst
 **TODO**
 
 - https://www.geeksforgeeks.org/comparison-among-bubble-sort-selection-sort-and-insertion-sort/?ref=rp
+
+![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
+
+# Divide and Conquer Algorithms
+
+In divide and conquer approach, the problem in hand, is divided into smaller sub-problems and then each problem is solved independently. When we keep on dividing the subproblems into even smaller sub-problems, we may eventually reach a stage where no more division is possible. Those "atomic" smallest possible sub-problem (fractions) are solved. The solution of all sub-problems is finally merged in order to obtain the solution of an original problem.
+
+<p align="center">
+  <img  src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/Divide_and_conquer_.jpg" alt="DC_Algorithms_">
+</p>
+
+Broadly, we can understand divide-and-conquer approach in a three-step process.
+
+## Divide/Break
+
+This step involves breaking the problem into smaller sub-problems. Sub-problems should represent a part of the original problem. This step generally takes a recursive approach to divide the problem until no sub-problem is further divisible. At this stage, sub-problems become atomic in nature but still represent some part of the actual problem.
+
+## Conquer/Solve
+
+This step receives a lot of smaller sub-problems to be solved. Generally, at this level, the problems are considered `solved` on their own.
+
+## Merge/Combine
+
+When the smaller sub-problems are solved, this stage recursively combines them until they formulate a solution of the original problem. This algorithmic approach works recursively and conquer & merge steps works so close that they appear as one.
+
+**Examples**
+The following computer algorithms are based on divide-and-conquer programming approach −
+
+- Merge Sort
+- Quick Sort
+- Binary Search
+- Strassen's Matrix Multiplication
+- Closest pair (points)
+- Maximum and Minimum Problem
+- Binary Search
+- Sorting (merge sort, quick sort)
+- Tower of Hanoi.
+-
+
+## Fundamental of Divide & Conquer Strategy:
+
+There are two fundamental of Divide & Conquer Strategy:
+
+- Relational Formula
+- Stopping Condition
+
+**1. Relational Formula:** It is the formula that we generate from the given technique. After generation of Formula we apply D&C Strategy, i.e. we break the problem recursively & solve the broken subproblems.
+
+**2. Stopping Condition:** When we break the problem using Divide & Conquer Strategy, then we need to know that for how much time, we need to apply divide & Conquer. So the condition where the need to stop our recursion steps of D&C is called as Stopping Condition.
+
+```
+DAC(a, i, j)
+{
+    if(small(a, i, j))
+      return(Solution(a, i, j))
+    else
+      m = divide(a, i, j)               // f1(n)
+      b = DAC(a, i, mid)                 // T(n/2)
+      c = DAC(a, mid+1, j)            // T(n/2)
+      d = combine(b, c)                 // f2(n)
+   return(d)
+}
+```
+
+```
+This is recurrence relation for above program.
+           O(1) if n is small
+T(n) =     f1(n) + 2T(n/2) + f2(n)
+```
+
+TODO
+
+- https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/
+
+![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
+
+# Merge Sort
+
+## Strategy
+
+## Complexity Analysis
+
+## Verdict
+
+## Few More Donut
+
+## :bulb: Challenges
+
+## Links
+
+![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
