@@ -561,20 +561,18 @@ Following are some of the important characteristics of Insertion Sort:
 
 Following are the steps involved in insertion sort:
 
-* We start by making the second element of the given array, i.e. element at index 1, the key. The key element here is the new card that we need to add to our existing sorted set of cards(remember the example with cards above).
-* We compare the key element with the element(s) before it, in this case, element at index 0:
-* If the key element is less than the first element, we insert the key element before the first element.
-* If the key element is greater than the first element, then we insert it after the first element.
-* Then, we make the third element of the array as key and will compare it with elements to it's left and insert it at the right position.
-* And we go on repeating this, until the array is sorted.
+- We start by making the second element of the given array, i.e. element at index 1, the key. The key element here is the new card that we need to add to our existing sorted set of cards(remember the example with cards above).
+- We compare the key element with the element(s) before it, in this case, element at index 0:
+- If the key element is less than the first element, we insert the key element before the first element.
+- If the key element is greater than the first element, then we insert it after the first element.
+- Then, we make the third element of the array as key and will compare it with elements to it's left and insert it at the right position.
+- And we go on repeating this, until the array is sorted.
 
-
- Let's consider an array with values {5, 1, 6, 2, 4, 3}
+Let's consider an array with values {5, 1, 6, 2, 4, 3}
 
  <p align="center">
   <img width="450" height="450" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/basic-insertion-sort_.png" alt="basic-insertion-sort_">
 </p>
-
 
 As you can see in the diagram above, after picking a `key`, we start iterating over the elements to the left of the `key`.
 
@@ -582,12 +580,10 @@ We continue to move towards left if the elements are greater than the `key` elem
 
 And, insert the `key` element after the element which is less than the `key` element.
 
-
-
 ```
 
 // // ###############################################################################
-// //  -------->>>>>> 1. Basic Bubble sort
+// //  -------->>>>>> 1. Insertion sort
 // //  -------->>>>>> Notice : Irrespective it always loops for array.length times each time
 // // Before Sorting [ 5, 1, 6, 2, 4, 3 ]
 // // Key to Insert:1         Array to check : [5]
@@ -630,7 +626,6 @@ console.log("\nTotal LOOPs :", loops);
 
 ```
 
-
 Now let's try to understand the above simple insertion sort algorithm.
 
 We took an array with 6 integers. We took a variable `key`, in which we put each element of the array, during each pass, starting from the second element, that is a[1].
@@ -643,9 +638,7 @@ We then make the next element as `key` and then repeat the same process.
 
 In the above array, first we pick 1 as `key`, we compare it with 5(element before 1), 1 is smaller than 5, we insert 1 before 5. Then we pick 6 as `key`, and compare it with 5 and 1, no shifting in position this time. Then 2 becomes the `key` and is compared with 6 and 5, and then 2 is inserted after 1. And this goes on until the complete array gets sorted.
 
-
 with a=[1,2,3,4,5,6]
-
 
 ```
 Before Sorting [ 1, 2, 3, 4, 5, 6 ]
@@ -661,22 +654,21 @@ As we mentioned above that insertion sort is an efficient sorting algorithm, as 
 
 Even though insertion sort is efficient, still, if we provide an already sorted array to the insertion sort algorithm, it will still execute the outer for loop, thereby requiring n steps to sort an already sorted array of n elements, which makes its best case time complexity a linear function of n.
 
-
 ## Verdict
 
-* Worst Case Time Complexity [ Big-O ]: **O(N<sup>2</sup>)** 
+- Worst Case Time Complexity [ Big-O ]: **O(N<sup>2</sup>)**
 
-* Best Case Time Complexity [Big-omega]: **O(n)**
+- Best Case Time Complexity [Big-omega]: **O(n)**
 
-* Average Time Complexity [Big-theta]: **O(N<sup>2</sup>)** 
+- Average Time Complexity [Big-theta]: **O(N<sup>2</sup>)**
 
-* Space Complexity: O(1)
-
+- Space Complexity: O(1)
 
 ## Few More Donut
+
 - [Recursive-Insertion-Sort](https://www.geeksforgeeks.org/recursive-insertion-sort/?ref=rp)
 - [Binary Search](https://www.geeksforgeeks.org/binary-insertion-sort/?ref=rp)
-  
+
 We can use binary search to reduce the number of comparisons in normal insertion sort. Binary Insertion Sort uses binary search to find the proper location to insert the selected item at each iteration.
 In normal insertion sort, it takes O(n^2) comparisons(at nth iteration) in worst case. We can reduce it to **O(log n)** by using binary search.
 
@@ -705,4 +697,5 @@ In normal insertion sort, it takes O(n^2) comparisons(at nth iteration) in worst
 # Bubble Vs Selection Vs Insertion Sorting
 
 **TODO**
+
 - https://www.geeksforgeeks.org/comparison-among-bubble-sort-selection-sort-and-insertion-sort/?ref=rp
