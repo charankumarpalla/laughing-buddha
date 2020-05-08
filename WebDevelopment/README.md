@@ -79,6 +79,18 @@
       - https://balsamiq.cloud/
     - https://www.awwwards.com/
     - https://ui-patterns.com/ :star: :star: :star:
+- NavBar
+- Grid
+- Containers
+- Carousal
+- cards
+- https://bootsnipp.com/
+- **Z-Index** - In Stacked/piled elements,first html elements are more backward and last html elements are forward towards screen
+  - Usually to get the html elements forward we need to change the jtml elements order in html code.., but using z-index its easy no need to change any html just add it in css to give the opsition to that element in the stack
+  - Z-index is always effective only if it is stacked i.e `position : Static/relative/absolute/Fixed`
+  - By default Z-index value is `0` . the bigger number more towards the screen
+- Media Query -   `@media <type> <feature>`
+
 
 ## Challenges
 
