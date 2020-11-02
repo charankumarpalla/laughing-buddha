@@ -89,8 +89,58 @@
   - Usually to get the html elements forward we need to change the jtml elements order in html code.., but using z-index its easy no need to change any html just add it in css to give the opsition to that element in the stack
   - Z-index is always effective only if it is stacked i.e `position : Static/relative/absolute/Fixed`
   - By default Z-index value is `0` . the bigger number more towards the screen
-- Media Query -   `@media <type> <feature>`
+- Media Query - `@media <type> <feature>`
+- Code Refactoring
 
+  - DRY vs WET
+    - **READABILTY** -
+    - **MODULARITY**
+    - **EFFICIENCY**
+    - **LENGTH**
+
+- **ADVANCED CSS**
+
+  - **Selectors**
+
+    - **Multiple Selectors** - `h1, h3, h4, p {color: #fffe21}`
+    - **Hierarchical Selectors** - `parent child {}`
+
+      ```
+      #User h1{
+        color: red;
+      }
+
+      #Admin h1{
+        color: cyan;
+      }
+
+      ```
+
+      ```
+      #user h1 {} NOT EQUAL TO h1 #user{}
+      ```
+
+    - **Combined Selectors** - `selector1.selector2{} or selector1#selector2{}`
+    - `elements .class` **vs** `element.class`
+    - Selector priority Order for the same element: `id > class > tag selector`
+
+      ```
+      h2{
+        color: blue;
+        color : yellow; // This is final
+      }
+      #heading{
+        color: blue;  // This is final with high priority
+      }
+
+      .clas{
+          color:yellow;
+      }
+
+      h1{
+          color:red;
+      }
+      ```
 
 ## Challenges
 

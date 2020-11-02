@@ -1,10 +1,37 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
   /* position: absolute; */
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 80px 50px 30px 50px;
+  line-height: 1.5;
+}
+
+h3 {
+  /* font-family: "montserrat-bold"; */
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
 }
 
 #title {
   background-color: #ff4c68;
+  text-align: left;
   color: #fffffd;
 }
 
@@ -19,13 +46,7 @@ body {
 .nav-item {
   padding: 0 16px 0 16px;
 }
-h1 {
-  /* font-family: "Ubuntu"; */
-  /* font-family: "Montserrat-Thin"; */
-  font-family: "Montserrat";
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
+
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
@@ -44,17 +65,6 @@ h1 {
   left: 150px;
   transform: rotate(25deg);
   position: absolute;
-}
-
-h3 {
-  /* font-family: "montserrat-bold"; */
-  font-family: "Montserrat-bold", sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-p {
-  color: #8f8f8f;
 }
 
 .features-icon {
@@ -90,18 +100,9 @@ p {
 
 #testimonials {
   /* padding: 5% 17%; */
-  text-align: center;
+
   background-color: #ef8072;
   color: #fff;
-}
-
-h2 {
-  font-family: "Montserrat-Bold";
-  font-size: 2rem;
-  font-weight: bold;
-  /* margin: 0 150px 0 150px; */
-  padding: 80px 50px 30px 50px;
-  line-height: 1.5;
 }
 
 .testimonials-image {
@@ -112,7 +113,6 @@ h2 {
 
 #press {
   background-color: #ef8072;
-  text-align: center;
   padding: 20px;
 }
 
@@ -124,7 +124,6 @@ h2 {
 /* PRICING */
 
 #pricing {
-  text-align: center;
   padding: 50px;
   /* font-size: 30px; */
 }
@@ -143,11 +142,8 @@ h2 {
 
 #cta {
   background-color: #ff4c68;
-  text-align: center;
   padding: 80px;
   font-family: "Ubuntu";
-  /* font-family: "Montserrat-Thin"; */
-  /* padding: */
 }
 
 .cta_h3 {
@@ -159,7 +155,6 @@ h2 {
 
 @media (max-width: 800px) {
   #title {
-    text-align: center;
     color: #000;
   }
 
@@ -175,7 +170,12 @@ h2 {
 }
 
 #footer {
-  text-align: center;
   background-color: #fff;
   padding: 30px;
+  color: rgb(93, 93, 201);
+  /* word-spacing: 16px; */
+}
+
+.container-fluid .i {
+  margin: 10px;
 }
