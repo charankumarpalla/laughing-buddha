@@ -1,0 +1,54 @@
+body {
+  background-color: #4cbbb9;
+}
+hr {
+  /* size: 9 noshade; */
+  /* background-color: white; */
+  /* background-color: yellow; */
+  border-style: none none none none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+  /* height: 0px; */
+  /* height: 3px;
+    width: 50%; */
+}
+#p1 {
+  height: 10%;
+  width: 10%;
+}
+#p1 {
+  height: 20%;
+  width: 20%;
+}
+#p3 {
+  height: 30%;
+  width: 30%;
+}
+#p4 {
+  height: 40%;
+  width: 40%;
+}
+#p5 {
+  height: 50%;
+  width: 50%;
+}
+
+input {
+  background-color: rgb(146, 238, 207);
+}
+
+textarea {
+  background-color: rgb(146, 238, 207);
+}
+p {
+  color: green;
+}
+
+h1:hover {
+  color: red;
+}
+h2 {
+  color: green;
+}

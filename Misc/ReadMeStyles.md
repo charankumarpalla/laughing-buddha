@@ -20,13 +20,13 @@
 
 | Emoji |           Code            |      Description       |
 | :---: | :-----------------------: | :--------------------: |
-|  🚧   |     `:construction:`      | Page still in Progress |
-|  👏   |         `:clap:`          |       References       |
-|  ⭐️  |         `:star:`          |      Nice Article      |
-|  ⛽️  |       `:fuelpump:`        | Important Information  |
-|  ✔️   |   `:heavy_check_mark:`    |     Done and Read      |
-|  ☑️   | `:ballot_box_with_check:` |          Done          |
-|  ✅   |   `:white_check_mark:`    |        Revisit         |
+|   🚧   |     `:construction:`      | Page still in Progress |
+|   👏   |         `:clap:`          |       References       |
+|   ⭐️   |         `:star:`          |      Nice Article      |
+|   ⛽️   |       `:fuelpump:`        | Important Information  |
+|   ✔️   |   `:heavy_check_mark:`    |     Done and Read      |
+|   ☑️   | `:ballot_box_with_check:` |          Done          |
+|   ✅   |   `:white_check_mark:`    |        Revisit         |
 
 | NOTE:            |
 | :--------------- |
@@ -104,7 +104,7 @@
 
 <div align="right">
 
-🏁 [Your Journey Starts here ---->>>>](Algorithms&DataStructures/Readme.md)
+🏁 [Your Journey Starts here ---->>>>](Algorithms_DataStructures/Readme.md)
 
 </div>
 
