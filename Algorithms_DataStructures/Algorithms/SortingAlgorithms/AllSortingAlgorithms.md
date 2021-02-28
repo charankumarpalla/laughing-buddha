@@ -317,6 +317,9 @@ Following are the Time and Space complexity for the Bubble Sort algorithm.
 - [recursive-bubble-sort](https://www.geeksforgeeks.org/recursive-bubble-sort/)
 
 ## :bulb: Challenges
+- [ ] [hackerearth
+ ](https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/practice-problems/)
+
 
 ## Links
 
