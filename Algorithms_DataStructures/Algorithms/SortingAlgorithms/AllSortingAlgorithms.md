@@ -356,6 +356,37 @@ This algorithm is not suitable for large data sets as its average and worst case
   <img width="600" height="300" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/SelectionSort_.jpg" alt="Algorithm_solutions">
 </p>
 
+
+```
+
+
+// Selection Sort
+var a=[ 5, 1, 6, 2, 4, 3 ]
+var loop=0
+
+let SelectionSort = (arr)=>{
+    l=a.length
+    for (var i=0;i<l-1;i++){
+        for(var j=i+1;j<l;j++){
+            console.log(a, a[i], a[j]); 
+            if(a[i]>a[j]){
+                [a[i],a[j]]=[a[j],a[i]]
+            }
+            ++loop
+        }
+        console.log("\n")
+    }
+}
+
+
+console.log("Before Sorting : ",a)
+SelectionSort(a)
+console.log("After Sorting : ",a)
+console.log("loops: "+loop)
+```
+
+
+
 ```
 
 
