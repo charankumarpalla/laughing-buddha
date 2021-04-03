@@ -367,17 +367,21 @@ var loop=0
 let SelectionSort = (arr)=>{
     l=a.length
     for (var i=0;i<l-1;i++){
+        let min_index=i;
         for(var j=i+1;j<l;j++){
             console.log(a, a[i], a[j]); 
-            if(a[i]>a[j]){
-                [a[i],a[j]]=[a[j],a[i]]
+            if(a[j]<a[min_index]){
+                min_index=j
             }
             ++loop
+        }
+
+        if(i!=min_index){
+            [a[i],a[min_index]]=[a[min_index],a[i]]
         }
         console.log("\n")
     }
 }
-
 
 console.log("Before Sorting : ",a)
 SelectionSort(a)
@@ -721,6 +725,8 @@ In normal insertion sort, it takes O(n^2) comparisons(at nth iteration) in worst
 ## :bulb: Challenges
 
 ## Links
+- **Reference** :
+  - https://stackabuse.com/insertion-sort-in-javascript/
 
 ![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
 
