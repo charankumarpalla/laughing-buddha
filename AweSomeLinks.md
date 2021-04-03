@@ -24,3 +24,9 @@ This is One Stop page for all the Important resources Found accross the learning
 # Data Science
 
 - [Data Sets for Practice](https://github.com/charankumarpalla/awesome-datascience#data-sets) :star:
+
+
+
+# Data Structures
+	- https://github.com/arnauddri/algorithms(GoLang)
+	- https://github.com/floyernick/Data-Structures-and-Algorithms (GoLang)
