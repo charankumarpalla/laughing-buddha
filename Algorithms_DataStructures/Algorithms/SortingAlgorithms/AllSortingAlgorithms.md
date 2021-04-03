@@ -317,6 +317,9 @@ Following are the Time and Space complexity for the Bubble Sort algorithm.
 - [recursive-bubble-sort](https://www.geeksforgeeks.org/recursive-bubble-sort/)
 
 ## :bulb: Challenges
+- [ ] [hackerearth
+ ](https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/practice-problems/)
+
 
 ## Links
 
@@ -352,6 +355,41 @@ This algorithm is not suitable for large data sets as its average and worst case
 <p align="center">
   <img width="600" height="300" src="../../../PlayGround/ResourcesFiles/Algorithms_DataStructures/sorting/SelectionSort_.jpg" alt="Algorithm_solutions">
 </p>
+
+
+```
+
+
+// Selection Sort
+var a=[ 5, 1, 6, 2, 4, 3 ]
+var loop=0
+
+let SelectionSort = (arr)=>{
+    l=a.length
+    for (var i=0;i<l-1;i++){
+        let min_index=i;
+        for(var j=i+1;j<l;j++){
+            console.log(a, a[i], a[j]); 
+            if(a[j]<a[min_index]){
+                min_index=j
+            }
+            ++loop
+        }
+
+        if(i!=min_index){
+            [a[i],a[min_index]]=[a[min_index],a[i]]
+        }
+        console.log("\n")
+    }
+}
+
+console.log("Before Sorting : ",a)
+SelectionSort(a)
+console.log("After Sorting : ",a)
+console.log("loops: "+loop)
+```
+
+
 
 ```
 
@@ -687,6 +725,8 @@ In normal insertion sort, it takes O(n^2) comparisons(at nth iteration) in worst
 ## :bulb: Challenges
 
 ## Links
+- **Reference** :
+  - https://stackabuse.com/insertion-sort-in-javascript/
 
 ![-----------------------------------------------------](../../../PlayGround/ResourcesFiles/ReadMeResources/lines/cut.png)
 
