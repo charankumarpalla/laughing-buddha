@@ -21,7 +21,6 @@ for (var char of str) {
 }
 console.log(result);
 
-
 /***************************************************
 *	Author : charankumar.palla@gmail.com
 *	Context : Usage of map
