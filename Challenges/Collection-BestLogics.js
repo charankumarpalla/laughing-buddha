@@ -256,3 +256,45 @@ downlod('',
         console.log(`Handling error...`);
     }
 );
+
+
+
+/***************************************************
+*	Author : charankumar.palla@gmail.com
+*	Context : Counter construct
+*	Samples : 
+*	Observe : See how this has different scopes in program
+*	Reference Link : 
+*****************************************************/
+
+// call the forEach() method on the numbers array. In the callback function, add the element to the sum variable and call the increase() method of the counter object. Notice that the counter object is referred to as this inside the callback function.
+
+function Counter() {
+    this.count = 0;
+    let self = this;        // understand this ??
+
+    return {
+        count:5,
+        increase: function () {
+            self.count++        // check what happens: try `this` instead of self
+        },
+        current: function () {
+            return self.count  // check what happens: try `this` instead of self
+            
+        },
+        reset: function () {
+            self.count=0         // check what happens: try `this` instead of self
+        }
+    }
+}
+
+var counter = new Counter();
+var numbers = [1, 2, 3];
+var sum = 0;
+numbers.forEach(function (e) {
+    sum += e;
+    this.increase();
+}, counter);
+
+console.log(sum); // 6
+console.log(counter.current()); 
