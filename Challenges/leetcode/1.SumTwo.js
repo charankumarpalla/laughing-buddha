@@ -32,8 +32,7 @@ function sumTwo(nums, target) {
     result !=-1 ? console.log(`Found Target Sum ${target} in Array ${nums} at Index : `,result):console.log("Target Sum not found");;
 }
 
-
-sumTwo([2,7,11,15],9)
+sumTwo([2,7,11,15],9) 
 sumTwo([1, 3, 4], 5)
 sumTwo([1, 2, 3], 4)
 sumTwo([3, 3], 6)
