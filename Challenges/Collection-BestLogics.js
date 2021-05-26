@@ -297,4 +297,70 @@ numbers.forEach(function (e) {
 }, counter);
 
 console.log(sum); // 6
-console.log(counter.current()); 
+console.log(counter.current());
+
+
+
+
+/***************************************************
+*	Author : charankumar.palla@gmail.com
+*	Context : Reverse a string using a JavaScript stack
+*	Samples : 
+*	Observe : 
+*	Reference Link : 
+*****************************************************/
+
+function reverse(str) {
+    let stack = [];
+    // push letter into stack
+    for (let i = 0; i < str.length; i++) {
+        stack.push(str[i]);
+    }
+    // pop letter from the stack
+    let reverseStr = '';
+    while (stack.length > 0) {
+        reverseStr += stack.pop();
+    }
+    return reverseStr;
+}
+console.log(reverse('JavaScript Stack')); //kcatS tpircSavaJ
+
+
+
+/***************************************************
+*	Author : charankumar.palla@gmail.com
+*	Context : Occurance of a character in a array
+*	Samples : 
+*	Observe : 
+*	Reference Link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
+*****************************************************/
+
+
+var scores = [10, 20, 30, 10, 40, 20];
+var count=0
+while (position !== -1) {
+    ++count
+    position=scores.indexOf(10,position+1)  /// Understand this  position+1
+}
+console.log("Count : ", count);
+
+
+/***************************************************
+*	Author : charankumar.palla@gmail.com
+*	Context : let vs Var
+*	Samples : 
+*	Observe : let to var change how it changes
+*	Reference Link : https://blog.bitsrc.io/javascript-internals-javascript-engine-run-time-environment-settimeout-web-api-eeed263b1617
+*****************************************************/
+
+
+a = [1, 2, 3, 4]
+// with let -> 0,1,2,3
+// with var -> 4,4,4,4
+for (let i = 0; i < a.length; i++) { // try to change from let-> var
+    setTimeout(() => {
+        console.log(thii)
+    }, 1000);
+}
+
+
