@@ -13,7 +13,9 @@ Table of Contents
       * [AI_ML_DL_DS](#ai_ml_dl_ds)
       * [MobileDevelopment](#mobiledevelopment)
       * [NodeJS](#nodejs)
+      * [Challenges](#misc)
       * [Misc](#misc)
+
    * [<g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png">🔗</g-emoji>  Reference links](#link--reference-links)
 
 
@@ -67,6 +69,15 @@ Table of Contents
 <a href="NodeJS/README.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
 
 </div>
+
+## Challenges
+
+<div align="right">
+
+<a href="Challenges/README.md" alt=""><img src="https://img.shields.io/badge/ReadMore-...-green?style=for-the-badge&logo=markdown"/></a>
+
+</div>
+
 
 
 ## Misc
