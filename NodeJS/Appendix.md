@@ -93,5 +93,25 @@ function foo() {
 setTimeout(foo, 2000);
 ```
 
-- [ ] 
+
+
+# Promises
+*The best Resource*: https://www.javascripttutorial.net/es6/javascript-promises/
+
+```
+let completed = true;
+
+let learnJS = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        if (completed) {
+            resolve("I have completed learning JS.");
+        } else {
+            reject("I haven't completed learning JS yet.");
+        }
+    }, 3 * 1000);
+});
+```
+
+
+
     
